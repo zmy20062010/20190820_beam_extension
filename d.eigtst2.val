@@ -1,0 +1,3262 @@
+
+ Starting direction of the free parameter(s) : 
+ PAR(  1) :  0.100000000000E+01
+ PAR(  2) :  0.000000000000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1     1  EP    1   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     2   0        2.00000E-01   0.00000E+00
+   1     2   1        2.00000E-01   0.00000E+00
+
+   1     2         Fold Function    1.00000E+00
+   1     2         BP   Function    9.35489E-01
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1     2        0   2.00000E-01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1     2         Iterations   :   1
+   1     2         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     3   0        4.00000E-01   0.00000E+00
+   1     3   1        4.00000E-01   0.00000E+00
+
+   1     3         Fold Function    1.00000E+00
+   1     3         BP   Function    7.56827E-01
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1     3        0   4.00000E-01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1     3         Iterations   :   1
+   1     3         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     4   0        6.00000E-01   0.00000E+00
+   1     4   1        6.00000E-01   0.00000E+00
+
+   1     4         Fold Function    1.00000E+00
+   1     4         BP   Function    5.04551E-01
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1     4        0   6.00000E-01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1     4         Iterations   :   1
+   1     4         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     5   0        8.00000E-01   0.00000E+00
+   1     5   1        8.00000E-01   0.00000E+00
+
+   1     5         Fold Function    1.00000E+00
+   1     5         BP   Function    2.33872E-01
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1     5        0   8.00000E-01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1     5         Iterations   :   1
+   1     5         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     6   0        1.00000E+00   0.00000E+00
+   1     6   1        1.00000E+00   0.00000E+00
+
+   1     6         Fold Function    1.00000E+00
+   1     6         BP   Function   -1.00000E-07
+ ==> Location of special point :  Convergence.   Step size =  -8.55167E-08
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1     6  BP    2   1.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1     6         Iterations   :   1
+   1     6         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     7   0        1.20000E+00   0.00000E+00
+   1     7   1        1.20000E+00   0.00000E+00
+
+   1     7         Fold Function    1.00000E+00
+   1     7         BP   Function   -1.55915E-01
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1     7        0   1.20000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1     7         Iterations   :   1
+   1     7         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     8   0        1.40000E+00   0.00000E+00
+   1     8   1        1.40000E+00   0.00000E+00
+
+   1     8         Fold Function    1.00000E+00
+   1     8         BP   Function   -2.16236E-01
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1     8        0   1.40000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1     8         Iterations   :   1
+   1     8         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     9   0        1.60000E+00   0.00000E+00
+   1     9   1        1.60000E+00   0.00000E+00
+
+   1     9         Fold Function    1.00000E+00
+   1     9         BP   Function   -1.89207E-01
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1     9        0   1.60000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1     9         Iterations   :   1
+   1     9         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    10   0        1.80000E+00   0.00000E+00
+   1    10   1        1.80000E+00   0.00000E+00
+
+   1    10         Fold Function    1.00000E+00
+   1    10         BP   Function   -1.03943E-01
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    10        0   1.80000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    10         Iterations   :   1
+   1    10         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    11   0        2.00000E+00   0.00000E+00
+   1    11   1        2.00000E+00   0.00000E+00
+
+   1    11         Fold Function    1.00000E+00
+   1    11         BP   Function    9.99963E-08
+ ==> Location of special point :  Convergence.   Step size =  -1.92406E-07
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    11  BP    3   2.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    11         Iterations   :   1
+   1    11         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    12   0        2.20000E+00   0.00000E+00
+   1    12   1        2.20000E+00   0.00000E+00
+
+   1    12         Fold Function    1.00000E+00
+   1    12         BP   Function    8.50446E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    12        0   2.20000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    12         Iterations   :   1
+   1    12         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    13   0        2.40000E+00   0.00000E+00
+   1    13   1        2.40000E+00   0.00000E+00
+
+   1    13         Fold Function    1.00000E+00
+   1    13         BP   Function    1.26138E-01
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    13        0   2.40000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    13         Iterations   :   1
+   1    13         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    14   0        2.60000E+00   0.00000E+00
+   1    14   1        2.60000E+00   0.00000E+00
+
+   1    14         Fold Function    1.00000E+00
+   1    14         BP   Function    1.16435E-01
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    14        0   2.60000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    14         Iterations   :   1
+   1    14         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    15   0        2.80000E+00   0.00000E+00
+   1    15   1        2.80000E+00   0.00000E+00
+
+   1    15         Fold Function    1.00000E+00
+   1    15         BP   Function    6.68206E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    15        0   2.80000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    15         Iterations   :   1
+   1    15         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    16   0        3.00000E+00   0.00000E+00
+   1    16   1        3.00000E+00   0.00000E+00
+
+   1    16         Fold Function    1.00000E+00
+   1    16         BP   Function   -9.99049E-08
+ ==> Location of special point :  Convergence.   Step size =  -2.99024E-07
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    16  BP    4   3.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    16         Iterations   :   1
+   1    16         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    17   0        3.20000E+00   0.00000E+00
+   1    17   1        3.20000E+00   0.00000E+00
+
+   1    17         Fold Function    1.00000E+00
+   1    17         BP   Function   -5.84682E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    17        0   3.20000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    17         Iterations   :   1
+   1    17         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    18   0        3.40000E+00   0.00000E+00
+   1    18   1        3.40000E+00   0.00000E+00
+
+   1    18         Fold Function    1.00000E+00
+   1    18         BP   Function   -8.90385E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    18        0   3.40000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    18         Iterations   :   1
+   1    18         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    19   0        3.60000E+00   0.00000E+00
+   1    19   1        3.60000E+00   0.00000E+00
+
+   1    19         Fold Function    1.00000E+00
+   1    19         BP   Function   -8.40918E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    19        0   3.60000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    19         Iterations   :   1
+   1    19         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    20   0        3.80000E+00   0.00000E+00
+   1    20   1        3.80000E+00   0.00000E+00
+
+   1    20         Fold Function    1.00000E+00
+   1    20         BP   Function   -4.92362E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    20        0   3.80000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    20         Iterations   :   1
+   1    20         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    21   0        4.00000E+00   0.00000E+00
+   1    21   1        4.00000E+00   0.00000E+00
+
+   1    21         Fold Function    1.00000E+00
+   1    21         BP   Function    9.90547E-08
+ ==> Location of special point :  Convergence.   Step size =  -4.02365E-07
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    21  BP    5   4.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    21         Iterations   :   1
+   1    21         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    22   0        4.20000E+00   0.00000E+00
+   1    22   1        4.20000E+00   0.00000E+00
+
+   1    22         Fold Function    1.00000E+00
+   1    22         BP   Function    4.45472E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    22        0   4.20000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    22         Iterations   :   1
+   1    22         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    23   0        4.40000E+00   0.00000E+00
+   1    23   1        4.40000E+00   0.00000E+00
+
+   1    23         Fold Function    1.00000E+00
+   1    23         BP   Function    6.88025E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    23        0   4.40000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    23         Iterations   :   1
+   1    23         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    24   0        4.60000E+00   0.00000E+00
+   1    24   1        4.60000E+00   0.00000E+00
+
+   1    24         Fold Function    1.00000E+00
+   1    24         BP   Function    6.58110E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    24        0   4.60000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    24         Iterations   :   1
+   1    24         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    25   0        4.80000E+00   0.00000E+00
+   1    25   1        4.80000E+00   0.00000E+00
+
+   1    25         Fold Function    1.00000E+00
+   1    25         BP   Function    3.89786E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    25        0   4.80000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    25         Iterations   :   1
+   1    25         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    26   0        5.00000E+00   0.00000E+00
+   1    26   1        5.00000E+00   0.00000E+00
+
+   1    26         Fold Function    1.00000E+00
+   1    26         BP   Function   -9.44022E-08
+ ==> Location of special point :  Convergence.   Step size =  -4.84378E-07
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    26  BP    6   5.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    26         Iterations   :   1
+   1    26         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    27   0        5.20000E+00   0.00000E+00
+   1    27   1        5.20000E+00   0.00000E+00
+
+   1    27         Fold Function    1.00000E+00
+   1    27         BP   Function   -3.59804E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    27        0   5.20000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    27         Iterations   :   1
+   1    27         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    28   0        5.40000E+00   0.00000E+00
+   1    28   1        5.40000E+00   0.00000E+00
+
+   1    28         Fold Function    1.00000E+00
+   1    28         BP   Function   -5.60613E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    28        0   5.40000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    28         Iterations   :   1
+   1    28         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    29   0        5.60000E+00   0.00000E+00
+   1    29   1        5.60000E+00   0.00000E+00
+
+   1    29         Fold Function    1.00000E+00
+   1    29         BP   Function   -5.40590E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    29        0   5.60000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    29         Iterations   :   1
+   1    29         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    30   0        5.80000E+00   0.00000E+00
+   1    30   1        5.80000E+00   0.00000E+00
+
+   1    30         Fold Function    1.00000E+00
+   1    30         BP   Function   -3.22582E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    30        0   5.80000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    30         Iterations   :   1
+   1    30         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    31   0        6.00000E+00   0.00000E+00
+   1    31   1        6.00000E+00   0.00000E+00
+
+   1    31         Fold Function    1.00000E+00
+   1    31         BP   Function    7.61213E-08
+ ==> Location of special point :  Convergence.   Step size =  -4.71949E-07
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    31  BP    7   6.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    31         Iterations   :   1
+   1    31         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    32   0        6.20000E+00   0.00000E+00
+   1    32   1        6.20000E+00   0.00000E+00
+
+   1    32         Fold Function    1.00000E+00
+   1    32         BP   Function    3.01771E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    32        0   6.20000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    32         Iterations   :   1
+   1    32         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    33   0        6.40000E+00   0.00000E+00
+   1    33   1        6.40000E+00   0.00000E+00
+
+   1    33         Fold Function    1.00000E+00
+   1    33         BP   Function    4.73017E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    33        0   6.40000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    33         Iterations   :   1
+   1    33         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    34   0        6.60000E+00   0.00000E+00
+   1    34   1        6.60000E+00   0.00000E+00
+
+   1    34         Fold Function    1.00000E+00
+   1    34         BP   Function    4.58683E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    34        0   6.60000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    34         Iterations   :   1
+   1    34         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    35   0        6.80000E+00   0.00000E+00
+   1    35   1        6.80000E+00   0.00000E+00
+
+   1    35         Fold Function    1.00000E+00
+   1    35         BP   Function    2.75144E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    35        0   6.80000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    35         Iterations   :   1
+   1    35         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    36   0        7.00000E+00   0.00000E+00
+   1    36   1        7.00000E+00   0.00000E+00
+
+   1    36         Fold Function    1.00000E+00
+   1    36         BP   Function   -1.88120E-08
+ ==> Location of special point :  Convergence.   Step size =  -1.36743E-07
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    36  BP    8   7.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    36         Iterations   :   1
+   1    36         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    37   0        7.20000E+00   0.00000E+00
+   1    37   1        7.20000E+00   0.00000E+00
+
+   1    37         Fold Function    1.00000E+00
+   1    37         BP   Function   -2.59858E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    37        0   7.20000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    37         Iterations   :   1
+   1    37         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    38   0        7.40000E+00   0.00000E+00
+   1    38   1        7.40000E+00   0.00000E+00
+
+   1    38         Fold Function    1.00000E+00
+   1    38         BP   Function   -4.09095E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    38        0   7.40000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    38         Iterations   :   1
+   1    38         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    39   0        7.60000E+00   0.00000E+00
+   1    39   1        7.60000E+00   0.00000E+00
+
+   1    39         Fold Function    1.00000E+00
+   1    39         BP   Function   -3.98330E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    39        0   7.60000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    39         Iterations   :   1
+   1    39         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    40   0        7.80000E+00   0.00000E+00
+   1    40   1        7.80000E+00   0.00000E+00
+
+   1    40         Fold Function    1.00000E+00
+   1    40         BP   Function   -2.39870E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    40        0   7.80000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    40         Iterations   :   1
+   1    40         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    41   0        8.00000E+00   0.00000E+00
+   1    41   1        8.00000E+00   0.00000E+00
+
+   1    41         Fold Function    1.00000E+00
+   1    41         BP   Function   -1.33720E-07
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    41        0   8.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    41         Iterations   :   1
+   1    41         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    42   0        8.20000E+00   0.00000E+00
+   1    42   1        8.20000E+00   0.00000E+00
+
+   1    42         Fold Function    1.00000E+00
+   1    42         BP   Function    2.28167E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99999E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    42   0        8.00000E+00   0.00000E+00
+   1    42   1        8.00000E+00   0.00000E+00
+
+   1    42         BP   Function    1.02946E-08
+ ==> Location of special point :  Convergence.   Step size =  -8.23573E-08
+   1    42         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    42  BP    9   8.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    42         Iterations   :   1
+   1    42         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    43   0        8.20000E+00   0.00000E+00
+   1    43   1        8.20000E+00   0.00000E+00
+
+   1    43         Fold Function    1.00000E+00
+   1    43         BP   Function    2.28168E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    43        0   8.20000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    43         Iterations   :   1
+   1    43         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    44   0        8.40000E+00   0.00000E+00
+   1    44   1        8.40000E+00   0.00000E+00
+
+   1    44         Fold Function    1.00000E+00
+   1    44         BP   Function    3.60393E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    44        0   8.40000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    44         Iterations   :   1
+   1    44         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    45   0        8.60000E+00   0.00000E+00
+   1    45   1        8.60000E+00   0.00000E+00
+
+   1    45         Fold Function    1.00000E+00
+   1    45         BP   Function    3.52013E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    45        0   8.60000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    45         Iterations   :   1
+   1    45         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    46   0        8.80000E+00   0.00000E+00
+   1    46   1        8.80000E+00   0.00000E+00
+
+   1    46         Fold Function    1.00000E+00
+   1    46         BP   Function    2.12613E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    46        0   8.80000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    46         Iterations   :   1
+   1    46         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    47   0        9.00000E+00   0.00000E+00
+   1    47   1        9.00000E+00   0.00000E+00
+
+   1    47         Fold Function    1.00000E+00
+   1    47         BP   Function    3.64289E-07
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    47        0   9.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    47         Iterations   :   1
+   1    47         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    48   0        9.20000E+00   0.00000E+00
+   1    48   1        9.20000E+00   0.00000E+00
+
+   1    48         Fold Function    1.00000E+00
+   1    48         BP   Function   -2.03363E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99996E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    48   0        9.00001E+00   0.00000E+00
+   1    48   1        9.00001E+00   0.00000E+00
+
+   1    48         BP   Function   -3.15509E-08
+ ==> Location of special point :  Convergence.   Step size =  -2.83960E-07
+   1    48         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    48  BP   10   9.00001E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    48         Iterations   :   1
+   1    48         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    49   0        9.20001E+00   0.00000E+00
+   1    49   1        9.20001E+00   0.00000E+00
+
+   1    49         Fold Function    1.00000E+00
+   1    49         BP   Function   -2.03366E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    49        0   9.20001E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    49         Iterations   :   1
+   1    49         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    50   0        9.40001E+00   0.00000E+00
+   1    50   1        9.40001E+00   0.00000E+00
+
+   1    50         Fold Function    1.00000E+00
+   1    50         BP   Function   -3.22053E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    50        0   9.40001E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    50         Iterations   :   1
+   1    50         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    51   0        9.60001E+00   0.00000E+00
+   1    51   1        9.60001E+00   0.00000E+00
+
+   1    51         Fold Function    1.00000E+00
+   1    51         BP   Function   -3.15345E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    51        0   9.60001E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    51         Iterations   :   1
+   1    51         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    52   0        9.80001E+00   0.00000E+00
+   1    52   1        9.80001E+00   0.00000E+00
+
+   1    52         Fold Function    1.00000E+00
+   1    52         BP   Function   -1.90921E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    52        0   9.80001E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    52         Iterations   :   1
+   1    52         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    53   0        1.00000E+01   0.00000E+00
+   1    53   1        1.00000E+01   0.00000E+00
+
+   1    53         Fold Function    1.00000E+00
+   1    53         BP   Function   -7.85546E-07
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    53        0   1.00000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    53         Iterations   :   1
+   1    53         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    54   0        1.02000E+01   0.00000E+00
+   1    54   1        1.02000E+01   0.00000E+00
+
+   1    54         Fold Function    1.00000E+00
+   1    54         BP   Function    1.83421E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99991E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    54   0        1.00000E+01   0.00000E+00
+   1    54   1        1.00000E+01   0.00000E+00
+
+   1    54         BP   Function    6.89569E-08
+ ==> Location of special point :  Convergence.   Step size =  -6.89580E-07
+   1    54         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    54  BP   11   1.00000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    54         Iterations   :   1
+   1    54         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    55   0        1.02000E+01   0.00000E+00
+   1    55   1        1.02000E+01   0.00000E+00
+
+   1    55         Fold Function    1.00000E+00
+   1    55         BP   Function    1.83428E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    55        0   1.02000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    55         Iterations   :   1
+   1    55         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    56   0        1.04000E+01   0.00000E+00
+   1    56   1        1.04000E+01   0.00000E+00
+
+   1    56         Fold Function    1.00000E+00
+   1    56         BP   Function    2.91085E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    56        0   1.04000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    56         Iterations   :   1
+   1    56         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    57   0        1.06000E+01   0.00000E+00
+   1    57   1        1.06000E+01   0.00000E+00
+
+   1    57         Fold Function    1.00000E+00
+   1    57         BP   Function    2.85597E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    57        0   1.06000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    57         Iterations   :   1
+   1    57         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    58   0        1.08000E+01   0.00000E+00
+   1    58   1        1.08000E+01   0.00000E+00
+
+   1    58         Fold Function    1.00000E+00
+   1    58         BP   Function    1.73248E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    58        0   1.08000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    58         Iterations   :   1
+   1    58         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    59   0        1.10000E+01   0.00000E+00
+   1    59   1        1.10000E+01   0.00000E+00
+
+   1    59         Fold Function    1.00000E+00
+   1    59         BP   Function    1.55911E-06
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    59        0   1.10000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    59         Iterations   :   1
+   1    59         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    60   0        1.12000E+01   0.00000E+00
+   1    60   1        1.12000E+01   0.00000E+00
+
+   1    60         Fold Function    1.00000E+00
+   1    60         BP   Function   -1.67035E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99981E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    60   0        1.10000E+01   0.00000E+00
+   1    60   1        1.10000E+01   0.00000E+00
+
+   1    60         BP   Function   -1.35964E-07
+ ==> Location of special point :  Convergence.   Step size =  -1.49566E-06
+   1    60         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    60  BP   12   1.10000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    60         Iterations   :   1
+   1    60         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    61   0        1.12000E+01   0.00000E+00
+   1    61   1        1.12000E+01   0.00000E+00
+
+   1    61         Fold Function    1.00000E+00
+   1    61         BP   Function   -1.67048E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    61        0   1.12000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    61         Iterations   :   1
+   1    61         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    62   0        1.14000E+01   0.00000E+00
+   1    62   1        1.14000E+01   0.00000E+00
+
+   1    62         Fold Function    1.00000E+00
+   1    62         BP   Function   -2.65550E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    62        0   1.14000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    62         Iterations   :   1
+   1    62         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    63   0        1.16000E+01   0.00000E+00
+   1    63   1        1.16000E+01   0.00000E+00
+
+   1    63         Fold Function    1.00000E+00
+   1    63         BP   Function   -2.60979E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    63        0   1.16000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    63         Iterations   :   1
+   1    63         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    64   0        1.18000E+01   0.00000E+00
+   1    64   1        1.18000E+01   0.00000E+00
+
+   1    64         Fold Function    1.00000E+00
+   1    64         BP   Function   -1.58574E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    64        0   1.18000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    64         Iterations   :   1
+   1    64         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    65   0        1.20000E+01   0.00000E+00
+   1    65   1        1.20000E+01   0.00000E+00
+
+   1    65         Fold Function    1.00000E+00
+   1    65         BP   Function   -2.89104E-06
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    65        0   1.20000E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    65         Iterations   :   1
+   1    65         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    66   0        1.22000E+01   0.00000E+00
+   1    66   1        1.22000E+01   0.00000E+00
+
+   1    66         Fold Function    1.00000E+00
+   1    66         BP   Function    1.53328E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99962E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    66   0        1.20001E+01   0.00000E+00
+   1    66   1        1.20001E+01   0.00000E+00
+
+   1    66         BP   Function    2.49071E-07
+ ==> Location of special point :  Convergence.   Step size =  -2.98905E-06
+   1    66         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    66  BP   13   1.20001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    66         Iterations   :   1
+   1    66         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    67   0        1.22001E+01   0.00000E+00
+   1    67   1        1.22001E+01   0.00000E+00
+
+   1    67         Fold Function    1.00000E+00
+   1    67         BP   Function    1.53353E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    67        0   1.22001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    67         Iterations   :   1
+   1    67         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    68   0        1.24001E+01   0.00000E+00
+   1    68   1        1.24001E+01   0.00000E+00
+
+   1    68         Fold Function    1.00000E+00
+   1    68         BP   Function    2.44131E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    68        0   1.24001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    68         Iterations   :   1
+   1    68         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    69   0        1.26001E+01   0.00000E+00
+   1    69   1        1.26001E+01   0.00000E+00
+
+   1    69         Fold Function    1.00000E+00
+   1    69         BP   Function    2.40269E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    69        0   1.26001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    69         Iterations   :   1
+   1    69         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    70   0        1.28001E+01   0.00000E+00
+   1    70   1        1.28001E+01   0.00000E+00
+
+   1    70         Fold Function    1.00000E+00
+   1    70         BP   Function    1.46200E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    70        0   1.28001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    70         Iterations   :   1
+   1    70         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    71   0        1.30001E+01   0.00000E+00
+   1    71   1        1.30001E+01   0.00000E+00
+
+   1    71         Fold Function    1.00000E+00
+   1    71         BP   Function    5.07023E-06
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    71        0   1.30001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    71         Iterations   :   1
+   1    71         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    72   0        1.32001E+01   0.00000E+00
+   1    72   1        1.32001E+01   0.00000E+00
+
+   1    72         Fold Function    1.00000E+00
+   1    72         BP   Function   -1.41688E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99928E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    72   0        1.30001E+01   0.00000E+00
+   1    72   1        1.30001E+01   0.00000E+00
+
+   1    72         BP   Function   -4.31041E-07
+ ==> Location of special point :  Convergence.   Step size =  -5.60422E-06
+   1    72         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    72  BP   14   1.30001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    72         Iterations   :   1
+   1    72         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    73   0        1.32001E+01   0.00000E+00
+   1    73   1        1.32001E+01   0.00000E+00
+
+   1    73         Fold Function    1.00000E+00
+   1    73         BP   Function   -1.41731E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    73        0   1.32001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    73         Iterations   :   1
+   1    73         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    74   0        1.34001E+01   0.00000E+00
+   1    74   1        1.34001E+01   0.00000E+00
+
+   1    74         Fold Function    1.00000E+00
+   1    74         BP   Function   -2.25908E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    74        0   1.34001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    74         Iterations   :   1
+   1    74         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    75   0        1.36001E+01   0.00000E+00
+   1    75   1        1.36001E+01   0.00000E+00
+
+   1    75         Fold Function    1.00000E+00
+   1    75         BP   Function   -2.22607E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    75        0   1.36001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    75         Iterations   :   1
+   1    75         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    76   0        1.38001E+01   0.00000E+00
+   1    76   1        1.38001E+01   0.00000E+00
+
+   1    76         Fold Function    1.00000E+00
+   1    76         BP   Function   -1.35628E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    76        0   1.38001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    76         Iterations   :   1
+   1    76         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    77   0        1.40001E+01   0.00000E+00
+   1    77   1        1.40001E+01   0.00000E+00
+
+   1    77         Fold Function    1.00000E+00
+   1    77         BP   Function   -8.48327E-06
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    77        0   1.40001E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    77         Iterations   :   1
+   1    77         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    78   0        1.42001E+01   0.00000E+00
+   1    78   1        1.42001E+01   0.00000E+00
+
+   1    78         Fold Function    1.00000E+00
+   1    78         BP   Function    1.31670E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99871E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    78   0        1.40003E+01   0.00000E+00
+   1    78   1        1.40003E+01   0.00000E+00
+
+   1    78         BP   Function    7.11785E-07
+ ==> Location of special point :  Convergence.   Step size =  -9.96718E-06
+   1    78         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    78  BP   15   1.40003E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    78         Iterations   :   1
+   1    78         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    79   0        1.42003E+01   0.00000E+00
+   1    79   1        1.42003E+01   0.00000E+00
+
+   1    79         Fold Function    1.00000E+00
+   1    79         BP   Function    1.31743E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    79        0   1.42003E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    79         Iterations   :   1
+   1    79         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    80   0        1.44003E+01   0.00000E+00
+   1    80   1        1.44003E+01   0.00000E+00
+
+   1    80         Fold Function    1.00000E+00
+   1    80         BP   Function    2.10212E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    80        0   1.44003E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    80         Iterations   :   1
+   1    80         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    81   0        1.46003E+01   0.00000E+00
+   1    81   1        1.46003E+01   0.00000E+00
+
+   1    81         Fold Function    1.00000E+00
+   1    81         BP   Function    2.07368E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    81        0   1.46003E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    81         Iterations   :   1
+   1    81         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    82   0        1.48003E+01   0.00000E+00
+   1    82   1        1.48003E+01   0.00000E+00
+
+   1    82         Fold Function    1.00000E+00
+   1    82         BP   Function    1.26498E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    82        0   1.48003E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    82         Iterations   :   1
+   1    82         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    83   0        1.50003E+01   0.00000E+00
+   1    83   1        1.50003E+01   0.00000E+00
+
+   1    83         Fold Function    1.00000E+00
+   1    83         BP   Function    1.36308E-05
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    83        0   1.50003E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    83         Iterations   :   1
+   1    83         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    84   0        1.52003E+01   0.00000E+00
+   1    84   1        1.52003E+01   0.00000E+00
+
+   1    84         Fold Function    1.00000E+00
+   1    84         BP   Function   -1.22949E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99779E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    84   0        1.50005E+01   0.00000E+00
+   1    84   1        1.50005E+01   0.00000E+00
+
+   1    84         BP   Function   -1.12924E-06
+ ==> Location of special point :  Iteration   1  Step size =  -1.69449E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    84   0        1.50005E+01   0.00000E+00
+   1    84   1        1.50005E+01   0.00000E+00
+
+   1    84         BP   Function    7.33188E-11
+ ==> Location of special point :  Convergence.   Step size =   1.10012E-09
+   1    84         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    84  BP   16   1.50005E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    84         Iterations   :   1
+   1    84         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    85   0        1.52005E+01   0.00000E+00
+   1    85   1        1.52005E+01   0.00000E+00
+
+   1    85         Fold Function    1.00000E+00
+   1    85         BP   Function   -1.23056E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    85        0   1.52005E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    85         Iterations   :   1
+   1    85         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    86   0        1.54005E+01   0.00000E+00
+   1    86   1        1.54005E+01   0.00000E+00
+
+   1    86         Fold Function    1.00000E+00
+   1    86         BP   Function   -1.96548E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    86        0   1.54005E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    86         Iterations   :   1
+   1    86         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    87   0        1.56005E+01   0.00000E+00
+   1    87   1        1.56005E+01   0.00000E+00
+
+   1    87         Fold Function    1.00000E+00
+   1    87         BP   Function   -1.94090E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    87        0   1.56005E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    87         Iterations   :   1
+   1    87         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    88   0        1.58005E+01   0.00000E+00
+   1    88   1        1.58005E+01   0.00000E+00
+
+   1    88         Fold Function    1.00000E+00
+   1    88         BP   Function   -1.18551E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    88        0   1.58005E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    88         Iterations   :   1
+   1    88         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    89   0        1.60005E+01   0.00000E+00
+   1    89   1        1.60005E+01   0.00000E+00
+
+   1    89         Fold Function    1.00000E+00
+   1    89         BP   Function   -2.22008E-05
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    89        0   1.60005E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    89         Iterations   :   1
+   1    89         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    90   0        1.62005E+01   0.00000E+00
+   1    90   1        1.62005E+01   0.00000E+00
+
+   1    90         Fold Function    1.00000E+00
+   1    90         BP   Function    1.15265E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99616E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    90   0        1.60009E+01   0.00000E+00
+   1    90   1        1.60009E+01   0.00000E+00
+
+   1    90         BP   Function    1.81603E-06
+ ==> Location of special point :  Iteration   1  Step size =  -2.90744E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    90   0        1.60008E+01   0.00000E+00
+   1    90   1        1.60008E+01   0.00000E+00
+
+   1    90         BP   Function   -2.04781E-10
+ ==> Location of special point :  Convergence.   Step size =   3.27813E-09
+   1    90         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    90  BP   17   1.60008E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    90         Iterations   :   1
+   1    90         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    91   0        1.62008E+01   0.00000E+00
+   1    91   1        1.62008E+01   0.00000E+00
+
+   1    91         Fold Function    1.00000E+00
+   1    91         BP   Function    1.15440E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    91        0   1.62008E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    91         Iterations   :   1
+   1    91         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    92   0        1.64008E+01   0.00000E+00
+   1    92   1        1.64008E+01   0.00000E+00
+
+   1    92         Fold Function    1.00000E+00
+   1    92         BP   Function    1.84545E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    92        0   1.64008E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    92         Iterations   :   1
+   1    92         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    93   0        1.66008E+01   0.00000E+00
+   1    93   1        1.66008E+01   0.00000E+00
+
+   1    93         Fold Function    1.00000E+00
+   1    93         BP   Function    1.82416E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    93        0   1.66008E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    93         Iterations   :   1
+   1    93         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    94   0        1.68008E+01   0.00000E+00
+   1    94   1        1.68008E+01   0.00000E+00
+
+   1    94         Fold Function    1.00000E+00
+   1    94         BP   Function    1.11571E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    94        0   1.68008E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    94         Iterations   :   1
+   1    94         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    95   0        1.70008E+01   0.00000E+00
+   1    95   1        1.70008E+01   0.00000E+00
+
+   1    95         Fold Function    1.00000E+00
+   1    95         BP   Function    3.34161E-05
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    95        0   1.70008E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    95         Iterations   :   1
+   1    95         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    96   0        1.72008E+01   0.00000E+00
+   1    96   1        1.72008E+01   0.00000E+00
+
+   1    96         Fold Function    1.00000E+00
+   1    96         BP   Function   -1.08436E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99386E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    96   0        1.70014E+01   0.00000E+00
+   1    96   1        1.70014E+01   0.00000E+00
+
+   1    96         BP   Function   -2.69867E-06
+ ==> Location of special point :  Iteration   1  Step size =  -4.59220E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    96   0        1.70014E+01   0.00000E+00
+   1    96   1        1.70014E+01   0.00000E+00
+
+   1    96         BP   Function    4.86420E-10
+ ==> Location of special point :  Convergence.   Step size =   8.27565E-09
+   1    96         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    96  BP   18   1.70014E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    96         Iterations   :   1
+   1    96         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    97   0        1.72014E+01   0.00000E+00
+   1    97   1        1.72014E+01   0.00000E+00
+
+   1    97         Fold Function    1.00000E+00
+   1    97         BP   Function   -1.08700E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    97        0   1.72014E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    97         Iterations   :   1
+   1    97         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    98   0        1.74014E+01   0.00000E+00
+   1    98   1        1.74014E+01   0.00000E+00
+
+   1    98         Fold Function    1.00000E+00
+   1    98         BP   Function   -1.73914E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    98        0   1.74014E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    98         Iterations   :   1
+   1    98         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1    99   0        1.76014E+01   0.00000E+00
+   1    99   1        1.76014E+01   0.00000E+00
+
+   1    99         Fold Function    1.00000E+00
+   1    99         BP   Function   -1.72077E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1    99        0   1.76014E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1    99         Iterations   :   1
+   1    99         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   100   0        1.78014E+01   0.00000E+00
+   1   100   1        1.78014E+01   0.00000E+00
+
+   1   100         Fold Function    1.00000E+00
+   1   100         BP   Function   -1.05409E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   100        0   1.78014E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   100         Iterations   :   1
+   1   100         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   101   0        1.80014E+01   0.00000E+00
+   1   101   1        1.80014E+01   0.00000E+00
+
+   1   101         Fold Function    1.00000E+00
+   1   101         BP   Function   -4.89146E-05
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   101        0   1.80014E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   101         Iterations   :   1
+   1   101         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   102   0        1.82014E+01   0.00000E+00
+   1   102   1        1.82014E+01   0.00000E+00
+
+   1   102         Fold Function    1.00000E+00
+   1   102         BP   Function    1.02301E-02
+ ==> Location of special point :  Iteration   0  Step size =  -1.99048E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   102   0        1.80024E+01   0.00000E+00
+   1   102   1        1.80024E+01   0.00000E+00
+
+   1   102         BP   Function    3.89706E-06
+ ==> Location of special point :  Iteration   1  Step size =  -7.02516E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   102   0        1.80023E+01   0.00000E+00
+   1   102   1        1.80023E+01   0.00000E+00
+
+   1   102         BP   Function   -1.08755E-09
+ ==> Location of special point :  Convergence.   Step size =   1.95995E-08
+   1   102         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   102  BP   19   1.80023E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   102         Iterations   :   1
+   1   102         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   103   0        1.82023E+01   0.00000E+00
+   1   103   1        1.82023E+01   0.00000E+00
+
+   1   103         Fold Function    1.00000E+00
+   1   103         BP   Function    1.02688E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   103        0   1.82023E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   103         Iterations   :   1
+   1   103         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   104   0        1.84023E+01   0.00000E+00
+   1   104   1        1.84023E+01   0.00000E+00
+
+   1   104         Fold Function    1.00000E+00
+   1   104         BP   Function    1.64428E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   104        0   1.84023E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   104         Iterations   :   1
+   1   104         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   105   0        1.86023E+01   0.00000E+00
+   1   105   1        1.86023E+01   0.00000E+00
+
+   1   105         Fold Function    1.00000E+00
+   1   105         BP   Function    1.62860E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   105        0   1.86023E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   105         Iterations   :   1
+   1   105         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   106   0        1.88023E+01   0.00000E+00
+   1   106   1        1.88023E+01   0.00000E+00
+
+   1   106         Fold Function    1.00000E+00
+   1   106         BP   Function    9.99456E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   106        0   1.88023E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   106         Iterations   :   1
+   1   106         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   107   0        1.90023E+01   0.00000E+00
+   1   107   1        1.90023E+01   0.00000E+00
+
+   1   107         Fold Function    1.00000E+00
+   1   107         BP   Function    6.98313E-05
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   107        0   1.90023E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   107         Iterations   :   1
+   1   107         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   108   0        1.92023E+01   0.00000E+00
+   1   108   1        1.92023E+01   0.00000E+00
+
+   1   108         Fold Function    1.00000E+00
+   1   108         BP   Function   -9.67343E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.98567E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   108   0        1.90037E+01   0.00000E+00
+   1   108   1        1.90037E+01   0.00000E+00
+
+   1   108         BP   Function   -5.48046E-06
+ ==> Location of special point :  Iteration   1  Step size =  -1.04360E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   108   0        1.90036E+01   0.00000E+00
+   1   108   1        1.90036E+01   0.00000E+00
+
+   1   108         BP   Function    2.30058E-09
+ ==> Location of special point :  Convergence.   Step size =   4.37896E-08
+   1   108         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   108  BP   20   1.90036E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   108         Iterations   :   1
+   1   108         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   109   0        1.92036E+01   0.00000E+00
+   1   109   1        1.92036E+01   0.00000E+00
+
+   1   109         Fold Function    1.00000E+00
+   1   109         BP   Function   -9.72878E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   109        0   1.92036E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   109         Iterations   :   1
+   1   109         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   110   0        1.94036E+01   0.00000E+00
+   1   110   1        1.94036E+01   0.00000E+00
+
+   1   110         Fold Function    1.00000E+00
+   1   110         BP   Function   -1.55907E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   110        0   1.94036E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   110         Iterations   :   1
+   1   110         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   111   0        1.96036E+01   0.00000E+00
+   1   111   1        1.96036E+01   0.00000E+00
+
+   1   111         Fold Function    1.00000E+00
+   1   111         BP   Function   -1.54596E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   111        0   1.96036E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   111         Iterations   :   1
+   1   111         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   112   0        1.98036E+01   0.00000E+00
+   1   112   1        1.98036E+01   0.00000E+00
+
+   1   112         Fold Function    1.00000E+00
+   1   112         BP   Function   -9.50883E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   112        0   1.98036E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   112         Iterations   :   1
+   1   112         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   113   0        2.00036E+01   0.00000E+00
+   1   113   1        2.00036E+01   0.00000E+00
+
+   1   113         Fold Function    1.00000E+00
+   1   113         BP   Function   -9.74605E-05
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   113        0   2.00036E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   113         Iterations   :   1
+   1   113         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   114   0        2.02036E+01   0.00000E+00
+   1   114   1        2.02036E+01   0.00000E+00
+
+   1   114         Fold Function    1.00000E+00
+   1   114         BP   Function    9.16292E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.97895E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   114   0        2.00057E+01   0.00000E+00
+   1   114   1        2.00057E+01   0.00000E+00
+
+   1   114         BP   Function    7.51732E-06
+ ==> Location of special point :  Iteration   1  Step size =  -1.50834E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   114   0        2.00056E+01   0.00000E+00
+   1   114   1        2.00056E+01   0.00000E+00
+
+   1   114         BP   Function   -4.62286E-09
+ ==> Location of special point :  Convergence.   Step size =   9.26992E-08
+   1   114         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   114  BP   21   2.00056E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   114         Iterations   :   1
+   1   114         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   115   0        2.02056E+01   0.00000E+00
+   1   115   1        2.02056E+01   0.00000E+00
+
+   1   115         Fold Function    1.00000E+00
+   1   115         BP   Function    9.24034E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   115        0   2.02056E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   115         Iterations   :   1
+   1   115         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   116   0        2.04056E+01   0.00000E+00
+   1   116   1        2.04056E+01   0.00000E+00
+
+   1   116         Fold Function    1.00000E+00
+   1   116         BP   Function    1.48204E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   116        0   2.04056E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   116         Iterations   :   1
+   1   116         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   117   0        2.06056E+01   0.00000E+00
+   1   117   1        2.06056E+01   0.00000E+00
+
+   1   117         Fold Function    1.00000E+00
+   1   117         BP   Function    1.47149E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   117        0   2.06056E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   117         Iterations   :   1
+   1   117         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   118   0        2.08056E+01   0.00000E+00
+   1   118   1        2.08056E+01   0.00000E+00
+
+   1   118         Fold Function    1.00000E+00
+   1   118         BP   Function    9.07641E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   118        0   2.08056E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   118         Iterations   :   1
+   1   118         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   119   0        2.10056E+01   0.00000E+00
+   1   119   1        2.10056E+01   0.00000E+00
+
+   1   119         Fold Function    1.00000E+00
+   1   119         BP   Function    1.33245E-04
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   119        0   2.10056E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   119         Iterations   :   1
+   1   119         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   120   0        2.12056E+01   0.00000E+00
+   1   120   1        2.12056E+01   0.00000E+00
+
+   1   120         Fold Function    1.00000E+00
+   1   120         BP   Function   -8.68960E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.96980E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   120   0        2.10086E+01   0.00000E+00
+   1   120   1        2.10086E+01   0.00000E+00
+
+   1   120         BP   Function   -1.00675E-05
+ ==> Location of special point :  Iteration   1  Step size =  -2.12393E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   120   0        2.10084E+01   0.00000E+00
+   1   120   1        2.10084E+01   0.00000E+00
+
+   1   120         BP   Function    8.85082E-09
+ ==> Location of special point :  Convergence.   Step size =   1.86560E-07
+   1   120         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   120  BP   22   2.10084E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   120         Iterations   :   1
+   1   120         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   121   0        2.12084E+01   0.00000E+00
+   1   121   1        2.12084E+01   0.00000E+00
+
+   1   121         Fold Function    1.00000E+00
+   1   121         BP   Function   -8.79569E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   121        0   2.12084E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   121         Iterations   :   1
+   1   121         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   122   0        2.14084E+01   0.00000E+00
+   1   122   1        2.14084E+01   0.00000E+00
+
+   1   122         Fold Function    1.00000E+00
+   1   122         BP   Function   -1.41201E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   122        0   2.14084E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   122         Iterations   :   1
+   1   122         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   123   0        2.16084E+01   0.00000E+00
+   1   123   1        2.16084E+01   0.00000E+00
+
+   1   123         Fold Function    1.00000E+00
+   1   123         BP   Function   -1.40411E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   123        0   2.16084E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   123         Iterations   :   1
+   1   123         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   124   0        2.18084E+01   0.00000E+00
+   1   124   1        2.18084E+01   0.00000E+00
+
+   1   124         Fold Function    1.00000E+00
+   1   124         BP   Function   -8.69160E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   124        0   2.18084E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   124         Iterations   :   1
+   1   124         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   125   0        2.20084E+01   0.00000E+00
+   1   125   1        2.20084E+01   0.00000E+00
+
+   1   125         Fold Function    1.00000E+00
+   1   125         BP   Function   -1.78758E-04
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   125        0   2.20084E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   125         Iterations   :   1
+   1   125         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   126   0        2.22084E+01   0.00000E+00
+   1   126   1        2.22084E+01   0.00000E+00
+
+   1   126         Fold Function    1.00000E+00
+   1   126         BP   Function    8.24566E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.95756E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   126   0        2.20126E+01   0.00000E+00
+   1   126   1        2.20126E+01   0.00000E+00
+
+   1   126         BP   Function    1.31712E-05
+ ==> Location of special point :  Iteration   1  Step size =  -2.91635E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   126   0        2.20123E+01   0.00000E+00
+   1   126   1        2.20123E+01   0.00000E+00
+
+   1   126         BP   Function   -1.61806E-08
+ ==> Location of special point :  Convergence.   Step size =   3.57824E-07
+   1   126         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   126  BP   23   2.20123E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   126         Iterations   :   1
+   1   126         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   127   0        2.22123E+01   0.00000E+00
+   1   127   1        2.22123E+01   0.00000E+00
+
+   1   127         Fold Function    1.00000E+00
+   1   127         BP   Function    8.38838E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   127        0   2.22123E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   127         Iterations   :   1
+   1   127         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   128   0        2.24123E+01   0.00000E+00
+   1   128   1        2.24123E+01   0.00000E+00
+
+   1   128         Fold Function    1.00000E+00
+   1   128         BP   Function    1.34799E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   128        0   2.24123E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   128         Iterations   :   1
+   1   128         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   129   0        2.26123E+01   0.00000E+00
+   1   129   1        2.26123E+01   0.00000E+00
+
+   1   129         Fold Function    1.00000E+00
+   1   129         BP   Function    1.34289E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   129        0   2.26123E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   129         Iterations   :   1
+   1   129         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   130   0        2.28123E+01   0.00000E+00
+   1   130   1        2.28123E+01   0.00000E+00
+
+   1   130         Fold Function    1.00000E+00
+   1   130         BP   Function    8.34988E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   130        0   2.28123E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   130         Iterations   :   1
+   1   130         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   131   0        2.30123E+01   0.00000E+00
+   1   131   1        2.30123E+01   0.00000E+00
+
+   1   131         Fold Function    1.00000E+00
+   1   131         BP   Function    2.35677E-04
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   131        0   2.30123E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   131         Iterations   :   1
+   1   131         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   132   0        2.32123E+01   0.00000E+00
+   1   132   1        2.32123E+01   0.00000E+00
+
+   1   132         Fold Function    1.00000E+00
+   1   132         BP   Function   -7.82420E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.94152E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   132   0        2.30182E+01   0.00000E+00
+   1   132   1        2.30182E+01   0.00000E+00
+
+   1   132         BP   Function   -1.68352E-05
+ ==> Location of special point :  Iteration   1  Step size =  -3.90633E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   132   0        2.30178E+01   0.00000E+00
+   1   132   1        2.30178E+01   0.00000E+00
+
+   1   132         BP   Function    2.82835E-08
+ ==> Location of special point :  Convergence.   Step size =   6.55160E-07
+   1   132         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   132  BP   24   2.30178E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   132         Iterations   :   1
+   1   132         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   133   0        2.32178E+01   0.00000E+00
+   1   133   1        2.32178E+01   0.00000E+00
+
+   1   133         Fold Function    1.00000E+00
+   1   133         BP   Function   -8.01297E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   133        0   2.32178E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   133         Iterations   :   1
+   1   133         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   134   0        2.34178E+01   0.00000E+00
+   1   134   1        2.34178E+01   0.00000E+00
+
+   1   134         Fold Function    1.00000E+00
+   1   134         BP   Function   -1.28915E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   134        0   2.34178E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   134         Iterations   :   1
+   1   134         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   135   0        2.36178E+01   0.00000E+00
+   1   135   1        2.36178E+01   0.00000E+00
+
+   1   135         Fold Function    1.00000E+00
+   1   135         BP   Function   -1.28711E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   135        0   2.36178E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   135         Iterations   :   1
+   1   135         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   136   0        2.38178E+01   0.00000E+00
+   1   136   1        2.38178E+01   0.00000E+00
+
+   1   136         Fold Function    1.00000E+00
+   1   136         BP   Function   -8.04771E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   136        0   2.38178E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   136         Iterations   :   1
+   1   136         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   137   0        2.40178E+01   0.00000E+00
+   1   137   1        2.40178E+01   0.00000E+00
+
+   1   137         Fold Function    1.00000E+00
+   1   137         BP   Function   -3.05750E-04
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   137        0   2.40178E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   137         Iterations   :   1
+   1   137         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   138   0        2.42178E+01   0.00000E+00
+   1   138   1        2.42178E+01   0.00000E+00
+
+   1   138         Fold Function    1.00000E+00
+   1   138         BP   Function    7.41904E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.92084E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   138   0        2.40257E+01   0.00000E+00
+   1   138   1        2.40257E+01   0.00000E+00
+
+   1   138         BP   Function    2.10157E-05
+ ==> Location of special point :  Iteration   1  Step size =  -5.10382E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   138   0        2.40252E+01   0.00000E+00
+   1   138   1        2.40252E+01   0.00000E+00
+
+   1   138         BP   Function   -4.73006E-08
+ ==> Location of special point :  Convergence.   Step size =   1.14613E-06
+   1   138         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   138  BP   25   2.40252E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   138         Iterations   :   1
+   1   138         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   139   0        2.42252E+01   0.00000E+00
+   1   139   1        2.42252E+01   0.00000E+00
+
+   1   139         Fold Function    1.00000E+00
+   1   139         BP   Function    7.66486E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   139        0   2.42252E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   139         Iterations   :   1
+   1   139         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   140   0        2.44252E+01   0.00000E+00
+   1   140   1        2.44252E+01   0.00000E+00
+
+   1   140         Fold Function    1.00000E+00
+   1   140         BP   Function    1.23480E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   140        0   2.44252E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   140         Iterations   :   1
+   1   140         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   141   0        2.46252E+01   0.00000E+00
+   1   141   1        2.46252E+01   0.00000E+00
+
+   1   141         Fold Function    1.00000E+00
+   1   141         BP   Function    1.23612E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   141        0   2.46252E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   141         Iterations   :   1
+   1   141         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   142   0        2.48252E+01   0.00000E+00
+   1   142   1        2.48252E+01   0.00000E+00
+
+   1   142         Fold Function    1.00000E+00
+   1   142         BP   Function    7.78223E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   142        0   2.48252E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   142         Iterations   :   1
+   1   142         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   143   0        2.50252E+01   0.00000E+00
+   1   143   1        2.50252E+01   0.00000E+00
+
+   1   143         Fold Function    1.00000E+00
+   1   143         BP   Function    3.90749E-04
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   143        0   2.50252E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   143         Iterations   :   1
+   1   143         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   144   0        2.52252E+01   0.00000E+00
+   1   144   1        2.52252E+01   0.00000E+00
+
+   1   144         Fold Function    1.00000E+00
+   1   144         BP   Function   -7.02454E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.89461E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   144   0        2.50357E+01   0.00000E+00
+   1   144   1        2.50357E+01   0.00000E+00
+
+   1   144         BP   Function   -2.55998E-05
+ ==> Location of special point :  Iteration   1  Step size =  -6.50092E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   144   0        2.50351E+01   0.00000E+00
+   1   144   1        2.50351E+01   0.00000E+00
+
+   1   144         BP   Function    7.56708E-08
+ ==> Location of special point :  Convergence.   Step size =   1.91592E-06
+   1   144         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   144  BP   26   2.50351E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   144         Iterations   :   1
+   1   144         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   145   0        2.52351E+01   0.00000E+00
+   1   145   1        2.52351E+01   0.00000E+00
+
+   1   145         Fold Function    1.00000E+00
+   1   145         BP   Function   -7.34012E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   145        0   2.52351E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   145         Iterations   :   1
+   1   145         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   146   0        2.54351E+01   0.00000E+00
+   1   146   1        2.54351E+01   0.00000E+00
+
+   1   146         Fold Function    1.00000E+00
+   1   146         BP   Function   -1.18433E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   146        0   2.54351E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   146         Iterations   :   1
+   1   146         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   147   0        2.56351E+01   0.00000E+00
+   1   147   1        2.56351E+01   0.00000E+00
+
+   1   147         Fold Function    1.00000E+00
+   1   147         BP   Function   -1.18940E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   147        0   2.56351E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   147         Iterations   :   1
+   1   147         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   148   0        2.58351E+01   0.00000E+00
+   1   148   1        2.58351E+01   0.00000E+00
+
+   1   148         Fold Function    1.00000E+00
+   1   148         BP   Function   -7.55112E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   148        0   2.58351E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   148         Iterations   :   1
+   1   148         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   149   0        2.60351E+01   0.00000E+00
+   1   149   1        2.60351E+01   0.00000E+00
+
+   1   149         Fold Function    1.00000E+00
+   1   149         BP   Function   -4.92420E-04
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   149        0   2.60351E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   149         Iterations   :   1
+   1   149         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   150   0        2.62351E+01   0.00000E+00
+   1   150   1        2.62351E+01   0.00000E+00
+
+   1   150         Fold Function    1.00000E+00
+   1   150         BP   Function    6.63552E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.86183E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   150   0        2.60489E+01   0.00000E+00
+   1   150   1        2.60489E+01   0.00000E+00
+
+   1   150         BP   Function    3.03877E-05
+ ==> Location of special point :  Iteration   1  Step size =  -8.06353E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   150   0        2.60481E+01   0.00000E+00
+   1   150   1        2.60481E+01   0.00000E+00
+
+   1   150         BP   Function   -1.15691E-07
+ ==> Location of special point :  Convergence.   Step size =   3.05823E-06
+   1   150         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   150  BP   27   2.60481E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   150         Iterations   :   1
+   1   150         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   151   0        2.62481E+01   0.00000E+00
+   1   151   1        2.62481E+01   0.00000E+00
+
+   1   151         Fold Function    1.00000E+00
+   1   151         BP   Function    7.03536E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   151        0   2.62481E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   151         Iterations   :   1
+   1   151         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   152   0        2.64481E+01   0.00000E+00
+   1   152   1        2.64481E+01   0.00000E+00
+
+   1   152         Fold Function    1.00000E+00
+   1   152         BP   Function    1.13723E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   152        0   2.64481E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   152         Iterations   :   1
+   1   152         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   153   0        2.66481E+01   0.00000E+00
+   1   153   1        2.66481E+01   0.00000E+00
+
+   1   153         Fold Function    1.00000E+00
+   1   153         BP   Function    1.14649E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   153        0   2.66481E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   153         Iterations   :   1
+   1   153         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   154   0        2.68481E+01   0.00000E+00
+   1   154   1        2.68481E+01   0.00000E+00
+
+   1   154         Fold Function    1.00000E+00
+   1   154         BP   Function    7.35242E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   154        0   2.68481E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   154         Iterations   :   1
+   1   154         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   155   0        2.70481E+01   0.00000E+00
+   1   155   1        2.70481E+01   0.00000E+00
+
+   1   155         Fold Function    1.00000E+00
+   1   155         BP   Function    6.12423E-04
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   155        0   2.70481E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   155         Iterations   :   1
+   1   155         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   156   0        2.72481E+01   0.00000E+00
+   1   156   1        2.72481E+01   0.00000E+00
+
+   1   156         Fold Function    1.00000E+00
+   1   156         BP   Function   -6.24719E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.82144E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   156   0        2.70659E+01   0.00000E+00
+   1   156   1        2.70659E+01   0.00000E+00
+
+   1   156         BP   Function   -3.50794E-05
+ ==> Location of special point :  Iteration   1  Step size =  -9.72253E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   156   0        2.70650E+01   0.00000E+00
+   1   156   1        2.70650E+01   0.00000E+00
+
+   1   156         BP   Function    1.68720E-07
+ ==> Location of special point :  Convergence.   Step size =   4.65375E-06
+   1   156         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   156  BP   28   2.70650E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   156         Iterations   :   1
+   1   156         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   157   0        2.72650E+01   0.00000E+00
+   1   157   1        2.72650E+01   0.00000E+00
+
+   1   157         Fold Function    1.00000E+00
+   1   157         BP   Function   -6.74764E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   157        0   2.72650E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   157         Iterations   :   1
+   1   157         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   158   0        2.74650E+01   0.00000E+00
+   1   158   1        2.74650E+01   0.00000E+00
+
+   1   158         Fold Function    1.00000E+00
+   1   158         BP   Function   -1.09305E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   158        0   2.74650E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   158         Iterations   :   1
+   1   158         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   159   0        2.76650E+01   0.00000E+00
+   1   159   1        2.76650E+01   0.00000E+00
+
+   1   159         Fold Function    1.00000E+00
+   1   159         BP   Function   -1.10698E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   159        0   2.76650E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   159         Iterations   :   1
+   1   159         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   160   0        2.78650E+01   0.00000E+00
+   1   160   1        2.78650E+01   0.00000E+00
+
+   1   160         Fold Function    1.00000E+00
+   1   160         BP   Function   -7.18439E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   160        0   2.78650E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   160         Iterations   :   1
+   1   160         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   161   0        2.80650E+01   0.00000E+00
+   1   161   1        2.80650E+01   0.00000E+00
+
+   1   161         Fold Function    1.00000E+00
+   1   161         BP   Function   -7.52264E-04
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   161        0   2.80650E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   161         Iterations   :   1
+   1   161         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   162   0        2.82650E+01   0.00000E+00
+   1   162   1        2.82650E+01   0.00000E+00
+
+   1   162         Fold Function    1.00000E+00
+   1   162         BP   Function    5.85507E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.77229E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   162   0        2.80877E+01   0.00000E+00
+   1   162   1        2.80877E+01   0.00000E+00
+
+   1   162         BP   Function    3.92700E-05
+ ==> Location of special point :  Iteration   1  Step size =  -1.13659E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   162   0        2.80866E+01   0.00000E+00
+   1   162   1        2.80866E+01   0.00000E+00
+
+   1   162         BP   Function   -2.33997E-07
+ ==> Location of special point :  Convergence.   Step size =   6.73238E-06
+   1   162         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   162  BP   29   2.80866E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   162         Iterations   :   1
+   1   162         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   163   0        2.82866E+01   0.00000E+00
+   1   163   1        2.82866E+01   0.00000E+00
+
+   1   163         Fold Function    1.00000E+00
+   1   163         BP   Function    6.47441E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   163        0   2.82866E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   163         Iterations   :   1
+   1   163         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   164   0        2.84866E+01   0.00000E+00
+   1   164   1        2.84866E+01   0.00000E+00
+
+   1   164         Fold Function    1.00000E+00
+   1   164         BP   Function    1.05140E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   164        0   2.84866E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   164         Iterations   :   1
+   1   164         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   165   0        2.86866E+01   0.00000E+00
+   1   165   1        2.86866E+01   0.00000E+00
+
+   1   165         Fold Function    1.00000E+00
+   1   165         BP   Function    1.07052E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   165        0   2.86866E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   165         Iterations   :   1
+   1   165         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   166   0        2.88866E+01   0.00000E+00
+   1   166   1        2.88866E+01   0.00000E+00
+
+   1   166         Fold Function    1.00000E+00
+   1   166         BP   Function    7.04538E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   166        0   2.88866E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   166         Iterations   :   1
+   1   166         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   167   0        2.90866E+01   0.00000E+00
+   1   167   1        2.90866E+01   0.00000E+00
+
+   1   167         Fold Function    1.00000E+00
+   1   167         BP   Function    9.13221E-04
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   167        0   2.90866E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   167         Iterations   :   1
+   1   167         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   168   0        2.92866E+01   0.00000E+00
+   1   168   1        2.92866E+01   0.00000E+00
+
+   1   168         Fold Function    1.00000E+00
+   1   168         BP   Function   -5.45504E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.71320E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   168   0        2.91153E+01   0.00000E+00
+   1   168   1        2.91153E+01   0.00000E+00
+
+   1   168         BP   Function   -4.24602E-05
+ ==> Location of special point :  Iteration   1  Step size =  -1.28336E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   168   0        2.91140E+01   0.00000E+00
+   1   168   1        2.91140E+01   0.00000E+00
+
+   1   168         BP   Function    3.07229E-07
+ ==> Location of special point :  Convergence.   Step size =   9.21935E-06
+   1   168         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   168  BP   30   2.91140E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   168         Iterations   :   1
+   1   168         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   169   0        2.93140E+01   0.00000E+00
+   1   169   1        2.93140E+01   0.00000E+00
+
+   1   169         Fold Function    1.00000E+00
+   1   169         BP   Function   -6.21345E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   169        0   2.93140E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   169         Iterations   :   1
+   1   169         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   170   0        2.95140E+01   0.00000E+00
+   1   170   1        2.95140E+01   0.00000E+00
+
+   1   170         Fold Function    1.00000E+00
+   1   170         BP   Function   -1.01194E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   170        0   2.95140E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   170         Iterations   :   1
+   1   170         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   171   0        2.97140E+01   0.00000E+00
+   1   171   1        2.97140E+01   0.00000E+00
+
+   1   171         Fold Function    1.00000E+00
+   1   171         BP   Function   -1.03677E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   171        0   2.97140E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   171         Iterations   :   1
+   1   171         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   172   0        2.99140E+01   0.00000E+00
+   1   172   1        2.99140E+01   0.00000E+00
+
+   1   172         Fold Function    1.00000E+00
+   1   172         BP   Function   -6.93370E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   172        0   2.99140E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   172         Iterations   :   1
+   1   172         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   173   0        3.01140E+01   0.00000E+00
+   1   173   1        3.01140E+01   0.00000E+00
+
+   1   173         Fold Function    1.00000E+00
+   1   173         BP   Function   -1.09626E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   173        0   3.01140E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   173         Iterations   :   1
+   1   173         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   174   0        3.03140E+01   0.00000E+00
+   1   174   1        3.03140E+01   0.00000E+00
+
+   1   174         Fold Function    1.00000E+00
+   1   174         BP   Function    5.04328E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.64288E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   174   0        3.01497E+01   0.00000E+00
+   1   174   1        3.01497E+01   0.00000E+00
+
+   1   174         BP   Function    4.40869E-05
+ ==> Location of special point :  Iteration   1  Step size =  -1.39188E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   174   0        3.01483E+01   0.00000E+00
+   1   174   1        3.01483E+01   0.00000E+00
+
+   1   174         BP   Function   -3.79314E-07
+ ==> Location of special point :  Convergence.   Step size =   1.18735E-05
+   1   174         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   174  BP   31   3.01483E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   174         Iterations   :   1
+   1   174         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   175   0        3.03483E+01   0.00000E+00
+   1   175   1        3.03483E+01   0.00000E+00
+
+   1   175         Fold Function    1.00000E+00
+   1   175         BP   Function    5.96284E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   175        0   3.03483E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   175         Iterations   :   1
+   1   175         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   176   0        3.05483E+01   0.00000E+00
+   1   176   1        3.05483E+01   0.00000E+00
+
+   1   176         Fold Function    1.00000E+00
+   1   176         BP   Function    9.74337E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   176        0   3.05483E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   176         Iterations   :   1
+   1   176         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   177   0        3.07483E+01   0.00000E+00
+   1   177   1        3.07483E+01   0.00000E+00
+
+   1   177         Fold Function    1.00000E+00
+   1   177         BP   Function    1.00542E-02
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   177        0   3.07483E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   177         Iterations   :   1
+   1   177         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   178   0        3.09483E+01   0.00000E+00
+   1   178   1        3.09483E+01   0.00000E+00
+
+   1   178         Fold Function    1.00000E+00
+   1   178         BP   Function    6.84755E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   178        0   3.09483E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   178         Iterations   :   1
+   1   178         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   179   0        3.11483E+01   0.00000E+00
+   1   179   1        3.11483E+01   0.00000E+00
+
+   1   179         Fold Function    1.00000E+00
+   1   179         BP   Function    1.30197E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   179        0   3.11483E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   179         Iterations   :   1
+   1   179         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   180   0        3.13483E+01   0.00000E+00
+   1   180   1        3.13483E+01   0.00000E+00
+
+   1   180         Fold Function    1.00000E+00
+   1   180         BP   Function   -4.61633E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.56002E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   180   0        3.11923E+01   0.00000E+00
+   1   180   1        3.11923E+01   0.00000E+00
+
+   1   180         BP   Function   -4.35809E-05
+ ==> Location of special point :  Iteration   1  Step size =  -1.43775E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   180   0        3.11909E+01   0.00000E+00
+   1   180   1        3.11909E+01   0.00000E+00
+
+   1   180         BP   Function    4.35918E-07
+ ==> Location of special point :  Iteration   2  Step size =   1.42392E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   180   0        3.11909E+01   0.00000E+00
+   1   180   1        3.11909E+01   0.00000E+00
+
+   1   180         BP   Function   -3.96950E-11
+ ==> Location of special point :  Convergence.   Step size =  -1.29652E-09
+   1   180         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   180  BP   32   3.11909E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   180         Iterations   :   1
+   1   180         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   181   0        3.13909E+01   0.00000E+00
+   1   181   1        3.13909E+01   0.00000E+00
+
+   1   181         Fold Function    1.00000E+00
+   1   181         BP   Function   -5.72126E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   181        0   3.13909E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   181         Iterations   :   1
+   1   181         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   182   0        3.15909E+01   0.00000E+00
+   1   182   1        3.15909E+01   0.00000E+00
+
+   1   182         Fold Function    1.00000E+00
+   1   182         BP   Function   -9.38345E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   182        0   3.15909E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   182         Iterations   :   1
+   1   182         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   183   0        3.17909E+01   0.00000E+00
+   1   183   1        3.17909E+01   0.00000E+00
+
+   1   183         Fold Function    1.00000E+00
+   1   183         BP   Function   -9.76167E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   183        0   3.17909E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   183         Iterations   :   1
+   1   183         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   184   0        3.19909E+01   0.00000E+00
+   1   184   1        3.19909E+01   0.00000E+00
+
+   1   184         Fold Function    1.00000E+00
+   1   184         BP   Function   -6.78458E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   184        0   3.19909E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   184         Iterations   :   1
+   1   184         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   185   0        3.21909E+01   0.00000E+00
+   1   185   1        3.21909E+01   0.00000E+00
+
+   1   185         Fold Function    1.00000E+00
+   1   185         BP   Function   -1.53001E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   185        0   3.21909E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   185         Iterations   :   1
+   1   185         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   186   0        3.23909E+01   0.00000E+00
+   1   186   1        3.23909E+01   0.00000E+00
+
+   1   186         Fold Function    1.00000E+00
+   1   186         BP   Function    4.17153E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.46330E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   186   0        3.22446E+01   0.00000E+00
+   1   186   1        3.22446E+01   0.00000E+00
+
+   1   186         BP   Function    4.04556E-05
+ ==> Location of special point :  Iteration   1  Step size =  -1.39540E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   186   0        3.22432E+01   0.00000E+00
+   1   186   1        3.22432E+01   0.00000E+00
+
+   1   186         BP   Function   -4.58799E-07
+ ==> Location of special point :  Iteration   2  Step size =   1.56483E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   186   0        3.22432E+01   0.00000E+00
+   1   186   1        3.22432E+01   0.00000E+00
+
+   1   186         BP   Function    4.87492E-11
+ ==> Location of special point :  Convergence.   Step size =  -1.66252E-09
+   1   186         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   186  BP   33   3.22432E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   186         Iterations   :   1
+   1   186         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   187   0        3.24432E+01   0.00000E+00
+   1   187   1        3.24432E+01   0.00000E+00
+
+   1   187         Fold Function    1.00000E+00
+   1   187         BP   Function    5.48661E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   187        0   3.24432E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   187         Iterations   :   1
+   1   187         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   188   0        3.26432E+01   0.00000E+00
+   1   188   1        3.26432E+01   0.00000E+00
+
+   1   188         Fold Function    1.00000E+00
+   1   188         BP   Function    9.03680E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   188        0   3.26432E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   188         Iterations   :   1
+   1   188         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   189   0        3.28432E+01   0.00000E+00
+   1   189   1        3.28432E+01   0.00000E+00
+
+   1   189         Fold Function    1.00000E+00
+   1   189         BP   Function    9.48734E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   189        0   3.28432E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   189         Iterations   :   1
+   1   189         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   190   0        3.30432E+01   0.00000E+00
+   1   190   1        3.30432E+01   0.00000E+00
+
+   1   190         Fold Function    1.00000E+00
+   1   190         BP   Function    6.74309E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   190        0   3.30432E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   190         Iterations   :   1
+   1   190         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   191   0        3.32432E+01   0.00000E+00
+   1   191   1        3.32432E+01   0.00000E+00
+
+   1   191         Fold Function    1.00000E+00
+   1   191         BP   Function    1.78073E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   191        0   3.32432E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   191         Iterations   :   1
+   1   191         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   192   0        3.34432E+01   0.00000E+00
+   1   192   1        3.34432E+01   0.00000E+00
+
+   1   192         Fold Function    1.00000E+00
+   1   192         BP   Function   -3.70565E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.35085E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   192   0        3.33081E+01   0.00000E+00
+   1   192   1        3.33081E+01   0.00000E+00
+
+   1   192         BP   Function   -3.44185E-05
+ ==> Location of special point :  Iteration   1  Step size =  -1.24200E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   192   0        3.33069E+01   0.00000E+00
+   1   192   1        3.33069E+01   0.00000E+00
+
+   1   192         BP   Function    4.30262E-07
+ ==> Location of special point :  Iteration   2  Step size =   1.53354E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   192   0        3.33069E+01   0.00000E+00
+   1   192   1        3.33069E+01   0.00000E+00
+
+   1   192         BP   Function   -4.83739E-11
+ ==> Location of special point :  Convergence.   Step size =  -1.72395E-09
+   1   192         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   192  BP   34   3.33069E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   192         Iterations   :   1
+   1   192         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   193   0        3.35069E+01   0.00000E+00
+   1   193   1        3.35069E+01   0.00000E+00
+
+   1   193         Fold Function    1.00000E+00
+   1   193         BP   Function   -5.25795E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   193        0   3.35069E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   193         Iterations   :   1
+   1   193         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   194   0        3.37069E+01   0.00000E+00
+   1   194   1        3.37069E+01   0.00000E+00
+
+   1   194         Fold Function    1.00000E+00
+   1   194         BP   Function   -8.70126E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   194        0   3.37069E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   194         Iterations   :   1
+   1   194         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   195   0        3.39069E+01   0.00000E+00
+   1   195   1        3.39069E+01   0.00000E+00
+
+   1   195         Fold Function    1.00000E+00
+   1   195         BP   Function   -9.22824E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   195        0   3.39069E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   195         Iterations   :   1
+   1   195         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   196   0        3.41069E+01   0.00000E+00
+   1   196   1        3.41069E+01   0.00000E+00
+
+   1   196         Fold Function    1.00000E+00
+   1   196         BP   Function   -6.72014E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   196        0   3.41069E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   196         Iterations   :   1
+   1   196         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   197   0        3.43069E+01   0.00000E+00
+   1   197   1        3.43069E+01   0.00000E+00
+
+   1   197         Fold Function    1.00000E+00
+   1   197         BP   Function   -2.05265E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   197        0   3.43069E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   197         Iterations   :   1
+   1   197         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   198   0        3.45069E+01   0.00000E+00
+   1   198   1        3.45069E+01   0.00000E+00
+
+   1   198         Fold Function    1.00000E+00
+   1   198         BP   Function    3.21708E-03
+ ==> Location of special point :  Iteration   0  Step size =  -1.22097E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   198   0        3.43848E+01   0.00000E+00
+   1   198   1        3.43848E+01   0.00000E+00
+
+   1   198         BP   Function    2.55214E-05
+ ==> Location of special point :  Iteration   1  Step size =  -9.64169E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   198   0        3.43838E+01   0.00000E+00
+   1   198   1        3.43838E+01   0.00000E+00
+
+   1   198         BP   Function   -3.39981E-07
+ ==> Location of special point :  Iteration   2  Step size =   1.26761E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   198   0        3.43838E+01   0.00000E+00
+   1   198   1        3.43838E+01   0.00000E+00
+
+   1   198         BP   Function    3.48906E-11
+ ==> Location of special point :  Convergence.   Step size =  -1.30075E-09
+   1   198         Fold Function    1.00000E+00
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   198  BP   35   3.43838E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   198         Iterations   :   1
+   1   198         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   199   0        3.45838E+01   0.00000E+00
+   1   199   1        3.45838E+01   0.00000E+00
+
+   1   199         Fold Function    1.00000E+00
+   1   199         BP   Function    5.03425E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   199        0   3.45838E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+
+   1   199         Iterations   :   1
+   1   199         Next Step    :   2.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1   200   0        3.47838E+01   0.00000E+00
+   1   200   1        3.47838E+01   0.00000E+00
+
+   1   200         Fold Function    1.00000E+00
+   1   200         BP   Function    8.37479E-03
+
+  BR    PT  TY  LAB    PAR(1)        L2-NORM       MAX U(1)      MAX U(2)      PAR(2)     
+   1   200  EP   36   3.47838E+01   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+===============================================
+
+ Total Time    0.715E-01
