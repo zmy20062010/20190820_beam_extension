@@ -1,0 +1,12 @@
+
+#==============
+# AUTO Demo lin
+#==============
+
+pgm   = "bm_piezo_one"
+pgm_push = "bm_piezo_one.push"
+pgm_pull = "bm_piezo_one.pull"
+
+rpush = run(e=pgm, c=pgm_push)
+print "push done"
+rpull = run(rpush("UZ1"),e=pgm, c=pgm_pull)

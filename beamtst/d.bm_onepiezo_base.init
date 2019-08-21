@@ -1,0 +1,66 @@
+
+ Starting direction of the free parameter(s) : 
+ PAR(  4) :  0.707009053030E+00
+
+  BR    PT  TY  LAB    PAR(4)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)      MAX U(4)      MAX U(5)      MAX U(6)   
+   1     1  EP    1   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     2   0        1.41402E-01   1.41441E-01
+   1     2   1        1.41402E-01   1.41441E-01
+
+   1     2         BP   Function    1.41313E+00
+
+  BR    PT  TY  LAB    PAR(4)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)      MAX U(4)      MAX U(5)      MAX U(6)   
+   1     2        0   1.41402E-01   1.41441E-01   1.41497E-01   0.00000E+00   1.27521E-04   0.00000E+00   3.82537E-04   0.00000E+00
+
+   1     2         Iterations   :   1
+   1     2         Next Step    :   4.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     3   0        4.24205E-01   4.24323E-01
+   1     3   1        4.24205E-01   4.24323E-01
+
+   1     3         BP   Function    1.41313E+00
+
+  BR    PT  TY  LAB    PAR(4)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)      MAX U(4)      MAX U(5)      MAX U(6)   
+   1     3        0   4.24205E-01   4.24323E-01   4.24492E-01   0.00000E+00   3.82562E-04   0.00000E+00   1.14761E-03   0.00000E+00
+
+   1     3         Iterations   :   1
+   1     3         Next Step    :   5.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     4   0        7.77710E-01   7.77925E-01
+   1     4   1        7.77710E-01   7.77925E-01
+
+   1     4         BP   Function    1.41313E+00
+
+  BR    PT  TY  LAB    PAR(4)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)      MAX U(4)      MAX U(5)      MAX U(6)   
+   1     4        0   7.77710E-01   7.77925E-01   7.78236E-01   0.00000E+00   7.01364E-04   0.00000E+00   2.10395E-03   0.00000E+00
+
+   1     4         Iterations   :   1
+   1     4         Next Step    :   5.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     5   0        1.13121E+00   1.13153E+00
+   1     5   1        1.13121E+00   1.13153E+00
+
+ ==> Location of special point :  Iteration   0  Step size =  -1.85591E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   1     5   0        1.00000E+00   1.00028E+00
+   1     5   1        1.00000E+00   1.00028E+00
+
+ ==> Location of special point :  Convergence.   Step size =   1.85591E-08
+   1     5         BP   Function    1.41313E+00
+
+  BR    PT  TY  LAB    PAR(4)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)      MAX U(4)      MAX U(5)      MAX U(6)   
+   1     5  UZ    2   1.00000E+00   1.00028E+00   1.00068E+00   0.00000E+00   9.01832E-04   0.00000E+00   2.70532E-03   0.00000E+00
+===============================================
+
+ Total Time    0.780E-01
