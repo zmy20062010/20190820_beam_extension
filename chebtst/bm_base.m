@@ -1,75 +1,75 @@
 function bm_base
 
 %% Rl 100 ohm
-Rl   = 100.0;
-frlist = 1:0.2:1000;
-Vplist = zeros(size(frlist));
-Iplist = zeros(size(frlist));
-Pplist = zeros(size(frlist));
-for k = 1:length(frlist)
-    [Vp, Ip, Pp] = bm_eigen(frlist(k), Rl);
-    Vplist(k) = Vp;
-    Iplist(k) = Ip;
-    Pplist(k) = Pp;
-end
-figure(1)
-subplot(131); semilogy(frlist, abs(Vplist)); 
-subplot(132); semilogy(frlist, abs(Iplist));
-subplot(133); semilogy(frlist, abs(Pplist));
+% Rl   = 100.0;
+% frlist = 1:0.2:1000;
+% Vplist = zeros(size(frlist));
+% Iplist = zeros(size(frlist));
+% Pplist = zeros(size(frlist));
+% for k = 1:length(frlist)
+%     [Vp, Ip, Pp] = bm_eigen(frlist(k), Rl);
+%     Vplist(k) = Vp;
+%     Iplist(k) = Ip;
+%     Pplist(k) = Pp;
+% end
+% figure(1)
+% subplot(131); semilogy(frlist, abs(Vplist)); 
+% subplot(132); semilogy(frlist, abs(Iplist));
+% subplot(133); semilogy(frlist, abs(Pplist));
 
 %% Rl 1000 ohm
-Rl   = 100.0e1;
-frlist = 1:0.2:1000;
-Vplist = zeros(size(frlist));
-Iplist = zeros(size(frlist));
-Pplist = zeros(size(frlist));
-for k = 1:length(frlist)
-    [Vp, Ip, Pp] = bm_eigen(frlist(k), Rl);
-    Vplist(k) = Vp;
-    Iplist(k) = Ip;
-    Pplist(k) = Pp;
-end
-figure(2)
-subplot(131); semilogy(frlist, abs(Vplist)); 
-subplot(132); semilogy(frlist, abs(Iplist));
-subplot(133); semilogy(frlist, abs(Pplist));
+% Rl   = 100.0e1;
+% frlist = 1:0.2:1000;
+% Vplist = zeros(size(frlist));
+% Iplist = zeros(size(frlist));
+% Pplist = zeros(size(frlist));
+% for k = 1:length(frlist)
+%     [Vp, Ip, Pp] = bm_eigen(frlist(k), Rl);
+%     Vplist(k) = Vp;
+%     Iplist(k) = Ip;
+%     Pplist(k) = Pp;
+% end
+% figure(2)
+% subplot(131); semilogy(frlist, abs(Vplist)); 
+% subplot(132); semilogy(frlist, abs(Iplist));
+% subplot(133); semilogy(frlist, abs(Pplist));
 
 
 %% Rl 10000 ohm
-Rl   = 100.0e2;
-frlist = 1:0.2:1000;
-Vplist = zeros(size(frlist));
-Iplist = zeros(size(frlist));
-Pplist = zeros(size(frlist));
-for k = 1:length(frlist)
-    [Vp, Ip, Pp] = bm_eigen(frlist(k), Rl);
-    Vplist(k) = Vp;
-    Iplist(k) = Ip;
-    Pplist(k) = Pp;
-end
-figure(3)
-subplot(131); semilogy(frlist, abs(Vplist)); 
-subplot(132); semilogy(frlist, abs(Iplist));
-subplot(133); semilogy(frlist, abs(Pplist));
+% Rl   = 100.0e2;
+% frlist = 1:0.2:1000;
+% Vplist = zeros(size(frlist));
+% Iplist = zeros(size(frlist));
+% Pplist = zeros(size(frlist));
+% for k = 1:length(frlist)
+%     [Vp, Ip, Pp] = bm_eigen(frlist(k), Rl);
+%     Vplist(k) = Vp;
+%     Iplist(k) = Ip;
+%     Pplist(k) = Pp;
+% end
+% figure(3)
+% subplot(131); semilogy(frlist, abs(Vplist)); 
+% subplot(132); semilogy(frlist, abs(Iplist));
+% subplot(133); semilogy(frlist, abs(Pplist));
 
 
 %% Rl 100000 ohm
-Rl   = 100.0e3;
-frlist = 1:0.2:1000;
-Vplist = zeros(size(frlist));
-Iplist = zeros(size(frlist));
-Pplist = zeros(size(frlist));
-for k = 1:length(frlist)
-    [Vp, Ip, Pp] = bm_eigen(frlist(k), Rl);
-    Vplist(k) = Vp;
-    Iplist(k) = Ip;
-    Pplist(k) = Pp;
-end
-figure(4)
-subplot(131); semilogy(frlist, abs(Vplist)); 
-subplot(132); semilogy(frlist, abs(Iplist));
-subplot(133); semilogy(frlist, abs(Pplist));
-
+% Rl   = 100.0e3;
+% frlist = 1:0.2:1000;
+% Vplist = zeros(size(frlist));
+% Iplist = zeros(size(frlist));
+% Pplist = zeros(size(frlist));
+% for k = 1:length(frlist)
+%     [Vp, Ip, Pp] = bm_eigen(frlist(k), Rl);
+%     Vplist(k) = Vp;
+%     Iplist(k) = Ip;
+%     Pplist(k) = Pp;
+% end
+% figure(4)
+% subplot(131); semilogy(frlist, abs(Vplist)); 
+% subplot(132); semilogy(frlist, abs(Iplist));
+% subplot(133); semilogy(frlist, abs(Pplist));
+% 
 
 %% Rl 1000000 ohm
 Rl   = 100.0e4;
@@ -89,12 +89,6 @@ subplot(132); semilogy(frlist, abs(Iplist));
 subplot(133); semilogy(frlist, abs(Pplist));
 
 
-
-
-% subplot(121);  plot(x,real(u(x)));
-% subplot(122);  plot(x,imag(u(x)));
-
-% plot(u, 'LineWidth', 2), grid on
 end
 
 
