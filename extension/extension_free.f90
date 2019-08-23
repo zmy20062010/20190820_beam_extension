@@ -14,14 +14,17 @@
 
       COMPLEX*16 u1, u1x, u1xx, u1xxx
       COMPLEX*16 u2, u2x, u2xx, u2xxx
-      REAL*8     alpha, beta, nu, lamB, lamm, laml
+      REAL*8     alpha, beta, lamB, lamm, laml, nur, nui
+      COMPLEX*16 nu
 
       alpha = PAR(1)
       beta  = PAR(2)
-      nu    = PAR(3)
-      lamB  = PAR(4)
-      lamm  = PAR(5)
-      laml  = PAR(6)
+      lamB  = PAR(3)
+      lamm  = PAR(4)
+      laml  = PAR(5)
+      nur   = PAR(8)
+      nui   = PAR(9)
+      nu    = COMPLEX(nur, nui)
 
       u1    = U(1)
       u1x   = U(2)
@@ -57,8 +60,10 @@
       REAL*8 Cp, Bp, ep, Be, mp, me
       REAL*8 fr, PI
 
-      REAL*8 alpha, beta, nu
-      REAL*8 lamB, lamm, laml, lamh
+      REAL*8 alpha, beta
+      REAL*8 lamB, lamm, laml
+
+      REAL*8 newBCr, newBCi, nur, nui, pushpull
 
       PI = ATAN(1.0d0) * 4.0d0
 
@@ -93,19 +98,27 @@
 
       alpha = ep * SQRT(lp / Cp / Bp)
       beta  = Rl * Cp * SQRT(Bp / mp / lp**4.0d0)
-      nu    = 2 * PI * fr * SQRT(mp * lp**4.0d0 / Bp)
+      ! nu    = 2 * PI * fr * SQRT(mp * lp**4.0d0 / Bp)
       lamB  = Be / Bp
       lamm  = me / mp
       laml  = le / lp
-      lamh  = 0.0d0
+
+      newBCr   = 0.0d0
+      newBCi   = 0.0d0
+      nur      = 1.0d0
+      nui      = 0.0d0
+      pushpull = 0.0d0
 
       PAR(1) = alpha
       PAR(2) = beta
-      PAR(3) = nu
-      PAR(4) = lamB
-      PAR(5) = lamm
-      PAR(6) = laml
-      PAR(7) = lamh
+      PAR(3) = lamB
+      PAR(4) = lamm
+      PAR(5) = laml
+      PAR(6) = newBCr
+      PAR(7) = newBCi
+      PAR(8) = nur
+      PAR(9) = nui
+      PAR(10)= pushpull
 
       U(1)   = 0.0d0
       U(2)   = 0.0d0
@@ -126,25 +139,31 @@
       COMPLEX*16 U0, U1, FB, DBC
       DIMENSION U0(NDIM), U1(NDIM), FB(NBC)
 
-      REAL*8 alpha, beta, nu
-      REAL*8 lamB, lamm, laml, lamh
+      REAL*8 alpha, beta, alsq
+      REAL*8 lamB, lamm, laml
 
       COMPLEX*16 u10, u1x0, u1xx0, u1xxx0
       COMPLEX*16 u11, u1x1, u1xx1, u1xxx1
       COMPLEX*16 u20, u2x0, u2xx0, u2xxx0
       COMPLEX*16 u21, u2x1, u2xx1, u2xxx1
 
-      COMPLEX*16 iu
-      iu = COMPLEX(0.0d0, 1.0d0)
+      COMPLEX*16 newBC, nu, jnu
+      REAL*8     newBCr, newBCi, nur, nui, pushpull
 
-      alpha = PAR(1)
-      beta  = PAR(2)
-      nu    = PAR(3)
-      lamB  = PAR(4)
-      lamm  = PAR(5)
-      laml  = PAR(6)
-      ! Parameter used to control the inhomogeneous boundary condition
-      lamh  = PAR(7) 
+      alpha    = PAR(1)
+      beta     = PAR(2)
+      lamB     = PAR(3)
+      lamm     = PAR(4)
+      laml     = PAR(5)
+      newBCr   = PAR(6)
+      newBCi   = PAR(7)
+      nur      = PAR(8)
+      nui      = PAR(9)
+      pushpull = PAR(10)
+      newBC    = COMPLEX(newBCr, newBCi)
+      nu       = COMPLEX(nur, nui)
+      jnu      = COMPLEX(0.0d0, 1.0d0)*nu
+      alsq     = alpha**2.0d0
 
       u10    = U0(1)
       u1x0   = U0(2)
@@ -164,16 +183,16 @@
       u2xx1  = U1(7)
       u2xxx1 = U1(8)
 
-      FB(1) = u10 - 1.0d0 * lamh
+      FB(1) = u10 - pushpull
       FB(2) = u1x0
       FB(3) = u11 - u20
       FB(4) = laml * u1x1 - u2x0
-      FB(5) = u1xx1 + iu * nu * beta  / ( iu * nu * beta + 1 ) &
-              * alpha**(2.0d0) * u1x1 &
+      FB(5) = u1xx1 + jnu * beta  / ( jnu * beta + 1 ) * alsq * u1x1 &
               - lamB / (laml**(2.0d0)) * u2xx0
       FB(6) = u1xxx1 - lamB / (laml**(3.0d0)) * u2xxx0
       FB(7) = u2xx1
       FB(8) = u2xxx1
+      FB(9) = u2x1 - newBC
 
       END SUBROUTINE BCND
 

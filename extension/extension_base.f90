@@ -94,6 +94,7 @@
       alpha = ep * SQRT(lp / Cp / Bp)
       beta  = Rl * Cp * SQRT(Bp / mp / lp**4.0d0)
       nu    = 2 * PI * fr * SQRT(mp * lp**4.0d0 / Bp)
+      ! nu = 1.1317071070250151 for fr = 120
       lamB  = Be / Bp
       lamm  = me / mp
       laml  = le / lp
