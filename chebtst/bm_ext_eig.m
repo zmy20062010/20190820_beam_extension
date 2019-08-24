@@ -16,23 +16,13 @@ e31  = d31 * Yp;
 % fr   = 90;
 % Rl   = 100.0e3;
 %     beam extension material constants
-le   = 100e-3;
+le   = 40e-3;
 Ye   = 2.3e9;
 rhoe = 1.38e3;
 he   = 0.25e-3;
 
 xib  = 0.1e-3;
 rd   = xib/lp;
-
-
-%     positions from the neutral axis as a reference
-nY  = Ys / Yp;
-hpa = ( hp*hp + 2*nY*hp*hs + nY*hs*hs) / (hp+nY*hs) / 2.0e0;
-hsa = ( hp*hp + 2*hp*hs + nY*hs*hs) / (hp+nY*hs) / 2.0e0;
-hpc = nY*hs*(hp + hs) / (hp+nY*hs) / 2.0e0;
-ya  = -hsa;
-yb  = hpa - hp;
-yc  = hpa;
 
 %     structural, electrical, and piezoelectric parameters
 Bp = 2.0/3.0 * b * ( Ys * hs^3.0 + Yp * ((hs + hp)^3.0 - hs^3.0) );
@@ -69,8 +59,8 @@ x = 0:0.01:1;
 
 u1x  = u1(x);
 u2x  = u2(x);
-plot(x*lp, abs(u1x),'r', 'LineWidth', 2); hold on;
-plot(x*le+lp, abs(u2x),'b', 'LineWidth', 2);
+% plot(x*lp, abs(u1x),'r', 'LineWidth', 2); hold on;
+% plot(x*le+lp, abs(u2x),'b', 'LineWidth', 2);
 
 Vp = 1i*nu*beta/(1i*nu*beta + 1) * ep / Cp * rd * feval(diff(u1),1);
 Ip = Vp / Rl;
