@@ -22,7 +22,7 @@ rhoe = 1.38e3;
 he   = 0.25e-3;
 
 xib  = 0.1e-3;
-rd   = xib / lp;
+rd   = xib/lp;
 
 %     structural, electrical, and piezoelectric parameters
 Bp = 2.0/3.0 * b * ( Ys * hs^3.0 + Yp * ((hs + hp)^3.0 - hs^3.0) );
@@ -59,8 +59,8 @@ x = 0:0.01:1;
 
 u1x  = u1(x);
 u2x  = u2(x);
-% plot(x*lp, abs(u1x),'r', 'LineWidth', 2); hold on;
-% plot(x*le+lp, abs(u2x),'b', 'LineWidth', 2);
+plot(x*lp, abs(u1x),'r', 'LineWidth', 2); hold on;
+plot(x*le+lp, abs(u2x),'b', 'LineWidth', 2);
 
 Vp = 1i*nu*beta/(1i*nu*beta + 1) * ep / Cp * rd * feval(diff(u1),1);
 Ip = Vp / Rl;

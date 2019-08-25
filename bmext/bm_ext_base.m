@@ -19,11 +19,11 @@ end
 % subplot(131); semilogy(frlist, abs(Vplist)./wlist./wlist/xib, 'r');hold on;
 % subplot(132); semilogy(frlist, abs(Iplist)./wlist./wlist/xib, 'r');hold on;
 % subplot(133); semilogy(frlist, abs(Pplist)./wlist./wlist/xib, 'r');hold on;
-semilogy(frlist, abs(Vplist)./wlist./wlist/xib, 'r')
-set(gca, 'linewidth', 1.1, 'fontsize', 16, 'fontname', 'times')
+% semilogy(frlist, abs(Vplist)./wlist./wlist/xib, 'r')
+% set(gca, 'linewidth', 1.1, 'fontsize', 16, 'fontname', 'times')
 
 %% length ratio 0.0
-% save('bm_ext_base_laml_0p0_Rl_1e7','frlist', 'Vplist', 'Iplist', 'Pplist', 'wlist', 'xib', 'Rl')
+save('bm_ext_base_laml_0p0_Rl_1e7','frlist', 'Vplist', 'Iplist', 'Pplist', 'wlist', 'xib', 'Rl')
 % save('bm_ext_base_laml_0p0_Rl_1e6','frlist', 'Vplist', 'Iplist', 'Pplist', 'wlist', 'xib', 'Rl')
 % save('bm_ext_base_laml_0p0_Rl_1e5','frlist', 'Vplist', 'Iplist', 'Pplist', 'wlist', 'xib', 'Rl')
 % save('bm_ext_base_laml_0p0_Rl_1e4','frlist', 'Vplist', 'Iplist', 'Pplist', 'wlist', 'xib', 'Rl')
