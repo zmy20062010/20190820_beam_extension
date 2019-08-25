@@ -293,38 +293,41 @@ legend('show')
 
 figure(2)
 %%  Rl = 1e0 ohm, laml from 0.10 to 1.0
-results0 = load('bm_ext_base_laml_1p0_Rl_1e0', 'Vplist', 'frlist', 'xib'); 
-Vplist0 = results0.Vplist;
-results1 = load('bm_ext_base_laml_0p8_Rl_1e0', 'Vplist'); 
-Vplist1 = results1.Vplist;
-results2 = load('bm_ext_base_laml_0p5_Rl_1e0', 'Vplist'); 
-Vplist2 = results2.Vplist;
-results3 = load('bm_ext_base_laml_0p4_Rl_1e0', 'Vplist'); 
-Vplist3 = results3.Vplist;
-results4 = load('bm_ext_base_laml_0p3_Rl_1e0', 'Vplist'); 
-Vplist4 = results4.Vplist;
-results5 = load('bm_ext_base_laml_0p2_Rl_1e0', 'Vplist'); 
-Vplist5 = results5.Vplist;
-results6 = load('bm_ext_base_laml_0p1_Rl_1e0', 'Vplist'); 
-Vplist6 = results6.Vplist;
-
-frlist = results0.frlist;
-wlist  = 2*pi*frlist;
-xib  = results0.xib;
-
-semilogy(frlist, abs(Vplist0)./wlist./wlist/xib, 'r', 'DisplayName','\lambda_l=1.0'); hold on
-semilogy(frlist, abs(Vplist1)./wlist./wlist/xib, 'g', 'DisplayName','\lambda_l=0.8'); 
-semilogy(frlist, abs(Vplist2)./wlist./wlist/xib, 'b', 'DisplayName','\lambda_l=0.5'); 
-semilogy(frlist, abs(Vplist3)./wlist./wlist/xib, 'm', 'DisplayName','\lambda_l=0.4'); 
-semilogy(frlist, abs(Vplist4)./wlist./wlist/xib, 'c', 'DisplayName','\lambda_l=0.3'); 
-semilogy(frlist, abs(Vplist5)./wlist./wlist/xib, 'k', 'DisplayName','\lambda_l=0.2'); 
-semilogy(frlist, abs(Vplist6)./wlist./wlist/xib, 'y.', 'DisplayName','\lambda_l=0.1'); 
-
-% grid on
-set(gca, 'linewidth', 1.1, 'fontsize', 12, 'fontname', 'times')
-title('length ratio R\_l = 1.0e0 \Omega')
-set(gcf, 'color', 'w')
-legend('show')
+% results0 = load('bm_ext_base_laml_1p0_Rl_1e0', 'Vplist', 'frlist', 'xib'); 
+% Vplist0 = results0.Vplist;
+% results1 = load('bm_ext_base_laml_0p8_Rl_1e0', 'Vplist'); 
+% Vplist1 = results1.Vplist;
+% results2 = load('bm_ext_base_laml_0p5_Rl_1e0', 'Vplist'); 
+% Vplist2 = results2.Vplist;
+% results3 = load('bm_ext_base_laml_0p4_Rl_1e0', 'Vplist'); 
+% Vplist3 = results3.Vplist;
+% results4 = load('bm_ext_base_laml_0p3_Rl_1e0', 'Vplist'); 
+% Vplist4 = results4.Vplist;
+% results5 = load('bm_ext_base_laml_0p2_Rl_1e0', 'Vplist'); 
+% Vplist5 = results5.Vplist;
+% results6 = load('bm_ext_base_laml_0p1_Rl_1e0', 'Vplist'); 
+% Vplist6 = results6.Vplist;
+% results7 = load('bm_ext_base_laml_0p0_Rl_1e0', 'Vplist'); 
+% Vplist7 = results7.Vplist;
+% 
+% frlist = results0.frlist;
+% wlist  = 2*pi*frlist;
+% xib  = results0.xib;
+% 
+% semilogy(frlist, abs(Vplist0)./wlist./wlist/xib, 'r', 'DisplayName','\lambda_l=1.0'); hold on
+% semilogy(frlist, abs(Vplist1)./wlist./wlist/xib, 'g', 'DisplayName','\lambda_l=0.8'); 
+% semilogy(frlist, abs(Vplist2)./wlist./wlist/xib, 'b', 'DisplayName','\lambda_l=0.5'); 
+% semilogy(frlist, abs(Vplist3)./wlist./wlist/xib, 'm', 'DisplayName','\lambda_l=0.4'); 
+% semilogy(frlist, abs(Vplist4)./wlist./wlist/xib, 'c', 'DisplayName','\lambda_l=0.3'); 
+% semilogy(frlist, abs(Vplist5)./wlist./wlist/xib, 'k', 'DisplayName','\lambda_l=0.2'); 
+% semilogy(frlist, abs(Vplist6)./wlist./wlist/xib, 'y.', 'DisplayName','\lambda_l=0.1'); 
+% semilogy(frlist, abs(Vplist7)./wlist./wlist/xib, 'r.', 'DisplayName','\lambda_l=0.0');
+% 
+% % grid on
+% set(gca, 'linewidth', 1.1, 'fontsize', 12, 'fontname', 'times')
+% title('length ratio R\_l = 1.0e0 \Omega')
+% set(gcf, 'color', 'w')
+% legend('show')
 
 %%  Rl = 1e1 ohm, laml from 0.10 to 1.0
 % results0 = load('bm_ext_base_laml_1p0_Rl_1e1', 'Vplist', 'frlist', 'xib'); 
@@ -467,32 +470,45 @@ legend('show')
 % legend('show')
 
 %%  Rl = 1e6 ohm, laml from 0.10 to 1.0
-% results0 = load('bm_ext_base_laml_1p0_Rl_1e6', 'Vplist', 'frlist', 'xib'); 
-% Vplist0 = results0.Vplist;
-% results1 = load('bm_ext_base_laml_0p8_Rl_1e6', 'Vplist'); 
-% Vplist1 = results1.Vplist;
-% results2 = load('bm_ext_base_laml_0p5_Rl_1e6', 'Vplist'); 
-% Vplist2 = results2.Vplist;
-% results3 = load('bm_ext_base_laml_0p2_Rl_1e6', 'Vplist'); 
-% Vplist3 = results3.Vplist;
-% results4 = load('bm_ext_base_laml_0p1_Rl_1e6', 'Vplist'); 
-% Vplist4 = results4.Vplist;
-% 
-% frlist = results0.frlist;
-% wlist  = 2*pi*frlist;
-% xib  = results0.xib;
-% 
-% semilogy(frlist, abs(Vplist0)./wlist./wlist/xib, 'r', 'DisplayName','\lambda_l=1.0'); hold on
-% semilogy(frlist, abs(Vplist1)./wlist./wlist/xib, 'g', 'DisplayName','\lambda_l=0.8'); 
-% semilogy(frlist, abs(Vplist2)./wlist./wlist/xib, 'b', 'DisplayName','\lambda_l=0.5'); 
-% semilogy(frlist, abs(Vplist3)./wlist./wlist/xib, 'm', 'DisplayName','\lambda_l=0.2'); 
-% semilogy(frlist, abs(Vplist4)./wlist./wlist/xib, 'c', 'DisplayName','\lambda_l=0.1'); 
-% 
-% % grid on
-% set(gca, 'linewidth', 1.1, 'fontsize', 12, 'fontname', 'times')
-% title('length ratio R\_l = 1.0e6 \Omega')
-% set(gcf, 'color', 'w')
-% legend('show')
+results0 = load('bm_ext_base_laml_1p0_Rl_1e6', 'Vplist', 'frlist', 'xib'); 
+Vplist0 = results0.Vplist;
+results1 = load('bm_ext_base_laml_0p8_Rl_1e6', 'Vplist'); 
+Vplist1 = results1.Vplist;
+results2 = load('bm_ext_base_laml_0p5_Rl_1e6', 'Vplist'); 
+Vplist2 = results2.Vplist;
+results3 = load('bm_ext_base_laml_0p4_Rl_1e6', 'Vplist'); 
+Vplist3 = results3.Vplist;
+results4 = load('bm_ext_base_laml_0p3_Rl_1e6', 'Vplist'); 
+Vplist4 = results4.Vplist;
+results5 = load('bm_ext_base_laml_0p2_Rl_1e6', 'Vplist'); 
+Vplist5 = results5.Vplist;
+results6 = load('bm_ext_base_laml_0p1_Rl_1e6', 'Vplist'); 
+Vplist6 = results6.Vplist;
+results7 = load('bm_ext_base_laml_0p0_Rl_1e6', 'Vplist'); 
+Vplist7 = results7.Vplist;
+
+frlist = results0.frlist;
+wlist  = 2*pi*frlist;
+xib  = results0.xib;
+
+semilogy(frlist, abs(Vplist0)./wlist./wlist/xib, 'r', 'DisplayName','\lambda_l=1.0'); hold on
+semilogy(frlist, abs(Vplist1)./wlist./wlist/xib, 'g', 'DisplayName','\lambda_l=0.8'); 
+semilogy(frlist, abs(Vplist2)./wlist./wlist/xib, 'b', 'DisplayName','\lambda_l=0.5'); 
+semilogy(frlist, abs(Vplist3)./wlist./wlist/xib, 'm', 'DisplayName','\lambda_l=0.4'); 
+semilogy(frlist, abs(Vplist4)./wlist./wlist/xib, 'y', 'DisplayName','\lambda_l=0.3'); 
+semilogy(frlist, abs(Vplist5)./wlist./wlist/xib, 'k', 'DisplayName','\lambda_l=0.2'); 
+semilogy(frlist, abs(Vplist6)./wlist./wlist/xib, 'c.', 'DisplayName','\lambda_l=0.1'); 
+semilogy(frlist, abs(Vplist7)./wlist./wlist/xib, 'm.', 'DisplayName','\lambda_l=0.0'); 
+
+% grid on
+set(gca, 'linewidth', 1.1, 'fontsize', 12, 'fontname', 'times')
+xlim([0,100]);
+title('length ratio R\_l = 1.0e6 \Omega')
+set(gcf, 'color', 'w')
+legend('show')
+print(gcf,'test.jpg','-dpng','-r300');      
+print(gcf,'test.pdf','-dpdf');
+print(gcf,'test.eps','-depsc');
 
 %%  Rl = 1e7 ohm, laml from 0.10 to 1.0
 % results0 = load('bm_ext_base_laml_1p0_Rl_1e7', 'Vplist', 'frlist', 'xib'); 
