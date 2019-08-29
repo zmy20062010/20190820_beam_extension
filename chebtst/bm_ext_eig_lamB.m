@@ -1,4 +1,4 @@
-function [Vp, Ip, Pp] = bm_ext_eig(fr,Rl)
+function [Vp, Ip, Pp] = bm_ext_eig_lamB(fr,Rl)
 %     beam base structure material constants
 lp   =  100.0e-3;
 Ys   =  10.0e10;
@@ -17,7 +17,7 @@ e31  = d31 * Yp;
 % Rl   = 100.0e3;
 %     beam extension material constants
 le   = 30.0e-3;
-Ye   = 2.3e9;
+Ye   = 3.3e9;
 rhoe = 1.38e3;
 he   = 0.25e-3;
 
@@ -60,14 +60,9 @@ A.bc = @(x, u1, u2) [u1(0) - 1.0;
                      feval(diff(u2,3), 1);
                      ];
 [u1,u2] = A\0;
-x = 0:0.01:1;
-
-u1x  = u1(x);
-u2x  = u2(x);
-% plot(x*lp, abs(u1x),'r', 'LineWidth', 2); hold on;
-% plot(x*le+lp, abs(u2x),'b', 'LineWidth', 2);
 
 Vp = 1i*nu*beta/(1i*nu*beta + 1) * ep / Cp * rd * feval(diff(u1),1);
 Ip = Vp / Rl;
 Pp = Vp * Ip;
+
 end
