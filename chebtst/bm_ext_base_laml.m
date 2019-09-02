@@ -15,7 +15,7 @@ md = size(Rl,1);
 nd = size(Rl,2);
 
 tic
-parfor m = 1:md
+for m = 1:md
     for n = 1: nd
         [Vp, Ip, Pp] = bm_ext_eig_laml(fr(m,n), Rl(m,n));
         Vplist(m,n) = Vp;
@@ -30,8 +30,8 @@ toc
 % save('bm_ext_base_laml_l_10e-3','fr', 'Rl', 'Vplist', 'Iplist', 'Pplist', 'xib')
 % save('bm_ext_base_laml_l_20e-3','fr', 'Rl', 'Vplist', 'Iplist', 'Pplist', 'xib')
 % save('bm_ext_base_laml_l_30e-3','fr', 'Rl', 'Vplist', 'Iplist', 'Pplist', 'xib')
-save('bm_ext_base_laml_l_40e-3','fr', 'Rl', 'Vplist', 'Iplist', 'Pplist', 'xib')
-% save('bm_ext_base_laml_l_50e-3','fr', 'Rl', 'Vplist', 'Iplist', 'Pplist', 'xib')
+% save('bm_ext_base_laml_l_40e-3','fr', 'Rl', 'Vplist', 'Iplist', 'Pplist', 'xib')
+save('bm_ext_base_laml_l_50e-3','fr', 'Rl', 'Vplist', 'Iplist', 'Pplist', 'xib')
 % save('bm_ext_base_laml_l_60e-3','fr', 'Rl', 'Vplist', 'Iplist', 'Pplist', 'xib')
 % save('bm_ext_base_laml_l_70e-3','fr', 'Rl', 'Vplist', 'Iplist', 'Pplist', 'xib')
 % save('bm_ext_base_laml_l_80e-3','fr', 'Rl', 'Vplist', 'Iplist', 'Pplist', 'xib')
