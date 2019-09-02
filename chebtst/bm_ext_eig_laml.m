@@ -1,4 +1,4 @@
-function [Vp, Ip, Pp] = bm_ext_eig_lamB(fr,Rl)
+function [Vp, Ip, Pp] = bm_ext_eig_laml(fr,Rl)
 %     beam base structure material constants
 lp   =  100.0e-3;
 Ys   =  10.0e10;
@@ -16,8 +16,8 @@ e31  = d31 * Yp;
 % fr   = 90;
 % Rl   = 100.0e3;
 %     beam extension material constants
-le   = 30.0e-3;
-Ye   = 0.01e9;
+le   = 40.0e-3;
+Ye   = 2.3e9;
 rhoe = 1.38e3;
 he   = 0.25e-3;
 
