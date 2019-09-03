@@ -127,3 +127,27 @@ title('external electrical load R\_l = 100.0 \Omega')
 
 
 
+
+%% Rl  1000000 ohm, different laml
+figure(8)
+plot(fr(1,:),abs(vplist00(7,:)),'r', 'DisplayName','\lambda_l=0.0'); hold on
+plot(fr(1,:),abs(vplist01(7,:)),'g', 'DisplayName','\lambda_l=0.1')
+plot(fr(1,:),abs(vplist02(7,:)),'b', 'DisplayName','\lambda_l=0.2')
+plot(fr(1,:),abs(vplist03(7,:)),'k', 'DisplayName','\lambda_l=0.3')
+plot(fr(1,:),abs(vplist04(7,:)),'c', 'DisplayName','\lambda_l=0.4')
+plot(fr(1,:),abs(vplist05(7,:)),'r.-', 'DisplayName','\lambda_l=0.5')
+plot(fr(1,:),abs(vplist06(7,:)),'g.-', 'DisplayName','\lambda_l=0.6')
+plot(fr(1,:),abs(vplist07(7,:)),'b.-', 'DisplayName','\lambda_l=0.7')
+plot(fr(1,:),abs(vplist08(7,:)),'k.-', 'DisplayName','\lambda_l=0.8')
+plot(fr(1,:),abs(vplist09(7,:)),'c.-', 'DisplayName','\lambda_l=0.9')
+plot(fr(1,:),abs(vplist10(7,:)),'y', 'DisplayName','\lambda_l=1.0')
+% set(gca,'XScale','log');
+set(gca,'YScale','log');
+xlim([1,100]);
+xlabel('base excitation frequency');
+ylabel('output voltage amplitude');
+set(gca, 'linewidth', 1.1, 'fontsize', 12, 'fontname', 'times')
+set(gcf, 'color', 'w')
+legend('show')
+title('external electrical load R\_l = 1000000.0 \Omega')
+
