@@ -36,8 +36,8 @@ A.lbc = @(u) [u-1; diff(u)];
 A.rbc = @(u) [diff(u,2) + 1i*nu*beta/(1i*nu*beta+1)*alpha*alpha*diff(u); diff(u,3)];
 u = A\0;
 
-x = 0:0.01:1;
-ux  = u(x);
+% x = 0:0.01:1;
+% ux  = u(x);
 
 % plot(x*lp, abs(u1x),'r', 'LineWidth', 2); hold on;
 % plot(x*le+lp, abs(u2x),'b', 'LineWidth', 2);
