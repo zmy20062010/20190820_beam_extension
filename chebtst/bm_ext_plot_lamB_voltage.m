@@ -76,32 +76,32 @@ xib  = result00.xib;
 
 
 %% Rl from 1 ohm to 10 Mohm, different laml
-% figure(1)
-% mesh(fr,Rl,abs(vplist00), 'DisplayName','Y_e=0.01e9'); hold on
-% mesh(fr,Rl,abs(vplist01), 'DisplayName','Y_e=0.02e9')
-% mesh(fr,Rl,abs(vplist02), 'DisplayName','Y_e=0.03e9')
-% mesh(fr,Rl,abs(vplist03), 'DisplayName','Y_e=0.04e9')
-% mesh(fr,Rl,abs(vplist04), 'DisplayName','Y_e=0.05e9')
-% mesh(fr,Rl,abs(vplist05), 'DisplayName','Y_e=0.06e9')
-% mesh(fr,Rl,abs(vplist06), 'DisplayName','Y_e=0.07e9')
-% mesh(fr,Rl,abs(vplist07), 'DisplayName','Y_e=0.08e9')
-% mesh(fr,Rl,abs(vplist08), 'DisplayName','Y_e=0.09e9')
-% mesh(fr,Rl,abs(vplist09), 'DisplayName','Y_e=0.1e9')
-% mesh(fr,Rl,abs(vplist10), 'DisplayName','Y_e=0.2e9')
-% mesh(fr,Rl,abs(vplist11), 'DisplayName','Y_e=0.3e9')
-% mesh(fr,Rl,abs(vplist12), 'DisplayName','Y_e=1.3e9')
-% mesh(fr,Rl,abs(vplist13), 'DisplayName','Y_e=2.3e9')
-% mesh(fr,Rl,abs(vplist14), 'DisplayName','Y_e=3.3e9')
-% set(gca,'XScale','log');
-% set(gca,'YScale','log');
-% set(gca,'ZScale','log');
-% xlabel('fr');
-% ylabel('Rl');
-% zlabel('output voltage amplitude');
-% set(gca, 'linewidth', 1.1, 'fontsize', 12, 'fontname', 'times')
-% set(gcf, 'color', 'w')
-% legend('show')
-% title('length ratio \lambda\_l = 0.0')
+figure(1)
+mesh(fr,Rl,abs(vplist00), 'DisplayName','Y_e=0.01e9'); hold on
+mesh(fr,Rl,abs(vplist01), 'DisplayName','Y_e=0.02e9')
+mesh(fr,Rl,abs(vplist02), 'DisplayName','Y_e=0.03e9')
+mesh(fr,Rl,abs(vplist03), 'DisplayName','Y_e=0.04e9')
+mesh(fr,Rl,abs(vplist04), 'DisplayName','Y_e=0.05e9')
+mesh(fr,Rl,abs(vplist05), 'DisplayName','Y_e=0.06e9')
+mesh(fr,Rl,abs(vplist06), 'DisplayName','Y_e=0.07e9')
+mesh(fr,Rl,abs(vplist07), 'DisplayName','Y_e=0.08e9')
+mesh(fr,Rl,abs(vplist08), 'DisplayName','Y_e=0.09e9')
+mesh(fr,Rl,abs(vplist09), 'DisplayName','Y_e=0.1e9')
+mesh(fr,Rl,abs(vplist10), 'DisplayName','Y_e=0.2e9')
+mesh(fr,Rl,abs(vplist11), 'DisplayName','Y_e=0.3e9')
+mesh(fr,Rl,abs(vplist12), 'DisplayName','Y_e=1.3e9')
+mesh(fr,Rl,abs(vplist13), 'DisplayName','Y_e=2.3e9')
+mesh(fr,Rl,abs(vplist14), 'DisplayName','Y_e=3.3e9')
+set(gca,'XScale','log');
+set(gca,'YScale','log');
+set(gca,'ZScale','log');
+xlabel('fr');
+ylabel('Rl');
+zlabel('output voltage amplitude');
+set(gca, 'linewidth', 1.1, 'fontsize', 12, 'fontname', 'times')
+set(gcf, 'color', 'w')
+legend('show')
+title('length ratio \lambda\_l = 0.0')
 
 
 

@@ -93,7 +93,7 @@ plot(fr(1,:),abs(vplist03(3,:)),'b', 'DisplayName','\rho_e=1.38e3')
 plot(fr(1,:),abs(vplist04(3,:)),'k', 'DisplayName','\rho_e=1.38e4')
 plot(fr(1,:),abs(vplist05(3,:)),'c', 'DisplayName','\rho_e=1.38e5')
 % set(gca,'XScale','log');
-% set(gca,'YScale','log');
+set(gca,'YScale','log');
 xlim([1,100]);
 xlabel('base excitation frequency');
 ylabel('output voltage amplitude');

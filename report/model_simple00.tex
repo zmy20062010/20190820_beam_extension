@@ -6,8 +6,8 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
 
-% \usepackage{geometry}
-% \geometry{left = 1.5cm, right = 1.5 cm}
+\usepackage{geometry}
+\geometry{left = 1.5cm, right = 1.5 cm}
 
 \begin{document}
 \title{Investigation upon the performance of piezoelectric energy harvester with flexible extensions}
@@ -241,17 +241,20 @@ The system (\ref{eq:eq_balance_equations_compact}) and (\ref{eq:eq_boundary_cond
 
 \section{Influence of extension part upon energy harvester performance}
 
+
+The basic geometry and material properties of the materials used in the proposed piezoelectric energy harvester with flexible extensions are summarized in Table~\ref{tab:parameter_value_extension}. Note that some of the parameters, like length $l_e$, Young's modulus $Y_e$, and volumetric density $\rho_e$ of the beam extension, are actually changing across different simulations. In the simulation, base excitation frequency $fr$ and external load resistance $R_l$, which change the dimensionless values of $\nu$ and $\beta$, respectively, are of critical importance in the sense that these two parameters reflect the influence of vibration source frequency spectrum and external load circuit. For every set of parameter values, we set the base excitation frequency $fr$ to change from $1\ Hz$ to $100\ Hz$, which covers the usual frequency range of natural vibration sources, and set the load resistance $R_l$ to change from $1\ \Omega$ to $10\ M\Omega$, which is inspired by the Ref. \cite{erturk2009experimentally} and takes into account the dielectric property of piezoelectric materials. Actually, when the load resistance $R_l = 1\ \Omega$, the piezoelectric energy harvester is said to be in a short-circuit condition as the general equivalent resistance of the structure is much larger than $R_l$. On the other hand, when $R_l = 10\ M\Omega$, the system is close to an open-circuit condition where no external load is connected to the output electrodes.
+
+In the following, we will investigate the influences of length $l_e$, Young's modulus $Y_e$, and volumetric density $\rho_e$ of the beam extension upon the performance of the piezoelectric energy harvester with flexible extensions separately.
+
 \subsection{beam extension length $l_e$ or length ratio $\lambda_l$}
 
-Perhaps beam extension length $l_e$ or length ratio $\lambda_l$ is the most important parameters to check, as a length $l_e = 0$ means that no beam extension is attached. Therefore a zero length ratio is referred to as a case for characteristics comparison. In this classical case \cite{erturk2009experimentally}, a lot of research can be found in the literature in terms of its dynamic model, modal property, and energy harvesting performances. 
-
-In the simulation, we set the length ratio $\lambda_l$ to be in the range of $0 \leq \lambda_l \leq 1$. For each value of $\lambda_l$, we change the base excitation frequency $f$ or corresponding angular frequency $\sigma$ and load resistance $R_l$ which will change the dimensionless values of $\nu$ and $\beta$. In fact, $f$ is set to range from $1\ Hz$ to $1000\ Hz$, which covers the usual excitation frequencies in engineering applications. At the same time, borrowing experience from Ref. \cite{erturk2009experimentally}, we set the load resistance $R_l$ to change from $1\ \Omega$ to $10\ M\Omega$. Actually, the load resistance $R_l = 1\ \Omega$ is close to an short-circuit condition when the electrodes for device output is connected directly to each other, while the load resistance $R_l = 10\ M\Omega$ is close to an open-circuit condition where no external load is connected to the output electrodes.
+The presence of the beam extension is firstly controlled by the beam extension length $l_e$ or length ratio $\lambda_l$, equivalently. When $\lambda_l = 0.0$, no beam extension is attached the resultant energy harvester reduces to the classical piezoelectric energy harvesting bimorph. \cite{erturk2009experimentally} In our research, this case is referred to as a reference. In the considered range of length ratio $0 \leq \lambda_l \leq 1$, the base excitation problem is solved with respect to different base excitation frequency $fr$ and external load resistance $R_l$. Then we plot the 
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{./fig_laml_vol_versus_fr_Rl.eps}
+    \includegraphics[width=\textwidth]{./fig_output_voltage_vs_fr_Rl_laml_all}
     \caption{Output voltage $V_p$ (amplitude) and output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus length ratio $\lambda_l$ at different frequency $f$ and load resistance $R_l$. }
-    \label{fig:fig_laml_vol_versus_fr_Rl}
+    \label{fig:fig_output_voltage_vs_fr_Rl_laml_all}
 \end{figure}
 
 It is easily seen from the diagram that the change of extension length $l_e$ have a great influence on the frequency response of the piezoelectric energy harvester. At the given values of $\lambda_B$ and $\lambda_m$, the contained vibration modes in the frequency range considered does change with respect to
@@ -263,7 +266,7 @@ the length ratio $\lambda_l$. When $\lambda_l$ is relatively small, which is bel
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{./fig_laml_vol_versus_fr_Rl.eps}
+    \includegraphics[width=0.8\textwidth]{./fig_laml_vol_versus_fr_Rl}
     \caption{Output voltage $V_p$ (amplitude) and output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus bending stiffness ratio $\lambda_l$ at different frequency $f$ and load resistance $R_l$. }
     \label{fig:fig_lamB_vol_versus_fr_Rl}
 \end{figure}
@@ -276,7 +279,7 @@ the length ratio $\lambda_l$. When $\lambda_l$ is relatively small, which is bel
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{./fig_laml_vol_versus_fr_Rl.eps}
+    \includegraphics[width=0.8\textwidth]{./fig_laml_vol_versus_fr_Rl}
     \caption{Output voltage $V_p$ (amplitude) and output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus line mass density ratio $\lambda_m$ at different frequency $f$ and load resistance $R_l$. }
     \label{fig:fig_lamm_vol_versus_fr_Rl}
 \end{figure}
