@@ -93,6 +93,7 @@ INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT ./fig_output_power_vs_fr_Rl_laml_all.pdf
 INPUT ./fig_laml_vol_versus_fr_Rl.pdf
 INPUT ./fig_laml_vol_versus_fr_Rl.pdf
 INPUT model_simple00.bbl

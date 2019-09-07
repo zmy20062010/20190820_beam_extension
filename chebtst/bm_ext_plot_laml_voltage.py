@@ -114,8 +114,6 @@ ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
 
 plt.show()
 
-plt.show()
-
 
 
 # ['OFFSETTEXTPAD', '_AXINFO', '_PLANES', '__class__', '__delattr__', '__dict__', 

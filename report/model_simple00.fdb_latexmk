@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex model_simple00"] 1567758509 "model_simple00.aux" "model_simple00.bbl" "model_simple00" 1567768298
+["bibtex model_simple00"] 1567817459 "model_simple00.aux" "model_simple00.bbl" "model_simple00" 1567831552
   "d:/program/work/texlive/2016/texmf-dist/bibtex/bst/vancouver/vancouver.bst" 1491279624 38215 ea1386b2055049a8e03ec1b09fd54904 ""
   "maureenchou.bib" 1566634528 1476 f581a19850cf29133b09a70ab413db55 ""
-  "model_simple00.aux" 1567768297 3425 512b39537823412fd0b133a41216f757 ""
+  "model_simple00.aux" 1567831551 3705 6626a6ecb12a79234a81977002126c83 ""
   "model_simple00.bcf" 0 -1 0 ""
   (generated)
   "model_simple00.bbl"
   "model_simple00.blg"
-["pdflatex"] 1567768296 "model_simple00.tex" "model_simple00.pdf" "model_simple00" 1567768298
+["pdflatex"] 1567831550 "model_simple00.tex" "model_simple00.pdf" "model_simple00" 1567831552
   "d:/program/work/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1491278873 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1491279461 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1491279701 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -60,13 +60,14 @@
   "d:/program/work/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt" 1491279861 3520369 dc4f60a336f977ffde03988592eafdfa ""
   "fig_beam_configuration.pdf" 1565676924 9735 81795704d81b6ba25291b7751e468117 ""
   "fig_laml_vol_versus_fr_Rl.pdf" 1567122906 41241 7a04b79c7ff2779f63504a1d47753279 ""
-  "fig_output_voltage_vs_fr_Rl_laml_all.pdf" 1567748555 80341 3051fea75734975e7a1cb07df2b65cbc ""
-  "model_simple00.aux" 1567768297 3425 512b39537823412fd0b133a41216f757 ""
-  "model_simple00.bbl" 1567758510 594 3baab261bb86655375d080a32043a782 "bibtex model_simple00"
-  "model_simple00.spl" 1567768297 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "model_simple00.tex" 1567759011 25394 f5db30a499bc2d2daa8594b21c7882d0 ""
+  "fig_output_power_vs_fr_Rl_laml_all.pdf" 1567817367 537884 ee68159d2c23566f80149da7c5a0a450 ""
+  "fig_output_voltage_vs_fr_Rl_laml_all.pdf" 1567816691 539879 1f40d8a673f0e34641fa6551afb28107 ""
+  "model_simple00.aux" 1567831551 3705 6626a6ecb12a79234a81977002126c83 ""
+  "model_simple00.bbl" 1567817459 594 3baab261bb86655375d080a32043a782 "bibtex model_simple00"
+  "model_simple00.spl" 1567831550 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "model_simple00.tex" 1567831549 26406 5c578b20a5971b74bb7e5b125cb6c3d8 ""
   (generated)
-  "model_simple00.pdf"
   "model_simple00.spl"
   "model_simple00.log"
   "model_simple00.aux"
+  "model_simple00.pdf"

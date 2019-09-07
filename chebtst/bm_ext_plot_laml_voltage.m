@@ -33,34 +33,34 @@ xib  = result00.xib;
 f = figure(1);
 set(gca, 'linewidth', 1.1, 'fontsize', 12, 'fontname', 'times')
 set(gcf, 'color', 'w')
-colormap pink
+colormap lines
 subplot(231)
 mesh(fr,Rl,abs(vplist00), 'DisplayName','\lambda_l=0.0')
 set(gca,'XScale','log');
 set(gca,'YScale','log');
 set(gca,'ZScale','log');
 subplot(232)
-surf(fr,Rl,abs(vplist02), 'DisplayName','\lambda_l=0.2')
+mesh(fr,Rl,abs(vplist02), 'DisplayName','\lambda_l=0.2')
 set(gca,'XScale','log');
 set(gca,'YScale','log');
 set(gca,'ZScale','log');
 subplot(233)
-surf(fr,Rl,abs(vplist04), 'DisplayName','\lambda_l=0.4')
+mesh(fr,Rl,abs(vplist04), 'DisplayName','\lambda_l=0.4')
 set(gca,'XScale','log');
 set(gca,'YScale','log');
 set(gca,'ZScale','log');
 subplot(234)
-surf(fr,Rl,abs(vplist06), 'DisplayName','\lambda_l=0.6')
+mesh(fr,Rl,abs(vplist06), 'DisplayName','\lambda_l=0.6')
 set(gca,'XScale','log');
 set(gca,'YScale','log');
 set(gca,'ZScale','log');
 subplot(235)
-surf(fr,Rl,abs(vplist08), 'DisplayName','\lambda_l=0.8')
+mesh(fr,Rl,abs(vplist08), 'DisplayName','\lambda_l=0.8')
 set(gca,'XScale','log');
 set(gca,'YScale','log');
 set(gca,'ZScale','log');
 subplot(236)
-surf(fr,Rl,abs(vplist10), 'DisplayName','\lambda_l=1.0')
+mesh(fr,Rl,abs(vplist10), 'DisplayName','\lambda_l=1.0')
 set(gca,'XScale','log');
 set(gca,'YScale','log');
 set(gca,'ZScale','log');
