@@ -8,9 +8,6 @@ from matplotlib.ticker import LinearLocator, FormatStrFormatter
 from cycler import cycler
 
 
-
-
-
 result00 = sio.loadmat('bm_ext_base_laml_l_00e-3.mat'); 
 vplist00  = result00['Vplist'];
 pplist00  = result00['Pplist'];
@@ -101,7 +98,7 @@ ph_pplist10 = np.angle(pplist10)
 
 
 
-def plot_vol_vs_fr_Rl_laml():
+def plot_vol_laml_vs_fr_Rl():
     # fig, ax = plt.subplots()
     # fig, (ax0, ax1) = plt.subplots(nrows=2, constrained_layout=True)
     fig01, ((ax11, ax12), (ax13, ax21), (ax22, ax23)) = plt.subplots(ncols = 2, nrows = 3, figsize=(18,24), sharex=True, sharey=True)
@@ -222,9 +219,7 @@ def plot_vol_vs_fr_Rl_laml():
     plt.savefig("fig_output_voltage_vs_fr_Rl_laml_all.jpg",dpi=300)
     plt.show()
 
-
-
-def plot_pow_vs_fr_Rl_laml():
+def plot_pow_laml_vs_fr_Rl():
     # fig, ax = plt.subplots()
     # fig, (ax0, ax1) = plt.subplots(nrows=2, constrained_layout=True)
     fig01, ((ax11, ax12), (ax13, ax21), (ax22, ax23)) = plt.subplots(ncols = 2, nrows = 3, figsize=(18,24), sharex=True, sharey=True)
@@ -345,8 +340,27 @@ def plot_pow_vs_fr_Rl_laml():
     plt.savefig("fig_output_power_vs_fr_Rl_laml_all.jpg",dpi=300)
     plt.show()
 
+def plot_perf_laml_0p3_vs_fr_Rl():
+    fig01, ((ax11, ax12), (ax13, ax21), (ax22, ax23)) = plt.subplots(ncols = 2, nrows = 3, figsize=(18,24), sharex=True, sharey=True)
+
+    ax11.plot(fr[0,:],am_vplist00[0,:],'r', label= '$R_l$ = 1 $\Omega$')
+    # ax11.plot(fr[0,:],am_vplist00[1,:],'g', label= '$R_l$ = 10 $\Omega$')
+    ax11.plot(fr[0,:],am_vplist00[2,:],'b.', label= '$R_l$ = 100 $\Omega$')
+    # ax11.plot(fr[0,:],am_vplist00[3,:],'c', label= '$R_l$ = 1 k$\Omega$')
+    ax11.plot(fr[0,:],am_vplist00[4,:],'m*', label= '$R_l$ = 10 k$\Omega$')
+    # ax11.plot(fr[0,:],am_vplist00[5,:],'k', label= '$R_l$ = 100 k$\Omega$')
+    ax11.plot(fr[0,:],am_vplist00[6,:],'k--', label= '$R_l$ = 1 M$\Omega$')
+    # ax11.plot(fr[0,:],am_vplist00[7,:],'y--', label= '$R_l$ = 10 M$\Omega$')
+    # To the value of Rl being 1 Mohm, there is no obvious difference in terms of the 
+    # eigenfrequency and output voltage
+    ax11.set_title('$\lambda_l$=0.0')
+    ax11.set_xlim(1,100)
+    ax11.set_yscale('log')
+    # ax11.set_xlabel('Base excitation frequency $fr$')
+    ax11.set_ylabel('Amplitude of the output voltage $V_p$ (V)')
+    ax11.legend(loc='lower right', ncol=4)
 
 
 if __name__ == '__main__':
-    plot_vol_vs_fr_Rl_laml()
-    plot_pow_vs_fr_Rl_laml()
+    plot_vol_laml_vs_fr_Rl()
+    plot_pow_laml_vs_fr_Rl()
