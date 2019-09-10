@@ -6,6 +6,7 @@ import scipy.io as sio
 from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
 from cycler import cycler
+import matplotlib.ticker as mtick
 
 
 result00 = sio.loadmat('bm_ext_base_laml_l_00e-3.mat'); 
@@ -101,7 +102,7 @@ ph_pplist10 = np.angle(pplist10)
 def plot_vol_laml_vs_fr_Rl():
     # fig, ax = plt.subplots()
     # fig, (ax0, ax1) = plt.subplots(nrows=2, constrained_layout=True)
-    fig01, ((ax11, ax12), (ax13, ax21), (ax22, ax23)) = plt.subplots(ncols = 2, nrows = 3, figsize=(18,24), sharex=True, sharey=True)
+    fig01, ((ax11, ax12), (ax13, ax21), (ax22, ax23)) = plt.subplots(ncols = 2, nrows = 3, figsize=(18,24), sharex=True)
     # fig01 = plt.figure(1, figsize=(12,8))
     # ax01 = fig01.add_axes([0.1, 0.1, 0.6, 0.75])
 
@@ -222,7 +223,7 @@ def plot_vol_laml_vs_fr_Rl():
 def plot_pow_laml_vs_fr_Rl():
     # fig, ax = plt.subplots()
     # fig, (ax0, ax1) = plt.subplots(nrows=2, constrained_layout=True)
-    fig01, ((ax11, ax12), (ax13, ax21), (ax22, ax23)) = plt.subplots(ncols = 2, nrows = 3, figsize=(18,24), sharex=True, sharey=True)
+    fig01, ((ax11, ax12), (ax13, ax21), (ax22, ax23)) = plt.subplots(ncols = 2, nrows = 3, figsize=(18,24), sharex=True)
     # fig01 = plt.figure(1, figsize=(12,8))
     # ax01 = fig01.add_axes([0.1, 0.1, 0.6, 0.75])
 
@@ -340,27 +341,336 @@ def plot_pow_laml_vs_fr_Rl():
     plt.savefig("fig_output_power_vs_fr_Rl_laml_all.jpg",dpi=300)
     plt.show()
 
-def plot_perf_laml_0p3_vs_fr_Rl():
-    fig01, ((ax11, ax12), (ax13, ax21), (ax22, ax23)) = plt.subplots(ncols = 2, nrows = 3, figsize=(18,24), sharex=True, sharey=True)
+def plot_perf_laml_0p3_0p4_vs_fr_Rl():
+    fig, axes = plt.subplots(ncols = 3, nrows = 2, figsize=(24,18), sharex=True)
+    axes[0,0].plot(Rl[:,0],am_vplist00[:,200], 'r-*', label='fr=10')
+    axes[0,0].plot(Rl[:,0],am_vplist00[:,300], 'g-.', label='fr=31.62')
+    axes[0,0].plot(Rl[:,0],am_vplist00[:,325], 'b--', label='fr=42.17')
+    axes[0,0].plot(Rl[:,0],am_vplist00[:,350], 'm-', label='fr=56.23')
+    axes[0,0].plot(Rl[:,0],am_vplist00[:,375], 'c-d', label='fr=74.99')
+    axes[0,0].plot(Rl[:,0],am_vplist00[:,400], 'k-o', label='fr=100')
+    axes[0,0].set_xscale('log')
+    axes[0,0].set_yscale('log')
+    axes[0,0].set_title('$\lambda_l$ = 0.0')
+    axes[0,0].legend(loc='lower right', ncol=2)
+    # axes[0,0].set_xlabel('Externally connected resistance $R_l$ ($\Omega$)')
+    axes[0,0].set_ylabel('Amplitude of the output voltage $V_p$ (V)')
 
-    ax11.plot(fr[0,:],am_vplist00[0,:],'r', label= '$R_l$ = 1 $\Omega$')
-    # ax11.plot(fr[0,:],am_vplist00[1,:],'g', label= '$R_l$ = 10 $\Omega$')
-    ax11.plot(fr[0,:],am_vplist00[2,:],'b.', label= '$R_l$ = 100 $\Omega$')
-    # ax11.plot(fr[0,:],am_vplist00[3,:],'c', label= '$R_l$ = 1 k$\Omega$')
-    ax11.plot(fr[0,:],am_vplist00[4,:],'m*', label= '$R_l$ = 10 k$\Omega$')
-    # ax11.plot(fr[0,:],am_vplist00[5,:],'k', label= '$R_l$ = 100 k$\Omega$')
-    ax11.plot(fr[0,:],am_vplist00[6,:],'k--', label= '$R_l$ = 1 M$\Omega$')
-    # ax11.plot(fr[0,:],am_vplist00[7,:],'y--', label= '$R_l$ = 10 M$\Omega$')
-    # To the value of Rl being 1 Mohm, there is no obvious difference in terms of the 
-    # eigenfrequency and output voltage
-    ax11.set_title('$\lambda_l$=0.0')
-    ax11.set_xlim(1,100)
-    ax11.set_yscale('log')
-    # ax11.set_xlabel('Base excitation frequency $fr$')
-    ax11.set_ylabel('Amplitude of the output voltage $V_p$ (V)')
-    ax11.legend(loc='lower right', ncol=4)
+    axes[1,0].plot(Rl[:,0],am_pplist00[:,200], 'r-*', label='fr=10')
+    axes[1,0].plot(Rl[:,0],am_pplist00[:,300], 'g-.', label='fr=31.62')
+    axes[1,0].plot(Rl[:,0],am_pplist00[:,325], 'b--', label='fr=42.17')
+    axes[1,0].plot(Rl[:,0],am_pplist00[:,350], 'm-', label='fr=56.23')
+    axes[1,0].plot(Rl[:,0],am_pplist00[:,375], 'c-d', label='fr=74.99')
+    axes[1,0].plot(Rl[:,0],am_pplist00[:,400], 'k-o', label='fr=100')
+    axes[1,0].set_xscale('log')
+    axes[1,0].set_yscale('log')
+    axes[1,0].set_title('$\lambda_l$ = 0.0')
+    axes[1,0].legend(loc='lower right', ncol=2)
+    axes[1,0].set_xlabel('Externally connected resistance $R_l$ ($\Omega$)')
+    axes[1,0].set_ylabel('Amplitude of the output power $P_p$ (W)')
 
+
+    axes[0,1].plot(Rl[:,0],am_vplist03[:,200], 'r-*', label='fr=10')
+    axes[0,1].plot(Rl[:,0],am_vplist03[:,300], 'g-.', label='fr=31.62')
+    axes[0,1].plot(Rl[:,0],am_vplist03[:,325], 'b--', label='fr=42.17')
+    axes[0,1].plot(Rl[:,0],am_vplist03[:,350], 'm-', label='fr=56.23')
+    axes[0,1].plot(Rl[:,0],am_vplist03[:,375], 'c-d', label='fr=74.99')
+    axes[0,1].plot(Rl[:,0],am_vplist03[:,400], 'k-o', label='fr=100')
+    axes[0,1].set_xscale('log')
+    axes[0,1].set_yscale('log')
+    axes[0,1].set_title('$\lambda_l$ = 0.3')
+    axes[0,1].legend(loc='lower right', ncol=2)
+    # axes[0,1].set_xlabel('Externally connected resistance $R_l$ ($\Omega$)')
+    # axes[0,1].set_ylabel('Amplitude of the output voltage $V_p$ (W)')
+
+    axes[1,1].plot(Rl[:,0],am_pplist03[:,200], 'r-*', label='fr=10')
+    axes[1,1].plot(Rl[:,0],am_pplist03[:,300], 'g-.', label='fr=31.62')
+    axes[1,1].plot(Rl[:,0],am_pplist03[:,325], 'b--', label='fr=42.17')
+    axes[1,1].plot(Rl[:,0],am_pplist03[:,350], 'm-', label='fr=56.23')
+    axes[1,1].plot(Rl[:,0],am_pplist03[:,375], 'c-d', label='fr=74.99')
+    axes[1,1].plot(Rl[:,0],am_pplist03[:,400], 'k-o', label='fr=100')
+    axes[1,1].set_xscale('log')
+    axes[1,1].set_yscale('log')
+    axes[1,1].set_title('$\lambda_l$ = 0.3')
+    axes[1,1].legend(loc='lower right', ncol=2)
+    axes[1,1].set_xlabel('Externally connected resistance $R_l$ ($\Omega$)')
+    # axes[1,1].set_ylabel('Amplitude of the output power $P_p$ (W)')
+
+
+    axes[0,2].plot(Rl[:,0],am_vplist03[:,200], 'r-*', label='fr=10')
+    axes[0,2].plot(Rl[:,0],am_vplist04[:,300], 'g-.', label='fr=31.62')
+    axes[0,2].plot(Rl[:,0],am_vplist04[:,325], 'b--', label='fr=42.17')
+    axes[0,2].plot(Rl[:,0],am_vplist04[:,350], 'm-', label='fr=56.23')
+    axes[0,2].plot(Rl[:,0],am_vplist04[:,375], 'c-d', label='fr=74.99')
+    axes[0,2].plot(Rl[:,0],am_vplist04[:,400], 'k-o', label='fr=100')
+    axes[0,2].set_xscale('log')
+    axes[0,2].set_yscale('log')
+    axes[0,2].set_title('$\lambda_l$ = 0.4')
+    axes[0,2].legend(loc='lower right', ncol=2)
+    # axes[0,2].set_xlabel('Externally connected resistance $R_l$ ($\Omega$)')
+    # axes[0,2].set_ylabel('Amplitude of the output voltage $V_p$ (W)')
+
+    axes[1,2].plot(Rl[:,0],am_pplist04[:,200], 'r-*', label='fr=10')
+    axes[1,2].plot(Rl[:,0],am_pplist04[:,300], 'g-.', label='fr=31.62')
+    axes[1,2].plot(Rl[:,0],am_pplist04[:,325], 'b--', label='fr=42.17')
+    axes[1,2].plot(Rl[:,0],am_pplist04[:,350], 'm-', label='fr=56.23')
+    axes[1,2].plot(Rl[:,0],am_pplist04[:,375], 'c-d', label='fr=74.99')
+    axes[1,2].plot(Rl[:,0],am_pplist04[:,400], 'k-o', label='fr=100')
+    axes[1,2].set_xscale('log')
+    axes[1,2].set_yscale('log')
+    axes[1,2].set_title('$\lambda_l$ = 0.4')
+    axes[1,2].legend(loc='lower right', ncol=2)
+    axes[1,2].set_xlabel('Externally connected resistance $R_l$ ($\Omega$)')
+    # axes[1,2].set_ylabel('Amplitude of the output power $P_p$ (W)')
+
+    # print(fr[0,200],fr[0,300],fr[0,325],fr[0,350],fr[0,375],fr[0,400])
+    plt.text(0.02, 0.93, "(a)", fontweight="bold", transform=axes[0,0].transAxes)
+    plt.text(0.02, 0.93, "(b)", fontweight="bold", transform=axes[0,1].transAxes)
+    plt.text(0.02, 0.93, "(c)", fontweight="bold", transform=axes[0,2].transAxes)
+    plt.text(0.02, 0.93, "(d)", fontweight="bold", transform=axes[1,0].transAxes)
+    plt.text(0.02, 0.93, "(e)", fontweight="bold", transform=axes[1,1].transAxes)
+    plt.text(0.02, 0.93, "(f)", fontweight="bold", transform=axes[1,2].transAxes)
+    plt.suptitle("Amplitude of the output power $P_p$  and voltage $V_p$ versus externally connected resistance $R_l$ at different $fr$ and $\lambda_l$",fontsize=18)
+
+    plt.subplots_adjust(left=0.05, right=0.98, top=0.90, bottom=0.07, wspace=0.15, hspace=0.17)
+    plt.savefig("fig_perf_laml_0p3_0p4_vs_fr_Rl.pdf")
+    plt.savefig("fig_perf_laml_0p3_0p4_vs_fr_Rl.eps")
+    plt.savefig("fig_perf_laml_0p3_0p4_vs_fr_Rl.jpg",dpi=300)
+    plt.show()
+
+
+def plot_vol_fr_sl_Rl_sl_vs_laml():
+    fig, axes = plt.subplots(ncols = 4, nrows = 4, figsize=(18,24), sharex=True)
+
+
+    am_vplist = np.array([am_vplist00, am_vplist01, am_vplist02, am_vplist03,
+                 am_vplist04, am_vplist05, am_vplist06, am_vplist07,
+                 am_vplist08, am_vplist09, am_vplist10])
+    am_pplist = np.array([am_pplist00, am_pplist01, am_pplist02, am_pplist03,
+                 am_pplist04, am_pplist05, am_pplist06, am_pplist07,
+                 am_pplist08, am_pplist09, am_pplist10])
+    laml_list = np.linspace(0.0, 1.0, 11)
+    # print(am_vplist.shape)
+    # print(am_pplist.shape)
+    # print(laml_list)
+    class ScalarFormatterForceFormat(mtick.ScalarFormatter):
+        def _set_format(self,vmin,vmax):  # Override function that finds format to use.
+            self.format = "%1.2f"  # Give format here
+    
+    yfmt = ScalarFormatterForceFormat()
+    yfmt.set_powerlimits((0,0))
+
+    # ticklabel_format(self, *, axis='both', style='', scilimits=None, useOffset=None, useLocale=None, useMathText=None)
+
+    # axes[0,0].plot(laml_list,am_vplist[:, 0, 0], 'r-*', label='fr=1 $Hz$, $R_l$ = 1 $\Omega$')
+    # axes[0,0].yaxis.set_major_formatter(yfmt)
+    # # axes[0,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[0,1].plot(laml_list,am_vplist[:, 2, 0], 'r-*', label='fr=1 $Hz$, $R_l$ = 100 $\Omega$')
+    # axes[0,1].yaxis.set_major_formatter(yfmt)
+    # # axes[0,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[0,2].plot(laml_list,am_vplist[:, 4, 0], 'r-*', label='fr=1 $Hz$, $R_l$ = 10 k$\Omega$')
+    # axes[0,2].yaxis.set_major_formatter(yfmt)
+    # # axes[0,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[0,3].plot(laml_list,am_vplist[:, 6, 0], 'r-*', label='fr=1 $Hz$, $R_l$ = 1 M$\Omega$')
+    # axes[0,3].yaxis.set_major_formatter(yfmt)
+    # # axes[0,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+
+    # axes[1,0].plot(laml_list,am_vplist[:, 0, 100], 'r-*', label='fr=3.162 $Hz$, $R_l$ = 1 $\Omega$')
+    # axes[1,0].yaxis.set_major_formatter(yfmt)
+    # # axes[1,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[1,1].plot(laml_list,am_vplist[:, 2, 100], 'r-*', label='fr=3.162 $Hz$, $R_l$ = 100 $\Omega$')
+    # axes[1,1].yaxis.set_major_formatter(yfmt)
+    # # axes[1,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[1,2].plot(laml_list,am_vplist[:, 4, 100], 'r-*', label='fr=3.162 $Hz$, $R_l$ = 10 $\Omega$')
+    # axes[1,2].yaxis.set_major_formatter(yfmt)
+    # # axes[1,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[1,3].plot(laml_list,am_vplist[:, 6, 100], 'r-*', label='fr=3.162 $Hz$, $R_l$ = 1 M$\Omega$')
+    # axes[1,3].yaxis.set_major_formatter(yfmt)
+    # # axes[1,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+    axes[0,0].plot(laml_list,am_vplist[:, 0, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 1 $\Omega$')
+    axes[0,0].yaxis.set_major_formatter(yfmt)
+    # axes[0,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[0,1].plot(laml_list,am_vplist[:, 2, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 100 $\Omega$')
+    axes[0,1].yaxis.set_major_formatter(yfmt)
+    # axes[0,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[0,2].plot(laml_list,am_vplist[:, 4, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 10 k$\Omega$')
+    axes[0,2].yaxis.set_major_formatter(yfmt)
+    # axes[0,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[0,3].plot(laml_list,am_vplist[:, 6, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 1 M$\Omega$')
+    axes[0,3].yaxis.set_major_formatter(yfmt)
+    # axes[0,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+    axes[1,0].plot(laml_list,am_vplist[:, 0, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 1 $\Omega$')
+    axes[1,0].yaxis.set_major_formatter(yfmt)
+    # axes[1,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[1,1].plot(laml_list,am_vplist[:, 2, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 100 $\Omega$')
+    axes[1,1].yaxis.set_major_formatter(yfmt)
+    # axes[1,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[1,2].plot(laml_list,am_vplist[:, 4, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 10 k$\Omega$')
+    axes[1,2].yaxis.set_major_formatter(yfmt)
+    # axes[1,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[1,3].plot(laml_list,am_vplist[:, 6, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 1 M$\Omega$')
+    axes[1,3].yaxis.set_major_formatter(yfmt)
+    # axes[1,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+    axes[2,0].plot(laml_list,am_vplist[:, 0, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 1 $\Omega$')
+    axes[2,0].yaxis.set_major_formatter(yfmt)
+    # axes[2,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[2,1].plot(laml_list,am_vplist[:, 2, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 10 $\Omega$')
+    axes[2,1].yaxis.set_major_formatter(yfmt)
+    # axes[2,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[2,2].plot(laml_list,am_vplist[:, 4, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 10 k$\Omega$')
+    axes[2,2].yaxis.set_major_formatter(yfmt)
+    # axes[2,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[2,3].plot(laml_list,am_vplist[:, 6, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 1 M$\Omega$')
+    axes[2,3].yaxis.set_major_formatter(yfmt)
+    # axes[2,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+    axes[3,0].plot(laml_list,am_vplist[:, 0, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 1 $\Omega$')
+    axes[3,0].yaxis.set_major_formatter(yfmt)
+    # axes[3,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[3,1].plot(laml_list,am_vplist[:, 2, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 100 $\Omega$')
+    axes[3,1].yaxis.set_major_formatter(yfmt)
+    # axes[3,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[3,2].plot(laml_list,am_vplist[:, 4, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 10 k$\Omega$')
+    axes[3,2].yaxis.set_major_formatter(yfmt)
+    # axes[3,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[3,3].plot(laml_list,am_vplist[:, 6, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 1 M$\Omega$')
+    axes[3,3].yaxis.set_major_formatter(yfmt)
+    # axes[3,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+    for i in range(4):
+        for j in range(4):
+            axes[i,j].legend(loc='best')
+
+
+    plt.subplots_adjust(left=0.05, right=0.98, top=0.90, bottom=0.07, wspace=0.15, hspace=0.17)
+    plt.savefig("fig_vol_fr_sl_Rl_sl_vs_laml.pdf")
+    plt.savefig("fig_vol_fr_sl_Rl_sl_vs_laml.eps")
+    plt.savefig("fig_vol_fr_sl_Rl_sl_vs_laml.jpg",dpi=300)
+    plt.show()
+
+
+def plot_pow_fr_sl_Rl_sl_vs_laml():
+    fig, axes = plt.subplots(ncols = 4, nrows = 4, figsize=(18,24), sharex=True)
+
+
+    am_pplist = np.array([am_pplist00, am_pplist01, am_pplist02, am_pplist03,
+                 am_pplist04, am_pplist05, am_pplist06, am_pplist07,
+                 am_pplist08, am_pplist09, am_pplist10])
+    am_pplist = np.array([am_pplist00, am_pplist01, am_pplist02, am_pplist03,
+                 am_pplist04, am_pplist05, am_pplist06, am_pplist07,
+                 am_pplist08, am_pplist09, am_pplist10])
+    laml_list = np.linspace(0.0, 1.0, 11)
+    # print(am_pplist.shape)
+    # print(am_pplist.shape)
+    # print(laml_list)
+    class ScalarFormatterForceFormat(mtick.ScalarFormatter):
+        def _set_format(self,vmin,vmax):  # Override function that finds format to use.
+            self.format = "%1.2f"  # Give format here
+    
+    yfmt = ScalarFormatterForceFormat()
+    yfmt.set_powerlimits((0,0))
+
+    # ticklabel_format(self, *, axis='both', style='', scilimits=None, useOffset=None, useLocale=None, useMathText=None)
+
+    # axes[0,0].plot(laml_list,am_pplist[:, 0, 0], 'r-*', label='fr=1 $Hz$, $R_l$ = 1 $\Omega$')
+    # axes[0,0].yaxis.set_major_formatter(yfmt)
+    # # axes[0,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[0,1].plot(laml_list,am_pplist[:, 2, 0], 'r-*', label='fr=1 $Hz$, $R_l$ = 100 $\Omega$')
+    # axes[0,1].yaxis.set_major_formatter(yfmt)
+    # # axes[0,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[0,2].plot(laml_list,am_pplist[:, 4, 0], 'r-*', label='fr=1 $Hz$, $R_l$ = 10 k$\Omega$')
+    # axes[0,2].yaxis.set_major_formatter(yfmt)
+    # # axes[0,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[0,3].plot(laml_list,am_pplist[:, 6, 0], 'r-*', label='fr=1 $Hz$, $R_l$ = 1 M$\Omega$')
+    # axes[0,3].yaxis.set_major_formatter(yfmt)
+    # # axes[0,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+
+    # axes[1,0].plot(laml_list,am_pplist[:, 0, 100], 'r-*', label='fr=3.162 $Hz$, $R_l$ = 1 $\Omega$')
+    # axes[1,0].yaxis.set_major_formatter(yfmt)
+    # # axes[1,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[1,1].plot(laml_list,am_pplist[:, 2, 100], 'r-*', label='fr=3.162 $Hz$, $R_l$ = 100 $\Omega$')
+    # axes[1,1].yaxis.set_major_formatter(yfmt)
+    # # axes[1,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[1,2].plot(laml_list,am_pplist[:, 4, 100], 'r-*', label='fr=3.162 $Hz$, $R_l$ = 10 $\Omega$')
+    # axes[1,2].yaxis.set_major_formatter(yfmt)
+    # # axes[1,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    # axes[1,3].plot(laml_list,am_pplist[:, 6, 100], 'r-*', label='fr=3.162 $Hz$, $R_l$ = 1 M$\Omega$')
+    # axes[1,3].yaxis.set_major_formatter(yfmt)
+    # # axes[1,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+    axes[0,0].plot(laml_list,am_pplist[:, 0, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 1 $\Omega$')
+    axes[0,0].yaxis.set_major_formatter(yfmt)
+    # axes[0,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[0,1].plot(laml_list,am_pplist[:, 2, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 100 $\Omega$')
+    axes[0,1].yaxis.set_major_formatter(yfmt)
+    # axes[0,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[0,2].plot(laml_list,am_pplist[:, 4, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 10 k$\Omega$')
+    axes[0,2].yaxis.set_major_formatter(yfmt)
+    # axes[0,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[0,3].plot(laml_list,am_pplist[:, 6, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 1 M$\Omega$')
+    axes[0,3].yaxis.set_major_formatter(yfmt)
+    # axes[0,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+    axes[1,0].plot(laml_list,am_pplist[:, 0, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 1 $\Omega$')
+    axes[1,0].yaxis.set_major_formatter(yfmt)
+    # axes[1,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[1,1].plot(laml_list,am_pplist[:, 2, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 100 $\Omega$')
+    axes[1,1].yaxis.set_major_formatter(yfmt)
+    # axes[1,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[1,2].plot(laml_list,am_pplist[:, 4, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 10 k$\Omega$')
+    axes[1,2].yaxis.set_major_formatter(yfmt)
+    # axes[1,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[1,3].plot(laml_list,am_pplist[:, 6, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 1 M$\Omega$')
+    axes[1,3].yaxis.set_major_formatter(yfmt)
+    # axes[1,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+    axes[2,0].plot(laml_list,am_pplist[:, 0, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 1 $\Omega$')
+    axes[2,0].yaxis.set_major_formatter(yfmt)
+    # axes[2,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[2,1].plot(laml_list,am_pplist[:, 2, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 10 $\Omega$')
+    axes[2,1].yaxis.set_major_formatter(yfmt)
+    # axes[2,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[2,2].plot(laml_list,am_pplist[:, 4, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 10 k$\Omega$')
+    axes[2,2].yaxis.set_major_formatter(yfmt)
+    # axes[2,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[2,3].plot(laml_list,am_pplist[:, 6, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 1 M$\Omega$')
+    axes[2,3].yaxis.set_major_formatter(yfmt)
+    # axes[2,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+    axes[3,0].plot(laml_list,am_pplist[:, 0, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 1 $\Omega$')
+    axes[3,0].yaxis.set_major_formatter(yfmt)
+    # axes[3,0].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[3,1].plot(laml_list,am_pplist[:, 2, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 100 $\Omega$')
+    axes[3,1].yaxis.set_major_formatter(yfmt)
+    # axes[3,1].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[3,2].plot(laml_list,am_pplist[:, 4, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 10 k$\Omega$')
+    axes[3,2].yaxis.set_major_formatter(yfmt)
+    # axes[3,2].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+    axes[3,3].plot(laml_list,am_pplist[:, 6, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 1 M$\Omega$')
+    axes[3,3].yaxis.set_major_formatter(yfmt)
+    # axes[3,3].ticklabel_format(axis='y', style='sci',scilimits=(0,0))
+
+    for i in range(4):
+        for j in range(4):
+            axes[i,j].legend(loc='best')
+
+
+    plt.subplots_adjust(left=0.05, right=0.98, top=0.90, bottom=0.07, wspace=0.15, hspace=0.17)
+    plt.savefig("fig_pow_fr_sl_Rl_sl_vs_laml.pdf")
+    plt.savefig("fig_pow_fr_sl_Rl_sl_vs_laml.eps")
+    plt.savefig("fig_pow_fr_sl_Rl_sl_vs_laml.jpg",dpi=300)
+    plt.show()
 
 if __name__ == '__main__':
-    plot_vol_laml_vs_fr_Rl()
-    plot_pow_laml_vs_fr_Rl()
+    # plot_vol_laml_vs_fr_Rl()
+    # plot_pow_laml_vs_fr_Rl()
+    # plot_perf_laml_0p3_0p4_vs_fr_Rl()
+    plot_vol_fr_sl_Rl_sl_vs_laml()
+    plot_pow_fr_sl_Rl_sl_vs_laml()
+    # for x in range(2, 6):
+    #   print(x)
