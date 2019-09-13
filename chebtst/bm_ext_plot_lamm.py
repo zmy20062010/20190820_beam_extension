@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import scipy.io as sio
 from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
-
+import matplotlib.ticker as mtick
 
 result01  = sio.loadmat('bm_ext_base_lamm_rhoe_1p38e1.mat'); 
 vplist01  = result01['Vplist'];

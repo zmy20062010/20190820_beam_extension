@@ -397,7 +397,7 @@ def plot_perf_laml_0p3_0p4_vs_fr_Rl():
     # axes[1,1].set_ylabel('Amplitude of the output power $P_p$ (W)')
 
 
-    axes[0,2].plot(Rl[:,0],am_vplist03[:,200], 'r-*', label='fr=10')
+    axes[0,2].plot(Rl[:,0],am_vplist04[:,200], 'r-*', label='fr=10')
     axes[0,2].plot(Rl[:,0],am_vplist04[:,300], 'g-.', label='fr=31.62')
     axes[0,2].plot(Rl[:,0],am_vplist04[:,325], 'b--', label='fr=42.17')
     axes[0,2].plot(Rl[:,0],am_vplist04[:,350], 'm-', label='fr=56.23')
@@ -552,7 +552,6 @@ def plot_vol_fr_sl_Rl_sl_vs_laml():
     plt.savefig("fig_vol_fr_sl_Rl_sl_vs_laml.jpg",dpi=300)
     plt.show()
 
-
 def plot_pow_fr_sl_Rl_sl_vs_laml():
     fig, axes = plt.subplots(ncols = 4, nrows = 4, figsize=(18,24), sharex=True)
 
@@ -669,8 +668,6 @@ def plot_pow_fr_sl_Rl_sl_vs_laml():
 if __name__ == '__main__':
     # plot_vol_laml_vs_fr_Rl()
     # plot_pow_laml_vs_fr_Rl()
-    # plot_perf_laml_0p3_0p4_vs_fr_Rl()
-    plot_vol_fr_sl_Rl_sl_vs_laml()
-    plot_pow_fr_sl_Rl_sl_vs_laml()
-    # for x in range(2, 6):
-    #   print(x)
+    plot_perf_laml_0p3_0p4_vs_fr_Rl()
+    # plot_vol_fr_sl_Rl_sl_vs_laml()
+    # plot_pow_fr_sl_Rl_sl_vs_laml()

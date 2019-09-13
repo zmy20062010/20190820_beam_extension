@@ -248,7 +248,9 @@ In the following, we will investigate the influences of length $l_e$, Young's mo
 
 \subsection{beam extension length $l_e$ or length ratio $\lambda_l$}
 
-The presence of the beam extension is firstly controlled by the beam extension length $l_e$ or length ratio $\lambda_l$, equivalently. When $\lambda_l = 0.0$, no beam extension is attached the resultant energy harvester reduces to the classical piezoelectric energy harvesting bimorph. \cite{erturk2009experimentally} In our research, this case is referred to as a reference. In the considered range of length ratio $0 \leq \lambda_l \leq 1$, the base excitation problem is solved with respect to different base excitation frequency $fr$ and external load resistance $R_l$. Then we plot the resulting amplitude of output voltage $V_p$ with respect to the length ratio of $\lambda_l = 0,\ 0.2,\ 0.4,\ 0.6,\ 0.8,\ 1.0$ in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all} and plot the corresponding amplitude of output power $P_p$ in Figure~\ref{fig:fig_output_power_vs_fr_Rl_laml_all}.
+The presence of the beam extension is firstly controlled by the beam extension length $l_e$ or length ratio $\lambda_l$, equivalently. When $\lambda_l = 0.0$, no beam extension is attached the resultant energy harvester reduces to the classical piezoelectric energy harvesting bimorph. \cite{erturk2009experimentally} In our research, this case is referred to as a reference. In the considered range of length ratio $0 \leq \lambda_l \leq 1$, the base excitation problem is solved with respect to different base excitation frequency $fr$ and external load resistance $R_l$. 
+
+In the first place, we plot the resulting amplitude of output voltage $V_p$ with respect to the length ratio of $\lambda_l = 0,\ 0.2,\ 0.4,\ 0.6,\ 0.8,\ 1.0$ in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all} and the corresponding amplitude of output power $P_p$ in Figure~\ref{fig:fig_output_power_vs_fr_Rl_laml_all}.
 
 \begin{figure}[!htbp]
     \centering
@@ -264,8 +266,7 @@ With the increase of the length ratio $\lambda_l$, say $\lambda_l = 0.4$, $0.6$,
 
 With further increase of the length ratio to $\lambda_l = 1.0$, two extra resonant and anti-resonant modes occur in the considered frequency range and the frequency shift begins to be important. 
 
-
-In this view, the attachment of the flexible extension part may introduces extra vibration modes in the considered frequency range. Noting that typical piezoelectric energy harvesters rely on resonant modes to work, this will actually expands the bandwidth of the proposed piezoelectric energy harvester. The point to be noticed is the existence of anti-resonant modes. They correspond to low output voltage and output power, and to some degree narrows the bandwidth of the energy harvester. However, it is still not worse than an otherwise non-resonant vibration, as in both cases the electrical output of the piezoelectric energy harvester is unusable.
+In this view, the attachment of the flexible extension part may introduces extra vibration modes in the considered frequency range. Noting that typical piezoelectric energy harvesters rely on resonant modes to work, this will actually expands the bandwidth of the proposed piezoelectric energy harvester. On the other hand, the flexible extension also provides a way to tune the bandwidth of a piezoelectric energy harvester. The point to be noticed is the existence of anti-resonant modes. They correspond to low output voltage and output power, and to some degree narrows the bandwidth of the energy harvester. However, it is still not worse than an otherwise non-resonant vibration, as in both cases the electrical output of the piezoelectric energy harvester is unusable.
 
 
 \begin{figure}[!htbp]
@@ -275,10 +276,7 @@ In this view, the attachment of the flexible extension part may introduces extra
     \label{fig:fig_output_power_vs_fr_Rl_laml_all}
 \end{figure}
 
-
-It is easily seen from the diagram that the change of extension length $l_e$ have a great influence on the frequency response of the piezoelectric energy harvester. At the given values of $\lambda_B$ and $\lambda_m$, the contained vibration modes in the frequency range considered does change with respect to
-the length ratio $\lambda_l$. When $\lambda_l$ is relatively small, which is below $0.3$ in our case, no extra vibration modes can be found in the frequency range of $1\ - \ 100\ Hz$. Hence the energy harvesting performances of the proposed energy harvesters are similar to that of a pure cantilever beam piezoelectric energy harvester. (note: it will be better if I can compare the resonant energy harvesting performance in this case) With further increase of the length ratio $\lambda_l$, there begins to exist an extra resonant and anti-resonant mode in the considered frequency range. In this view, the change of length ratio actually expands the bandwidth of the energy harvesting performances. Even when the length ratio $\lambda_l =\ 1.0$, three resonant modes are found in the frequency range. The point to be noticed is the existence of anti-resonant mode, which largely narrows the bandwidth of the energy harvester. This accompanying characteristic is to be further investigated in the following research. 
-
+In the second place, we compare the case where $\lambda = 0.3$ and $0.4$ with the reference case where $\lambda = 0.0$ in terms of different externally connected resistance $R_l$. The resulting amplitude of output voltage $V_p$ and output power $P_p$ are shown in Figure~\ref{fig:fig_perf_laml_0p3_0p4_vs_fr_Rl}. It is obvious that in the range of low $R_l$, a power law exists between the amplitudes of output voltage and power and the connected resistance $R_l$. For all the chosen frequency values $fr$, the increase of $R_l$ leads to an increase in $V_p$, and finally it is found that $V_p$ approaches asymptotically to a limit value $V_p^{lim}$. This value actually corresponds to the open-circuit output voltage of the piezoelectric energy harvester. At the same time, the value of $P_p$ exhibits an obvious maximum at some values of $R_l$ between $10 k\Omega$ and $1 M\Omega$. And away from the maximum value, we see also a power law between the value of $R_l$ and $P_p$. This indicates that an asymptotic analysis may help us to simplify the analysis of performance of piezoelectric energy harvesters. But this is out of the scope of our current contribution and will be covered in the furture research.
 
 \begin{figure}[!htbp]
     \centering
@@ -287,8 +285,9 @@ the length ratio $\lambda_l$. When $\lambda_l$ is relatively small, which is bel
     \label{fig:fig_perf_laml_0p3_0p4_vs_fr_Rl}
 \end{figure}
 
-It is easily seen from the diagram that the change of extension length $l_e$ have a great influence on the frequency response of the piezoelectric energy harvester. At the given values of $\lambda_B$ and $\lambda_m$, the contained vibration modes in the frequency range considered does change with respect to
-the length ratio $\lambda_l$. When $\lambda_l$ is relatively small, which is below $0.3$ in our case, no extra vibration modes can be found in the frequency range of $1\ - \ 100\ Hz$. Hence the energy harvesting performances of the proposed energy harvesters are similar to that of a pure cantilever beam piezoelectric energy harvester. (note: it will be better if I can compare the resonant energy harvesting performance in this case) With further increase of the length ratio $\lambda_l$, there begins to exist an extra resonant and anti-resonant mode in the considered frequency range. In this view, the change of length ratio actually expands the bandwidth of the energy harvesting performances. Even when the length ratio $\lambda_l =\ 1.0$, three resonant modes are found in the frequency range. The point to be noticed is the existence of anti-resonant mode, which largely narrows the bandwidth of the energy harvester. This accompanying characteristic is to be further investigated in the following research. 
+
+In the third place, at different values of $fr$ and $R_l$, we directly plot the amplitudes of $V_p$ and $P_p$ with respect to $\lambda_l$, which are shown in Figure~\ref{fig:fig_vol_fr_sl_Rl_sl_vs_laml} and Figure~\ref{fig:fig_vol_fr_sl_Rl_sl_vs_laml}. It is shown from the figures that at given values of $R_l$ and $fr$, output performances of the proposed piezoelectric energy harvesters can be tuned by the parameter $\lambda_l$. For example, when $fr\ =\ 31.62\ Hz$ and $R_l\ =\ 10\ k\Omega$, a maximum peak around $
+\lambda_l = 0.5$ is shown if we increase the values of $\lambda_l$. Compared with the case of no extension ($\lambda_l = 0$), the amplitude of output voltage $V_p$ is about $3$ times larger, while the amplitude of output power $P_p$ is about $3$ times larger. This indicates that the addition of the flexible extension can substantially increase the output performance of a piezoelectric energy harvester. It should be noted that in case of large values of $fr$, like $fr = 100 Hz$, the tuning performance of the flexible extension is no longer siginificant.
 
 \begin{figure}[!htbp]
     \centering
@@ -297,8 +296,6 @@ the length ratio $\lambda_l$. When $\lambda_l$ is relatively small, which is bel
     \label{fig:fig_vol_fr_sl_Rl_sl_vs_laml}
 \end{figure}
 
-It is easily seen from the diagram that the change of extension length $l_e$ have a great influence on the frequency response of the piezoelectric energy harvester. At the given values of $\lambda_B$ and $\lambda_m$, the contained vibration modes in the frequency range considered does change with respect to
-the length ratio $\lambda_l$. When $\lambda_l$ is relatively small, which is below $0.3$ in our case, no extra vibration modes can be found in the frequency range of $1\ - \ 100\ Hz$. Hence the energy harvesting performances of the proposed energy harvesters are similar to that of a pure cantilever beam piezoelectric energy harvester. (note: it will be better if I can compare the resonant energy harvesting performance in this case) With further increase of the length ratio $\lambda_l$, there begins to exist an extra resonant and anti-resonant mode in the considered frequency range. In this view, the change of length ratio actually expands the bandwidth of the energy harvesting performances. Even when the length ratio $\lambda_l =\ 1.0$, three resonant modes are found in the frequency range. The point to be noticed is the existence of anti-resonant mode, which largely narrows the bandwidth of the energy harvester. This accompanying characteristic is to be further investigated in the following research. 
 
 \begin{figure}[!htbp]
     \centering
