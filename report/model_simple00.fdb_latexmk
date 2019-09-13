@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex model_simple00"] 1568270896 "model_simple00.aux" "model_simple00.bbl" "model_simple00" 1568277769
+["bibtex model_simple00"] 1568365501 "model_simple00.aux" "model_simple00.bbl" "model_simple00" 1568367566
   "d:/Program/Wooktool/texlive/2016/texmf-dist/bibtex/bst/vancouver/vancouver.bst" 1491041328 38215 ea1386b2055049a8e03ec1b09fd54904 ""
   "maureenchou.bib" 1568255558 1476 f581a19850cf29133b09a70ab413db55 ""
-  "model_simple00.aux" 1568277768 4785 58860fb800026c127b6fbc83dc594a98 ""
+  "model_simple00.aux" 1568367564 7963 6e7f49a22a77c3a026c97539398b3b38 ""
   (generated)
   "model_simple00.blg"
   "model_simple00.bbl"
-["xdvipdfmx"] 1568277768 "model_simple00.xdv" "model_simple00.pdf" "model_simple00" 1568277769
-  "model_simple00.xdv" 1568277768 194436 5e49b27351405bd05021823f1eb0e454 "xelatex"
+["xdvipdfmx"] 1568367565 "model_simple00.xdv" "model_simple00.pdf" "model_simple00" 1568367566
+  "model_simple00.xdv" 1568367564 336128 f4b854d9e29984cbf8bf8e19662b5670 "xelatex"
   (generated)
   "model_simple00.pdf"
-["xelatex"] 1568277719 "model_simple00.tex" "model_simple00.xdv" "model_simple00" 1568277769
+["xelatex"] 1568367514 "model_simple00.tex" "model_simple00.xdv" "model_simple00" 1568367566
   "d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1491035328 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1491040275 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1491041845 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -56,18 +56,29 @@
   "d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/psnfss/upzd.fd" 1491038632 148 b2a94082cb802f90d3daf6dd0c7188a0 ""
   "d:/Program/Wooktool/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt" 1491042024 3558608 5f9f877dc2c41fbfddb297501e598613 ""
   "fig_beam_configuration.pdf" 1568255557 9735 81795704d81b6ba25291b7751e468117 ""
-  "fig_laml_vol_versus_fr_Rl.pdf" 1568255557 41241 7a04b79c7ff2779f63504a1d47753279 ""
-  "fig_output_power_vs_fr_Rl_laml_all.pdf" 1568255557 113239 86a49c7a5a8dcd101c8d601953b63a1f ""
-  "fig_output_voltage_vs_fr_Rl_laml_all.pdf" 1568255557 112894 c120a22d7a5391447515185592a49eec ""
+  "fig_output_power_vs_fr_Rl_lamB_all.pdf" 1568355012 118480 1f5dd009c30a447290be486469506c13 ""
+  "fig_output_power_vs_fr_Rl_laml_all.pdf" 1568255557 114326 c46c4ea046a6deb0fd9ad5cb2470da02 ""
+  "fig_output_power_vs_fr_Rl_lamm_all.pdf" 1568360713 85012 f5e43a31bd338d09871bcdf50faad345 ""
+  "fig_output_voltage_vs_fr_Rl_lamB_all.pdf" 1568354507 118147 c14f0040b6f97055d79217d29ba1a4e3 ""
+  "fig_output_voltage_vs_fr_Rl_laml_all.pdf" 1568255557 114167 7b794639cf059c0af51c019e8419a7a5 ""
+  "fig_output_voltage_vs_fr_Rl_lamm_all.pdf" 1568360311 84935 036ed68057afb415ac266fae23f1196f ""
   "fig_perf_laml_0p3_0p4_vs_fr_Rl.pdf" 1568277643 52880 ebe09c46ac984a8d9242b6545c89157b ""
-  "fig_pow_fr_sl_Rl_sl_vs_laml.pdf" 1568255558 35613 743ade609c95730aad8eaab15fdb1267 ""
-  "fig_vol_fr_sl_Rl_sl_vs_laml.pdf" 1568255558 34710 fa339a8f1cbfa7c51479f2fcb1d868db ""
-  "model_simple00.aux" 1568277768 4785 58860fb800026c127b6fbc83dc594a98 ""
-  "model_simple00.bbl" 1568270896 594 3baab261bb86655375d080a32043a782 "bibtex model_simple00"
-  "model_simple00.spl" 1568277768 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "model_simple00.tex" 1568270845 30802 15691bc892f7fb22fbf5653155ad7ed4 ""
+  "fig_pow_fr_sl_Rl_sl_vs_lamB.pdf" 1568363654 55813 fcb8a94b6447dbecfcc309a8a5748458 ""
+  "fig_pow_fr_sl_Rl_sl_vs_laml.pdf" 1568277625 35621 0931a5b23164620036d8e30f5dac2cbd ""
+  "fig_pow_fr_sl_Rl_sl_vs_lamm.pdf" 1568365630 54620 4e5e709bc70f0295d082e63bce4f925b ""
+  "fig_pow_lamB_list_vs_fr_Rl.pdf" 1568358025 54460 325018273eb6e38922be6e91882f06f6 ""
+  "fig_pow_lamm_list_vs_fr_Rl.pdf" 1568364443 46439 28de12173360b75bdb511f077d34b6e6 ""
+  "fig_vol_fr_sl_Rl_sl_vs_lamB.pdf" 1568363638 55884 4eb60e67b8b8716c97ce5f5c0968e0c2 ""
+  "fig_vol_fr_sl_Rl_sl_vs_laml.pdf" 1568277607 34710 282d412f1438636e1dfc57d40e190dd2 ""
+  "fig_vol_fr_sl_Rl_sl_vs_lamm.pdf" 1568365118 54534 2949559f91f5119bbd81273845219e92 ""
+  "fig_vol_lamB_list_vs_fr_Rl.pdf" 1568357924 54590 446c58a498dd23a64a3be434c10ce323 ""
+  "fig_vol_lamm_list_vs_fr_Rl.pdf" 1568364273 46633 d3425b05e73caf692ffed43650ce0e48 ""
+  "model_simple00.aux" 1568367564 7963 6e7f49a22a77c3a026c97539398b3b38 ""
+  "model_simple00.bbl" 1568365502 594 3baab261bb86655375d080a32043a782 "bibtex model_simple00"
+  "model_simple00.spl" 1568367564 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "model_simple00.tex" 1568365448 47912 af59ef762b5f70adc2dd7735bd33993b ""
   (generated)
+  "model_simple00.xdv"
   "model_simple00.log"
   "model_simple00.spl"
-  "model_simple00.xdv"
   "model_simple00.aux"

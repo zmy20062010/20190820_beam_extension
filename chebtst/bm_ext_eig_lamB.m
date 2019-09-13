@@ -17,7 +17,7 @@ e31  = d31 * Yp;
 % Rl   = 100.0e3;
 %     beam extension material constants
 le   = 30.0e-3;
-Ye   = 0.01e9;
+Ye   = 0.2e9;
 rhoe = 1.38e3;
 he   = 0.25e-3;
 

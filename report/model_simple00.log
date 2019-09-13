@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.1)  12 SEP 2019 16:42
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.1)  13 SEP 2019 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -264,27 +264,66 @@ File: ./fig_output_power_vs_fr_Rl_laml_all.pdf Graphic file (type QTm)
 <use  "./fig_output_power_vs_fr_Rl_laml_all.pdf" > [6] [7] [8]
 File: ./fig_perf_laml_0p3_0p4_vs_fr_Rl.pdf Graphic file (type QTm)
 
-<use  "./fig_perf_laml_0p3_0p4_vs_fr_Rl.pdf" >
+<use  "./fig_perf_laml_0p3_0p4_vs_fr_Rl.pdf" > [9]
 File: ./fig_vol_fr_sl_Rl_sl_vs_laml.pdf Graphic file (type QTm)
 
 <use  "./fig_vol_fr_sl_Rl_sl_vs_laml.pdf" >
 File: ./fig_pow_fr_sl_Rl_sl_vs_laml.pdf Graphic file (type QTm)
 
 <use  "./fig_pow_fr_sl_Rl_sl_vs_laml.pdf" >
-File: ./fig_laml_vol_versus_fr_Rl.pdf Graphic file (type QTm)
+File: ./fig_output_voltage_vs_fr_Rl_lamB_all.pdf Graphic file (type QTm)
 
-<use  "./fig_laml_vol_versus_fr_Rl.pdf" > [9] [10] [11] [12]
-File: ./fig_laml_vol_versus_fr_Rl.pdf Graphic file (type QTm)
+<use  "./fig_output_voltage_vs_fr_Rl_lamB_all.pdf" > [10] [11] [12]
+File: ./fig_output_power_vs_fr_Rl_lamB_all.pdf Graphic file (type QTm)
 
-<use  "./fig_laml_vol_versus_fr_Rl.pdf" > [13] (./model_simple00.bbl) [14]
-(./model_simple00.aux) ) 
+<use  "./fig_output_power_vs_fr_Rl_lamB_all.pdf" >
+File: ./fig_vol_lamB_list_vs_fr_Rl.pdf Graphic file (type QTm)
+
+<use  "./fig_vol_lamB_list_vs_fr_Rl.pdf" > [13] [14]
+File: ./fig_pow_lamB_list_vs_fr_Rl.pdf Graphic file (type QTm)
+
+<use  "./fig_pow_lamB_list_vs_fr_Rl.pdf" > [15]
+File: ./fig_vol_fr_sl_Rl_sl_vs_lamB.pdf Graphic file (type QTm)
+
+<use  "./fig_vol_fr_sl_Rl_sl_vs_lamB.pdf" >
+
+LaTeX Warning: Float too large for page by 38.3576pt on input line 369.
+
+File: ./fig_pow_fr_sl_Rl_sl_vs_lamB.pdf Graphic file (type QTm)
+<use  "./fig_pow_fr_sl_Rl_sl_vs_lamB.pdf" >
+
+LaTeX Warning: Float too large for page by 38.3576pt on input line 382.
+
+File: ./fig_output_voltage_vs_fr_Rl_lamm_all.pdf Graphic file (type QTm)
+<use  "./fig_output_voltage_vs_fr_Rl_lamm_all.pdf" >
+File: ./fig_output_power_vs_fr_Rl_lamm_all.pdf Graphic file (type QTm)
+
+<use  "./fig_output_power_vs_fr_Rl_lamm_all.pdf" > [16] [17] [18] [19] [20]
+File: ./fig_vol_lamm_list_vs_fr_Rl.pdf Graphic file (type QTm)
+
+<use  "./fig_vol_lamm_list_vs_fr_Rl.pdf" >
+File: ./fig_pow_lamm_list_vs_fr_Rl.pdf Graphic file (type QTm)
+
+<use  "./fig_pow_lamm_list_vs_fr_Rl.pdf" > [21] [22]
+File: ./fig_vol_fr_sl_Rl_sl_vs_lamm.pdf Graphic file (type QTm)
+
+<use  "./fig_vol_fr_sl_Rl_sl_vs_lamm.pdf" >
+
+LaTeX Warning: Float too large for page by 38.3576pt on input line 445.
+
+File: ./fig_pow_fr_sl_Rl_sl_vs_lamm.pdf Graphic file (type QTm)
+<use  "./fig_pow_fr_sl_Rl_sl_vs_lamm.pdf" >
+
+LaTeX Warning: Float too large for page by 38.3576pt on input line 458.
+
+(./model_simple00.bbl) [23] [24] [25] (./model_simple00.aux) ) 
 Here is how much of TeX's memory you used:
- 2658 strings out of 493068
- 34356 string characters out of 6131911
- 111451 words of memory out of 5000000
- 6539 multiletter control sequences out of 15000+600000
+ 2690 strings out of 493068
+ 35482 string characters out of 6131911
+ 111550 words of memory out of 5000000
+ 6560 multiletter control sequences out of 15000+600000
  9185 words of font info for 43 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  32i,12n,30p,1517b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on model_simple00.xdv (14 pages, 194436 bytes).
+Output written on model_simple00.xdv (25 pages, 336128 bytes).
