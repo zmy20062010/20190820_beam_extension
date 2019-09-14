@@ -313,7 +313,7 @@ def plot_pow_lamm_list_vs_fr_Rl():
     plt.show()
 
 def plot_vol_fr_sl_Rl_sl_vs_lamm():
-    fig, axes = plt.subplots(ncols = 4, nrows = 4, figsize=(18,24), sharex=True)
+    fig, axes = plt.subplots(nrows = 2, ncols = 3, figsize=(24,12), sharex=True)
 
     am_vplist = np.array([am_vplist01, am_vplist02, am_vplist03,
                  am_vplist04, am_vplist05])
@@ -327,77 +327,96 @@ def plot_vol_fr_sl_Rl_sl_vs_lamm():
     yfmt = ScalarFormatterForceFormat()
     yfmt.set_powerlimits((0,0))
 
-    axes[0,0].plot(lamm_list,am_vplist[:, 0, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 1 $\\Omega$')
+    axes[0,0].plot(lamm_list,am_vplist[:, 0, 0], 'r-*', label='$R_l$ = 1 $\\Omega$')
+    axes[0,0].plot(lamm_list,am_vplist[:, 2, 0], 'k-.s', label='$R_l$ = 1 $\\Omega$')
+    axes[0,0].plot(lamm_list,am_vplist[:, 4, 0], 'm--d', label='$R_l$ = 1 $\\Omega$')
+    axes[0,0].plot(lamm_list,am_vplist[:, 6, 0], 'b-o', label='$R_l$ = 1 $\\Omega$')
     axes[0,0].yaxis.set_major_formatter(yfmt)
     axes[0,0].set_xscale('log')
+    axes[0,0].set_yscale('log')
+    axes[0,0].set_ylim(1e-10,1e-1)
+    axes[0,0].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[0,0].set_title('$fr$ = 1 $Hz$', fontsize=18)
     axes[0,0].set_ylabel('Amplitude of the output voltage $V_p$ (V)', fontsize=18)
+    axes[0,0].legend(loc='upper left', ncol=2, fontsize=18)
 
-    axes[0,1].plot(lamm_list,am_vplist[:, 2, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 100 $\\Omega$')
+
+    axes[0,1].plot(lamm_list,am_vplist[:, 0, 100], 'r-*', label='$R_l$ = 100 $\\Omega$')
+    axes[0,1].plot(lamm_list,am_vplist[:, 2, 100], 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    axes[0,1].plot(lamm_list,am_vplist[:, 4, 100], 'm--d', label='$R_l$ = 100 $\\Omega$')
+    axes[0,1].plot(lamm_list,am_vplist[:, 6, 100], 'b-o', label='$R_l$ = 100 $\\Omega$')
     axes[0,1].yaxis.set_major_formatter(yfmt)
+    axes[0,1].set_xscale('log')
+    axes[0,1].set_yscale('log')
+    axes[0,1].set_ylim(1e-8,1e0)
+    axes[0,1].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[0,1].set_title('$fr$ = 3.162 $Hz$', fontsize=18)
+    axes[0,1].legend(loc='upper left', ncol=2, fontsize=18)
 
-    axes[0,2].plot(lamm_list,am_vplist[:, 4, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 10 k$\\Omega$')
+    axes[0,2].plot(lamm_list,am_vplist[:, 0, 200], 'r-*', label='$R_l$ = 10 k$\\Omega$')
+    axes[0,2].plot(lamm_list,am_vplist[:, 2, 200], 'k-.s', label='$R_l$ = 10 k$\\Omega$')
+    axes[0,2].plot(lamm_list,am_vplist[:, 4, 200], 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    axes[0,2].plot(lamm_list,am_vplist[:, 6, 200], 'b-o', label='$R_l$ = 10 k$\\Omega$')
     axes[0,2].yaxis.set_major_formatter(yfmt)
+    axes[0,2].set_xscale('log')
+    axes[0,2].set_yscale('log')
+    axes[0,2].set_ylim(1e-7,1e1)
+    axes[0,2].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[0,2].set_title('$fr$ = 10 $Hz$', fontsize=18)
+    axes[0,2].legend(loc='upper left', ncol=2, fontsize=18)
 
-    axes[0,3].plot(lamm_list,am_vplist[:, 6, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 1 M$\\Omega$')
-    axes[0,3].yaxis.set_major_formatter(yfmt)
 
-
-    axes[1,0].plot(lamm_list,am_vplist[:, 0, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 1 $\\Omega$')
+    axes[1,0].plot(lamm_list,am_vplist[:, 0, 300], 'r-*', label='$R_l$ = 1 $\\Omega$')
+    axes[1,0].plot(lamm_list,am_vplist[:, 2, 300], 'k-.s', label='$R_l$ = 1 $\\Omega$')
+    axes[1,0].plot(lamm_list,am_vplist[:, 4, 300], 'm--d', label='$R_l$ = 1 $\\Omega$')
+    axes[1,0].plot(lamm_list,am_vplist[:, 6, 300], 'b-o', label='$R_l$ = 1 $\\Omega$')
     axes[1,0].yaxis.set_major_formatter(yfmt)
+    axes[1,0].set_xscale('log')
+    axes[1,0].set_yscale('log')
+    axes[1,0].set_ylim(1e-5,1e3)
+    axes[1,0].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[1,0].set_title('$fr$ = 31.62 $Hz$', fontsize=18)
     axes[1,0].set_ylabel('Amplitude of the output voltage $V_p$ (V)', fontsize=18)
+    axes[1,0].set_xlabel('Line density ratio $\\lambda_m$', fontsize=18)
+    axes[1,0].legend(loc='upper left', ncol=2, fontsize=18)
 
-    axes[1,1].plot(lamm_list,am_vplist[:, 2, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 100 $\\Omega$')
+
+    axes[1,1].plot(lamm_list,am_vplist[:, 0, 325], 'r-*', label='$R_l$ = 100 $\\Omega$')
+    axes[1,1].plot(lamm_list,am_vplist[:, 2, 325], 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    axes[1,1].plot(lamm_list,am_vplist[:, 4, 325], 'm--d', label='$R_l$ = 100 $\\Omega$')
+    axes[1,1].plot(lamm_list,am_vplist[:, 6, 325], 'b-o', label='$R_l$ = 100 $\\Omega$')
     axes[1,1].yaxis.set_major_formatter(yfmt)
+    axes[1,1].set_xscale('log')
+    axes[1,1].set_yscale('log')
+    axes[1,1].set_ylim(1e-6,1e5)
+    axes[1,1].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[1,1].set_title('$fr$ = 42.17 $Hz$', fontsize=18)
+    axes[1,1].set_xlabel('Line density ratio $\\lambda_m$', fontsize=18)
+    axes[1,1].legend(loc='upper left', ncol=2, fontsize=18)
 
-    axes[1,2].plot(lamm_list,am_vplist[:, 4, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 10 k$\\Omega$')
+
+    axes[1,2].plot(lamm_list,am_vplist[:, 0, 400], 'r-*', label='$R_l$ = 10 k$\\Omega$')
+    axes[1,2].plot(lamm_list,am_vplist[:, 2, 400], 'k-.s', label='$R_l$ = 10 k$\\Omega$')
+    axes[1,2].plot(lamm_list,am_vplist[:, 4, 400], 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    axes[1,2].plot(lamm_list,am_vplist[:, 6, 400], 'b-o', label='$R_l$ = 10 k$\\Omega$')
     axes[1,2].yaxis.set_major_formatter(yfmt)
-
-    axes[1,3].plot(lamm_list,am_vplist[:, 6, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 1 M$\\Omega$')
-    axes[1,3].yaxis.set_major_formatter(yfmt)
-
-    axes[2,0].plot(lamm_list,am_vplist[:, 0, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 1 $\\Omega$')
-    axes[2,0].yaxis.set_major_formatter(yfmt)
-    axes[2,0].set_ylabel('Amplitude of the output voltage $V_p$ (V)', fontsize=18)
-
-    axes[2,1].plot(lamm_list,am_vplist[:, 2, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 10 $\\Omega$')
-    axes[2,1].yaxis.set_major_formatter(yfmt)
-
-    axes[2,2].plot(lamm_list,am_vplist[:, 4, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 10 k$\\Omega$')
-    axes[2,2].yaxis.set_major_formatter(yfmt)
-
-    axes[2,3].plot(lamm_list,am_vplist[:, 6, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 1 M$\\Omega$')
-    axes[2,3].yaxis.set_major_formatter(yfmt)
-
-    axes[3,0].plot(lamm_list,am_vplist[:, 0, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 1 $\\Omega$')
-    axes[3,0].yaxis.set_major_formatter(yfmt)
-    axes[3,0].set_ylabel('Amplitude of the output voltage $V_p$ (V)', fontsize=18)
-    axes[3,0].set_xlabel('line density ratio $\\lambda_m$', fontsize=18)
-
-    axes[3,1].plot(lamm_list,am_vplist[:, 2, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 100 $\\Omega$')
-    axes[3,1].yaxis.set_major_formatter(yfmt)
-    axes[3,1].set_xlabel('line density ratio $\\lambda_m$', fontsize=18)
-
-    axes[3,2].plot(lamm_list,am_vplist[:, 4, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 10 k$\\Omega$')
-    axes[3,2].yaxis.set_major_formatter(yfmt)
-    axes[3,2].set_xlabel('line density ratio $\\lambda_m$', fontsize=18)
-
-    axes[3,3].plot(lamm_list,am_vplist[:, 6, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 1 M$\\Omega$')
-    axes[3,3].yaxis.set_major_formatter(yfmt)
-    axes[3,3].set_xlabel('line density ratio $\\lambda_m$', fontsize=18)
-
-    for i in range(4):
-        for j in range(4):
-            axes[i,j].legend(loc='best')
+    axes[1,2].set_xscale('log')
+    axes[1,2].set_yscale('log')
+    axes[1,2].set_ylim(1e-4,1e3)
+    axes[1,2].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[1,2].set_title('$fr$ = 100 $Hz$', fontsize=18)
+    axes[1,2].set_xlabel('Line density ratio $\\lambda_m$', fontsize=18)
+    axes[1,2].legend(loc='upper left', ncol=2, fontsize=18)
 
     plt.suptitle('Amplitude of the output voltage $V_p$ versus line density ratio $\\lambda_m$ at different $fr$ and $R_l$', fontsize=24)
-    plt.subplots_adjust(left=0.05, right=0.98, top=0.93, bottom=0.07, wspace=0.15, hspace=0.15)
+    plt.subplots_adjust(left=0.05, right=0.98, top=0.90, bottom=0.08, wspace=0.15, hspace=0.17)
     plt.savefig("fig_vol_fr_sl_Rl_sl_vs_lamm.pdf")
-    plt.savefig("fig_vol_fr_sl_Rl_sl_vs_lamm.eps")
-    plt.savefig("fig_vol_fr_sl_Rl_sl_vs_lamm.jpg",dpi=300)
-    plt.show()
+    # plt.savefig("fig_vol_fr_sl_Rl_sl_vs_lamm.eps")
+    # plt.savefig("fig_vol_fr_sl_Rl_sl_vs_lamm.jpg",dpi=300)
+    # plt.show()
 
 def plot_pow_fr_sl_Rl_sl_vs_lamm():
-    fig, axes = plt.subplots(ncols = 4, nrows = 4, figsize=(18,24), sharex=True)
+    fig, axes = plt.subplots(nrows = 2, ncols = 3, figsize=(24,12), sharex=True)
 
     am_vplist = np.array([am_vplist01, am_vplist02, am_vplist03,
                  am_vplist04, am_vplist05])
@@ -411,74 +430,94 @@ def plot_pow_fr_sl_Rl_sl_vs_lamm():
     yfmt = ScalarFormatterForceFormat()
     yfmt.set_powerlimits((0,0))
 
-    axes[0,0].plot(lamm_list,am_pplist[:, 0, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 1 $\\Omega$')
+
+    axes[0,0].plot(lamm_list,am_pplist[:, 0, 0], 'r-*', label='$R_l$ = 1 $\\Omega$')
+    axes[0,0].plot(lamm_list,am_pplist[:, 2, 0], 'k-.s', label='$R_l$ = 1 $\\Omega$')
+    axes[0,0].plot(lamm_list,am_pplist[:, 4, 0], 'm--d', label='$R_l$ = 1 $\\Omega$')
+    axes[0,0].plot(lamm_list,am_pplist[:, 6, 0], 'b-o', label='$R_l$ = 1 $\\Omega$')
     axes[0,0].yaxis.set_major_formatter(yfmt)
     axes[0,0].set_xscale('log')
+    axes[0,0].set_yscale('log')
+    # axes[0,0].set_ylim(1e-8,1e0)
+    axes[0,0].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[0,0].set_title('$fr$ = 1 $Hz$', fontsize=18)
     axes[0,0].set_ylabel('Amplitude of the output power $P_p$ (W)', fontsize=18)
+    axes[0,0].legend(loc='upper left', ncol=2, fontsize=18)
 
-    axes[0,1].plot(lamm_list,am_pplist[:, 2, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 100 $\\Omega$')
+
+    axes[0,1].plot(lamm_list,am_pplist[:, 0, 100], 'r-*', label='$R_l$ = 100 $\\Omega$')
+    axes[0,1].plot(lamm_list,am_pplist[:, 2, 100], 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    axes[0,1].plot(lamm_list,am_pplist[:, 4, 100], 'm--d', label='$R_l$ = 100 $\\Omega$')
+    axes[0,1].plot(lamm_list,am_pplist[:, 6, 100], 'b-o', label='$R_l$ = 100 $\\Omega$')
     axes[0,1].yaxis.set_major_formatter(yfmt)
+    axes[0,1].set_xscale('log')
+    axes[0,1].set_yscale('log')
+    # axes[0,1].set_ylim(1e-8,1e0)
+    axes[0,1].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[0,1].set_title('$fr$ = 3.162 $Hz$', fontsize=18)
+    axes[0,1].legend(loc='upper left', ncol=2, fontsize=18)
 
-    axes[0,2].plot(lamm_list,am_pplist[:, 4, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 10 k$\\Omega$')
+    axes[0,2].plot(lamm_list,am_pplist[:, 0, 200], 'r-*', label='$R_l$ = 10 k$\\Omega$')
+    axes[0,2].plot(lamm_list,am_pplist[:, 2, 200], 'k-.s', label='$R_l$ = 10 k$\\Omega$')
+    axes[0,2].plot(lamm_list,am_pplist[:, 4, 200], 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    axes[0,2].plot(lamm_list,am_pplist[:, 6, 200], 'b-o', label='$R_l$ = 10 k$\\Omega$')
     axes[0,2].yaxis.set_major_formatter(yfmt)
+    axes[0,2].set_xscale('log')
+    axes[0,2].set_yscale('log')
+    # axes[0,2].set_ylim(1e-8,1e0)
+    axes[0,2].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[0,2].set_title('$fr$ = 10 $Hz$', fontsize=18)
+    axes[0,2].legend(loc='upper left', ncol=2, fontsize=18)
 
-    axes[0,3].plot(lamm_list,am_pplist[:, 6, 200], 'r-*', label='fr=10 $Hz$, $R_l$ = 1 M$\\Omega$')
-    axes[0,3].yaxis.set_major_formatter(yfmt)
 
-
-    axes[1,0].plot(lamm_list,am_pplist[:, 0, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 1 $\\Omega$')
+    axes[1,0].plot(lamm_list,am_pplist[:, 0, 300], 'r-*', label='$R_l$ = 1 $\\Omega$')
+    axes[1,0].plot(lamm_list,am_pplist[:, 2, 300], 'k-.s', label='$R_l$ = 1 $\\Omega$')
+    axes[1,0].plot(lamm_list,am_pplist[:, 4, 300], 'm--d', label='$R_l$ = 1 $\\Omega$')
+    axes[1,0].plot(lamm_list,am_pplist[:, 6, 300], 'b-o', label='$R_l$ = 1 $\\Omega$')
     axes[1,0].yaxis.set_major_formatter(yfmt)
+    axes[1,0].set_xscale('log')
+    axes[1,0].set_yscale('log')
+    axes[1,0].set_ylim(1e-9,1e-3)
+    axes[1,0].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[1,0].set_title('$fr$ = 31.62 $Hz$', fontsize=18)
     axes[1,0].set_ylabel('Amplitude of the output power $P_p$ (W)', fontsize=18)
+    axes[1,0].set_xlabel('Line density ratio $\\lambda_m$', fontsize=18)
+    axes[1,0].legend(loc='upper left', ncol=2, fontsize=18)
 
-    axes[1,1].plot(lamm_list,am_pplist[:, 2, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 100 $\\Omega$')
+
+    axes[1,1].plot(lamm_list,am_pplist[:, 0, 325], 'r-*', label='$R_l$ = 100 $\\Omega$')
+    axes[1,1].plot(lamm_list,am_pplist[:, 2, 325], 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    axes[1,1].plot(lamm_list,am_pplist[:, 4, 325], 'm--d', label='$R_l$ = 100 $\\Omega$')
+    axes[1,1].plot(lamm_list,am_pplist[:, 6, 325], 'b-o', label='$R_l$ = 100 $\\Omega$')
     axes[1,1].yaxis.set_major_formatter(yfmt)
+    axes[1,1].set_xscale('log')
+    axes[1,1].set_yscale('log')
+    axes[1,1].set_ylim(1e-11,1e2)
+    axes[1,1].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[1,1].set_title('$fr$ = 42.17 $Hz$', fontsize=18)
+    axes[1,1].set_xlabel('Line density ratio $\\lambda_m$', fontsize=18)
+    axes[1,1].legend(loc='upper left', ncol=2, fontsize=18)
 
-    axes[1,2].plot(lamm_list,am_pplist[:, 4, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 10 k$\\Omega$')
+
+    axes[1,2].plot(lamm_list,am_pplist[:, 0, 400], 'r-*', label='$R_l$ = 10 k$\\Omega$')
+    axes[1,2].plot(lamm_list,am_pplist[:, 2, 400], 'k-.s', label='$R_l$ = 10 k$\\Omega$')
+    axes[1,2].plot(lamm_list,am_pplist[:, 4, 400], 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    axes[1,2].plot(lamm_list,am_pplist[:, 6, 400], 'b-o', label='$R_l$ = 10 k$\\Omega$')
     axes[1,2].yaxis.set_major_formatter(yfmt)
-
-    axes[1,3].plot(lamm_list,am_pplist[:, 6, 300], 'r-*', label='fr=31.62 $Hz$, $R_l$ = 1 M$\\Omega$')
-    axes[1,3].yaxis.set_major_formatter(yfmt)
-
-    axes[2,0].plot(lamm_list,am_pplist[:, 0, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 1 $\\Omega$')
-    axes[2,0].yaxis.set_major_formatter(yfmt)
-    axes[2,0].set_ylabel('Amplitude of the output power $P_p$ (W)', fontsize=18)
-
-    axes[2,1].plot(lamm_list,am_pplist[:, 2, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 10 $\\Omega$')
-    axes[2,1].yaxis.set_major_formatter(yfmt)
-
-    axes[2,2].plot(lamm_list,am_pplist[:, 4, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 10 k$\\Omega$')
-    axes[2,2].yaxis.set_major_formatter(yfmt)
-
-    axes[2,3].plot(lamm_list,am_pplist[:, 6, 325], 'r-*', label='fr=42.17 $Hz$, $R_l$ = 1 M$\\Omega$')
-    axes[2,3].yaxis.set_major_formatter(yfmt)
-
-    axes[3,0].plot(lamm_list,am_pplist[:, 0, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 1 $\\Omega$')
-    axes[3,0].yaxis.set_major_formatter(yfmt)
-    axes[3,0].set_ylabel('Amplitude of the output power $P_p$ (W)', fontsize=18)
-    axes[3,0].set_xlabel('line density ratio $\\lambda_m$', fontsize=18)
-
-    axes[3,1].plot(lamm_list,am_pplist[:, 2, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 100 $\\Omega$')
-    axes[3,1].yaxis.set_major_formatter(yfmt)
-    axes[3,1].set_xlabel('line density ratio $\\lambda_m$', fontsize=18)
-
-    axes[3,2].plot(lamm_list,am_pplist[:, 4, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 10 k$\\Omega$')
-    axes[3,2].yaxis.set_major_formatter(yfmt)
-    axes[3,2].set_xlabel('line density ratio $\\lambda_m$', fontsize=18)
-
-    axes[3,3].plot(lamm_list,am_pplist[:, 6, 400], 'r-*', label='fr=100 $Hz$, $R_l$ = 1 M$\\Omega$')
-    axes[3,3].yaxis.set_major_formatter(yfmt)
-    axes[3,3].set_xlabel('line density ratio $\\lambda_m$', fontsize=18)
-
-    for i in range(4):
-        for j in range(4):
-            axes[i,j].legend(loc='best')
+    axes[1,2].set_xscale('log')
+    axes[1,2].set_yscale('log')
+    axes[1,2].set_ylim(1e-8,1e-1)
+    axes[1,2].set_xlim(np.min(lamm_list), np.max(lamm_list))
+    axes[1,2].set_title('$fr$ = 100 $Hz$', fontsize=18)
+    axes[1,2].set_xlabel('Line density ratio $\\lambda_m$', fontsize=18)
+    axes[1,2].legend(loc='upper left', ncol=2, fontsize=18)
 
     plt.suptitle('Amplitude of the output power $P_p$ versus line density ratio $\\lambda_m$ at different $fr$ and $R_l$', fontsize=24)
-    plt.subplots_adjust(left=0.05, right=0.98, top=0.93, bottom=0.07, wspace=0.15, hspace=0.15)
+    plt.subplots_adjust(left=0.05, right=0.98, top=0.90, bottom=0.08, wspace=0.15, hspace=0.17)
     plt.savefig("fig_pow_fr_sl_Rl_sl_vs_lamm.pdf")
-    plt.savefig("fig_pow_fr_sl_Rl_sl_vs_lamm.eps")
-    plt.savefig("fig_pow_fr_sl_Rl_sl_vs_lamm.jpg",dpi=300)
-    plt.show()
+    # plt.savefig("fig_pow_fr_sl_Rl_sl_vs_lamm.eps")
+    # plt.savefig("fig_pow_fr_sl_Rl_sl_vs_lamm.jpg",dpi=300)
+    # plt.show()
 
 
 if __name__ == '__main__':
