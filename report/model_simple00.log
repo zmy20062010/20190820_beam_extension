@@ -1,19 +1,17 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.1)  13 SEP 2019 17:38
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  14 SEP 2019 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./model_simple00.tex
 (./model_simple00.tex
-LaTeX2e <2017/01/01> patch level 3
+LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/elsarticle/elsarticle.cl
-s
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/elsarticle/elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
 \@bls=\dimen102
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/base/article.cls
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -28,41 +26,47 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen103
 )
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
 
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cf
-g
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 99.
+Package graphics Info: Driver file: xetex.def on input line 96.
 
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/
-JK)
-))
+(d:/program/work/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
+
+(d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
-) (d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/psnfss/pifont.sty
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
 
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/psnfss/upzd.fd
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/psnfss/upsy.fd
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 \c@tnote=\count87
@@ -84,7 +88,7 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@@sep=\skip44
 
 (./model_simple00.spl)
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -95,41 +99,41 @@ LaTeX Info: Redefining \cite on input line 694.
 \openout3 = `model_simple00.spl'.
 
 )
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen109
 ))
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen110
 )
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count94
-LaTeX Info: Redefining \frac on input line 213.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count95
 \leftroot@=\count96
-LaTeX Info: Redefining \overline on input line 375.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count97
 \DOTSCASE@=\count98
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box30
 \strutbox@=\box31
 \big@size=\dimen111
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count99
 \c@MaxMatrixCols=\count100
 \dotsspace@=\muskip10
@@ -150,30 +154,46 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip48
 \multlinetaggap=\skip49
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(d:/program/work/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count106
@@ -200,8 +220,6 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
@@ -215,15 +233,15 @@ LaTeX Font Info:    ... okay on input line 12.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(42.67912pt, 528.93675pt, 42.67912pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(42.67912pt, 709.61174pt, 42.67912pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=528.93675pt
-* \textheight=556.47656pt
-* \oddsidemargin=-29.59087pt
-* \evensidemargin=-29.59087pt
-* \topmargin=-13.87262pt
+* \textwidth=430.00462pt
+* \textheight=709.61174pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -242,12 +260,12 @@ LaTeX Font Info:    ... okay on input line 12.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 15.
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 15.
 
-(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 File: ./fig_beam_configuration.pdf Graphic file (type QTm)
@@ -255,75 +273,69 @@ File: ./fig_beam_configuration.pdf Graphic file (type QTm)
 <use  "./fig_beam_configuration.pdf" > [1
 
 
-] [2] [3] [4] [5]
+] [2] [3] [4]
 File: ./fig_output_voltage_vs_fr_Rl_laml_all.pdf Graphic file (type QTm)
 
-<use  "./fig_output_voltage_vs_fr_Rl_laml_all.pdf" >
+<use  "./fig_output_voltage_vs_fr_Rl_laml_all.pdf" > [5]
 File: ./fig_output_power_vs_fr_Rl_laml_all.pdf Graphic file (type QTm)
 
-<use  "./fig_output_power_vs_fr_Rl_laml_all.pdf" > [6] [7] [8]
-File: ./fig_perf_laml_0p3_0p4_vs_fr_Rl.pdf Graphic file (type QTm)
+<use  "./fig_output_power_vs_fr_Rl_laml_all.pdf" > [6]
+File: ./fig_vol_laml_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
-<use  "./fig_perf_laml_0p3_0p4_vs_fr_Rl.pdf" > [9]
+<use  "./fig_vol_laml_list_vs_fr_Rl.pdf" >
+File: ./fig_pow_laml_list_vs_fr_Rl.pdf Graphic file (type QTm)
+
+<use  "./fig_pow_laml_list_vs_fr_Rl.pdf" > [7]
 File: ./fig_vol_fr_sl_Rl_sl_vs_laml.pdf Graphic file (type QTm)
 
 <use  "./fig_vol_fr_sl_Rl_sl_vs_laml.pdf" >
 File: ./fig_pow_fr_sl_Rl_sl_vs_laml.pdf Graphic file (type QTm)
 
-<use  "./fig_pow_fr_sl_Rl_sl_vs_laml.pdf" >
+<use  "./fig_pow_fr_sl_Rl_sl_vs_laml.pdf" > [8]
 File: ./fig_output_voltage_vs_fr_Rl_lamB_all.pdf Graphic file (type QTm)
 
-<use  "./fig_output_voltage_vs_fr_Rl_lamB_all.pdf" > [10] [11] [12]
+<use  "./fig_output_voltage_vs_fr_Rl_lamB_all.pdf" > [9]
 File: ./fig_output_power_vs_fr_Rl_lamB_all.pdf Graphic file (type QTm)
 
 <use  "./fig_output_power_vs_fr_Rl_lamB_all.pdf" >
 File: ./fig_vol_lamB_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
-<use  "./fig_vol_lamB_list_vs_fr_Rl.pdf" > [13] [14]
+<use  "./fig_vol_lamB_list_vs_fr_Rl.pdf" >
 File: ./fig_pow_lamB_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
-<use  "./fig_pow_lamB_list_vs_fr_Rl.pdf" > [15]
+<use  "./fig_pow_lamB_list_vs_fr_Rl.pdf" > [10] [11]
 File: ./fig_vol_fr_sl_Rl_sl_vs_lamB.pdf Graphic file (type QTm)
 
-<use  "./fig_vol_fr_sl_Rl_sl_vs_lamB.pdf" >
-
-LaTeX Warning: Float too large for page by 38.3576pt on input line 369.
-
+<use  "./fig_vol_fr_sl_Rl_sl_vs_lamB.pdf" > [12]
 File: ./fig_pow_fr_sl_Rl_sl_vs_lamB.pdf Graphic file (type QTm)
+
 <use  "./fig_pow_fr_sl_Rl_sl_vs_lamB.pdf" >
-
-LaTeX Warning: Float too large for page by 38.3576pt on input line 382.
-
 File: ./fig_output_voltage_vs_fr_Rl_lamm_all.pdf Graphic file (type QTm)
-<use  "./fig_output_voltage_vs_fr_Rl_lamm_all.pdf" >
+
+<use  "./fig_output_voltage_vs_fr_Rl_lamm_all.pdf" > [13]
 File: ./fig_output_power_vs_fr_Rl_lamm_all.pdf Graphic file (type QTm)
 
-<use  "./fig_output_power_vs_fr_Rl_lamm_all.pdf" > [16] [17] [18] [19] [20]
+<use  "./fig_output_power_vs_fr_Rl_lamm_all.pdf" > [14]
 File: ./fig_vol_lamm_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
 <use  "./fig_vol_lamm_list_vs_fr_Rl.pdf" >
 File: ./fig_pow_lamm_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
-<use  "./fig_pow_lamm_list_vs_fr_Rl.pdf" > [21] [22]
+<use  "./fig_pow_lamm_list_vs_fr_Rl.pdf" > [15]
 File: ./fig_vol_fr_sl_Rl_sl_vs_lamm.pdf Graphic file (type QTm)
 
 <use  "./fig_vol_fr_sl_Rl_sl_vs_lamm.pdf" >
-
-LaTeX Warning: Float too large for page by 38.3576pt on input line 445.
-
 File: ./fig_pow_fr_sl_Rl_sl_vs_lamm.pdf Graphic file (type QTm)
-<use  "./fig_pow_fr_sl_Rl_sl_vs_lamm.pdf" >
 
-LaTeX Warning: Float too large for page by 38.3576pt on input line 458.
-
-(./model_simple00.bbl) [23] [24] [25] (./model_simple00.aux) ) 
+<use  "./fig_pow_fr_sl_Rl_sl_vs_lamm.pdf" > (./model_simple00.bbl [16] [17]
+[18]) [19] (./model_simple00.aux) ) 
 Here is how much of TeX's memory you used:
- 2690 strings out of 493068
- 35482 string characters out of 6131911
- 111550 words of memory out of 5000000
- 6560 multiletter control sequences out of 15000+600000
- 9185 words of font info for 43 fonts, out of 8000000 for 9000
+ 3298 strings out of 493591
+ 42478 string characters out of 6141517
+ 121319 words of memory out of 5000000
+ 6653 multiletter control sequences out of 15000+600000
+ 10433 words of font info for 40 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 32i,12n,30p,1517b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,35p,1555b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on model_simple00.xdv (25 pages, 336128 bytes).
+Output written on model_simple00.pdf (19 pages).
