@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.11.5)  14 SEP 2019 23:00
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.11.5)  15 SEP 2019 05:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -299,16 +299,17 @@ File: ./fig_vol_fr_sl_Rl_sl_vs_lamB.pdf Graphic file (type pdf)
 <use ./fig_vol_fr_sl_Rl_sl_vs_lamB.pdf>
 File: ./fig_pow_fr_sl_Rl_sl_vs_lamB.pdf Graphic file (type pdf)
 <use ./fig_pow_fr_sl_Rl_sl_vs_lamB.pdf>
+ [10] [11] [12]
 File: ./fig_output_voltage_vs_fr_Rl_lamm_all.pdf Graphic file (type pdf)
 <use ./fig_output_voltage_vs_fr_Rl_lamm_all.pdf>
- [10] [11] [12]
 File: ./fig_output_power_vs_fr_Rl_lamm_all.pdf Graphic file (type pdf)
 <use ./fig_output_power_vs_fr_Rl_lamm_all.pdf>
+ [13]
 File: ./fig_vol_lamm_list_vs_fr_Rl.pdf Graphic file (type pdf)
 <use ./fig_vol_lamm_list_vs_fr_Rl.pdf>
 File: ./fig_pow_lamm_list_vs_fr_Rl.pdf Graphic file (type pdf)
 <use ./fig_pow_lamm_list_vs_fr_Rl.pdf>
- [13] [14]
+ [14]
 File: ./fig_vol_fr_sl_Rl_sl_vs_lamm.pdf Graphic file (type pdf)
 <use ./fig_vol_fr_sl_Rl_sl_vs_lamm.pdf>
 File: ./fig_pow_fr_sl_Rl_sl_vs_lamm.pdf Graphic file (type pdf)
@@ -321,6 +322,6 @@ Here is how much of TeX's memory you used:
  7145 multiletter control sequences out of 15000+600000
  9185 words of font info for 43 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 32i,12n,35p,1553b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,12n,35p,1839b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on model_simple00.xdv (16 pages, 334404 bytes).
+Output written on model_simple00.xdv (16 pages, 311244 bytes).

@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex model_simple00"] 1568473253 "model_simple00.aux" "model_simple00.bbl" "model_simple00" 1568473254
+["bibtex model_simple00"] 1568496591 "model_simple00.aux" "model_simple00.bbl" "model_simple00" 1568496592
   "/usr/local/texlive/2018/texmf-dist/bibtex/bst/vancouver/vancouver.bst" 1480098436 38215 ea1386b2055049a8e03ec1b09fd54904 ""
   "maureenchou.bib" 1568460803 1600 6653d4d6fad312e39bb6fc38b8878b3b ""
-  "model_simple00.aux" 1568473254 8759 9814d7141c96c771375f4fb7f996e193 ""
+  "model_simple00.aux" 1568496591 8769 d98db8f337f96a8446f3fa6ce4d20a1f ""
   (generated)
   "model_simple00.bbl"
   "model_simple00.blg"
-["xdvipdfmx"] 1568473254 "model_simple00.xdv" "model_simple00.pdf" "model_simple00" 1568473254
-  "model_simple00.xdv" 1568473254 334404 636d105e50e5e06231e89fa792dd9a37 "xelatex"
+["xdvipdfmx"] 1568496592 "model_simple00.xdv" "model_simple00.pdf" "model_simple00" 1568496592
+  "model_simple00.xdv" 1568496591 311244 4ae72ac7a524730658c39ed706684a21 "xelatex"
   (generated)
   "model_simple00.pdf"
-["xelatex"] 1568473253 "model_simple00.tex" "model_simple00.xdv" "model_simple00" 1568473254
+["xelatex"] 1568496591 "model_simple00.tex" "model_simple00.xdv" "model_simple00" 1568496592
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1480098689 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1480098689 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -78,12 +78,12 @@
   "fig_vol_lamB_list_vs_fr_Rl.pdf" 1568460802 54590 5b2f175e586b52ea657a4e9b14448c82 ""
   "fig_vol_laml_list_vs_fr_Rl.pdf" 1568460802 51869 ddbefca65fcadd14acacfdf2622a3cdb ""
   "fig_vol_lamm_list_vs_fr_Rl.pdf" 1568460802 46633 d3425b05e73caf692ffed43650ce0e48 ""
-  "model_simple00.aux" 1568473254 8759 9814d7141c96c771375f4fb7f996e193 ""
-  "model_simple00.bbl" 1568473253 728 3bdb21445cff3d7b3e88d15aacb58c10 "bibtex model_simple00"
-  "model_simple00.spl" 1568473254 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "model_simple00.tex" 1568469032 48116 0ab8c001a660c51851941e6f8510b88f ""
+  "model_simple00.aux" 1568496591 8769 d98db8f337f96a8446f3fa6ce4d20a1f ""
+  "model_simple00.bbl" 1568496591 728 3bdb21445cff3d7b3e88d15aacb58c10 "bibtex model_simple00"
+  "model_simple00.spl" 1568496591 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "model_simple00.tex" 1568496590 45919 e307d8412f88905fdff101a037212611 ""
   (generated)
   "model_simple00.log"
+  "model_simple00.aux"
   "model_simple00.spl"
   "model_simple00.xdv"
-  "model_simple00.aux"
