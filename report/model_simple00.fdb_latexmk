@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex model_simple00"] 1568507369 "model_simple00.aux" "model_simple00.bbl" "model_simple00" 1568507690
+["bibtex model_simple00"] 1568628250 "model_simple00.aux" "model_simple00.bbl" "model_simple00" 1568628252
   "d:/program/work/texlive/2016/texmf-dist/bibtex/bst/vancouver/vancouver.bst" 1491279624 38215 ea1386b2055049a8e03ec1b09fd54904 ""
-  "maureenchou.bib" 1568456894 1650 6653d4d6fad312e39bb6fc38b8878b3b ""
-  "model_simple00.aux" 1568507689 8802 8fb9b7da3a04fcc78864b7479eb6e392 ""
+  "maureenchou.bib" 1568613584 1814 cbc2bd97ac61d8cd292678a9d699fe71 ""
+  "model_simple00.aux" 1568628252 9177 0a003abc62a065c91a227d596fccb64a ""
   "model_simple00.bcf" 0 -1 0 ""
   (generated)
   "model_simple00.bbl"
   "model_simple00.blg"
-["pdflatex"] 1568507688 "model_simple00.tex" "model_simple00.pdf" "model_simple00" 1568507690
+["pdflatex"] 1568628251 "model_simple00.tex" "model_simple00.pdf" "model_simple00" 1568628252
   "d:/program/work/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1491278873 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1491279461 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1491279701 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -28,10 +28,9 @@
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1491278705 1116 933a60c408fc0a863a92debe84b2d294 ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1491278705 1120 8b7d695260f3cff42e636090a8002094 ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1491278705 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmti7.tfm" 1491278705 1492 86331993fe614793f5e7e755835c31c5 ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmti8.tfm" 1491278705 1504 1747189e0441d1c18f3ea56fafc1c480 ""
-  "d:/program/work/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1491278955 1458 43ab4710dc82f3edeabecd0d099626b2 ""
-  "d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty" 1491279188 1226 01a89dfef361f60ae7df13cd2946bc16 ""
-  "d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty" 1491279188 6797 90b7f83b0ad46826bc16058b1e3d48df ""
+  "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm" 1491278705 768 d7b9a2629a0c353102ad947dc9221d49 ""
   "d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty" 1491279188 8253 473e0e41f9adadb1977e8631b8f72ea6 ""
   "d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty" 1491279188 18425 5b3c0c59d76fac78978b5558e83c1f36 ""
   "d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1491278614 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
@@ -46,7 +45,6 @@
   "d:/program/work/texlive/2016/texmf-dist/tex/latex/base/article.cls" 1491279011 19821 310da678527a7dfe2a02c88af38079b7 ""
   "d:/program/work/texlive/2016/texmf-dist/tex/latex/base/size10.clo" 1491279011 8292 e897c12e1e886ce77fe26afc5d470886 ""
   "d:/program/work/texlive/2016/texmf-dist/tex/latex/elsarticle/elsarticle.cls" 1491278813 24964 58a46f1c511cb12d424674f91526c55c ""
-  "d:/program/work/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty" 1491278893 40502 e003406220954b0716679d7928aedd8a ""
   "d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1491278914 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1491278914 3103 f32642b1cd56c010cdfb6545539b7f0b ""
   "d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty" 1491278913 14391 bd64a9e5d07473b936423b5f3280ed2c ""
@@ -79,12 +77,12 @@
   "fig_vol_lamB_list_vs_fr_Rl.pdf" 1568419308 54590 446c58a498dd23a64a3be434c10ce323 ""
   "fig_vol_laml_list_vs_fr_Rl.pdf" 1568422118 51869 ddbefca65fcadd14acacfdf2622a3cdb ""
   "fig_vol_lamm_list_vs_fr_Rl.pdf" 1568419308 46633 d3425b05e73caf692ffed43650ce0e48 ""
-  "model_simple00.aux" 1568507689 8802 8fb9b7da3a04fcc78864b7479eb6e392 ""
-  "model_simple00.bbl" 1568507369 728 3bdb21445cff3d7b3e88d15aacb58c10 "bibtex model_simple00"
-  "model_simple00.spl" 1568507689 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "model_simple00.tex" 1568507687 47848 ba1a4a6e3076fceda1ca29ef879da4a4 ""
+  "model_simple00.aux" 1568628252 9177 0a003abc62a065c91a227d596fccb64a ""
+  "model_simple00.bbl" 1568628250 856 2b40ece822acc9c168b2b9a939d401c9 "bibtex model_simple00"
+  "model_simple00.spl" 1568628251 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "model_simple00.tex" 1568628242 49509 d3263bccf465da759a8424af4e363377 ""
   (generated)
   "model_simple00.pdf"
+  "model_simple00.spl"
   "model_simple00.log"
   "model_simple00.aux"
-  "model_simple00.spl"
