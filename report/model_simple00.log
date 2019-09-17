@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  16 SEP 2019 18:04
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  17 SEP 2019 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -213,59 +213,59 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 File: ./fig_beam_configuration.pdf Graphic file (type QTm)
 
-<use  "./fig_beam_configuration.pdf" > [2] [3] [4]
-Overfull \hbox (13.05833pt too wide) detected at line 179
+<use  "./fig_beam_configuration.pdf" > [2] [3] [4] [5]
+Overfull \hbox (13.05833pt too wide) detected at line 182
 [] \OML/cmm/m/it/10 :
  []
 
-[5] [6] [7]
+[6] [7] [8]
 File: ./fig_output_voltage_vs_fr_Rl_laml_all.pdf Graphic file (type QTm)
  <use  "./fig_output_voltage_vs_fr_Rl_laml_all.pdf" >
 File: ./fig_output_power_vs_fr_Rl_laml_all.pdf Graphic file (type QTm)
 
-<use  "./fig_output_power_vs_fr_Rl_laml_all.pdf" > [8] [9]
+<use  "./fig_output_power_vs_fr_Rl_laml_all.pdf" >
 File: ./fig_vol_laml_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
 <use  "./fig_vol_laml_list_vs_fr_Rl.pdf" >
 File: ./fig_pow_laml_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
-<use  "./fig_pow_laml_list_vs_fr_Rl.pdf" > [10]
+<use  "./fig_pow_laml_list_vs_fr_Rl.pdf" > [9] [10]
 File: ./fig_vol_fr_sl_Rl_sl_vs_laml.pdf Graphic file (type QTm)
 
 <use  "./fig_vol_fr_sl_Rl_sl_vs_laml.pdf" >
 File: ./fig_pow_fr_sl_Rl_sl_vs_laml.pdf Graphic file (type QTm)
 
-<use  "./fig_pow_fr_sl_Rl_sl_vs_laml.pdf" > [11] [12]
+<use  "./fig_pow_fr_sl_Rl_sl_vs_laml.pdf" > [11] [12] [13]
 File: ./fig_output_voltage_vs_fr_Rl_lamB_all.pdf Graphic file (type QTm)
 
 <use  "./fig_output_voltage_vs_fr_Rl_lamB_all.pdf" >
 File: ./fig_output_power_vs_fr_Rl_lamB_all.pdf Graphic file (type QTm)
 
-<use  "./fig_output_power_vs_fr_Rl_lamB_all.pdf" > [13] [14]
+<use  "./fig_output_power_vs_fr_Rl_lamB_all.pdf" > [14]
 File: ./fig_vol_lamB_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
 <use  "./fig_vol_lamB_list_vs_fr_Rl.pdf" >
 File: ./fig_pow_lamB_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
-<use  "./fig_pow_lamB_list_vs_fr_Rl.pdf" > [15]
+<use  "./fig_pow_lamB_list_vs_fr_Rl.pdf" > [15] [16]
 File: ./fig_vol_fr_sl_Rl_sl_vs_lamB.pdf Graphic file (type QTm)
 
 <use  "./fig_vol_fr_sl_Rl_sl_vs_lamB.pdf" >
 File: ./fig_pow_fr_sl_Rl_sl_vs_lamB.pdf Graphic file (type QTm)
 
-<use  "./fig_pow_fr_sl_Rl_sl_vs_lamB.pdf" > [16] [17]
+<use  "./fig_pow_fr_sl_Rl_sl_vs_lamB.pdf" > [17]
 File: ./fig_output_voltage_vs_fr_Rl_lamm_all.pdf Graphic file (type QTm)
 
 <use  "./fig_output_voltage_vs_fr_Rl_lamm_all.pdf" >
 File: ./fig_output_power_vs_fr_Rl_lamm_all.pdf Graphic file (type QTm)
 
-<use  "./fig_output_power_vs_fr_Rl_lamm_all.pdf" >
+<use  "./fig_output_power_vs_fr_Rl_lamm_all.pdf" > [18]
 File: ./fig_vol_lamm_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
 <use  "./fig_vol_lamm_list_vs_fr_Rl.pdf" >
 File: ./fig_pow_lamm_list_vs_fr_Rl.pdf Graphic file (type QTm)
 
-<use  "./fig_pow_lamm_list_vs_fr_Rl.pdf" > [18] [19]
+<use  "./fig_pow_lamm_list_vs_fr_Rl.pdf" > [19]
 File: ./fig_vol_fr_sl_Rl_sl_vs_lamm.pdf Graphic file (type QTm)
 
 <use  "./fig_vol_fr_sl_Rl_sl_vs_lamm.pdf" >

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex model_simple00"] 1568628250 "model_simple00.aux" "model_simple00.bbl" "model_simple00" 1568628252
+["bibtex model_simple00"] 1568711060 "model_simple00.aux" "model_simple00.bbl" "model_simple00" 1568711062
   "d:/program/work/texlive/2016/texmf-dist/bibtex/bst/vancouver/vancouver.bst" 1491279624 38215 ea1386b2055049a8e03ec1b09fd54904 ""
-  "maureenchou.bib" 1568613584 1814 cbc2bd97ac61d8cd292678a9d699fe71 ""
-  "model_simple00.aux" 1568628252 9177 0a003abc62a065c91a227d596fccb64a ""
+  "maureenchou.bib" 1568709743 2507 dbe05f98fd758f45e8c781be3c7e9ddb ""
+  "model_simple00.aux" 1568711062 9179 2539831ef1ea1f562c98a2ba47cc9b1d ""
   "model_simple00.bcf" 0 -1 0 ""
   (generated)
   "model_simple00.bbl"
   "model_simple00.blg"
-["pdflatex"] 1568628251 "model_simple00.tex" "model_simple00.pdf" "model_simple00" 1568628252
+["pdflatex"] 1568711061 "model_simple00.tex" "model_simple00.pdf" "model_simple00" 1568711062
   "d:/program/work/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1491278873 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1491279461 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1491279701 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -77,12 +77,12 @@
   "fig_vol_lamB_list_vs_fr_Rl.pdf" 1568419308 54590 446c58a498dd23a64a3be434c10ce323 ""
   "fig_vol_laml_list_vs_fr_Rl.pdf" 1568422118 51869 ddbefca65fcadd14acacfdf2622a3cdb ""
   "fig_vol_lamm_list_vs_fr_Rl.pdf" 1568419308 46633 d3425b05e73caf692ffed43650ce0e48 ""
-  "model_simple00.aux" 1568628252 9177 0a003abc62a065c91a227d596fccb64a ""
-  "model_simple00.bbl" 1568628250 856 2b40ece822acc9c168b2b9a939d401c9 "bibtex model_simple00"
-  "model_simple00.spl" 1568628251 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "model_simple00.tex" 1568628242 49509 d3263bccf465da759a8424af4e363377 ""
+  "model_simple00.aux" 1568711062 9179 2539831ef1ea1f562c98a2ba47cc9b1d ""
+  "model_simple00.bbl" 1568711061 856 2b40ece822acc9c168b2b9a939d401c9 "bibtex model_simple00"
+  "model_simple00.spl" 1568711061 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "model_simple00.tex" 1568711057 51514 da5c6f3fd774723b19cf9c650f78b68c ""
   (generated)
-  "model_simple00.pdf"
-  "model_simple00.spl"
-  "model_simple00.log"
   "model_simple00.aux"
+  "model_simple00.log"
+  "model_simple00.spl"
+  "model_simple00.pdf"
