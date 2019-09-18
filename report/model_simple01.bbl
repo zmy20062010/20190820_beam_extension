@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{erturk2009experimentally}
+Erturk A, Inman DJ.
+\newblock An experimentally validated bimorph cantilever model for
+  piezoelectric energy harvesting from base excitations.
+\newblock Smart materials and structures. 2009;18(2):025009.
+
+\bibitem{park2003dynamics}
+Park CH.
+\newblock Dynamics modelling of beams with shunted piezoelectric elements.
+\newblock Journal of Sound and vibration. 2003;268(1):115--129.
+
+\bibitem{driscoll2014chebfun}
+Driscoll TA, Hale N, Trefethen LN. Chebfun guide.
+\newblock Pafnuty Publications, Oxford; 2014.
+
+\bibitem{warlimont2018springer}
+Warlimont H, Martienssen W.
+\newblock Springer Handbook of Materials Data.
+\newblock Springer; 2018.
+
+\bibitem{dean1999lange}
+Dean JA.
+\newblock Lange's handbook of chemistry.
+\newblock New york; London: McGraw-Hill, Inc.; 1999.
+
+\end{thebibliography}

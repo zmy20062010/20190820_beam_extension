@@ -1,0 +1,504 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+\documentclass{elsarticle}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{xcolor}
+% \usepackage{geometry}
+% \geometry{top = 1.5 cm, bottom = 1.5 cm}
+\journal{Journal of Sound and Vibration}
+
+\begin{document}
+\title{Investigation upon the performance of piezoelectric energy harvester with elastic extensions}
+% \author{Maoying Zhou, Weiting Liu, Yang Fu}
+\author[1]{Maoying Zhou\corref{cor1}}
+\ead{myzhou@hdu.edu.cn}
+\author[2,3]{Yang Fu}
+\ead{yangfu@zju.edu.cn}
+\author[3]{Weiting Liu}
+\ead{liuwt@zju.edu.cn}
+
+\cortext[cor1]{Corresponding author}
+
+\address[1]{School of Mechanical Engineering, Hangzhou Dianzi University, Hangzhou, China}
+\address[2]{School of Automation and Mechanical Systems, Zhejiang University of Science and Technology, Hangzhou, China}
+\address[3]{State Key Lab of Fluid Power and Mechanical Systems, Zhejiang University, Hangzhou, China}
+
+
+\begin{abstract}
+
+Here in this contribution, we investigate the method of using elastic extension to tune the energy harvesting performance of classic piezoelectric cantilever energy harvesters. Dynamic model of the proposed method is established and transformed into a boundary value problem. Simulations are done to figure out the influence several system parameters, like length ratio $\lambda_l$, bending stiffness ratio $\lambda_B$, and line density ratio $\lambda_m$, upon the performance of the piezoelectric energy harvester with elastic extensions. Simulation results show that the three parameters have a combinational influence upon the performance of the proposed piezoelectric energy harvester. The addition of the elastic extension introduces extra vibration into the considered frequency range and help tune the performance of energy harvesting. 
+
+\end{abstract}
+
+\begin{keyword}
+piezoelectric energy harvesting \sep piezoelectric bimorph cantilever \sep elastic extension \sep performance tuning
+\end{keyword}
+
+\maketitle
+
+
+\section{Introduction}
+
+
+Energy crisis, global warming, and environmental pollution have been increasingly discussed worldwide. Various clean and renewable energy types, such as solar energy, kinetic energy, and bio-energy as alternative energy sources to replace the traditional fossil fuel, have been widely exploited owing to their sustainability and environmental friendliness. 1,2 In the last few decades, explosive research and development efforts have been devoted to energy harvesting technologies, which scavenge the wasted energy available in the ambient environment, such as vibrations, heat, light, radiation, wind, and water, into electrical energy for low-power devices. 3–7 In general, these energy harvesting schemes could suffer from low, variable, and unpredictable ambient conditions, while the great advancements in low-power integrated circuits (ICs), wireless communication, and mobile electronics have reduced the demands in power consumption requirements and increased the attractiveness of energy harvesting approaches. An excellent commercial
+example comes from the Perpetuum Ltd., 8 whose vibration energy harvesters and wireless sensor nodes can be used to monitor a wide variety of equipment and assets such as those in the rail industry.
+
+
+Energy harvesting has been a hot research topic since its first appearance in the 1990s []. It is concentrated on using smart materials and structures to convert solar, wind, or vibration energy in the ambient environment into electricity. Thus it is potential to provide a self-sustainable power sources for many practical applications, such as wireless sensor networks in remote areas, large scale structure status monitoring, and popular consumer electronics. Besides, this kind of technology provides a possible solution to the problem of depleting fossil resources. 
+
+According to the principles and materials used in the energy harvesting devices, they can be classified into several categories: electromagnetic energy harvesting devices, electrostatic energy harvesting devices, piezoelectric energy harvesting devices, and triboelectric energy harvesting devices []. Among all the proposed energy harvesting devices, piezoelectric ones has been the focus of many researchers because of their simple operation mechanism and ease of fabrication. 
+
+Generally a piezoelectric energy harvesting device is composed of a vibration structure and piezoelectric elements attached to this structure. The most popular and classic vibration structure is a bimorph cantilever beam, whose performance and model has been investigated for numerous times at different depths. [][][][] Though much progress has been made, the performance of current piezoelectric energy harvesting devices are still far from mature for engineering applications. Apart from the underlying piezoelectric materials, current piezoelectric energy harvesting devices are confronted with the following problems: limited bandwidth, insufficient output performances and poor energy conversion efficiency. 
+
+To address the problem of low bandwidth, nonlinearity is introduced to the piezoelectric energy harvesting systems by many researchers. The nonlinearity is related to external electromagnetic coupling, nonlinear structure or impact coupling (impact frequency up-conversion system). Most of the nonlinearities come from piezoelectric-electromagnetic structure coupling and based on the  multistable system operation principles. To improve the output performances of piezoelectric energy harvesters, aside from finding new materials, researchers begin to use metamaterials and metastructures to generate higher output performances. Among these trials, acoustic metamaterials has received much attention, though still at the early stage of its research. []
+
+
+Here in this contribution, we investigate the method of using elastic extension to tune the energy harvesting performance of classic piezoelectric cantilever energy harvesters. Dynamic model of the proposed method is established and transformed into a boundary value problem. Simulations are done to figure out the influence several system parameters, like length ratio $\lambda_l$, bending stiffness ratio $\lambda_B$, and line density ratio $\lambda_m$, upon the performance of the piezoelectric energy harvester with elastic extensions. Simulation results show that the three parameters have a combinational influence upon the performance of the proposed piezoelectric energy harvester. The addition of the elastic extension introduces extra vibration into the considered frequency range and help tune the performance of energy harvesting. 
+
+\section{Model Description}
+
+We seek to investigate the influence of a flexible extension upon the overall performance of a classic piezoelectric cantilever beam energy harvester. In our problem, the energy harvester is comprised of two parts: the primary beam part and the beam extension part, as shown in Figure~\ref{fig:fig_beam_configuration}.
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./fig_beam_configuration.pdf}
+    \caption{Schematic configuration of the piezoelectric energy harvester with flexible extension.}
+    \label{fig:fig_beam_configuration}
+\end{figure}
+
+Following the classical analyzing process of piezoelectric bimorph cantilever beams \cite{erturk2009experimentally,park2003dynamics}, we can simply list the following dimensional equations for the piezoelectric primary beam part as:
+\begin{equation}
+    \left\{\begin{aligned}
+        M_p(x_1,t) &= B_p \frac{\partial^2 w_1(x_1,t)}{\partial x_1^2} - e_p V_p (t) \\
+        q_p(x_1,t) &= e_p \frac{\partial^2 w_1(x_1,t)}{\partial x_1^2} + \epsilon_p V_p (t),
+    \end{aligned}\right.
+\end{equation}
+where where $M_p(x_1,t)$ is the moment at cross section of $x_1$ and $q_p(x_1,t)$ is the corresponding line charge density on the electrode. $w_1(x_1,t)$ is the displacement function of the primary beam part with $0 \leq x_1 \leq l_p$ and $V_p(t)$ is the voltage across the electrodes. The corresponding coefficients $B_p$, $e_p$, and $\epsilon_p$ are defined as
+\begin{equation}
+    B_p = \frac{2}{3}b\left\{ E_s h_s^3 + c_{11}^E \left[ (h_s+h_p)^3 - h_s^3 \right] \right\}, \quad e_p = b e_{31}\left(h_s+\frac{1}{2}h_p\right), \quad \epsilon_p = \frac{b \epsilon_{33}^S}{2 h_p}
+\end{equation}
+in which $c_{11}^E$ and $E_s$ are the elastic constants of the piezoelectric layer and the structure layer, respectively, $e_{31}$ is the piezoelectric charge constant of the piezoelectic layer, $\epsilon_{33}^S$ is the dielectric constant of the piezoelectric layer, $h_s$ and $h_p$ are the half structure layer thickness and piezoelectric layer thickness, respectively, $l_p$ is the length of the primary beam part, and $b$ is the width of the primary beam part.
+
+In terms of the mechanical balance, the equation of a piezoelectric beam can be established using the Euler-Bernoulli assumptions as follows
+\begin{equation}
+    B_p \frac{\partial^4 w_1(x_1,t)}{\partial x_1^4} + m_p \frac{\partial^2 w_1(x_1,t)}{\partial t^2} = 0
+\end{equation}
+where $m_p = 2 b(\rho_s h_s + \rho_p h_p)$ is the line mass density of the primary beam part with $\rho_s$ and $\rho_p$ being the volumetric density of the structure layer and the piezoelectric layer, respectively. In turn, principally the piezoelectric energy harvester can be regarded as a current source. So we need to know the charge accumulated on the electrode $Q_p(t)$, which is calculated as 
+\begin{equation}
+    Q_p(t) = \int_0^{l_p} q_p(t)\ d x_1\ = \ e_p \left.\left[ \frac{\partial w_1(x_1,t)}{\partial x_1} \right]\right|^{l_p}_0 + C_p V_p (t)
+\end{equation}
+where $C_p = \epsilon_p l_p$ is the inherent capacitance of the piezoelectric layer. According to the Kirchhoff's law, the electric equilibrium equation is 
+\begin{equation}
+    \frac{d Q_p(t)}{dt}  + \frac{V_p(t)}{R_l} = 0
+\end{equation}
+where $R_l$ is the externally connected resistive load.
+
+When it comes to the beam extension part ($0 \leq x_2 \leq l_e$), the governing equations are
+\begin{equation}
+    B_e \frac{\partial^4 w_2(x_2,t)}{\partial x_2^4} + m_e \frac{\partial^2 w_2(x_2,t)}{\partial t^2} = 0
+\end{equation}
+where $w_2(x_2,t)$ is the displacement of the extension beam at position $0\leq x_2 \leq l_e$, $B_e = \frac{2}{3} b h_e^3$ is the equivalent bending stiffness of the extension beam, $m_e = \rho_e h_e$ is the line mass density of the extension beam, $\rho_e$ is the volumetric mass density of the extension beam, $h_e$ is the half thickness of the extension beam, and $l_e$ is the length of the extension beam. As a result, the defining relations for the cross section moment $M_e(x_2,t)$ at the position $x_2$ is
+\begin{equation}
+    M_e(x_2,t) = B_e \frac{\partial^2 w_2(x_2,t)}{\partial x_2^2}.
+\end{equation}
+
+
+The related boundary conditions are listed as follows. When $ x_1 = 0$ at the fixed end of the primary beam,
+\begin{equation}
+    w_1(0,t) = w_b(t), \quad w_1^\prime(0,t) = 0,
+\end{equation}
+where $w_b(t)$ is the base excitation displacement function. Usually we use a harmonic vibration in the experiment where $w_b(t) = Re \left\{ \xi_b e^{j \sigma t} \right\}$ with $\sigma$ being the angular frequency of the base excitation signal and $j = \sqrt{-1}$ being the imaginary unit. To be more accurate, the amplitude $\xi_b$ is generally set to be a real constant designated by the controller. At the connection point of the primary beam and the beam extension where $x_1 = l_p$ and $x_2 = 0$,
+\begin{equation}
+    \left\{\begin{aligned}
+        w_1(l_p,t) &= w_2(0,t) \\
+        \frac{\partial w_1(l_p,t)}{\partial x_1} &= \frac{\partial w_2(0,t)}{\partial x_2} \\
+        B_p \frac{\partial^2 w_1(l_p,t)}{\partial x_1^2} - e_p V_p(t) &= B_e \frac{\partial^2 w_2(0,t)}{\partial x_2^2} \\
+        B_p \frac{\partial^3 w_1(l_p,t)}{\partial x_1^3} &= B_e \frac{\partial^3 w_2(0,t)}{\partial x_2^3}
+    \end{aligned}\right.,
+\end{equation}
+and at the free end of the beam extension where $x_2 = l_e$, we have
+\begin{equation}
+    \frac{\partial^2 w_2(l_e,t)}{\partial x_2^2} = 0, \quad \frac{\partial^3 w_2(l_e,t)}{\partial x_2^3} = 0
+\end{equation}
+
+
+\subsection{Harmonic Balance Analysis}
+Generally in the literature \cite{erturk2009experimentally,park2003dynamics}, mode decomposition method or finite element method are used to solve the above described equations. Here in this contribution, as we are interested in the steady state response of the piezoelectric energy harvester, and the above described system are linear, harmonic balance method is used. Hence, as a result of the base excitation $w_b(t) = Re \left\{ \xi_b e^{j \sigma t} \right\}$, we can set the steady state response of the displacements $w_1(x_1,t)$ and $w_2(x_2,t)$ of the primary beam and the beam extension respectively as 
+\begin{equation}
+    w_1(x_1,t) = \tilde{w}_1(x_1)e^{j \sigma t},\quad w_2(x_2,t) = \tilde{w}_2(x_2)e^{j \sigma t},
+\end{equation}
+the steady state voltage response $V_p(t)$ and charge accumulation $Q_p(t)$ as
+\begin{equation}
+    V_p(t) = \tilde{V}_p e^{j \sigma t},\quad Q_p(t) = \tilde{Q}_p e^{j \sigma t},
+\end{equation}
+and the cross section moment $M_p(x_1,t)$ and $M_e(x_2,t)$ described as
+\begin{equation}
+    M_p(x_1,t) = \tilde{M}_p(x_1) e^{j \sigma t},\quad M_e(x_2,t) = \tilde{M}_e(x_2) e^{j \sigma t}.
+\end{equation}
+As a result, the system of equations for the piezoelectric energy harvester can be summarized as
+\begin{equation}
+    \left\{\begin{aligned}
+        B_p \frac{\partial^4 \tilde{w}_1(x_1)}{\partial x_1^4} - m_p \sigma^2 \tilde{w}_1(x_1) &= 0 \\
+        B_e \frac{\partial^4 \tilde{w}_2(x_2)}{\partial x_2^4} - m_e \sigma^2 \tilde{w}_2(x_2) &= 0 \\
+        j \sigma \tilde{Q}_p + \frac{\tilde{V}_p}{R_l} &= 0
+    \end{aligned}\right.,
+    \label{eq:eq_balance_equations_original}
+\end{equation}
+\begin{equation}
+    \left\{\begin{aligned}
+        \tilde{M}_p(x_1) &= B_p \frac{\partial^2 \tilde{w}_1(x_1)}{\partial x_1^2} - e_p \tilde{V}_p \\
+        \tilde{Q}_p &= \ e_p \left.\left[ \frac{\partial \tilde{w}_1(x_1)}{\partial x_1} \right]\right|^{l_p}_0 + C_p \tilde{V}_p \\
+        \tilde{M}_e(x_2) &= B_e \frac{\partial^2 \tilde{w}_2(x_2)}{\partial x_2^2} 
+    \end{aligned}\right.,
+    \label{eq:eq_constitutive_equations_original}
+\end{equation}
+and the boundary conditions become
+\begin{equation}
+    \left\{\begin{aligned}
+        \tilde{w}_1(0) = \xi_b , &\quad \frac{\partial \tilde{w}_1}{\partial x_1} (0) = 0 \\
+        w_1(l_p,t) = w_2(0,t), &\quad \frac{\partial \tilde{w}_1(l_p)}{\partial x_1} = \frac{\partial \tilde{w}_2(0)}{\partial x_2} \\
+        B_p \frac{\partial^2 \tilde{w}_1(l_p)}{\partial x_1^2} - e_p \tilde{V}_p = B_e \frac{\partial^2 \tilde{w}_2(0)}{\partial x_2^2} , &\quad B_p \frac{\partial^3 \tilde{w}_1(l_p)}{\partial x_1^3} = B_e \frac{\partial^3 \tilde{w}_2(0)}{\partial x_2^3} \\
+        \frac{\partial^2 \tilde{w}_2(l_e)}{\partial x_2^2} = 0 , &\quad \frac{\partial^3 \tilde{w}_2(l_e)}{\partial x_2^3} = 0
+    \end{aligned}\right..
+    \label{eq:eq_boundary_conditions_original}
+\end{equation}
+
+From the equations (\ref{eq:eq_balance_equations_original}), (\ref{eq:eq_constitutive_equations_original}), and (\ref{eq:eq_boundary_conditions_original}), we can eliminate the electrical quantities $\tilde{Q}_p$ and $\tilde{V}_p$ by incorporating them into the boundary conditions. Actually, from equations (\ref{eq:eq_balance_equations_original}) and (\ref{eq:eq_constitutive_equations_original}), we have
+\begin{equation}
+    \tilde{V}_p = \frac{j \sigma R_l e_p}{j \sigma R_l C_p + 1} \left.\left[ \frac{\partial \tilde{w}_1(x_1)}{\partial x_1} \right]\right|^{l_p}_0
+\end{equation}
+which can actually be used to eliminate the term $\tilde{V}_p$ in the boundary conditions (\ref{eq:eq_boundary_conditions_original}). In the end, we can simplify the problem as a combination of the governing equations
+\begin{equation}
+    \left\{\begin{aligned}
+        B_p \frac{\partial^4 \tilde{w}_1(x_1)}{\partial x_1^4} - m_p \sigma^2 \tilde{w}_1(x_1) &= 0 \\
+        B_e \frac{\partial^4 \tilde{w}_2(x_2)}{\partial x_2^4} - m_e \sigma^2 \tilde{w}_2(x_2) &= 0 
+    \end{aligned}\right.
+    \label{eq:eq_balance_equations_converted}
+\end{equation}
+and the boundary conditions
+\begin{equation}
+    \left\{\begin{aligned}
+        \tilde{w}_1(0) = \xi_b , &\quad \frac{\partial \tilde{w}_1}{\partial x_1} (0) = 0 \\
+        \tilde{w}_1(l_p) = \tilde{w}_2(0), &\quad \frac{\partial \tilde{w}_1(l_p)}{\partial x_1} = \frac{\partial \tilde{w}_2(0)}{\partial x_2} \\
+        B_p \frac{\partial^2 \tilde{w}_1(l_p)}{\partial x_1^2} + \frac{j \sigma R_l e_p^2}{j \sigma R_l C_p + 1}  \frac{\partial \tilde{w}_1(l_p)}{\partial x_1} = B_e \frac{\partial^2 \tilde{w}_2(0)}{\partial x_2^2} , &\quad B_p \frac{\partial^3 \tilde{w}_1(l_p)}{\partial x_1^3} = B_e \frac{\partial^3 \tilde{w}_2(0)}{\partial x_2^3} \\
+        \frac{\partial^2 \tilde{w}_2(l_e)}{\partial x_2^2} = 0 , &\quad \frac{\partial^3 \tilde{w}_2(l_e)}{\partial x_2^3} = 0
+    \end{aligned}\right..
+    \label{eq:eq_boundary_conditions_converted}
+\end{equation}
+which actually manifests as a boundary value problem.
+
+\section{Dimensionless Problem}
+Using the following dimensionless group
+\begin{equation}
+    \tilde{w}_1, \tilde{w}_2 \sim \xi_b,\quad \tilde{x}_1 \sim l_p,\quad \tilde{x}_2 \sim l_e
+\end{equation}
+we can nondimensionalize the above formulated boundary value problem with respect to the following variables:
+\begin{equation}
+    \tilde{w}_1 = \xi_b u_1,\quad \tilde{w}_2 = \xi_b u_2,\quad \tilde{x}_1 = l_p x,\quad \tilde{x}_2 = l_e x.
+    \label{eq:eq_non_dim_variables}
+\end{equation}
+Note that here we use one independent space variable $x$ to nondimensionalize two previously used variables $x_1$ and $x_2$. This comes from the fact that the variables $x_1$ and $x_2$ are not coupled with each other in the sense that the primary beam and the extension beam  do not overlap each other except for their joint point where $x_1 = l_p$ and $x_2 = 0$. Thus the two variables do not occur in the equations simultaneously except for the boundary conditions. As for the boundary conditions, the change of variables does not affect the values of the equations. Therefore, the two parts of the piezoelectric energy harvester beam are in fact independent of each other except for the joining point. In one word, the equation (\ref{eq:eq_non_dim_variables}) does not change the problem in essence.
+
+Hence, the above boundary value problem is further changed into the combination of the governing equations
+\begin{equation}
+    \left\{\begin{aligned}
+        \frac{B_p}{l_p^4} u_1^{\prime\prime\prime\prime} - m_p \sigma^2 u_1 &= 0 \\
+        \frac{B_e}{l_e^4} u_2^{\prime\prime\prime\prime} - m_e \sigma^2 u_2 &= 0 
+    \end{aligned}\right.
+    \label{eq:eq_balance_equations_nondim}
+\end{equation}
+and the boundary conditions
+\begin{equation}
+    \left\{\begin{aligned}
+        u_1(0) = 1 , &\quad u_1^\prime(0) = 0 \\
+        u_1(1) = u_2(0), &\quad \frac{1}{l_p} u_1^\prime(1) = \frac{1}{l_e} u_2^\prime(0) \\
+        \frac{B_p}{l_p^2} u_1^{\prime\prime}(1) + \frac{j \sigma R_l e_p^2}{j \sigma R_l C_p + 1} \frac{1}{l_p} u_1^{\prime}(1) = \frac{B_e}{l_e^2} u_2^{\prime\prime}(0) , &\quad \frac{B_p}{l_p^3} u_1^{\prime\prime\prime}(1) = \frac{B_e}{l_e^3} u_2^{\prime\prime\prime}(0) \\
+        u_2^{\prime\prime}(1) = 0 , &\quad u_2^{\prime\prime\prime}(1) = 0
+    \end{aligned}\right..
+    \label{eq:eq_boundary_conditions_nondim}
+\end{equation}
+in which the prime means the derivative with respect to $x$. The equations can again be organized in a more compact form
+\begin{equation}
+    \left\{\begin{aligned}
+         u_1^{\prime\prime\prime\prime} - \nu^2 u_1 &= 0 \\
+         u_2^{\prime\prime\prime\prime} - \nu^2 \lambda_m \lambda_l^4 / \lambda_B u_2 &= 0 
+    \end{aligned}\right.
+    \label{eq:eq_balance_equations_compact}
+\end{equation}
+and the boundary conditions
+\begin{equation}
+    \left\{\begin{aligned}
+        u_1(0) = 1 , &\quad u_1^\prime(0) = 0 \\
+        u_1(1) = u_2(0), &\quad \lambda_l u_1^\prime(1) = u_2^\prime(0) \\
+        u_1^{\prime\prime}(1) + \frac{ j \nu \beta }{ j \nu \beta + 1 } \alpha^2 u_1^{\prime}(1) = \lambda_B/ \lambda_l^2 u_2^{\prime\prime}(0) , &\quad u_1^{\prime\prime\prime}(1) = \lambda_B/ \lambda_l^3 u_2^{\prime\prime\prime}(0) \\
+        u_2^{\prime\prime}(1) = 0 , &\quad u_2^{\prime\prime\prime}(1) = 0
+    \end{aligned}\right..
+    \label{eq:eq_boundary_conditions_compact}
+\end{equation}
+where 
+\begin{equation}
+    \nu = \sigma \sqrt{ \frac{ m_p l_p^4 }{ B_p } },\quad \lambda_B = \frac{B_e}{B_p},\quad \lambda_m = \frac{m_e}{m_p},\quad \lambda_l = \frac{l_e}{l_p}
+\end{equation}
+\begin{equation}
+    \beta = R_l C_p \sqrt{\frac{B_p}{m_p l_p^4}}, \quad \alpha = e_p \sqrt{\frac{l_p}{C_p B_p}}
+\end{equation}
+
+The system (\ref{eq:eq_balance_equations_compact}) and (\ref{eq:eq_boundary_conditions_compact}) is a two-point boundary value problem. The problem can readily be solved by a Chebyschev collocation method using the MATLAB package  \textit{Chebfun} \cite{driscoll2014chebfun}. 
+
+
+\begin{table}[!htbp]
+    \caption{Geometric, material, and electromechanical parameters of the simulation for piezoelectric energy harvester with flexible extension}
+    \label{tab:parameter_value_extension}
+    \centering
+    \begin{tabular}{lc}
+    \hline
+    \hline
+    \textbf{Parameter item} & \textbf{Parameter value} \\
+    \hline
+       Length of the primary beam, $l_p$ $(mm)$  & 100 \\
+       Width of the whole energy harvester, $b$ $(mm)$  & 20 \\
+       Half thickness of the structure, $h_s$ $(mm)$  & 0.25 \\
+       Thickness of the piezoelectric layer, $h_p$ $(mm)$  & 0.2 \\
+       Young's modulus of the structure, $Y_s$ $(Gpa)$  & 100 \\
+       Young's modulus of the piezoelectric layer, $Y_p$ $(Gpa)$  & 66 \\
+       Mass density of the substructure, $\rho_s$ $(kg/m^3)$  & 7165 \\
+       Mass density of the piezoelectric layer, $\rho_p$ $(kg/m^3)$  & 7800 \\
+       piezoelectric constant, $d_{31}$ $(pm/V)$  & -190 \\
+       Permittivity, $\epsilon^S_{33}$ $(nF/m)$  & 15.93 \\
+       Length of the beam extension, $l_e$ $(mm)$  & 30 \\
+       Young's modulus of the beam extension, $Y_e$ $(Gpa)$  & 2.3 \\
+       Mass density of the beam extension, $\rho_e$ $(kg/m^3)$  & 1.38 \\
+       Half thickness of the structure, $h_e$ $(mm)$  & 0.25 \\
+    \hline
+    \hline
+    \end{tabular}
+\end{table}
+
+
+
+\section{Influence of extension part upon energy harvester performance}
+
+
+The basic geometry and material properties of the materials used in the proposed piezoelectric energy harvester with flexible extensions are summarized in Table~\ref{tab:parameter_value_extension}. Note that some of the parameters, like length $l_e$, Young's modulus $Y_e$, and volumetric density $\rho_e$ of the beam extension, are actually changing across different simulations. In the simulation, base excitation frequency $fr$ and external load resistance $R_l$, which change the dimensionless values of $\nu$ and $\beta$, respectively, are of critical importance in the sense that these two parameters reflect the influence of vibration source frequency spectrum and external load circuit. For every set of parameter values, we set the base excitation frequency $fr$ to change from $1\ Hz$ to $100\ Hz$, which covers the usual frequency range of natural vibration sources, and set the load resistance $R_l$ to change from $1\ \Omega$ to $10\ M\Omega$, which is inspired by the Ref. \cite{erturk2009experimentally} and takes into account the dielectric property of piezoelectric materials. Actually, when the load resistance $R_l = 1\ \Omega$, the piezoelectric energy harvester is said to be in a short-circuit condition as the general equivalent resistance of the structure is much larger than $R_l$. On the other hand, when $R_l = 10\ M\Omega$, the system is close to an open-circuit condition where no external load is connected to the output electrodes.
+
+In the following, we will investigate the influences of length $l_e$, Young's modulus $Y_e$, and volumetric density $\rho_e$ of the beam extension upon the performance of the piezoelectric energy harvester with flexible extensions separately.
+
+\subsection{Beam extension length $l_e$ or length ratio $\lambda_l$}
+
+The presence of the beam extension is primarily indicated by the beam extension length $l_e$, or equivalently the length ratio $\lambda_l$. When $\lambda_l = 0.0$, no beam extension is attached to the primary beam and the resultant piezoelectric energy harvester reduces to the classic piezoelectric energy harvesting bimorph \cite{erturk2009experimentally}, which is referred to as a reference for comparison. In this contribution, the range of length ratio $\lambda_l$ to be considered is set to be $0.0 \leq \lambda_l \leq 1.0$. For each value of length ratio $\lambda_l$, the base excitation problem is solved with respect to different base excitation frequency $fr$ and load resistance $R_l$. In this process, the Young's modulus of the beam extension part is set to be $Y_e\ =\ 2.3\ GPa$ while its volumetric density is set to be $\rho_e\ =\ 1.38\ \times\ 10^3\ kg/m^3$.
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_output_voltage_vs_fr_Rl_laml_all}
+    \caption{Output voltage $V_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus base excitation frequency $fr$ at different length ratio $\lambda_l$ and load resistance $R_l$. }
+    \label{fig:fig_output_voltage_vs_fr_Rl_laml_all}
+\end{figure}
+
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_output_power_vs_fr_Rl_laml_all}
+    \caption{Output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus base excitation frequency $fr$ at different length ratio $\lambda_l$ and load resistance $R_l$. }
+    \label{fig:fig_output_power_vs_fr_Rl_laml_all}
+\end{figure}
+
+
+In the first place, we would like to explore the influence of base excitation frequency $fr$ upon performance of the piezoelectric energy harvester at different values of load resistance $R_l$ and length ratio $\lambda_l$. Let the frequency range of interest be $1\ -\ 100\ Hz$. The length ratio $\lambda_l$ is chosen to be $0.0$, $0.2$, $0.4$, $0.6$, $0.8$, or $1.0$, and load resistance $R_l$ is chosen to be $10^0\ \Omega$, $10^2\ \Omega$, $10^4\ \Omega$, or $10^6\ \Omega$. The resulting amplitudes of output voltage $V_p$ and output power $P_p$ are plotted against base excitation frequency $fr$ in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all} and Figure~\ref{fig:fig_output_power_vs_fr_Rl_laml_all}, respectively. In this process, the values of beam extension part density $\rho_e$ and Young's modulus $Y_e$ are kept unchanged, so do the values of $\lambda_m$ and $\lambda_B$.
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_vol_laml_list_vs_fr_Rl}
+    \caption{Output voltage $V_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus load resistance $R_l$ at different frequency $fr$ and length ratio $\lambda_l$. }
+    \label{fig:fig_vol_laml_list_vs_fr_Rl}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_pow_laml_list_vs_fr_Rl}
+    \caption{Output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus load resistance $R_l$ at different frequency $fr$ and length ratio $\lambda_l$. }
+    \label{fig:fig_pow_laml_list_vs_fr_Rl}
+\end{figure}
+
+
+According to Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all} and Figure~\ref{fig:fig_output_power_vs_fr_Rl_laml_all}, for the given values $\lambda_B$ and $\lambda_m$, frequency response of the piezoelectric energy harvester in the interested frequency range changes in accordance with the extension length $l_e$ and thus the length ratio $\lambda_l$. 
+
+When $\lambda_l$ is relatively small, say $\lambda_l = 0.2$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(b), frequency response of the $PEHFE$ piezoelectric energy harvester with flexible extension is almost the same as that of the $CPEH$ case where $\lambda_l = 0.0$. That is to say, there is only resonant peak in the considered frequency range and the corresponding resonant frequency is around $42\ Hz$ for different values of load resistance $R_l$. Therefore we can conclude that in this situation, the beam extension part is playing a negligible role in the motion of the primary beam part. As a result, energy harvesting performances of the proposed piezoelectric energy harvesters with flexible extensions are similar to that of a classic piezoelectric energy harvester. 
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_vol_fr_sl_Rl_sl_vs_laml}
+    \caption{Output voltage $V_p$ (amplitude) and output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus length ratio $\lambda_l$ at different frequency $f$ and load resistance $R_l$. \color{red}{to be revised in the legend, add label (a), (b)}}
+    \label{fig:fig_vol_fr_sl_Rl_sl_vs_laml}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_pow_fr_sl_Rl_sl_vs_laml}
+    \caption{Output voltage $V_p$ (amplitude) and output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus length ratio $\lambda_l$ at different frequency $f$ and load resistance $R_l$.  \color{red}{to be revised in the legend, add label (a), (b)} }
+    \label{fig:fig_pow_fr_sl_Rl_sl_vs_laml}
+\end{figure}
+
+
+With the increase of the length ratio $\lambda_l$, say $\lambda_l = 0.4$, $0.6$, or $0.8$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(b), (c), and (d), respectively, there begins to exist an extra resonant and anti-resonant mode in the considered frequency range, compared with that of the case of no flexible extension where $\lambda_l = 0.0$. An increase of the value of $\lambda_l$ causes the decrease of the resonant and anti-resonant frequencies of the newly occurring mode. What's more, for the cases of $\lambda_l = 0.4$ and $0.6$, the resonant frequency of the previously existing mode, which corresponds to the first resonant mode of a classic piezoelectric energy harvester, is shifted by an obvious degree. This can be explained as follows. The motion of the proposed piezoelectric energy harvester with flexible extension is controlled by the primary beam part and the beam extension part. With the increase of $\lambda_l$, resonant frequency of the beam extension part approaches that of the primary beam. Thus the two parts interact with each other at a high level. resonant frequency of the whole piezoelectric energy harvester with flexible extension is therefore tuned by the beam extension part. When the resonant frequency of the beam extension is far small than that of the primary beam, which is the case for $\lambda = 0.8$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(d), the two parts have little effect upon each other. 
+
+
+If we further increase the length ratio to $\lambda_l = 1.0$, more resonant and anti-resonant modes occur in the considered frequency range. It can be found from Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(d) and Figure~\ref{fig:fig_output_power_vs_fr_Rl_laml_all}(d) that, amplitude of the output voltage $V_p$ and output power $P_p$ at the newly occurring resonant mode is comparable in order of magnitude to that of the classic piezoelectric energy harvester. 
+
+
+In this view, attachment of the flexible extension part actually increases the working frequency range of the piezoelectric energy harvester, as typical piezoelectric energy harvesters rely on resonant modes to work. On the other hand, the flexible extension also provides a way to tune the bandwidth of a piezoelectric energy harvester. An obvious way to do so is to choose the parameters of the beam extension part, so that the beam extension part and the primary beam part have similar resonant frequency and interact strongly with each other. The point to be noticed is the existence of anti-resonant modes. They correspond to low output voltage and output power, and to some degree narrows the bandwidth of the energy harvester. However, it is still not worse than an otherwise non-resonant vibration, as in both cases the electrical output of the piezoelectric energy harvester is unusable.
+
+In the second place, we investigate the influence of load resistance $R_l$ upon performance of the piezoelectric energy harvester at different values of base excitation frequency $fr$ and length ratio $\lambda_l$. The resulting amplitudes of output voltage $V_p$ and output power $P_p$ are shown in Figure~\ref{fig:fig_vol_laml_list_vs_fr_Rl} and Figure~\ref{fig:fig_pow_laml_list_vs_fr_Rl}, respectively. It is obvious that in the range of low $R_l$, a power law exists between the amplitudes of output voltage $V_p$ and output power $P_p$ and load resistance $R_l$. For all the chosen values of base excitation frequency $fr$, the increase of $R_l$ leads to an increase in $V_p$. Ultimately, $V_p$ approaches asymptotically to a limit value $V_p^{lim}$. This value actually corresponds to the amplitude of open-circuit output voltage of the piezoelectric energy harvester. At the same time, the value of $P_p$ exhibits an obvious maximum at some values of $R_l$ between $10\ k\Omega$ and $1\ M\Omega$. And on both sides away from the maximum value, we see also a power law between the value of $R_l$ and $P_p$, as shown in Figure~\ref{fig:fig_pow_laml_list_vs_fr_Rl}. This indicates that an asymptotic analysis may help us to simplify the analysis of performance of piezoelectric energy harvesters. But this is out of the scope of our current contribution and will be covered in the future research.
+
+
+
+
+In the third place, at different values of $fr$ and $R_l$, we directly plot the amplitudes of $V_p$ and $P_p$ with respect to $\lambda_l$, which are shown in Figure~\ref{fig:fig_vol_fr_sl_Rl_sl_vs_laml} and Figure~\ref{fig:fig_vol_fr_sl_Rl_sl_vs_laml}, respectively. It is shown that at given values of $R_l$ and $fr$, output performances of the proposed piezoelectric energy harvesters can be tuned by the parameter $\lambda_l$. For example, when $fr\ =\ 31.62\ Hz$ and $R_l\ =\ 10\ k\Omega$, a maximum peak of $V_p$ and $P_p$ is found around $\lambda_l\ =\ 0.5$. Compared with the case of no flexible extension ($\lambda_l\ =\ 0$), the amplitude of output voltage $V_p$ is about $13$ times larger, while the amplitude of output power $P_p$ is about $3$ times larger. Similar phenomena can be found when $fr\ =\ 42.17\ Hz$. This indicates that the addition of the flexible extension can substantially increase the output performance of a piezoelectric energy harvester. It should be noted that in case of large values of $fr$, like $fr\ =\ 100\ Hz$, the tuning performance of the flexible extension is no longer significant.
+
+
+
+
+\subsection{Beam extension Young's modulus $Y_e$ or bending stiffness ratio $\lambda_B$}
+
+To investigate the influence of bending stiffness ratio $\lambda_B$ upon the performance of the piezoelectric energy harvester with flexible extension, we set different values of Young's modulus $Y_e$ of the beam extension part to change the values of $\lambda_B$. Considering the properties of commonly used engineering materials \cite{warlimont2018springer}, the values of $Y_e$ is set to be in the range of $0.01\ GPa\ \leq\ Y_e\ \leq\ 400\ GPa$. For each value of bending stiffness ratio $\lambda_B$, the base excitation problem is solved with respect to different base excitation frequency $fr$ and load resistance $R_l$. In this process, the length ratio is fixed to be $\lambda_l\ =\ 0.3$ while its volumetric density is set to be $\rho_e\ =\ 1.38\ \times\ 10^3\ kg/m^3$.
+
+Firstly, the influence of base excitation frequency $fr$ upon performance of the piezoelectric energy harvester is shown Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_lamB_all} and Figure~\ref{fig:fig_output_power_vs_fr_Rl_lamB_all} at different values of load resistance $R_l$ and bending stiffness ratio $\lambda_B$. To have a clear clue about the value of $\lambda_B$, it is found that for a Young's modulus of $Y_e\ =\ 0.01\ GPa$, the corresponding value of bending stiffness ratio is $\lambda_B\ =\ 2.39\times10^{-5}$, while for a Young's modulus of $Y_e\ =\ 200\ GPa$, the corresponding value of bending stiffness ratio is $\lambda_B\ =\ 0.478$.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_output_voltage_vs_fr_Rl_lamB_all}
+    \caption{Output voltage $V_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus base excitation frequency $fr$ at different bending stiffness ratio $\lambda_B$ and load resistance $R_l$. \color{red}{to be revised in the legend. change figure title} }
+    \label{fig:fig_output_voltage_vs_fr_Rl_lamB_all}
+\end{figure}
+
+
+It is easily seen from Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_lamB_all} and Figure~\ref{fig:fig_output_power_vs_fr_Rl_lamB_all} that, at the given values of $\lambda_l$ and $\lambda_m$, bending stiffness ratio $\lambda_B$ also affects frequency response of the proposed piezoelectric energy harvester with flexible extension, but in a different manner from length ratio $\lambda_l$. 
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_output_power_vs_fr_Rl_lamB_all}
+    \caption{Output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus base excitation frequency $fr$ at different bending stiffness ratio $\lambda_B$ and load resistance $R_l$. \color{red}{to be revised in the legend. change figure title} }
+    \label{fig:fig_output_power_vs_fr_Rl_lamB_all}
+\end{figure}
+
+
+When the bending stiffness ratio $\lambda_B$ is very small, say $Y_e\ =\ 0.01\ GPa$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_lamB_all}(a) and Figure~\ref{fig:fig_output_power_vs_fr_Rl_lamB_all}(a), there exist multiple resonant modes in the considered frequency range. And some of the resonant modes are potential to be used for energy harvesting. With the increase of bending stiffness ratio $\lambda_B$, fewer resonant modes are present in the considered frequency range. For example, when $Y_e\ =\ 0.3\ GPa$, two resonant modes are present and when $Y_e\ =\ 2.3\ GPa$, only one resonant mode is present. As a result, less frequencies can be utilized for energy harvesting. That is to say, to achieve an energy harvesting capacity of wider frequency range, smaller bending stiffness ratio $\lambda_B$ is preferred. Actually, from Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_lamB_all} we can conclude that, a bending stiffness ratio $\lambda_B$ in the order of $10^{-4}$ or lower is beneficial to the energy harvesting performance of the piezoelectric energy harvester with flexible extension. However, only changing the value of $\lambda_B$ is not the best way to tune the energy harvesting performance of the piezoelectric energy harvester with flexible extension. It is seen from the previous subsection and this subsection that, the combination change of larger $\lambda_l$ and lower $\lambda_B$ serve better for this goal.
+
+
+
+
+
+Similarly, for a set of chosen values of $Y_e$ and therefore $\lambda_B$, we plot the amplitudes of output voltage $V_p$ and output power $P_p$ with respect to load resistance $R_l$ at different base excitation frequencies $fr$ in Figure~\ref{fig:fig_vol_lamB_list_vs_fr_Rl} and Figure~\ref{fig:fig_pow_lamB_list_vs_fr_Rl}, respectively. It is easily seen that the amplitude of output voltage $V_p$ increases in terms of increasing $R_l$ and ultimately reaches a limit, which is actually the open-circuit output voltage. The amplitude of output power $P_p$ will reaches its maximum at a critical value of $R_l$, which is dependent on the values of $\lambda_B$ and $fr$. 
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_vol_lamB_list_vs_fr_Rl}
+    \caption{Output voltage $V_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus bending stiffness ratio $\lambda_B$ at different frequency $fr$ and load resistance $R_l$.  \color{red}{to be revised in the legend. change figure title} }
+    \label{fig:fig_vol_lamB_list_vs_fr_Rl}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_pow_lamB_list_vs_fr_Rl}
+    \caption{Output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus bending stiffness ratio $\lambda_B$ at different frequency $fr$ and load resistance $R_l$.  \color{red}{to be revised in the legend. change figure title} }
+    \label{fig:fig_pow_lamB_list_vs_fr_Rl}
+\end{figure}
+
+
+The influence of bending stiffness ratio $\lambda_B$ is shown by plotting the amplitudes of output voltage $V_p$ and output power $P_p$ relative to $\lambda_B$ at different values of load resistance $R_l$ and base excitation frequency $fr$, as shown in Figure~\ref{fig:fig_vol_fr_sl_Rl_sl_vs_lamB} and Figure~\ref{fig:fig_pow_fr_sl_Rl_sl_vs_lamB}, respectively. It is found that for a low frequency base excitation, as shown in Figure~\ref{fig:fig_vol_fr_sl_Rl_sl_vs_lamB}(a) and (b), no big difference is seen when we change the values of $\lambda_B$. The amplitudes of output voltage $V_p$ and output power $P_p$ remain at a low level and the proposed piezoelectric energy harvester with flexible extension can not be used for energy harvesting. For a higher base excitation frequency $fr$, as shown in Figure~\ref{fig:fig_vol_fr_sl_Rl_sl_vs_lamB}(c) and (d) and Figure~\ref{fig:fig_pow_fr_sl_Rl_sl_vs_lamB}(c) and (d), a peak of $V_p$ and $P_p$ is found for certain value of $\lambda_B$. The output performance of the piezoelectric energy harvester with flexible extension is increased by changing the value of $\lambda_B$. For a further higher value of $fr$, as shown in Figure~\ref{fig:fig_vol_fr_sl_Rl_sl_vs_lamB}(e), the value of $\lambda_B$ significantly change the amplitudes of output voltage $V_p$ and output power $P_p$. To achieve higher energy harvesting performance, higher (in the order of $10^{-1}$) or lower (in the order of $10^{-5}$) values of $\lambda_B$ are preferred against a moderate (in the order of $10^{-3}$) value of $\lambda_B$. For the value of base excitation frequency $fr\ =\ 100\ Hz$, as shown in Figure~\ref{fig:fig_vol_fr_sl_Rl_sl_vs_lamB}(f), the value of $\lambda_B$ is found again playing a minor role in changing the values of $V_p$ and $P_p$.
+
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_vol_fr_sl_Rl_sl_vs_lamB}
+    \caption{Output voltage $V_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus bending stiffness ratio $\lambda_B$ at different frequency $fr$ and load resistance $R_l$. }
+    \label{fig:fig_vol_fr_sl_Rl_sl_vs_lamB}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_pow_fr_sl_Rl_sl_vs_lamB}
+    \caption{Output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus bending stiffness ratio $\lambda_B$ at different frequency $fr$ and load resistance $R_l$. }
+    \label{fig:fig_pow_fr_sl_Rl_sl_vs_lamB}
+\end{figure}
+
+
+\subsection{Beam extension line density $\rho_e$ or line density ratio $\lambda_m$}
+
+To investigate the influence of line density ratio $\lambda_m$ upon the performance of the piezoelectric energy harvester with flexible extension, the volumetric density $\rho_e$ of the beam extension part is changed according the properties of commonly used engineering materials \cite{warlimont2018springer}. For the convenience of performance comparison, $\rho_e$ is set to be $1.38\times10^1\ kg/m^3$, $1.38\times10^2\ kg/m^3$, $1.38\times10^4\ kg/m^3$, or $1.38\times10^5\ kg/m^3$. For each value of line density ratio $\lambda_m$, the base excitation problem is solved for different base excitation frequency $fr$ and load resistance $R_l$. During the simulation, the length ratio is fixed to be $\lambda_l\ =\ 0.3$ while the beam extension bending stiffness is set to be $Y_e\ =\ 2.3\ GPa$.
+
+The influence of base excitation frequency $fr$ upon performance of the piezoelectric energy harvester is shown Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_lamm_all} and Figure~\ref{fig:fig_output_power_vs_fr_Rl_lamm_all} at different values of load resistance $R_l$ and bending stiffness ratio $\lambda_B$. A simple calculation shows that when $\rho_e\ =\ 1.38\times10^1\ kg/m^3$, $\lambda_e\ =\ 1.03\times10^{-3}$, while for $\rho_e\ =\ 1.38\times10^4\ kg/m^3$, $\lambda_m\ =\ 1.03$. For typical flexible like $PET$\cite{dean1999lange}, $\rho_e$ is $1.38\times10^1\ kg/m^3$, calculation results shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_lamm_all}(c) and Figure~\ref{fig:fig_output_power_vs_fr_Rl_lamm_all}(c) indicate that no extra resonant modes are present in the considered frequency range. Besides, no big difference is observed in terms of the amplitudes of output voltage $V_p$ and output power $P_p$ compared with the cases with lower volumetric densities, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_lamm_all}(a) and (b) and Figure~\ref{fig:fig_output_power_vs_fr_Rl_lamm_all}(a) and (b). However, for a larger density $\rho_e$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_lamm_all}(d) and Figure~\ref{fig:fig_output_power_vs_fr_Rl_lamm_all}(d), the existence of extra resonant modes is seen. As a result, we can conclude that a heavier beam extension may be better for energy harvesting, but it is not always possible to find appropriate materials. Indeed, for most structure materials in engineering applications, the corresponding volumetric densities are not enough to generate extra resonant modes in the range. Hence, it is not wise to depend on the parameter $\rho_e$ only to effectively tune the performance of the energy harvester with flexible extension. 
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_output_voltage_vs_fr_Rl_lamm_all}
+    \caption{Output voltage $V_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus base excitation frequency $fr$ at different line density ratio $\lambda_m$ and load resistance $R_l$.}
+    \label{fig:fig_output_voltage_vs_fr_Rl_lamm_all}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_output_power_vs_fr_Rl_lamm_all}
+    \caption{Output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus base excitation frequency $fr$ at different line density ratio $\lambda_m$ and load resistance $R_l$.}
+    \label{fig:fig_output_power_vs_fr_Rl_lamm_all}
+\end{figure}
+
+A second plot is done between the amplitudes of output voltage $V_p$ and output power $P_p$ and the load resistance $R_l$, at different values of $\lambda_m$ and $fr$. The results are shown in Figure~\ref{fig:fig_vol_lamm_list_vs_fr_Rl} and Figure~\ref{fig:fig_pow_lamm_list_vs_fr_Rl}. A familiar conclusion can be made that with the increase of $R_l$, amplitude of output voltage $V_p$ increases to an ultimate limit while amplitude of output power $P_p$ reaches its peak at some value of $R_l$.
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_vol_lamm_list_vs_fr_Rl}
+    \caption{Output voltage $V_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus load resistance $R_l$ at different frequency $fr$ and line density ratio $\lambda_m$. }
+    \label{fig:fig_vol_lamm_list_vs_fr_Rl}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_pow_lamm_list_vs_fr_Rl}
+    \caption{Output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus load resistance $R_l$ at different frequency $fr$ and line density ratio $\lambda_m$. }
+    \label{fig:fig_pow_lamm_list_vs_fr_Rl}
+\end{figure}
+
+A further plot is generated using the amplitudes of output voltage $V_p$ and output power $P_p$ versus line density ratio $\lambda_m$ at different values of load resistance $R_l$ and base excitation frequency $fr$, as shown in Figure~\ref{fig:fig_vol_fr_sl_Rl_sl_vs_lamm} and Figure~\ref{fig:fig_pow_fr_sl_Rl_sl_vs_lamm}. It is obvious that for low base excitation frequency, like $fr\ =\ 1\ Hz$, $V_p$ and $P_p$ increase with respect to $\lambda_m$. For the case of $fr\ =\ 31.62 \ Hz$, $V_p$ and $P_p$ changes little with respect to $\lambda_m$, compared with the cases of smaller $\lambda_m$. For the case of $fr\ =\ 41.27 \ Hz$, a significant change of $V_p$ and $P_p$ can be seen with respect to $\lambda_m$. While for the case of $fr\ =\ 100 \ Hz$, the change becomes negligible again. That is to say, at the frequency around the resonant frequency in the considered range, the change of line density ratio $\lambda_m$ is helpful to improve the performance of the proposed piezoelectric energy harvester with flexible extension. In the other cases, the change of $\lambda_m$ won't help too much. 
+
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_vol_fr_sl_Rl_sl_vs_lamm}
+    \caption{Output voltage $V_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus line density ratio $\lambda_m$ at different frequency $fr$ and load resistance $R_l$. \color{red}{legend to be revised} }
+    \label{fig:fig_vol_fr_sl_Rl_sl_vs_lamm}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./fig_pow_fr_sl_Rl_sl_vs_lamm}
+    \caption{Output power $P_p$ (amplitude) of the piezoelectric energy harvester with flexible extension versus line density ratio $\lambda_m$ at different frequency $fr$ and load resistance $R_l$. \color{red}{legend to be revised} }
+    \label{fig:fig_pow_fr_sl_Rl_sl_vs_lamm}
+\end{figure}
+
+
+\section{Conclusion and Discussion}
+
+Here in this contribution, we investigate the method of using elastic extension to tune the energy harvesting performance of classic piezoelectric cantilever energy harvesters. Dynamic model of the proposed method is established and transformed into a boundary value problem. Simulations are done to figure out the influence several system parameters, like length ratio $\lambda_l$, bending stiffness ratio $\lambda_B$, and line density ratio $\lambda_m$, upon the performance of the piezoelectric energy harvester with elastic extensions. 
+
+Firstly, it is found that by changing the parameter values, we can introduce extra resonant modes in the considered frequency range. And these resonant modes are potential for energy harvesting applications as the output level is usable. As engineering energy harvesting applications rely on resonant modes wot work, this means that we can expand the work range of energy harvesters by adding elastic extensions.
+
+Secondly, energy harvesting performance of a classical piezoelectric energy harvester can be tuned by elastic extension. It is seen from the simulation results that by changing parameter values, the introduced resonant mode can have a strong interaction with the originally resonant mode of a piezoelectric energy harvester. In this way, we see this system as a coupled oscillating system. By changing parameter values, the energy input into the whole system can be concentrated in one single oscillator. In that way, the output performance of the piezoelectric energy harvester is somehow strengthened and improved.
+
+Thirdly, the tuning effect of the elastic extension is the result of the combine action of three parameters $\lambda_l$, $\lambda_B$, and $\lambda_m$. The increase of $\lambda_l$ and $\lambda_m$ tends to increase the number of introduced resonant modes, while the increase of $\lambda_B$ tends to decrease it. Thus to better improve the performance of a piezoelectric energy harvester, a comprehensive study is yet to be done to figure out the best parameter set. In this sense, the asymptotic of the problem is necessary and will be the topic of future research. 
+
+\section*{Reference}
+
+\bibliography{maureenchou.bib}
+\bibliographystyle{vancouver}
+
+
+\end{document}
