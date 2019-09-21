@@ -124,10 +124,32 @@ Tran N, Ghayesh MH, Arjomandi M.
   for performance enhancement.
 \newblock International Journal of Engineering Science. 2018;127:162--185.
 
+\bibitem{zhou2019piezoelectric}
+Zhou CQXZ Maoying, Wang W.
+\newblock Piezoelectric wind energy harvesting device based on the inverted
+  cantilever beam with leaf-inspired extensions.
+\newblock AIP Advances. 2019;9:035213.
+
 \bibitem{park2003dynamics}
 Park CH.
 \newblock Dynamics modelling of beams with shunted piezoelectric elements.
 \newblock Journal of Sound and vibration. 2003;268(1):115--129.
+
+\bibitem{Timoshenko1974Vibration}
+Timoshenko S.
+\newblock Vibration problems in engineering.
+\newblock Wiley; 1974.
+
+\bibitem{maurini2006numerical}
+Maurini C, Porfiri M, Pouget J.
+\newblock Numerical methods for modal analysis of stepped piezoelectric beams.
+\newblock Journal of Sound and Vibration. 2006;298(4-5):918--933.
+
+\bibitem{wu1992generalized}
+Wu JJ.
+\newblock A generalized harmonic balance method for forced non-linear
+  oscillations: the subharmonic cases.
+\newblock Journal of Sound and Vibration. 1992;159(3):503--525.
 
 \bibitem{driscoll2014chebfun}
 Driscoll TA, Hale N, Trefethen LN. Chebfun guide.
