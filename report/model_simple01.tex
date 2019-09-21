@@ -71,13 +71,13 @@ Following the classical analyzing process of piezoelectric bimorph cantilever be
 where $M_p(x_1,t)$ is the bending moment at the cross section of position coordinate $x_1$ and $q_p(x_1,t)$ is the corresponding local line charge density on the electrode. $w_1(x_1,t)$ is the displacement function of the primary beam with $0 \leq x_1 \leq l_p$ and $V_p(t)$ is the voltage across the electrodes. Considering that the piezoelectric elements are arranged in a serial connection manner \cite{erturk2009experimentally}, the coefficients $B_p$, $e_p$, and $\epsilon_p$ are defined as
 \begin{equation}
     \left\{\begin{aligned}
-        B_p &= \frac{2}{3}b\left\{ E_s h_s^3 + c_{11}^E \left[ (h_s+h_p)^3 - h_s^3 \right] \right\}, \\
+        B_p &= \frac{2}{3}b\left\{ Y_s h_s^3 + Y_p \left[ (h_s+h_p)^3 - h_s^3 \right] \right\}, \\
         e_p &= b e_{31}\left(h_s+\frac{1}{2}h_p\right), \\
         \epsilon_p &= \frac{b \epsilon_{33}^S}{2 h_p},
     \end{aligned}\right.
     \label{eq:eq_primary_beam_consitutive_equation_coefficients}
 \end{equation}
-in which $c_{11}^E$ and $E_s$ are the elastic constants of the piezoelectric element and the base structure, respectively, $e_{31}$ is the piezoelectric charge constant of the piezoelectric element, $\epsilon_{33}^S$ is the dielectric constant of the piezoelectric element.
+in which $Y_p$ and $Y_s$ are the elastic constants of the piezoelectric element and the base structure, respectively, $e_{31}$ is the piezoelectric charge constant of the piezoelectric element, $\epsilon_{33}^S$ is the dielectric constant of the piezoelectric element.
 
 Using Euler-Bernoulli assumptions \cite{Timoshenko1974Vibration}, dynamic equations of the primary beam are formulated as 
 \begin{equation}
@@ -101,7 +101,7 @@ For the extension beam, the governing equations are simply
     B_e \frac{\partial^4 w_2(x_2,t)}{\partial x_2^4} + m_e \frac{\partial^2 w_2(x_2,t)}{\partial t^2} = 0
     \label{eq:eq_extension_beam_equilibrium_equation}
 \end{equation}
-where $w_2(x_2,t)$ is the displacement of the extension beam at position $0\leq x_2 \leq l_e$, $B_e = \frac{2}{3} b h_e^3$ is the equivalent bending stiffness of the extension beam, $m_e = 2\rho_e h_e$ is the line mass density of the extension beam, $\rho_e$ is the volumetric mass density of the extension beam. As a result, the defining relations for the bending moment $M_e(x_2,t)$ at the position $x_2$ is
+where $w_2(x_2,t)$ is the displacement of the extension beam at position $0\leq x_2 \leq l_e$, $B_e = \frac{2}{3} Y_e b h_e^3$ is the equivalent bending stiffness of the extension beam, $m_e = 2\rho_e h_e$ is the line mass density of the extension beam, $\rho_e$ is the volumetric mass density of the extension beam. In this process, $Y_e$ is the Young's modulus of the extension beam. As a result, the defining relations for the bending moment $M_e(x_2,t)$ at the position $x_2$ is
 \begin{equation}
     M_e(x_2,t) = B_e \frac{\partial^2 w_2(x_2,t)}{\partial x_2^2}.
     \label{eq:eq_extension_beam_consitution_equation}
@@ -248,10 +248,10 @@ The system (\ref{eq:eq_balance_equations_compact}) and (\ref{eq:eq_boundary_cond
 
 \section{Influence of extension part upon energy harvester performance}
 
-The basic geometry and material properties of the materials used in the proposed PEHEEs are summarized in Table~\ref{tab:parameter_value_extension}. Note that some of the parameters, like length $l_e$, Young's modulus $Y_e$, and volumetric density $\rho_e$ of the extension beam, are actually changing across different sets of simulations. The values given here are acting as a reference. In the simulation, base excitation frequency $f_b$ and external load resistance $R_l$, which change the dimensionless values of $\nu$ and $\beta$, respectively, are of critical importance in the sense that these two parameters reflect the influence of vibration source and external load circuit. For every set of parameter values, we set the base excitation frequency $f_b$ to change from $1\ Hz$ to $100\ Hz$, which covers the usual frequency range of natural vibration sources, and set the load resistance $R_l$ to change from $1\ \Omega$ to $10\ M\Omega$, which is inspired by the Ref. \cite{erturk2009experimentally} and takes into account the dielectric property of piezoelectric materials. Actually, when the load resistance $R_l = 1\ \Omega$, the PEHEE is said to be in a short-circuit condition as the general equivalent resistance of the PEHEE is much larger than $R_l$. On the other hand, when $R_l = 10\ M\Omega$, the system is close to an open-circuit condition where no external load is connected to the output electrodes.
+The basic geometry and material properties of the materials used in the proposed PEHEEs are summarized in Table~\ref{tab:parameter_value_extension}. Note that some of the parameters, like length $l_e$, Young's modulus $Y_e$, and volumetric density $\rho_e$ of the extension beam, are actually changing across different sets of simulations. The values given here are acting as a reference. In the simulation, base excitation frequency $f_b$ and external load resistance $R_l$, which change the dimensionless values of $\nu$ and $\beta$, respectively, are of critical importance in the sense that these two parameters reflect the influence of vibration source and external load circuit. For every set of parameter values, we set the base excitation frequency $f_b$ to change from $1\ Hz$ to $100\ Hz$, which covers the usual frequency range of natural vibration sources, and set the load resistance $R_l$ to change from $1\ \Omega$ to $10\ M\Omega$, which is inspired by the Ref. \cite{erturk2009experimentally} and takes into account the dielectric property of piezoelectric materials. Actually, when the load resistance $R_l = 1\ \Omega$, the PEHEE is said to be in a short-circuit condition as the equivalent resistance of the PEHEE is generally much larger than $R_l$. On the other hand, when $R_l = 10\ M\Omega$, the system is close to an open-circuit condition where no external load is connected to the output electrodes.
 
 \begin{table}[!htbp]
-    \caption{Geometric, material, and electromechanical parameters used in the simulation for PEHEEs}
+    \caption{Geometric and material parameters used in the simulation for PEHEEs}
     \label{tab:parameter_value_extension}
     \centering
     \begin{tabular}{lc}
@@ -279,11 +279,11 @@ The basic geometry and material properties of the materials used in the proposed
 \end{table}
 
 
-In the following, we will investigate the influences of length $l_e$, Young's modulus $Y_e$, and volumetric density $\rho_e$ of the beam extension upon the performance of the piezoelectric energy harvester with flexible extensions separately.
+In the following, we will investigate the influences of length ratio $\lambda_l$, bending stiffness ratio $\lambda_B$, and line density ratio $\lambda_m$ on the performances of PEHEEs. These three parameters are determined by the length $l_e$, Young's modulus $Y_e$, and volumetric density $\rho_e$ of the extension beam respectively. So we are actually focusing on the influences of this geometric and material properties.
 
-\subsection{Beam extension length $l_e$ or length ratio $\lambda_l$}
+\subsection{Length $l_e$ of the extension beam or length ratio $\lambda_l$}
 
-The presence of the beam extension is primarily indicated by the beam extension length $l_e$, or equivalently the length ratio $\lambda_l$. When $\lambda_l = 0.0$, no beam extension is attached to the primary beam and the resultant piezoelectric energy harvester reduces to the classic piezoelectric energy harvesting bimorph \cite{erturk2009experimentally}, which is referred to as a reference for comparison. In this contribution, the range of length ratio $\lambda_l$ to be considered is set to be $0.0 \leq \lambda_l \leq 1.0$. For each value of length ratio $\lambda_l$, the base excitation problem is solved with respect to different base excitation frequency $fr$ and load resistance $R_l$. In this process, the Young's modulus of the beam extension part is set to be $Y_e\ =\ 2.3\ GPa$ while its volumetric density is set to be $\rho_e\ =\ 1.38\ \times\ 10^3\ kg/m^3$.
+The presence of the extension beam is primarily indicated by the extension beam length $l_e$, or equivalently the length ratio $\lambda_l$. When $\lambda_l = 0.0$, no extension beam is attached to the primary beam and the resultant piezoelectric energy harvester reduces to a CPEH \cite{erturk2009experimentally}, which is referred to as a reference for comparison. In this contribution, the range of length ratio $\lambda_l$ to be considered is $0.0 \leq \lambda_l \leq 1.0$. For each value of length ratio $\lambda_l$, the above described base excitation problem is solved with respect to different base excitation frequency $f_b$ and load resistance $R_l$. In this process, Young's modulus of the extension beam is set to be $Y_e = 2.3\ GPa$ while its volumetric density is set to be $\rho_e = 1.38\times10^3\ kg/m^3$.
 
 
 \begin{figure}[!htbp]
@@ -303,8 +303,14 @@ The presence of the beam extension is primarily indicated by the beam extension 
 \end{figure}
 
 
-In the first place, we would like to explore the influence of base excitation frequency $fr$ upon performance of the piezoelectric energy harvester at different values of load resistance $R_l$ and length ratio $\lambda_l$. Let the frequency range of interest be $1\ -\ 100\ Hz$. The length ratio $\lambda_l$ is chosen to be $0.0$, $0.2$, $0.4$, $0.6$, $0.8$, or $1.0$, and load resistance $R_l$ is chosen to be $10^0\ \Omega$, $10^2\ \Omega$, $10^4\ \Omega$, or $10^6\ \Omega$. The resulting amplitudes of output voltage $V_p$ and output power $P_p$ are plotted against base excitation frequency $fr$ in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all} and Figure~\ref{fig:fig_output_power_vs_fr_Rl_laml_all}, respectively. In this process, the values of beam extension part density $\rho_e$ and Young's modulus $Y_e$ are kept unchanged, so do the values of $\lambda_m$ and $\lambda_B$.
-
+In the first place, we would like to explore the influence of base excitation frequency $f_b$ upon performance of the PEHEE at different values of load resistance $R_l$ and length ratio $\lambda_l$. Let the frequency range of interest be $1 - 100\ Hz$. The length ratio $\lambda_l$ is chosen to be $0.0$, $0.2$, $0.4$, $0.6$, $0.8$, or $1.0$, and load resistance $R_l$ is chosen to be $10^0\ \Omega$, $10^2\ \Omega$, $10^4\ \Omega$, or $10^6\ \Omega$. According the the previous sections, output voltage $\tilde{V}_p$ and output power $\tilde{P}_p$ can be evaluated by
+\begin{equation}
+    \begin{aligned}
+        \tilde{V}_p &= \frac{j \nu \beta}{j \nu \beta + 1} \frac{\xi_b}{l_p} \frac{e_p}{C_p}, \\
+        \tilde{P}_p &=  \tilde{V}_p^2 / R_l.
+    \end{aligned}
+\end{equation}
+Note that here $\tilde{V}_p$ and $\tilde{P}_p$ are the complex amplitudes of the periodic output voltage $V_p(t)$ and output power $P_p(t)$, which contain the modulus and phase information. Another point to be noted is that the frequencies of $V_p(t)$ and $P_p(t)$ are actually different. The frequency of $P_p(t)$ is twice as much as that of $V_p(t)$. In this contribution, we are more interested in the modulus information, which are $|\tilde{V}_p|$ and $|\tilde{P}_p|$, respectively. The simulation results of $|\tilde{V}_p|$ and $|\tilde{P}_p|$ are plotted against base excitation frequency $f_b$ in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all} and Figure~\ref{fig:fig_output_power_vs_fr_Rl_laml_all}, respectively. In this process, the values of density $\rho_e$ and Young's modulus $Y_e$ of the extension beam, or equivalently $\lambda_m$ and $\lambda_B$, are kept unchanged.
 
 \begin{figure}[!htbp]
     \centering
@@ -321,9 +327,7 @@ In the first place, we would like to explore the influence of base excitation fr
 \end{figure}
 
 
-According to Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all} and Figure~\ref{fig:fig_output_power_vs_fr_Rl_laml_all}, for the given values $\lambda_B$ and $\lambda_m$, frequency response of the piezoelectric energy harvester in the interested frequency range changes in accordance with the extension length $l_e$ and thus the length ratio $\lambda_l$. 
-
-When $\lambda_l$ is relatively small, say $\lambda_l = 0.2$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(b), frequency response of the $PEHFE$ piezoelectric energy harvester with flexible extension is almost the same as that of the $CPEH$ case where $\lambda_l = 0.0$. That is to say, there is only resonant peak in the considered frequency range and the corresponding resonant frequency is around $42\ Hz$ for different values of load resistance $R_l$. Therefore we can conclude that in this situation, the beam extension part is playing a negligible role in the motion of the primary beam part. As a result, energy harvesting performances of the proposed piezoelectric energy harvesters with flexible extensions are similar to that of a classic piezoelectric energy harvester. 
+According to Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all} and Figure~\ref{fig:fig_output_power_vs_fr_Rl_laml_all}, for the given values $\lambda_m$ and $\lambda_B$, frequency response of the PEHEE in the interested frequency range changes in accordance with the extension length $l_e$ and thus the length ratio $\lambda_l$. When $\lambda_l$ is relatively small, say $\lambda_l = 0.2$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(b), frequency response of the PEHEE is almost the same as that of the CPEH case where $\lambda_l = 0.0$. That is to say, there is only one resonant peak in the considered frequency range and the corresponding resonant frequency is around $42\ Hz$ for different values of load resistance $R_l$. Therefore we can conclude that in this situation, the extension beam is playing a negligible role in the motion of the primary beam. They are nearly uncoupled. As a result, energy harvesting performances of the PEHEEs are similar to that of a CPEH. 
 
 \begin{figure}[!htbp]
     \centering
@@ -341,7 +345,13 @@ When $\lambda_l$ is relatively small, say $\lambda_l = 0.2$, as shown in Figure~
 \end{figure}
 
 
-With the increase of the length ratio $\lambda_l$, say $\lambda_l = 0.4$, $0.6$, or $0.8$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(b), (c), and (d), respectively, there begins to exist an extra resonant and anti-resonant mode in the considered frequency range, compared with that of the case of no flexible extension where $\lambda_l = 0.0$. An increase of the value of $\lambda_l$ causes the decrease of the resonant and anti-resonant frequencies of the newly occurring mode. What's more, for the cases of $\lambda_l = 0.4$ and $0.6$, the resonant frequency of the previously existing mode, which corresponds to the first resonant mode of a classic piezoelectric energy harvester, is shifted by an obvious degree. This can be explained as follows. The motion of the proposed piezoelectric energy harvester with flexible extension is controlled by the primary beam part and the beam extension part. With the increase of $\lambda_l$, resonant frequency of the beam extension part approaches that of the primary beam. Thus the two parts interact with each other at a high level. resonant frequency of the whole piezoelectric energy harvester with flexible extension is therefore tuned by the beam extension part. When the resonant frequency of the beam extension is far small than that of the primary beam, which is the case for $\lambda = 0.8$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(d), the two parts have little effect upon each other. 
+With the increase of the length ratio $\lambda_l$, say $\lambda_l = 0.4$, $0.6$, or $0.8$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(c), (d), and (e), respectively, there begins to exist an extra resonant and anti-resonant mode in the considered frequency range, compared with that of the case of no elastic extension. An increase of the value of $\lambda_l$ causes the decrease of the resonant and anti-resonant frequencies of the newly occurring modes. What's more, for the cases of $\lambda_l = 0.4$ and $0.6$, the resonant frequency of the previously existing mode, which corresponds to the first resonant mode of a CPEH, is shifted by a small amount. This can be explained as follows. The motion of the PEHEE is actually controlled by the interaction between the primary beam and the extension beam. With the increase of $\lambda_l$, the interaction strengthens from a weak level to a somehow considerable level. When the interaction is weak, the motion of the primary beam and the extension beam is superimposed almost linearly. 
+
+When the interaction is strong enough, the two parts 
+
+
+
+With the increase of $\lambda_l$, resonant frequency of the beam extension part approaches that of the primary beam. Thus the two parts interact with each other at a high level. resonant frequency of the whole piezoelectric energy harvester with flexible extension is therefore tuned by the beam extension part. When the resonant frequency of the beam extension is far small than that of the primary beam, which is the case for $\lambda = 0.8$, as shown in Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(d), the two parts have little effect upon each other. 
 
 
 If we further increase the length ratio to $\lambda_l = 1.0$, more resonant and anti-resonant modes occur in the considered frequency range. It can be found from Figure~\ref{fig:fig_output_voltage_vs_fr_Rl_laml_all}(d) and Figure~\ref{fig:fig_output_power_vs_fr_Rl_laml_all}(d) that, amplitude of the output voltage $V_p$ and output power $P_p$ at the newly occurring resonant mode is comparable in order of magnitude to that of the classic piezoelectric energy harvester. 
