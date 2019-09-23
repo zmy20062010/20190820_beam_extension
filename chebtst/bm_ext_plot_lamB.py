@@ -611,10 +611,10 @@ def plot_vol_fr_sl_Rl_sl_vs_lamB():
     # ax[0,0].legend(loc='upper left', ncol=2, fontsize=18)
 
 
-    ax[0,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 0, 100]/xib/wr[0,0]/wr[0,0]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
-    ax[0,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 2, 100]/xib/wr[0,0]/wr[0,0]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
-    ax[0,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 4, 100]/xib/wr[0,0]/wr[0,0]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
-    ax[0,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 6, 100]/xib/wr[0,0]/wr[0,0]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
+    ax[0,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 0, 100]/xib/wr[0,100]/wr[0,100]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
+    ax[0,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 2, 100]/xib/wr[0,100]/wr[0,100]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    ax[0,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 4, 100]/xib/wr[0,100]/wr[0,100]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    ax[0,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 6, 100]/xib/wr[0,100]/wr[0,100]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
     ax[0,1].yaxis.set_major_formatter(yfmt)
     ax[0,1].set_xscale('log')
     ax[0,1].set_yscale('log')
@@ -624,10 +624,10 @@ def plot_vol_fr_sl_Rl_sl_vs_lamB():
     # ax[0,1].legend(loc='upper left', ncol=2, fontsize=18)
 
 
-    ax[0,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 0, 200]/xib/wr[0,0]/wr[0,0]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
-    ax[0,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 2, 200]/xib/wr[0,0]/wr[0,0]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
-    ax[0,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 4, 200]/xib/wr[0,0]/wr[0,0]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
-    ax[0,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 6, 200]/xib/wr[0,0]/wr[0,0]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
+    ax[0,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 0, 200]/xib/wr[0,200]/wr[0,200]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
+    ax[0,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 2, 200]/xib/wr[0,200]/wr[0,200]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    ax[0,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 4, 200]/xib/wr[0,200]/wr[0,200]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    ax[0,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 6, 200]/xib/wr[0,200]/wr[0,200]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
     ax[0,2].yaxis.set_major_formatter(yfmt)
     ax[0,2].set_xscale('log')
     ax[0,2].set_yscale('log')
@@ -637,10 +637,10 @@ def plot_vol_fr_sl_Rl_sl_vs_lamB():
     # ax[0,2].legend(loc='upper left', ncol=2, fontsize=18)
 
 
-    ax[1,0].plot(lamB_list.reshape(-1,1),(am_vplist[:, 0, 300]/xib/wr[0,0]/wr[0,0]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
-    ax[1,0].plot(lamB_list.reshape(-1,1),(am_vplist[:, 2, 300]/xib/wr[0,0]/wr[0,0]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
-    ax[1,0].plot(lamB_list.reshape(-1,1),(am_vplist[:, 4, 300]/xib/wr[0,0]/wr[0,0]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
-    ax[1,0].plot(lamB_list.reshape(-1,1),(am_vplist[:, 6, 300]/xib/wr[0,0]/wr[0,0]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
+    ax[1,0].plot(lamB_list.reshape(-1,1),(am_vplist[:, 0, 300]/xib/wr[0,300]/wr[0,300]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
+    ax[1,0].plot(lamB_list.reshape(-1,1),(am_vplist[:, 2, 300]/xib/wr[0,300]/wr[0,300]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    ax[1,0].plot(lamB_list.reshape(-1,1),(am_vplist[:, 4, 300]/xib/wr[0,300]/wr[0,300]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    ax[1,0].plot(lamB_list.reshape(-1,1),(am_vplist[:, 6, 300]/xib/wr[0,300]/wr[0,300]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
     ax[1,0].yaxis.set_major_formatter(yfmt)
     ax[1,0].set_xscale('log')
     ax[1,0].set_yscale('log')
@@ -651,10 +651,10 @@ def plot_vol_fr_sl_Rl_sl_vs_lamB():
     # ax[1,0].legend(loc='upper left', ncol=2, fontsize=18)
 
 
-    ax[1,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 0, 325]/xib/wr[0,0]/wr[0,0]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
-    ax[1,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 2, 325]/xib/wr[0,0]/wr[0,0]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
-    ax[1,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 4, 325]/xib/wr[0,0]/wr[0,0]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
-    ax[1,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 6, 325]/xib/wr[0,0]/wr[0,0]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
+    ax[1,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 0, 325]/xib/wr[0,325]/wr[0,325]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
+    ax[1,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 2, 325]/xib/wr[0,325]/wr[0,325]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    ax[1,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 4, 325]/xib/wr[0,325]/wr[0,325]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    ax[1,1].plot(lamB_list.reshape(-1,1),(am_vplist[:, 6, 325]/xib/wr[0,325]/wr[0,325]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
     ax[1,1].yaxis.set_major_formatter(yfmt)
     ax[1,1].set_xscale('log')
     ax[1,1].set_yscale('log')
@@ -665,10 +665,10 @@ def plot_vol_fr_sl_Rl_sl_vs_lamB():
     # ax[1,1].legend(loc='upper left', ncol=2, fontsize=18)
 
 
-    ax[1,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 0, 400]/xib/wr[0,0]/wr[0,0]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
-    ax[1,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 2, 400]/xib/wr[0,0]/wr[0,0]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
-    ax[1,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 4, 400]/xib/wr[0,0]/wr[0,0]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
-    ax[1,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 6, 400]/xib/wr[0,0]/wr[0,0]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
+    ax[1,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 0, 400]/xib/wr[0,400]/wr[0,400]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
+    ax[1,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 2, 400]/xib/wr[0,400]/wr[0,400]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    ax[1,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 4, 400]/xib/wr[0,400]/wr[0,400]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    ax[1,2].plot(lamB_list.reshape(-1,1),(am_vplist[:, 6, 400]/xib/wr[0,400]/wr[0,400]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
     ax[1,2].yaxis.set_major_formatter(yfmt)
     ax[1,2].set_xscale('log')
     ax[1,2].set_yscale('log')
@@ -730,10 +730,10 @@ def plot_pow_fr_sl_Rl_sl_vs_lamB():
     # ax[0,0].legend(loc='upper left', ncol=2, fontsize=18)
 
 
-    ax[0,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 0, 100]/xib/wr[0,0]/wr[0,0]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
-    ax[0,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 2, 100]/xib/wr[0,0]/wr[0,0]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
-    ax[0,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 4, 100]/xib/wr[0,0]/wr[0,0]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
-    ax[0,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 6, 100]/xib/wr[0,0]/wr[0,0]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
+    ax[0,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 0, 100]/xib/wr[0,100]/wr[0,100]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
+    ax[0,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 2, 100]/xib/wr[0,100]/wr[0,100]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    ax[0,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 4, 100]/xib/wr[0,100]/wr[0,100]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    ax[0,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 6, 100]/xib/wr[0,100]/wr[0,100]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
     ax[0,1].yaxis.set_major_formatter(yfmt)
     ax[0,1].set_xscale('log')
     ax[0,1].set_yscale('log')
@@ -743,10 +743,10 @@ def plot_pow_fr_sl_Rl_sl_vs_lamB():
     # ax[0,1].legend(loc='upper left', ncol=2, fontsize=18)
 
 
-    ax[0,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 0, 200]/xib/wr[0,0]/wr[0,0]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
-    ax[0,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 2, 200]/xib/wr[0,0]/wr[0,0]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
-    ax[0,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 4, 200]/xib/wr[0,0]/wr[0,0]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
-    ax[0,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 6, 200]/xib/wr[0,0]/wr[0,0]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
+    ax[0,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 0, 200]/xib/wr[0,200]/wr[0,200]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
+    ax[0,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 2, 200]/xib/wr[0,200]/wr[0,200]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    ax[0,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 4, 200]/xib/wr[0,200]/wr[0,200]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    ax[0,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 6, 200]/xib/wr[0,200]/wr[0,200]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
     ax[0,2].yaxis.set_major_formatter(yfmt)
     ax[0,2].set_xscale('log')
     ax[0,2].set_yscale('log')
@@ -756,10 +756,10 @@ def plot_pow_fr_sl_Rl_sl_vs_lamB():
     # ax[0,2].legend(loc='upper left', ncol=2, fontsize=18)
 
 
-    ax[1,0].plot(lamB_list.reshape(-1,1),(am_pplist[:, 0, 300]/xib/wr[0,0]/wr[0,0]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
-    ax[1,0].plot(lamB_list.reshape(-1,1),(am_pplist[:, 2, 300]/xib/wr[0,0]/wr[0,0]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
-    ax[1,0].plot(lamB_list.reshape(-1,1),(am_pplist[:, 4, 300]/xib/wr[0,0]/wr[0,0]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
-    ax[1,0].plot(lamB_list.reshape(-1,1),(am_pplist[:, 6, 300]/xib/wr[0,0]/wr[0,0]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
+    ax[1,0].plot(lamB_list.reshape(-1,1),(am_pplist[:, 0, 300]/xib/wr[0,300]/wr[0,300]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
+    ax[1,0].plot(lamB_list.reshape(-1,1),(am_pplist[:, 2, 300]/xib/wr[0,300]/wr[0,300]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    ax[1,0].plot(lamB_list.reshape(-1,1),(am_pplist[:, 4, 300]/xib/wr[0,300]/wr[0,300]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    ax[1,0].plot(lamB_list.reshape(-1,1),(am_pplist[:, 6, 300]/xib/wr[0,300]/wr[0,300]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
     ax[1,0].yaxis.set_major_formatter(yfmt)
     ax[1,0].set_xscale('log')
     ax[1,0].set_yscale('log')
@@ -770,10 +770,10 @@ def plot_pow_fr_sl_Rl_sl_vs_lamB():
     # ax[1,0].legend(loc='upper left', ncol=2, fontsize=18)
 
 
-    ax[1,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 0, 325]/xib/wr[0,0]/wr[0,0]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
-    ax[1,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 2, 325]/xib/wr[0,0]/wr[0,0]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
-    ax[1,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 4, 325]/xib/wr[0,0]/wr[0,0]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
-    ax[1,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 6, 325]/xib/wr[0,0]/wr[0,0]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
+    ax[1,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 0, 325]/xib/wr[0,325]/wr[0,325]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
+    ax[1,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 2, 325]/xib/wr[0,325]/wr[0,325]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    ax[1,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 4, 325]/xib/wr[0,325]/wr[0,325]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    ax[1,1].plot(lamB_list.reshape(-1,1),(am_pplist[:, 6, 325]/xib/wr[0,325]/wr[0,325]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
     ax[1,1].yaxis.set_major_formatter(yfmt)
     ax[1,1].set_xscale('log')
     ax[1,1].set_yscale('log')
@@ -784,10 +784,10 @@ def plot_pow_fr_sl_Rl_sl_vs_lamB():
     # ax[1,1].legend(loc='upper left', ncol=2, fontsize=18)
 
 
-    ax[1,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 0, 400]/xib/wr[0,0]/wr[0,0]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
-    ax[1,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 2, 400]/xib/wr[0,0]/wr[0,0]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
-    ax[1,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 4, 400]/xib/wr[0,0]/wr[0,0]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
-    ax[1,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 6, 400]/xib/wr[0,0]/wr[0,0]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
+    ax[1,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 0, 400]/xib/wr[0,400]/wr[0,400]).T, 'r-*', label='$R_l$ = 1 $\\Omega$')
+    ax[1,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 2, 400]/xib/wr[0,400]/wr[0,400]).T, 'k-.s', label='$R_l$ = 100 $\\Omega$')
+    ax[1,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 4, 400]/xib/wr[0,400]/wr[0,400]).T, 'm--d', label='$R_l$ = 10 k$\\Omega$')
+    ax[1,2].plot(lamB_list.reshape(-1,1),(am_pplist[:, 6, 400]/xib/wr[0,400]/wr[0,400]).T, 'b-o', label='$R_l$ = 1 M$\\Omega$')
     ax[1,2].yaxis.set_major_formatter(yfmt)
     ax[1,2].set_xscale('log')
     ax[1,2].set_yscale('log')
