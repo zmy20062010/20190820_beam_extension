@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  6 OCT 2019 09:09
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  7 OCT 2019 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -225,14 +225,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ]
-(./analysis_eig_asy00.aux) ) 
+[2] (./analysis_eig_asy00.aux) ) 
 Here is how much of TeX's memory you used:
- 2632 strings out of 493591
- 33166 string characters out of 6141517
- 99752 words of memory out of 5000000
- 6033 multiletter control sequences out of 15000+600000
- 10888 words of font info for 43 fonts, out of 8000000 for 9000
+ 2637 strings out of 493591
+ 33245 string characters out of 6141517
+ 103752 words of memory out of 5000000
+ 6038 multiletter control sequences out of 15000+600000
+ 12135 words of font info for 48 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 27i,8n,35p,316b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,8n,35p,624b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on analysis_eig_asy00.pdf (1 page).
+Output written on analysis_eig_asy00.pdf (2 pages).

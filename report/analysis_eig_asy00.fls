@@ -85,4 +85,9 @@ INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT analysis_eig_asy00.aux
