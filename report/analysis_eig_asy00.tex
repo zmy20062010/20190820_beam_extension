@@ -1,0 +1,160 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+\documentclass{article}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{top = 1.5 cm, bottom = 1.5 cm}
+
+\title{Asymptotic analysis of piezoelectric energy harvester}
+\author{Maoying Zhou}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Summary of the interested equations}
+
+Here we are interested in the classical model of a piezoelectric cantilever beam energy harvester, whose model is described using the following set of equations:
+\begin{equation}
+    u^{\prime\prime\prime\prime} - \lambda^2 u = 0,
+\end{equation}
+and the accompanying boundary conditions:
+\begin{equation}
+    \left\{\begin{aligned}
+        u(0) &= 0 \\
+        u^\prime(0) &= 0 \\
+        u^{\prime\prime}(1) + \frac{j\lambda \beta \alpha^2}{ j\lambda \beta + 1 } u^\prime(1) &= 0 \\
+        u^{\prime\prime\prime}(1) &= 0
+    \end{aligned}\right.,
+\end{equation}
+where $\lambda$ is the eigenvalues for the problem, $u$ denotes the displace function of the cantilever beam, $\beta$ is the dimensionless externally connected resistance, and $\alpha$ is the dimensionless piezoelectric coefficient. They can be expressed as follows
+\begin{equation}
+    \lambda = \omega \sqrt{ \frac{ m_p l_p^4 }{ B_p } }, \quad \beta = R_l C_p \sqrt{\frac{B_p}{m_p l_p^4}}, \quad \alpha = e_p \sqrt{\frac{l_p}{C_p B_p}},
+\end{equation}
+where $\omega$ is angular frequency, $m_p$ is line mass density, $l_p$ is the length of the cantilever beam, $B_p$ is the bending stiffness, $C_p$ is the inherent capacitance of the piezoelectric layer, $e_p$ is the charge accumulation number, $R_l$ is the externally connected resistance. In practical applications, dielectric property of piezoelectric materials indicate that the parameter $\beta$ is changed from a very small value, which is close to a short-circuit condition to a very large value, which corresponds to an open-circuit condition. Thus we have that $0 \leq \beta \leq \infty$. 
+
+
+\section{Asymptotic analysis when $\beta$ is small}
+
+Here we seek to find the behavior of the above system at a small value of connected resistance, i.e., $\beta \sim 0$. In this case, we set that 
+\begin{equation}
+    \begin{aligned}
+        \lambda_k &= \lambda_k^{(0)} + \beta \lambda_k^{(1)} + \beta^2 \lambda_k^{(2)} + \cdots \\
+        \phi_k &= \phi_k^{(0)} + \beta \phi_k^{(1)} + \beta^2 \phi_k^{(2)} + \cdots
+    \end{aligned}
+\end{equation}
+where $\lambda_k$ and $\phi_k$ are the $k$th eigenvalue and eigenfunction respectively of the above mentioned system under perturbation. $\lambda_k^{(0)}$ and $\phi_k^{(0)}$ are the corresponding eigenvalue and eigenfunction of the unperturbed system at $\beta = 0$:
+\begin{equation}
+    u^{\prime\prime\prime\prime} - \lambda^2 u = 0,
+\end{equation}
+\begin{equation}
+    \left\{\begin{aligned}
+        u(0) &= 0 \\
+        u^\prime(0) &= 0 \\
+        u^{\prime\prime}(1) &= 0 \\
+        u^{\prime\prime\prime}(1) &= 0
+    \end{aligned}\right..
+\end{equation}
+
+Obviously, the unperturbed system is a classical eigenvalue problem with the eigenvalues determined by 
+\begin{equation}
+    1 + cosh(\sqrt{\lambda}) cos(\sqrt{\lambda}) = 0
+\end{equation}
+whose first several values are
+\begin{equation}
+    \sqrt{\lambda_1}/\pi = 0.59686..., \sqrt{\lambda_2}/\pi = 1.49418..., \sqrt{\lambda_3}/\pi = 2.50025..., \sqrt{\lambda_4}/\pi = 3.49999..., ...
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
