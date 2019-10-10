@@ -41,16 +41,16 @@ where $\omega$ is angular frequency, $m_p$ is line mass density, $l_p$ is the le
 
 \section{Asymptotic analysis when $\beta$ is small}
 
-Here we seek to find the behavior of the above system at a small value of connected resistance, i.e., $\beta \sim 0$. In this case, we set that 
+Here we seek to find the behavior of the above system at a small value of connected resistance, i.e., $\beta \to 0$. In this case, we set $\beta$ to be the parameter for asymptotic expansion, and 
 \begin{equation}
     \begin{aligned}
-        \lambda_k &= \lambda_k^{(0)} + \beta \lambda_k^{(1)} + \beta^2 \lambda_k^{(2)} + \cdots \\
-        \phi_k &= \phi_k^{(0)} + \beta \phi_k^{(1)} + \beta^2 \phi_k^{(2)} + \cdots
+        \lambda^{(k)} &= \lambda_0^{(k)} + \beta \lambda_1^{(k)} + \beta^2 \lambda_2^{(k)} + \cdots \\
+        u^{(k)} &= u_0^{(k)} + \beta u_1^{(k)} + \beta^2 u_2^{(k)} + \cdots
     \end{aligned}
 \end{equation}
-where $\lambda_k$ and $\phi_k$ are the $k$th eigenvalue and eigenfunction respectively of the above mentioned system under perturbation. $\lambda_k^{(0)}$ and $\phi_k^{(0)}$ are the corresponding eigenvalue and eigenfunction of the unperturbed system at $\beta = 0$:
+where $\lambda^{(k)}$ and $u^{(k)}$ are the $k$th eigenvalue and eigenfunction respectively of the above mentioned system under perturbation. $\lambda_0^{(k)}$ and $u_0^{(k)}$ are the corresponding eigenvalue and eigenfunction of the unperturbed system at $\beta = 0$:
 \begin{equation}
-    u^{\prime\prime\prime\prime} - \lambda^2 u = 0,
+    u^{\prime\prime\prime\prime} - \lambda_0^2 u = 0,
 \end{equation}
 \begin{equation}
     \left\{\begin{aligned}
@@ -63,19 +63,91 @@ where $\lambda_k$ and $\phi_k$ are the $k$th eigenvalue and eigenfunction respec
 
 Obviously, the unperturbed system is a classical eigenvalue problem with the eigenvalues determined by 
 \begin{equation}
-    1 + cosh(\sqrt{\lambda}) cos(\sqrt{\lambda}) = 0
+    1 + \cosh(\sqrt{\lambda_0}) \cos(\sqrt{\lambda_0}) = 0
 \end{equation}
 whose first several values are
 \begin{equation}
-    \sqrt{\lambda_1}/\pi = 0.59686..., \sqrt{\lambda_2}/\pi = 1.49418..., \sqrt{\lambda_3}/\pi = 2.50025..., \sqrt{\lambda_4}/\pi = 3.49999..., ...
+    \frac{ \sqrt{\lambda_0^{(1)}} }{\pi} = 0.59686,\quad \frac{ \sqrt{\lambda_0^{(2)}} }{\pi} = 1.49418,\quad \frac{ \sqrt{\lambda_0^{(3)}} }{\pi} = 2.50025,\quad \frac{ \sqrt{\lambda_0^{(4)}} }{\pi} = 3.49999, \quad \cdots
 \end{equation}
 
 
+Take the asymptotic expansions and substitute them into the previously derived system of equations, we have the following asymptotic expansions to different orders of $\beta$:
+
+\noindent
+$O(\beta^0)$:
+\begin{equation}
+    \left\{\begin{aligned}
+        u_0^{\prime\prime\prime\prime} - \lambda_0^2 u_0 &=0 \\
+        u_0(0) &= 0 \\
+        u^{\prime}_0(0) &= 0 \\
+        u^{\prime\prime}_0(1) &= 0 \\
+        u^{\prime\prime\prime}_0(1) &= 0 
+    \end{aligned}\right.
+\end{equation}
+$O(\beta^1)$:
+\begin{equation}
+    \left\{\begin{aligned}
+        u_1^{\prime\prime\prime\prime} - \left( \lambda_0^2 u_1 + 2 \lambda_0 u_0 \lambda_1 \right) &=0 \\
+        u_1(0) &= 0 \\
+        u^{\prime}_1(0) &= 0 \\
+        u^{\prime\prime}_1(1) + j \alpha^2 \lambda_0 u_0^{\prime}(1) &= 0 \\
+        u^{\prime\prime\prime}_1(1) &= 0 
+    \end{aligned}\right.
+\end{equation}
+$O(\beta^2)$:
+\begin{equation}
+    \left\{\begin{aligned}
+        u_2^{\prime\prime\prime\prime} - \left( \lambda_0^2 u_2 + 2 \lambda_0 u_1 \lambda_1 + \lambda_1^2 u_0 + 2 \lambda_0 u_0 \lambda_2 \right) &=0 \\
+        u_2(0) &= 0 \\
+        u^{\prime}_2(0) &= 0 \\
+        u^{\prime\prime}_2(1) + \alpha^2 \lambda_0 u_0^{\prime}(1) + j \alpha^2 \left[ \lambda_0 u_1^{\prime}(1) + \lambda_1 u_0^{\prime}(1) \right] &= 0 \\
+        u^{\prime\prime\prime}_2(1) &= 0 
+    \end{aligned}\right.
+\end{equation}
 
 
+\section{Asymptotic analysis when $\beta$ is large}
 
+Here we seek to find the behavior of the above system at a large value of connected resistance, i.e., $\beta \to \infty$. In this case, we set $\frac{1}{\beta}$ to be the parameter for asymptotic expansion and 
+\begin{equation}
+    \begin{aligned}
+        \lambda^{(k)} &= \tilde\lambda_0^{(k)} + \left( \frac{1}{\beta} \right) \tilde\lambda_1^{(k)} + \left( \frac{1}{\beta} \right)^2 \tilde\lambda_2^{(k)} + \cdots \\
+        u^{(k)} &= \tilde{u}_0^{(k)} + \left( \frac{1}{\beta} \right) \tilde{u}_1^{(k)} + \left( \frac{1}{\beta} \right)^2 \tilde{u}_2^{(k)} + \cdots
+    \end{aligned}
+\end{equation}
+where $\tilde\lambda^{(k)}$ and $\tilde{u}^{(k)}$ are the $k$th eigenvalue and eigenfunction respectively of the above mentioned system under perturbation. $\tilde{\lambda}_0^{(k)}$ and $\tilde{u}_0^{(k)}$ are the corresponding eigenvalue and eigenfunction of the unperturbed system at $\beta = \infty$:
 
-
+\noindent
+$O(\frac{1}{\beta^0})$:
+\begin{equation}
+    \left\{\begin{aligned}
+        \tilde{u}_0^{\prime\prime\prime\prime} - \tilde\lambda_0^2 \tilde{u}_0 &=0 \\
+        \tilde{u}_0(0) &= 0 \\
+        \tilde{u}^{\prime}_0(0) &= 0 \\
+        \tilde{u}^{\prime\prime}_0(1) + \alpha^2 \tilde{u}^{\prime}_0(1) &= 0 \\
+        \tilde{u}^{\prime\prime\prime}_0(1) &= 0 
+    \end{aligned}\right.
+\end{equation}
+$O(\frac{1}{\beta^1})$:
+\begin{equation}
+    \left\{\begin{aligned}
+        \tilde{u}_1^{\prime\prime\prime\prime} - \left( \tilde\lambda_0^2 u_1 + 2 \tilde\lambda_0 \tilde{u}_0 \tilde\lambda_1 \right) &=0 \\
+        \tilde{u}_1(0) &= 0 \\
+        \tilde{u}^{\prime}_1(0) &= 0 \\
+        \tilde{u}^{\prime\prime}_1(1) + \alpha^2 \tilde{u}_1^{\prime}(1) + \frac{j \alpha^2}{\tilde\lambda_0} \tilde{u}_0^{\prime}(1) &= 0 \\
+        \tilde{u}^{\prime\prime\prime}_1(1) &= 0 
+    \end{aligned}\right.
+\end{equation}
+$O(\frac{1}{\beta^2})$:
+\begin{equation}
+    \left\{\begin{aligned}
+        \tilde{u}_2^{\prime\prime\prime\prime} - \left( \tilde\lambda_0^2 \tilde{u}_2 + 2 \tilde\lambda_0 \tilde{u}_1 \tilde\lambda_1 + \tilde\lambda_1^2 \tilde{u}_0 + 2 \tilde\lambda_0 \tilde{u}_0 \tilde\lambda_2 \right) &=0 \\
+        \tilde{u}_2(0) &= 0 \\
+        \tilde{u}^{\prime}_2(0) &= 0 \\
+        \tilde{u}^{\prime\prime}_2(1) + \left[ \alpha^2 \tilde{u}_2^{\prime}(1) - \frac{\alpha^2}{\tilde\lambda_0^2} \tilde{u}_0^{\prime}(1) \right] + j \left[ \frac{\alpha^2}{\tilde\lambda_0} \tilde{u}_1^{\prime}(1) - \frac{\alpha^2 \tilde\lambda_1}{\tilde\lambda_0^2} \tilde{u}_0^{\prime}(1) \right] &= 0 \\
+        \tilde{u}^{\prime\prime\prime}_2(1) &= 0 
+    \end{aligned}\right.
+\end{equation}
 
 
 
