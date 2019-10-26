@@ -1,0 +1,174 @@
+\begin{thebibliography}{10}
+
+\bibitem{zhou2018review}
+Zhou M, Al-Furjan MSH, Zou J, Liu W.
+\newblock A review on heat and mechanical energy harvesting from
+  human--Principles, prototypes and perspectives.
+\newblock Renewable and Sustainable Energy Reviews. 2018;82:3582--3609.
+
+\bibitem{dagdeviren2017energy}
+Dagdeviren C, Li Z, Wang ZL.
+\newblock Energy harvesting from the animal/human body for self-powered
+  electronics.
+\newblock Annual Review of Biomedical Engineering. 2017;19:85--108.
+
+\bibitem{safaei2019review}
+Safaei M, Sodano HA, Anton SR.
+\newblock A review of energy harvesting using piezoelectric materials:
+  State-of-the-art a decade later (2008-2018).
+\newblock Smart Materials and Structures. 2019;.
+
+\bibitem{liu2018comprehensive}
+Liu H, Zhong J, Lee C, Lee SW, Lin L.
+\newblock A comprehensive review on piezoelectric energy harvesting technology:
+  Materials, mechanisms, and applications.
+\newblock Applied Physics Reviews. 2018;5(4):041306.
+
+\bibitem{cepnik2013review}
+Cepnik C, Lausecker R, Wallrabe U.
+\newblock Review on electrodynamic energy harvesters—a classification
+  approach.
+\newblock Micromachines. 2013;4(2):168--196.
+
+\bibitem{tan2016review}
+Tan Y, Dong Y, Wang X.
+\newblock Review of MEMS electromagnetic vibration energy harvester.
+\newblock Journal of Microelectromechanical Systems. 2016;26(1):1--16.
+
+\bibitem{khan2016state}
+Khan FU, Qadir MU.
+\newblock State-of-the-art in vibration-based electrostatic energy harvesting.
+\newblock Journal of Micromechanics and Microengineering. 2016;26(10):103001.
+
+\bibitem{suzuki2011recent}
+Suzuki Y.
+\newblock Recent progress in MEMS electret generator for energy harvesting.
+\newblock IEEJ Transactions on Electrical and Electronic Engineering.
+  2011;6(2):101--111.
+
+\bibitem{sodano2004review}
+Sodano HA, Inman DJ, Park G.
+\newblock A review of power harvesting from vibration using piezoelectric
+  materials.
+\newblock Shock and Vibration Digest. 2004;36(3):197--206.
+
+\bibitem{fan2016flexible}
+Fan FR, Tang W, Wang ZL.
+\newblock Flexible nanogenerators for energy harvesting and self-powered
+  electronics.
+\newblock Advanced Materials. 2016;28(22):4283--4305.
+
+\bibitem{wang2015progress}
+Wang ZL, Chen J, Lin L.
+\newblock Progress in triboelectric nanogenerators as a new energy technology
+  and self-powered sensors.
+\newblock Energy \& Environmental Science. 2015;8(8):2250--2282.
+
+\bibitem{anton2007review}
+Anton SR, Sodano HA.
+\newblock A review of power harvesting using piezoelectric materials
+  (2003--2006).
+\newblock Smart materials and Structures. 2007;16(3):R1.
+
+\bibitem{erturk2008distributed}
+Erturk A, Inman DJ.
+\newblock A distributed parameter electromechanical model for cantilevered
+  piezoelectric energy harvesters.
+\newblock Journal of vibration and acoustics. 2008;130(4):041002.
+
+\bibitem{erturk2009experimentally}
+Erturk A, Inman DJ.
+\newblock An experimentally validated bimorph cantilever model for
+  piezoelectric energy harvesting from base excitations.
+\newblock Smart materials and structures. 2009;18(2):025009.
+
+\bibitem{goldschmidtboeing2008characterization}
+Goldschmidtboeing F, Woias P.
+\newblock Characterization of different beam shapes for piezoelectric energy
+  harvesting.
+\newblock Journal of micromechanics and microengineering. 2008;18(10):104013.
+
+\bibitem{fu2018electrode}
+Fu H, Chen G, Bai N.
+\newblock Electrode coverage optimization for piezoelectric energy harvesting
+  from tip excitation.
+\newblock Sensors. 2018;18(3):804.
+
+\bibitem{kim2015effect}
+Kim M, Dugundji J, Wardle BL.
+\newblock Effect of electrode configurations on piezoelectric vibration energy
+  harvesting performance.
+\newblock Smart Materials and Structures. 2015;24(4):045026.
+
+\bibitem{liao2012optimal}
+Liao Y, Sodano HA.
+\newblock Optimal placement of piezoelectric material on a cantilever beam for
+  maximum piezoelectric damping and power harvesting efficiency.
+\newblock Smart materials and structures. 2012;21(10):105014.
+
+\bibitem{patel2011geometric}
+Patel R, McWilliam S, Popov AA.
+\newblock A geometric parameter study of piezoelectric coverage on a
+  rectangular cantilever energy harvester.
+\newblock Smart Materials and Structures. 2011;20(8):085004.
+
+\bibitem{yildirim2017review}
+Yildirim T, Ghayesh MH, Li W, Alici G.
+\newblock A review on performance enhancement techniques for ambient vibration
+  energy harvesters.
+\newblock Renewable and Sustainable Energy Reviews. 2017;71:435--449.
+
+\bibitem{tran2018ambient}
+Tran N, Ghayesh MH, Arjomandi M.
+\newblock Ambient vibration energy harvesters: A review on nonlinear techniques
+  for performance enhancement.
+\newblock International Journal of Engineering Science. 2018;127:162--185.
+
+\bibitem{zhou2019piezoelectric}
+Zhou CQXZ Maoying, Wang W.
+\newblock Piezoelectric wind energy harvesting device based on the inverted
+  cantilever beam with leaf-inspired extensions.
+\newblock AIP Advances. 2019;9:035213.
+
+\bibitem{park2003dynamics}
+Park CH.
+\newblock Dynamics modelling of beams with shunted piezoelectric elements.
+\newblock Journal of Sound and vibration. 2003;268(1):115--129.
+
+\bibitem{Timoshenko1974Vibration}
+Timoshenko S.
+\newblock Vibration problems in engineering.
+\newblock Wiley; 1974.
+
+\bibitem{maurini2006numerical}
+Maurini C, Porfiri M, Pouget J.
+\newblock Numerical methods for modal analysis of stepped piezoelectric beams.
+\newblock Journal of Sound and Vibration. 2006;298(4-5):918--933.
+
+\bibitem{wu1992generalized}
+Wu JJ.
+\newblock A generalized harmonic balance method for forced non-linear
+  oscillations: the subharmonic cases.
+\newblock Journal of Sound and Vibration. 1992;159(3):503--525.
+
+\bibitem{driscoll2014chebfun}
+Driscoll TA, Hale N, Trefethen LN. Chebfun guide.
+\newblock Pafnuty Publications, Oxford; 2014.
+
+\bibitem{erturk2009effect}
+Erturk A, Tarazaga PA, Farmer JR, Inman DJ.
+\newblock Effect of strain nodes and electrode configuration on piezoelectric
+  energy harvesting from cantilevered beams.
+\newblock Journal of Vibration and Acoustics. 2009;131(1):011010.
+
+\bibitem{warlimont2018springer}
+Warlimont H, Martienssen W.
+\newblock Springer Handbook of Materials Data.
+\newblock Springer; 2018.
+
+\bibitem{dean1999lange}
+Dean JA.
+\newblock Lange's handbook of chemistry.
+\newblock New york; London: McGraw-Hill, Inc.; 1999.
+
+\end{thebibliography}
