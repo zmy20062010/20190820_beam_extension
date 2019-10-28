@@ -1,19 +1,15 @@
 (* ::Package:: *)
 
 (* ::Input:: *)
-(*fdet = 1+Cosh[Sqrt[\[Lambda]]]Cos[Sqrt[\[Lambda]]]+I \[Beta] Sqrt[\[Lambda]]/(1+I \[Beta] \[Lambda])\[Epsilon](Sinh[Sqrt[\[Lambda]]]cos[Sqrt[\[Lambda]]]+Cosh[Sqrt[\[Lambda]]]Sin[Sqrt[\[Lambda]]])*)
+(*fdet[\[Lambda]_] := 1+Cosh[Sqrt[\[Lambda]]]Cos[Sqrt[\[Lambda]]]+I \[Beta] Sqrt[\[Lambda]]/(1+I \[Beta] \[Lambda])\[Epsilon](Sinh[Sqrt[\[Lambda]]]Cos[Sqrt[\[Lambda]]]+Cosh[Sqrt[\[Lambda]]]Sin[Sqrt[\[Lambda]]]);*)
+(*FindRoot[fdet[\[Lambda]]/.{\[Epsilon]-> 20, \[Beta]->0.01},{\[Lambda],3.0+0.0 I}]*)
 
 
-fdet1[\[Lambda]_]:= 1+Cosh[Sqrt[\[Lambda]]]Cos[Sqrt[\[Lambda]]] + \[Epsilon](Sinh[Sqrt[\[Lambda]]]cos[Sqrt[\[Lambda]]]+Cosh[Sqrt[\[Lambda]]]Sin[Sqrt[\[Lambda]]]);
-(*Nsolve[(fdet1[\[Lambda]]/.{\[Epsilon]->0.001} )== 0 && 0 < Re[\[Lambda]] < 10, \[Lambda]]*)
-FindRoot[fdet1[\[Lambda]],{\[Lambda],3.0+1.0 I}]
+Plot[1 + Cosh[Sqrt[\[Lambda]]] Cos[Sqrt[\[Lambda]]] + 0.1(Sinh[Sqrt[\[Lambda]]]Cos[Sqrt[\[Lambda]]]+Cosh[Sqrt[\[Lambda]]] Sin[Sqrt[\[Lambda]]]),{\[Lambda], 1, 150}]
 
 
-FindRoot[(Cos[z + I] - 2) (z + 2), {z, 1}]
-FindRoot[x^2 + 1 == 0, {x, 1 + 1. I}]
+Plot3D[1+Cosh[Sqrt[\[Lambda]]]Cos[Sqrt[\[Lambda]]]+I \[Beta] Sqrt[\[Lambda]]/(1+I \[Beta] \[Lambda])(Sinh[Sqrt[\[Lambda]]]Cos[Sqrt[\[Lambda]]]+Cosh[Sqrt[\[Lambda]]]Sin[Sqrt[\[Lambda]]]),{\[Lambda], 1, 20},{\[Beta], 0, 1}]
 
 
-FindRoot[1+Cosh[Sqrt[\[Lambda]]]Cos[Sqrt[\[Lambda]]] + 0.1(Sinh[Sqrt[\[Lambda]]]cos[Sqrt[\[Lambda]]]+Cosh[Sqrt[\[Lambda]]]Sin[Sqrt[\[Lambda]]]), {\[Lambda] , 1.0 + 1.0 I}]
+Plot3D[Sin[x + y^2], {x, -3, 3}, {y, -2, 2}]
 
-
-Plot[1 + Cosh[Sqrt[\[Lambda]]] Cos[Sqrt[\[Lambda]]] + 0.1(Sinh[Sqrt[\[Lambda]]]Cos[Sqrt[\[Lambda]]]+Cosh[Sqrt[\[Lambda]]] Sin[Sqrt[\[Lambda]]]),{\[Lambda], 1, 20}]
