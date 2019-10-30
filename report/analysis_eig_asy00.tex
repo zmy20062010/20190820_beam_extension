@@ -191,6 +191,51 @@ or equivalently
 
 
 
+\section{Asymptotic analysis in terms of small $\alpha^2$}
+The forced vibration problem of a piezoelectric cantilever bimorph is described by
+\begin{equation}
+    u^{\prime\prime\prime\prime} - \lambda^2 u = \lambda^2,
+\end{equation}
+and the accompanying boundary conditions:
+\begin{equation}
+    \left\{\begin{aligned}
+        u(0) &= 0, \\
+        u^\prime(0) &= 0, \\
+        u^{\prime\prime}(1) + \frac{j\lambda \beta }{ j\lambda \beta + 1 } \epsilon u^\prime(1) &= 0, \\
+        u^{\prime\prime\prime}(1) &= 0,
+    \end{aligned}\right.
+\end{equation}
+
+Directly using the eigenvalue analysis method for linear boundary value problem, we arrive at the equation for the eigenvalue $\lambda$:
+\begin{equation}
+    \sqrt{\lambda} \left[ 1 + \left( \frac{e^{\sqrt{\lambda}} + e^{-\sqrt{\lambda}} }{2} \right) \cos \sqrt{\lambda} \right] + \frac{j \beta \lambda \alpha^2}{1 + j \beta \lambda} \left[ \left( \frac{e^{\sqrt{\lambda}} - e^{-\sqrt{\lambda}} }{2} \right) \cos \sqrt{\lambda} + \left( \frac{e^{\sqrt{\lambda}} + e^{-\sqrt{\lambda}} }{2} \right) \sin \sqrt{\lambda} \right] = 0
+\end{equation}
+or
+\begin{equation}
+    \sqrt{\lambda} \left[ 1 + \cosh \sqrt{\lambda} \cos \sqrt{\lambda} \right] + \frac{j \beta \lambda \alpha^2}{1 + j \beta \lambda} \left[ \sinh \sqrt{\lambda} \cos \sqrt{\lambda} + \cosh \sqrt{\lambda} \sin \sqrt{\lambda} \right] = 0
+\end{equation}
+
+Taking the parameter $\alpha^2$ as the small parameter $\epsilon$ and expanding the eigenvalue $\lambda$ in terms of this $\epsilon$, we have 
+\begin{equation}
+    \lambda = \lambda_0 + \epsilon \lambda_1 + \epsilon^2 \lambda_2 + \cdots
+\end{equation}
+and therefore:
+
+\noindent
+$O(\epsilon^0)$:
+\begin{equation}
+    1 + \cosh{\sqrt{\lambda_0}} \cos{\sqrt{\lambda_0}} = 0
+\end{equation}
+$O(\epsilon^1)$:
+\begin{equation}
+    2j \beta \lambda_0 \left( \cosh{\sqrt{\lambda_0}} \sin{\sqrt{\lambda_0}} + \sinh{\sqrt{\lambda_0}} \cos{\sqrt{\lambda_0}} \right) + (1+ j \beta \lambda_0)\lambda_1 \left( -\cosh{\sqrt{\lambda_0}} \sin{\sqrt{\lambda_0}} + \sinh{\sqrt{\lambda_0}} \cos{\sqrt{\lambda_0}} \right) = 0
+\end{equation}
+or equivalently
+\begin{equation}
+    \lambda_1 = \frac{ 2j \beta \lambda_0 }{ (1+ j \beta \lambda_0) } \frac{ \left( \cosh{\sqrt{\lambda_0}} \sin{\sqrt{\lambda_0}} + \sinh{\sqrt{\lambda_0}} \cos{\sqrt{\lambda_0}} \right) }{ \left( \cosh{\sqrt{\lambda_0}} \sin{\sqrt{\lambda_0}} - \sinh{\sqrt{\lambda_0}} \cos{\sqrt{\lambda_0}} \right) }
+\end{equation}
+
+
 
 
 

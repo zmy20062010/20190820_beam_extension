@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  27 OCT 2019 16:34
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  30 OCT 2019 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -237,7 +237,19 @@ m/it/10 j^^L^^U[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ^^U[] [] \OT1/cmr/m/n/10 = 0
 
  []
 
-[3] (./analysis_eig_asy00.aux) ) 
+[3]
+Overfull \hbox (3.19907pt too wide) detected at line 212
+[] [] \OT1/cmr/m/n/10 + [] [] = 0
+ []
+
+
+Overfull \hbox (42.92505pt too wide) detected at line 232
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 j^^L^^U[] [] \OT1/cmr/m/n/10 + (1 + \OML/cmm/
+m/it/10 j^^L^^U[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ^^U[] [] \OT1/cmr/m/n/10 = 0
+
+ []
+
+[4] (./analysis_eig_asy00.aux) ) 
 Here is how much of TeX's memory you used:
  2637 strings out of 493591
  33245 string characters out of 6141517
@@ -247,4 +259,4 @@ Here is how much of TeX's memory you used:
  1347 hyphenation exceptions out of 8191
  27i,11n,35p,624b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on analysis_eig_asy00.pdf (3 pages).
+Output written on analysis_eig_asy00.pdf (4 pages).
