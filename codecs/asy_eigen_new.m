@@ -1,37 +1,53 @@
 (* ::Package:: *)
 
 (* ::Input:: *)
-(*cd1 = {1,0,1,1};*)
-(*cd2 = {0,1,1,-1};*)
-(*cd3s = \[Lambda]{-Cos[\[Sqrt]\[Lambda]],-Sin[\[Sqrt]\[Lambda]],Exp[\[Sqrt]\[Lambda]],Exp[-\[Sqrt]\[Lambda]]};*)
-(*cd3t=\[Sqrt]\[Lambda] {-Sin[\[Sqrt]\[Lambda]],Cos[\[Sqrt]\[Lambda]],Exp[\[Sqrt]\[Lambda]],-Exp[-\[Sqrt]\[Lambda]]};*)
-(*cd3 = cd3s+I \[Lambda] \[Beta]/(1+I \[Lambda] \[Beta]) \[Alpha]^2 cd3t;*)
-(*cd4 ={Sin[\[Sqrt]\[Lambda]],-Cos[\[Sqrt]\[Lambda]],Exp[\[Sqrt]\[Lambda]],-Exp[-\[Sqrt]\[Lambda]]};*)
-(*cd={cd1,cd2,cd3,cd4};*)
-(*Det[cd]//Simplify*)
+(*cd10 = {1,0,1,0};*)
+(*cd20 = {0,1,0,1};*)
+(*cd30 ={-Cos[\[Sqrt]\[Lambda]],-Sin[\[Sqrt]\[Lambda]],Cosh[\[Sqrt]\[Lambda]],Sinh[\[Sqrt]\[Lambda]]};*)
+(*cd40 ={Sin[\[Sqrt]\[Lambda]],-Cos[\[Sqrt]\[Lambda]],Sinh[\[Sqrt]\[Lambda]],Cosh[\[Sqrt]\[Lambda]]};*)
+(*cd0={cd10,cd20,cd30,cd40};*)
+(*Det[cd0]//Simplify;*)
+(*bd0 = {1,0,0,0};*)
+(*coeff0 =LinearSolve[cd0,bd0]/.{Cosh[Sqrt[\[Lambda]]]^2-Sinh[Sqrt[\[Lambda]]]^2->1,Cos[Sqrt[\[Lambda]]]^2+Sin[Sqrt[\[Lambda]]]^2->1}//Simplify*)
+(*coeff0.cd1//Simplify*)
+(*coeff0.cd2//Simplify*)
+(*coeff0.cd3//Simplify*)
+(*coeff0.cd4//Simplify*)
 
 
-(* ::Input:: *)
-(**)
+cd11 = {1,0,1,0};
+cd21 = {0,1,0,1};
+cd31 ={-Cos[\[Sqrt]\[Lambda]],-Sin[\[Sqrt]\[Lambda]],Cosh[\[Sqrt]\[Lambda]],Sinh[\[Sqrt]\[Lambda]]};
+cd41 ={Sin[\[Sqrt]\[Lambda]],-Cos[\[Sqrt]\[Lambda]],Sinh[\[Sqrt]\[Lambda]],Cosh[\[Sqrt]\[Lambda]]};
+cd5 = {-Sin[\[Sqrt]\[Lambda]],Cos[\[Sqrt]\[Lambda]],Sinh[\[Sqrt]\[Lambda]],Cosh[\[Sqrt]\[Lambda]]};
+cd1={cd11,cd21,cd31,cd41};
+Det[cd1]//Simplify;
+bd1 = {0,0,1,0};
+coeff0.cd5//Simplify
+coeff1 =LinearSolve[cd1,bd1]/.{Cosh[Sqrt[\[Lambda]]]^2-Sinh[Sqrt[\[Lambda]]]^2->1,Cos[Sqrt[\[Lambda]]]^2+Sin[Sqrt[\[Lambda]]]^2->1}//Simplify
+coeff1 = coeff1* (-coeff0.cd5) * I \[Beta] Sqrt[\[Lambda]]/(1 + I \[Beta] \[Lambda])//Simplify
+coeff1.cd11//Simplify
+coeff1.cd21//Simplify
+coeff1.cd31//Simplify
+coeff1.cd41//Simplify
 
 
-Fall = (E^-Sqrt[\[Lambda]] (2 E^Sqrt[\[Lambda]] (-I+\[Beta] \[Lambda])+(-I - \[Epsilon] \[Beta] Sqrt[\[Lambda]]+\[Beta] \[Lambda]+E^(2 Sqrt[\[Lambda]]) (-I + \[Epsilon] \[Beta] Sqrt[\[Lambda]]+\[Beta] \[Lambda])) Cos[Sqrt[\[Lambda]]]+(1+E^(2 Sqrt[\[Lambda]])) \[Epsilon] \[Beta] Sqrt[\[Lambda]] Sin[Sqrt[\[Lambda]]]))/(-I+\[Beta] \[Lambda]);
-\[Lambda]  = \[Lambda]0 + \[Epsilon] \[Lambda]1 + \[Epsilon]^2 \[Lambda]2 + + \[Epsilon]^3 \[Lambda]3;
-Fall/.{\[Epsilon]->0}//Simplify
-D[Fall,{\[Epsilon],1}]/.{\[Epsilon]->0}//Simplify
-D[Fall,{\[Epsilon],2}]/.{\[Epsilon]->0}//Simplify
+cd12 = {1,0,1,0};
+cd22 = {0,1,0,1};
+cd32 ={-Cos[\[Sqrt]\[Lambda]],-Sin[\[Sqrt]\[Lambda]],Cosh[\[Sqrt]\[Lambda]],Sinh[\[Sqrt]\[Lambda]]};
+cd42 ={Sin[\[Sqrt]\[Lambda]],-Cos[\[Sqrt]\[Lambda]],Sinh[\[Sqrt]\[Lambda]],Cosh[\[Sqrt]\[Lambda]]};
+cd5 = {-Sin[\[Sqrt]\[Lambda]],Cos[\[Sqrt]\[Lambda]],Sinh[\[Sqrt]\[Lambda]],Cosh[\[Sqrt]\[Lambda]]};
+cd2 = {cd12,cd22,cd32,cd42};
+Det[cd2]//Simplify;
+bd2 = {0,0,1,0};
+coeff1.cd5//Simplify
+coeff2 =LinearSolve[cd2,bd2]/.{Cosh[Sqrt[\[Lambda]]]^2-Sinh[Sqrt[\[Lambda]]]^2->1,Cos[Sqrt[\[Lambda]]]^2+Sin[Sqrt[\[Lambda]]]^2->1}//Simplify
+coeff2 = coeff2*(-coeff1.cd5) * I \[Beta] Sqrt[\[Lambda]]/(1 + I \[Beta] \[Lambda])/.{Cosh[Sqrt[\[Lambda]]]^2-Sinh[Sqrt[\[Lambda]]]^2->1}//Simplify
+coeff2.cd12//Simplify
+coeff2.cd22//Simplify
+coeff2.cd32//Simplify
+coeff2.cd42//Simplify
 
-
-s0 = 2+(E^-Sqrt[\[Lambda]0]+E^Sqrt[\[Lambda]0]) Cos[Sqrt[\[Lambda]0]];
-s1 = (E^-Sqrt[\[Lambda]0] ((-1+E^(2 Sqrt[\[Lambda]0])) (-I \[Lambda]1+\[Beta] \[Lambda]0 (2+\[Lambda]1)) Cos[Sqrt[\[Lambda]0]]-(1+E^(2 Sqrt[\[Lambda]0])) (\[Beta] \[Lambda]0 (-2+\[Lambda]1)-I \[Lambda]1) Sin[Sqrt[\[Lambda]0]]))/(2 Sqrt[\[Lambda]0] (-I+\[Beta] \[Lambda]0));
-s2 = 1/(4 \[Lambda]0^(3/2) (-I+\[Beta] \[Lambda]0)^2) E^-Sqrt[\[Lambda]0] (((-1+E^(2 Sqrt[\[Lambda]0])) (\[Lambda]1^2-4 \[Lambda]0 \[Lambda]2)-2 I \[Beta] \[Lambda]0 (2 (-1+E^(2 Sqrt[\[Lambda]0]) (1+2 Sqrt[\[Lambda]0])+2 Sqrt[\[Lambda]0]) \[Lambda]1-(-1+E^(2 Sqrt[\[Lambda]0])) \[Lambda]1^2+4 (-1+E^(2 Sqrt[\[Lambda]0])) \[Lambda]0 \[Lambda]2)+\[Beta]^2 \[Lambda]0^2 ((4+E^(2 Sqrt[\[Lambda]0]) (-4+8 Sqrt[\[Lambda]0])+8 Sqrt[\[Lambda]0]) \[Lambda]1-(-1+E^(2 Sqrt[\[Lambda]0])) \[Lambda]1^2+4 (-1+E^(2 Sqrt[\[Lambda]0])) \[Lambda]0 \[Lambda]2)) Cos[Sqrt[\[Lambda]0]]-((1+E^(2 Sqrt[\[Lambda]0]) (1-2 Sqrt[\[Lambda]0])+2 Sqrt[\[Lambda]0]) \[Lambda]1^2-4 (1+E^(2 Sqrt[\[Lambda]0])) \[Lambda]0 \[Lambda]2-2 I \[Beta] \[Lambda]0 (-2 (1+E^(2 Sqrt[\[Lambda]0])) \[Lambda]1+(-1+E^(2 Sqrt[\[Lambda]0]) (-1+2 Sqrt[\[Lambda]0])-2 Sqrt[\[Lambda]0]) \[Lambda]1^2+4 (1+E^(2 Sqrt[\[Lambda]0])) \[Lambda]0 \[Lambda]2)+\[Beta]^2 \[Lambda]0^2 (4 (1+E^(2 Sqrt[\[Lambda]0])) \[Lambda]1+(-1+E^(2 Sqrt[\[Lambda]0]) (-1+2 Sqrt[\[Lambda]0])-2 Sqrt[\[Lambda]0]) \[Lambda]1^2+4 (1+E^(2 Sqrt[\[Lambda]0])) \[Lambda]0 \[Lambda]2)) Sin[Sqrt[\[Lambda]0]]);
-lam0 = FindRoot[s0==0,{\[Lambda]0,1.0}]
-lam1 = Solve[s1==0,{\[Lambda]1}]//Simplify;
-lam1 = lam1[[1]]
-lam2 = Solve[s2==0,{\[Lambda]2}]/.lam1//Simplify;
-lam2 = lam2[[1]]
-lam1 = lam1/.lam0//Simplify
-lam2 = lam2/.lam1/.lam0//Simplify
 
 
 
