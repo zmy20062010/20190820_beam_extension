@@ -14,6 +14,8 @@
 (*coeff0.cd3//Simplify*)
 (*coeff0.cd4//Simplify*)
 (*sol0 = coeff0*)
+(**)
+(**)
 
 
 bd1 = {0,0,-1,0};
@@ -25,8 +27,6 @@ coeff1.cd4//Simplify
 sol0.{-Sin[\[Sqrt]\[Lambda]],Cos[\[Sqrt]\[Lambda]],Sinh[\[Sqrt]\[Lambda]],Cosh[\[Sqrt]\[Lambda]]}//Simplify
 cmultiple1 = I \[Beta] Sqrt[\[Lambda]]/(1 + I \[Beta] \[Lambda])* (sol0.{-Sin[\[Sqrt]\[Lambda]],Cos[\[Sqrt]\[Lambda]],Sinh[\[Sqrt]\[Lambda]],Cosh[\[Sqrt]\[Lambda]]})/.{Cosh[Sqrt[\[Lambda]]]^2-Sinh[Sqrt[\[Lambda]]]^2->1,Cos[Sqrt[\[Lambda]]]^2+Sin[Sqrt[\[Lambda]]]^2->1}//Simplify
 sol1 = (coeff1 * cmultiple1)//Simplify
-
-
 
 
 
