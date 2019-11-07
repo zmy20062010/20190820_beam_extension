@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 
 
 
-eps = 1.5
+eps = 0.1
 sqlam = 1
 beta = 2000
-x = np.linspace(0.0, 1.0, 101)
+x = np.linspace(0.0, 1.0, 1001)
 
 
 
@@ -17,7 +17,6 @@ Ae = ( 1 + np.cos(sqlam)*np.cosh(sqlam) - np.sin(sqlam)*np.sinh(sqlam) + ( 2 * 1
 Be = ( np.sin(sqlam)*np.cosh(sqlam) + np.cos(sqlam)*np.sinh(sqlam) + ( 2 * 1j * beta * sqlam * eps) / (1 + 1j * beta * sqlam * sqlam ) * np.sin(sqlam)*np.sinh(sqlam) ) / coeff_denom
 Ce = - Ae
 De = - Be
-
 
 
 
@@ -58,11 +57,24 @@ u2 = A2 * np.cos(sqlam*x) + B2 * np.sin(sqlam*x) + C2 * np.cosh(sqlam*x) + D2 * 
 u3 = A3 * np.cos(sqlam*x) + B3 * np.sin(sqlam*x) + C3 * np.cosh(sqlam*x) + D3 * np.sinh(sqlam*x)
 
 
-plt.figure()
-plt.plot(x,np.abs(ue),'m--', label = 'ue')
-plt.plot(x,np.abs(u0),'r-', label = 'u0')
-plt.plot(x,np.abs(u0 + u1*eps),'b-', label = 'u0+e u1')
-plt.plot(x,np.abs(u0 + u1*eps + u2*eps*eps),'k-', label = 'u0+e u1 + e2 u2')
-plt.plot(x,np.abs(u0 + u1*eps + u2*eps*eps + + u3*eps*eps*eps),'c-', label = 'u0+e u1 + e2 u2 + e3 u3')
-plt.legend()
+plt.figure(1,figsize=(12,6))
+plt.subplot(121)
+plt.plot(x,np.abs(ue),'m--', label = '$u_e$')
+plt.plot(x,np.abs(u0),'r-', label = '$u_0$')
+plt.plot(x,np.abs(u0 + u1*eps),'b-', label = '$u_0 + e u_1$')
+plt.plot(x,np.abs(u0 + u1*eps + u2*eps*eps),'k-', label = '$u_0 + e u_1 + e^2 u_2$')
+plt.plot(x,np.abs(u0 + u1*eps + u2*eps*eps + u3*eps*eps*eps),'c-', label = '$u_0+e u_1 + e^2 u_2 + e^3 u_3$')
+plt.legend(loc = 'upper left')
+
+plt.subplot(122)
+plt.plot(x,np.angle(ue)/np.pi*180,'m--.', label = '$u_e$')
+plt.plot(x,np.angle(u0)/np.pi*180,'r-', label = '$u_0$')
+plt.plot(x,np.angle(u0 + u1*eps)/np.pi*180,'b-', label = '$u_0 + e u_1$')
+plt.plot(x,np.angle(u0 + u1*eps + u2*eps*eps)/np.pi*180,'k-', label = '$u_0+e u_1 + e^2 u_2$')
+plt.plot(x,np.angle(u0 + u1*eps + u2*eps*eps + u3*eps*eps*eps)/np.pi*180,'c-', label = '$u_0+e u_1 + e^2 u_2 + e^3 u_3$')
+plt.legend(loc = 'center left')
+
+
 plt.show()
+
+
