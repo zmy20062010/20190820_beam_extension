@@ -42,3 +42,6 @@ sol2 = (coeff2 * cmultiple2)//Simplify
 
 
 
+
+
+
