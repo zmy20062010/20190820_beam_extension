@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 
 
-eps = 0.1
+eps = 0.15
 sqlam = 1
-beta = 2000
+beta = 2
 x = np.linspace(0.0, 1.0, 1001)
 
 
@@ -29,7 +29,6 @@ B0 = ( np.cos(sqlam) * np.sinh(sqlam) + np.sin(sqlam) * np.cosh(sqlam) )/( 2.0 +
 C0 = - A0
 D0 = - B0
 
-ue = Ae * np.cos(sqlam*x) + Be * np.sin(sqlam*x) + Ce * np.cosh(sqlam*x) + De * np.sinh(sqlam*x)
 
 #########  First order expansion
 A1 = (1j * beta * sqlam / (1.0 + 1j * beta * sqlam * sqlam )) * ( (np.sinh(sqlam) - np.sin(sqlam))/(1.0 + np.cos(sqlam)*np.cosh(sqlam)) ) * ( (np.cos(sqlam) + np.cosh(sqlam))/(2.0 + 2.0*np.cos(sqlam)*np.cosh(sqlam)) )
@@ -51,10 +50,13 @@ C3 = - A3
 D3 = - B3
 
 #########  Expansion for the function
+ue = Ae * np.cos(sqlam*x) + Be * np.sin(sqlam*x) + Ce * np.cosh(sqlam*x) + De * np.sinh(sqlam*x)
 u0 = A0 * np.cos(sqlam*x) + B0 * np.sin(sqlam*x) + C0 * np.cosh(sqlam*x) + D0 * np.sinh(sqlam*x)
 u1 = A1 * np.cos(sqlam*x) + B1 * np.sin(sqlam*x) + C1 * np.cosh(sqlam*x) + D1 * np.sinh(sqlam*x)
 u2 = A2 * np.cos(sqlam*x) + B2 * np.sin(sqlam*x) + C2 * np.cosh(sqlam*x) + D2 * np.sinh(sqlam*x)
 u3 = A3 * np.cos(sqlam*x) + B3 * np.sin(sqlam*x) + C3 * np.cosh(sqlam*x) + D3 * np.sinh(sqlam*x)
+
+print(ue)
 
 
 plt.figure(1,figsize=(12,6))
