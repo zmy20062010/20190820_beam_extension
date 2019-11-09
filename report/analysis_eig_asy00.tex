@@ -16,7 +16,6 @@
 
 \maketitle
 
-
 \section{Summary of the interested equations}
 
 The dynamic equations for a typical piezoelectric composite cantilever beam is 
@@ -58,7 +57,33 @@ and
 \end{equation}
 
 
-In the classical energy harvesting applications, the cantilever beam is subject to a periodical base excitation 
+In the classical energy harvesting applications, the cantilever beam is subject to a periodical base excitation $w_b(t)$. Thus the dynamic response of the cantilever beam is decomposed as 
+\begin{equation}
+    w(x,t) = w_b(t) + w_{rel}(x,t),
+\end{equation}
+where $w_{rel}(x,t)$ is the relative displacement function of the cantilever beam. In this way, the system is converted into 
+\begin{equation}
+    B_p \frac{\partial^4 w_{rel}(x,t)}{\partial x^4} + m_p \frac{\partial^2 w_{rel}(x,t)}{\partial t^2} = - m_p \frac{\partial^2 w_{b}(x,t)}{\partial t^2},
+\end{equation}
+\begin{equation}
+    e_p \left.\left[ \frac{\partial^2 w(x,t)}{\partial x \partial t}\right]\right|_0^{l_p} + C_p \frac{d V_p(t)}{d t} + \frac{V_p(t)}{R_l} = 0.
+\end{equation}
+\begin{equation}
+    \left\{\begin{aligned}
+        w_{rel}(0,t) &= 0, \\
+        \frac{\partial w_{rel}(0,t)}{\partial x} &= 0,
+    \end{aligned}\right.
+\end{equation}
+and
+\begin{equation}
+    \left\{\begin{aligned}
+        B_p \frac{\partial^2 w_{rel}(l_p,t)}{\partial x^2} - e_p V_p(t) &= 0, \\
+        \frac{\partial^3 w_{rel}(l_p,t)}{\partial x^3} = 0.
+    \end{aligned}\right.
+\end{equation}
+
+
+
 \begin{equation}
     w_b(t) = \xi_b e^{j \lambda t}
 \end{equation}
