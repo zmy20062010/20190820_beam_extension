@@ -19,6 +19,55 @@
 
 \section{Summary of the interested equations}
 
+The dynamic equations for a typical piezoelectric composite cantilever beam is 
+\begin{equation}
+    B_p \frac{\partial^4 w(x,t)}{\partial x^4} + m_p \frac{\partial^2 w(x,t)}{\partial t^2} = 0,
+\end{equation}
+where $B_p$ is the equivalent bending stiffness and $m_p$ is the line mass density of the piezoelectric cantilever beam. If the piezoelectric elements attached to the cantilever beam is connected to an external electrical load $R_l$, we have
+\begin{equation}
+    \frac{d Q_p(t)}{d t} + \frac{V_p(t)}{R_l} = 0.
+\end{equation}
+For the underlying physics, we have the following constitutive equations
+\begin{equation}
+    \begin{aligned}
+        M_p(x,t) &= B_p \frac{\partial^2 w(x,t)}{\partial x^2} - e_p V_p(t), \\
+        q_p(x,t) &= e_p \frac{\partial^2 w(x,t)}{\partial x^2} + \varepsilon_p V_p(t),
+    \end{aligned}
+\end{equation}
+or equivalently,
+\begin{equation}
+    \left\{\begin{aligned}
+        M_p(x,t) &= B_p \frac{\partial^2 w(x,t)}{\partial x^2} - e_p V_p(t), \\
+        Q_p(x,t) &= e_p \left.\left[ \frac{\partial w(x,t)}{\partial x} \right]\right|_0^{l_p} + C_p V_p(t).
+    \end{aligned}\right.
+\end{equation}
+
+One end of the cantilever beam is fixed while the other end is free. So the boundary conditions are
+\begin{equation}
+    \left\{\begin{aligned}
+        w(0,t) &= w_b(t), \\
+        \frac{\partial w(0,t)}{\partial x} &= 0,
+    \end{aligned}\right.
+\end{equation}
+and
+\begin{equation}
+    \left\{\begin{aligned}
+        M_p(l_p,t) &= B_p \frac{\partial^2 w(l_p,t)}{\partial x^2} - e_p V_p(t) = 0, \\
+        Q_p(l_p,t) &= B_p \frac{\partial^3 w(l_p,t)}{\partial x^3} = 0.
+    \end{aligned}\right.
+\end{equation}
+
+
+In the classical energy harvesting applications, the cantilever beam is subject to a periodical base excitation 
+\begin{equation}
+    w_b(t) = \xi_b e^{j \lambda t}
+\end{equation}
+where $\xi_b$ is usually a real vibration amplitude.
+
+
+
+
+
 Here we are interested in the classical model of a piezoelectric cantilever beam energy harvester, whose model is described using the following set of equations:
 \begin{equation}
     u^{\prime\prime\prime\prime} - \lambda^2 u = 0,
