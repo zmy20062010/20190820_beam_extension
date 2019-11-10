@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  10 NOV 2019 10:38
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  10 NOV 2019 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./analysis_eig_asy00.tex
-(./analysis_eig_asy00.tex
+**./analysis_eig_asy01.tex
+(./analysis_eig_asy01.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (d:/program/work/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -164,8 +164,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen121
 \Gm@dimlist=\toks20
 )
-(./analysis_eig_asy00.aux)
-\openout1 = `analysis_eig_asy00.aux'.
+(./analysis_eig_asy01.aux)
+\openout1 = `analysis_eig_asy01.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -225,26 +225,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ]
-[2] [3]
-Overfull \hbox (3.19907pt too wide) detected at line 277
-[] [] \OT1/cmr/m/n/10 + [] [] = 0
- []
-
-[4]
-Overfull \hbox (42.92505pt too wide) detected at line 297
-\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 j^^L^^U[] [] \OT1/cmr/m/n/10 + (1 + \OML/cmm/
-m/it/10 j^^L^^U[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ^^U[] [] \OT1/cmr/m/n/10 = 0
-
- []
-
-[5] [6] [7] [8] [9] (./analysis_eig_asy00.aux) ) 
+[2] [3] [4] [5] [6] (./analysis_eig_asy01.aux) ) 
 Here is how much of TeX's memory you used:
- 2637 strings out of 493591
- 33245 string characters out of 6141517
- 119752 words of memory out of 5000000
- 6038 multiletter control sequences out of 15000+600000
- 12135 words of font info for 48 fonts, out of 8000000 for 9000
+ 2632 strings out of 493591
+ 33166 string characters out of 6141517
+ 127791 words of memory out of 5000000
+ 6033 multiletter control sequences out of 15000+600000
+ 10888 words of font info for 43 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 27i,11n,35p,624b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,35p,484b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on analysis_eig_asy00.pdf (9 pages).
+Output written on analysis_eig_asy01.pdf (6 pages).

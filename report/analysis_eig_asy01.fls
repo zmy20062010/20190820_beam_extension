@@ -1,7 +1,7 @@
 PWD D:/maureen/github/beam_extension_20190820/report
 INPUT d:/program/work/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt
-INPUT ./analysis_eig_asy00.tex
-OUTPUT analysis_eig_asy00.log
+INPUT ./analysis_eig_asy01.tex
+OUTPUT analysis_eig_asy01.log
 INPUT d:/program/work/texlive/2016/texmf-dist/tex/latex/base/article.cls
 INPUT d:/program/work/texlive/2016/texmf-dist/tex/latex/base/article.cls
 INPUT d:/program/work/texlive/2016/texmf-dist/tex/latex/base/size10.clo
@@ -48,9 +48,9 @@ INPUT d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 INPUT d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 INPUT d:/program/work/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT d:/program/work/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-INPUT analysis_eig_asy00.aux
-INPUT analysis_eig_asy00.aux
-OUTPUT analysis_eig_asy00.aux
+INPUT analysis_eig_asy01.aux
+INPUT analysis_eig_asy01.aux
+OUTPUT analysis_eig_asy01.aux
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -85,9 +85,4 @@ INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT analysis_eig_asy00.aux
+INPUT analysis_eig_asy01.aux

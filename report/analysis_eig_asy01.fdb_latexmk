@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1573353516 "analysis_eig_asy00.tex" "analysis_eig_asy00.pdf" "analysis_eig_asy00" 1573353517
-  "analysis_eig_asy00.aux" 1573353517 535 b2c6e8c0ff2a82068225f93b55970c3d ""
-  "analysis_eig_asy00.tex" 1573353515 32395 8ad83cfcd2d3e1921d607e099440482c ""
+["pdflatex"] 1573371689 "analysis_eig_asy01.tex" "analysis_eig_asy01.pdf" "analysis_eig_asy01" 1573381140
+  "analysis_eig_asy01.aux" 1573371690 105 f34a686cd815d836ee55e77a0a804153 ""
+  "analysis_eig_asy01.tex" 1573371688 22011 143c0124708647330f6b4a03fb31f814 ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1491278873 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1491278614 1004 54797486969f23fa377b128694d548df ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1491278614 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -50,8 +50,6 @@
   "d:/program/work/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def" 1491279670 21052 2a1a30b53c57c3b04e71c305475a35fc ""
   "d:/program/work/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt" 1491279861 3520369 dc4f60a336f977ffde03988592eafdfa ""
   (generated)
-  "/home/myzhou/Documents/github/20190820_beam_extension/report/analysis_eig_asy00.pdf"
-  "/home/myzhou/Documents/github/20190820_beam_extension/report/analysis_eig_asy00.log"
-  "analysis_eig_asy00.log"
-  "analysis_eig_asy00.pdf"
-  "analysis_eig_asy00.aux"
+  "analysis_eig_asy01.log"
+  "analysis_eig_asy01.pdf"
+  "analysis_eig_asy01.aux"
