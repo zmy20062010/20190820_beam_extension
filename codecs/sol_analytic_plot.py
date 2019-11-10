@@ -54,23 +54,33 @@ def beam_disp(x, arg_sqlam = sqlam, arg_beta = beta, arg_eps = eps):
 
 print(sqlam,beta,eps)
 plt.subplot(211)
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0)), 'm-')
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.05)), 'b-.')
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.1)), 'g-.')
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.5)), 'c-.')
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 1.0)), 'k-.')
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 5.0)), 'r-')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.0)), 'm-', label = '$\\delta = 0.0$')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.05)), 'b-.', label = '$\\delta = 0.05$')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.1)), 'g-.', label = '$\\delta = 0.1$')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.5)), 'c-.', label = '$\\delta = 0.5$')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 1.0)), 'k-.', label = '$\\delta = 1.0$')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 5.0)), 'r-', label = '$\\delta = 5.0$')
 plt.grid(True)
+plt.legend()
+plt.ylabel('amplitude function')
 
 plt.subplot(212)
-plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0)), 'm-')
-plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.05)), 'b-.')
-plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.1)), 'g-.')
-plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.5)), 'c-.')
-plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 1.0)), 'k-.')
-plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 5.0)), 'r-')
+plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0)), 'm-', label = '$\\delta = 0.0$')
+plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.05)), 'b-.', label = '$\\delta = 0.05$')
+plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.1)), 'g-.', label = '$\\delta = 0.1$')
+plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.5)), 'c-.', label = '$\\delta = 0.5$')
+plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 1.0)), 'k-.', label = '$\\delta = 1.0$')
+plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 5.0)), 'r-', label = '$\\delta = 5.0$')
 plt.grid(True)
+plt.legend()
 
+plt.xlabel('Streamwise position $z$')
+plt.ylabel('phase angle function')
+
+
+plt.savefig('fig_sol_analytic_disp_fun.jpg',dpi=300)
+plt.savefig('fig_sol_analytic_disp_fun.eps')
+plt.savefig('fig_sol_analytic_disp_fun.pdf')
 plt.show()
 
 
@@ -90,7 +100,7 @@ def output_vals(arg_sqlam = sqlam, arg_beta = beta, arg_eps = eps, arg_rd = rd, 
     Def = - Bef
 
     #########  Expansion for the function
-    ue1 = ( - Aef * np.cos(arg_sqlam) + Bef * np.sin(arg_sqlam) + Cef * np.cosh(arg_sqlam) + Def * np.sinh(arg_sqlam) ) * arg_sqlam
+    ue1 = arg_sqlam * ( - Aef * np.cos(arg_sqlam) + Bef * np.sin(arg_sqlam) + Cef * np.cosh(arg_sqlam) + Def * np.sinh(arg_sqlam) )
     ve = -( 1j * arg_beta * arg_sqlam * arg_sqlam) / (1 + 1j * beta * arg_sqlam * arg_sqlam ) * arg_rd * arg_rv * ue1
     ie = ve / arg_Rl
     pe = ve * ie
