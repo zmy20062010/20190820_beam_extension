@@ -162,45 +162,31 @@ Analytically, we can directly obtain the solution to this problem as
     \end{aligned}\right.
 \end{equation}
 
-
-In the following, we can obtain the corresponding displacement function $u(x)$ in terms of its amplitude and phase in Figure~\ref{fig:fig_sol_analytic_disp_fun}. 
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_fun.jpg}
-    \caption{Amplitude and phase of the displacement function $u(x)$}
-    \label{fig:fig_sol_analytic_disp_fun}
-\end{figure}
-
-It is seen from the figure that the responsive displacement function $u(x)$ is tuned by the attached piezoelectric layers. Nonetheless, the tuning effect is minuscule in the way that compared to the non-piezoelectric case, amplitude of the displacement $u(x)$ is disturbed to a small degree, while the phase is little offset from a value of $0$. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\newpage
-The resulting output voltage $V_p$, current $I_p$, and power $P_p$ can be formulated as follows
+The resulting complex amplitudes $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ for output voltage $V_p(t)$, output current $I_p(t)$, and output power $P_p(t)$, respectively, can be formulated as follows
 \begin{equation}
     \left\{\begin{aligned}
-        \tilde{V}_p &= \frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\xi_b}{l_p} \frac{e_p}{C_p} u^\prime(1), \\
+        \tilde{V}_p &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\xi_b}{l_p} \frac{e_p}{C_p} u^\prime(1), \\
+        &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\xi_b}{l_p} \frac{e_p}{C_p} \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}} + B_\delta \cos{\sqrt{\sigma}} + C_\delta \sinh{\sqrt{\sigma}} + D_\delta \cosh{\sqrt{\sigma}} \right),\\
         \tilde{I}_p &=  \tilde{V}_p / R_l, \\
         \tilde{P}_p &=  \tilde{V}_p^2 / R_l.
     \end{aligned}\right.
 \end{equation}
+
+
+
+
+In the following, we can obtain the corresponding displacement function $u(z)$ in terms of its amplitude and phase in Figure~\ref{fig:fig_sol_analytic_disp_fun}. 
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_fun.jpg}
+    \caption{Amplitude and phase of the displacement function $u(z)$}
+    \label{fig:fig_sol_analytic_disp_fun}
+\end{figure}
+
+The solution function $u(z)$ is dependent upon three dimensionless parameters $\beta$, $\sigma$, and $\delta$. $\beta$ indicates the electric properties of the piezoelectric energy harvesting system, $\sigma$ is the equivalent base excitation frequency and hence depicts the mechanical input part of the system, and $\delta$ reflects the electromechanical effect in the system. It is seen from the figure that the responsive displacement function $u(z)$ is tuned by the attached piezoelectric layers. Nonetheless, the tuning effect is minuscule in the way that compared to the non-piezoelectric case, amplitude of the displacement $u(z)$ is disturbed to a small degree, while the phase is little offset from a value of $0$. 
+
+
 
 
 
