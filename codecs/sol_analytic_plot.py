@@ -16,7 +16,7 @@ ep33S= 7.32e-9
 e31  = -5.35
 # external circuit and excitation
 fr   = 48
-Rl   = 900.0e3
+Rl   = 100.0e3
 
 
 Bp = 2.0e0/3.0e0 * b * ( Ys * hs**3.0e0 + c11E * ((hs + hp)**3.0e0) - hs**3.0e0 )

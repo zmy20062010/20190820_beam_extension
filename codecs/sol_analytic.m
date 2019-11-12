@@ -29,7 +29,5 @@ coeff2 =((-I+\[Beta] \[Lambda]) Cosh[Sqrt[\[Lambda]]] Sin[Sqrt[\[Lambda]]]+((-I+
 (I Numerator[coeff1]-(1+I \[Beta] \[Lambda])Numerator[mysol1])//Expand//Simplify
 
 
-
-
-
-
+c1 = {-Sin[\[Sqrt]\[Sigma]],Cos[\[Sqrt]\[Sigma]],Sinh[\[Sqrt]\[Sigma]],Cosh[\[Sqrt]\[Sigma]]};
+coeff.c1//Simplify
