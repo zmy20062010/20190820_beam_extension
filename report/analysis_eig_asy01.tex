@@ -8,6 +8,7 @@
 \usepackage{geometry}
 \geometry{top = 1.5 cm, bottom = 1.5 cm}
 
+
 \title{Revisit to the theoretical analysis of a classical piezoelectric cantilever energy harvester}
 \author{Maoying Zhou}
 \date{\today}
@@ -22,7 +23,7 @@ The dynamic equations for a typical piezoelectric composite cantilever beam is
 \begin{equation}
     B_p \frac{\partial^4 w(x,t)}{\partial x^4} + m_p \frac{\partial^2 w(x,t)}{\partial t^2} = 0,
 \end{equation}
-where $B_p$ is the equivalent bending stiffness and $m_p$ is the line mass density of the piezoelectric cantilever beam. If the piezoelectric elements attached to the cantilever beam is connected to an external electrical load $R_l$, we have
+where $B_p$ is the equivalent bending stiffness and $m_p$ is the line mass density of the piezoelectric cantilever beam. If the piezoelectric elements attached to the cantilever beam is connected to an external electrical load $R_l$, we have 
 \begin{equation}
     \frac{d Q_p(t)}{d t} + \frac{V_p(t)}{R_l} = 0.
 \end{equation}
@@ -168,20 +169,22 @@ The resulting complex amplitudes $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$
         \tilde{V}_p &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} u^\prime(1), \\
         &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}} + B_\delta \cos{\sqrt{\sigma}} + C_\delta \sinh{\sqrt{\sigma}} + D_\delta \cosh{\sqrt{\sigma}} \right) \\
         &= \frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p}  \frac{ \sqrt{\sigma} \left( \sin\sqrt{\sigma} - \sinh\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }\\
-        &= \frac{j \sigma \beta}{j \sigma \beta + 1} V_m , \\
-        \tilde{I}_p &=  \tilde{V}_p / R_l = \frac{V_m}{R_l}  \frac{j \sigma \beta}{j \sigma \beta + 1} = \frac{j \sigma \beta}{j \sigma \beta + 1} I_m , \\
-        \tilde{P}_p &=  \tilde{V}_p^2 / R_l = \frac{V_m^2}{R_l}  \left( \frac{j \sigma \beta}{j \sigma \beta + 1} \right)^2 = \left( \frac{j \sigma \beta}{j \sigma \beta + 1} \right)^2 P_m,
+        &= \frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} \chi_p , \\
+        \tilde{I}_p &=  \tilde{V}_p / R_l = \frac{V_m}{R_l}  \frac{j \sigma \beta}{j \sigma \beta + 1} = \frac{j} {j \sigma \beta + 1} \frac{\eta_b}{l_p} e_p \sigma_b \chi_p , \\
+        \tilde{P}_p &=  \tilde{V}_p^2 / R_l = \frac{V_m^2}{R_l}  \left( \frac{j \sigma \beta}{j \sigma \beta + 1} \right)^2 = \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left(e_p \sigma_b\right) \frac{ \sigma \beta}{\left( j \sigma \beta + 1 \right)^2}  \chi_p,
     \end{aligned}\right.
 \end{equation}
 in which we have used the notations that 
+% \begin{equation}
+%     \left\{\begin{aligned}
+%         V_m &= \frac{\eta_b}{l_p} \frac{e_p}{C_p} \frac{ \sqrt{\sigma} \left( \sin\sqrt{\sigma} - \sinh\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }, \\
+%         I_m &= \frac{V_m}{R_l}, \\
+%         P_m &= \frac{V_m^2}{R_l}.
+%     \end{aligned}\right.
+% \end{equation}
 \begin{equation}
-    \left\{\begin{aligned}
-        V_m &= \frac{\eta_b}{l_p} \frac{e_p}{C_p} \frac{ \sqrt{\sigma} \left( \sin\sqrt{\sigma} - \sinh\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }, \\
-        I_m &= \frac{V_m}{R_l}, \\
-        P_m &= \frac{V_m^2}{R_l}.
-    \end{aligned}\right.
+    \chi_p = \frac{ \sqrt{\sigma} \left( \sin\sqrt{\sigma} - \sinh\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }
 \end{equation}
-
 
 
 In the following, we can obtain the corresponding displacement function $u(z)$ in terms of its amplitude and phase in Figure~\ref{fig:fig_sol_analytic_disp_fun}. 
