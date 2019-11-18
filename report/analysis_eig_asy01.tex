@@ -180,6 +180,16 @@ in which we have used the notations that
 \end{equation}
 
 
+In view of the above process, it is shown that the problem is determined by the following four dimensionless groups:
+\begin{equation}
+    \sigma = \sigma_b \sqrt{\frac{m_p l_p^4}{B_p}}, \quad \beta = R_l C_p \sqrt{\frac{B_p}{m_p l_p^4}}, \quad \delta = \frac{e_p^2 l_p}{C_p B_p}, \quad r_d = \frac{\eta_b}{l_p},
+\end{equation}
+where $\sigma$ is the dimensionless base excitation frequency, $\beta$ dimensionless electrical resonant frequency, $\delta$ is the dimensionless electromechanical coupling strength for the structure, and $r_d$ is the dimensionless base excitation amplitude. In fact, we have eight physical parameters in this problem: $m_p$, $l_p$, $B_p$, $e_p$, $C_p$, $R_l$ $\sigma_b$, $\eta_b$, while four dimensions length $\mathbf{L}$, mass $\mathbf{M}$, time $\mathbf{T}$, and electrical current $\mathbf{I}$ are present. Thus according to the Buckingham's PI theorem, \cite{buckingham1914physically} we have four independent dimensionless groups, which is organized as above.
+
+
+Nonetheless, the tuning effect is minuscule in the way that compared to the non-piezoelectric case, amplitude of the displacement $u(z)$ is disturbed to a small degree, while the phase is little offset from a value of $0$. 
+
+
 In the following, we can obtain the corresponding displacement function $u(z)$ in terms of its amplitude and phase in Figure~\ref{fig:fig_sol_analytic_disp_fun}. 
 
 \begin{figure}[!htbp]
@@ -188,9 +198,6 @@ In the following, we can obtain the corresponding displacement function $u(z)$ i
     \caption{Amplitude and phase of the displacement function $u(z)$}
     \label{fig:fig_sol_analytic_disp_fun}
 \end{figure}
-
-The solution function $u(z)$ is dependent upon three dimensionless parameters $\beta$, $\sigma$, and $\delta$. $\beta$ indicates the electric properties of the piezoelectric energy harvesting system, $\sigma$ is the equivalent base excitation frequency and hence depicts the mechanical input part of the system, and $\delta$ reflects the electromechanical effect in the system. It is seen from the figure that the responsive displacement function $u(z)$ is tuned by the attached piezoelectric layers. Nonetheless, the tuning effect is minuscule in the way that compared to the non-piezoelectric case, amplitude of the displacement $u(z)$ is disturbed to a small degree, while the phase is little offset from a value of $0$. 
-
 
 
 
@@ -399,6 +406,9 @@ As a result, we obtain that for $k \geq 0$
 
 
 
+\section*{Reference}
 
+\bibliography{analysis_eig_asy.bib}
+\bibliographystyle{vancouver}
 
 \end{document}
