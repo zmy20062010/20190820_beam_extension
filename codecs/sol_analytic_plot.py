@@ -52,30 +52,43 @@ def beam_disp(x, arg_sqlam = sqlam, arg_beta = beta, arg_eps = eps):
 
     return ue
 
+plt.figure(1, figsize=(12,6))
 print(sqlam,beta,eps)
-plt.subplot(211)
+plt.subplot(121)
 plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.0)), 'm-', label = '$\\delta = 0.0$')
 plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.05)), 'b-.', label = '$\\delta = 0.05$')
 plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.1)), 'g-.', label = '$\\delta = 0.1$')
 plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.5)), 'c-.', label = '$\\delta = 0.5$')
 plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 1.0)), 'k-.', label = '$\\delta = 1.0$')
 plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 5.0)), 'r-', label = '$\\delta = 5.0$')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 10.0)), 'r-', label = '$\\delta = 10.0$')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 100.0)), 'r-', label = '$\\delta = 100.0$')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 1000.0)), 'r--', label = '$\\delta = 1000.0$')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 10000.0)), 'r-.', label = '$\\delta = 10000.0$')
 plt.grid(True)
-plt.legend()
-plt.ylabel('amplitude function')
+plt.legend(loc='best')
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+plt.ylabel('Amplitude function')
+plt.xlabel('Streamwise position $z$')
 
-plt.subplot(212)
+
+plt.subplot(122)
 plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0)), 'm-', label = '$\\delta = 0.0$')
 plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.05)), 'b-.', label = '$\\delta = 0.05$')
 plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.1)), 'g-.', label = '$\\delta = 0.1$')
 plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.5)), 'c-.', label = '$\\delta = 0.5$')
 plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 1.0)), 'k-.', label = '$\\delta = 1.0$')
 plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 5.0)), 'r-', label = '$\\delta = 5.0$')
+plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 10.0)), 'r-p', label = '$\\delta = 10.0$')
+plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 100.0)), 'r-d', label = '$\\delta = 100.0$')
+plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 1000.0)), 'r--', label = '$\\delta = 1000.0$')
+plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 10000.0)), 'r-s', label = '$\\delta = 10000.0$')
 plt.grid(True)
-plt.legend()
-
+plt.legend(loc='best')
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
 plt.xlabel('Streamwise position $z$')
-plt.ylabel('phase angle function')
+plt.ylabel('Phase angle function')
+plt.tight_layout()
 
 
 plt.savefig('fig_sol_analytic_disp_fun.jpg',dpi=300)
@@ -108,25 +121,43 @@ def output_vals(arg_sqlam = sqlam, arg_beta = beta, arg_eps = eps, arg_rd = rd, 
     return [ve, ie, pe]
 
 
+# plt.figure(2, figsize=(16,6))
 
-# sqlam_list = np.linspace(0.0,10.0,1001)
+# eps_list = np.logspace(-2,2,401)
 # plt.subplot(131)
-# plt.plot(sqlam_list, np.abs(output_vals(sqlam_list)[0]), 'r-', label = 'vol')
+# plt.plot(eps_list, np.abs(output_vals(sqlam, beta, eps_list)[0]), 'r-', label = 'voltage $\\tilde{V}_p$')
 # plt.xscale('log')
-# plt.yscale('log')
+# # plt.yscale('log')
+# plt.grid(True)
+# plt.legend()
+# plt.xlabel('Electromechanical coupling factor $\\delta$')
+# plt.ylabel('Output voltage $\\tilde{V}_p$')
+
 
 # plt.subplot(132)
-# plt.plot(sqlam_list, np.abs(output_vals(sqlam_list)[1]), 'b-', label = 'cur')
+# plt.plot(eps_list, np.abs(output_vals(sqlam, beta, eps_list)[1]), 'b-', label = 'Current $\\tilde{I}_p$')
 # plt.xscale('log')
-# plt.yscale('log')
+# # plt.yscale('log')
+# plt.grid(True)
+# plt.legend()
+# plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+# plt.xlabel('Electromechanical coupling factor $\\delta$')
+# plt.ylabel('Output current $\\tilde{I}_p$')
+
 
 # plt.subplot(133)
 # plt.xscale('log')
-# plt.plot(sqlam_list, np.abs(output_vals(sqlam_list)[2]), 'k-', label = 'pow')
+# plt.plot(eps_list, np.abs(output_vals(sqlam, beta, eps_list)[2]), 'k-', label = 'Power $\\tilde{P}_p$')
 # plt.xscale('log')
-# plt.yscale('log')
+# # plt.yscale('log')
 # plt.grid(True)
 # plt.legend()
+# plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+# plt.xlabel('Electromechanical coupling factor $\\delta$')
+# plt.ylabel('Output power $\\tilde{P}_p$')
+
+
+# plt.tight_layout()
 # plt.show()
 
 
