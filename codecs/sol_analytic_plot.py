@@ -139,10 +139,10 @@ def output_vals(arg_sqlam = sqlam, arg_beta = beta, arg_eps = eps, arg_rd = rd, 
 
 plt.figure(2, figsize=(16,6))
 
-eps_list = np.logspace(-2,0,401)
+eps_list = np.logspace(-4,0,401)
 plt.subplot(131)
 plt.plot(eps_list, np.abs(output_vals(sqlam, beta, eps_list)[0]), 'r-', label = 'voltage $\\tilde{V}_p$')
-plt.xscale('log')
+# plt.xscale('log')
 # plt.yscale('log')
 plt.grid(True)
 plt.legend()
@@ -152,7 +152,7 @@ plt.ylabel('Output voltage $\\tilde{V}_p$')
 
 plt.subplot(132)
 plt.plot(eps_list, np.abs(output_vals(sqlam, beta, eps_list)[1]), 'b-', label = 'Current $\\tilde{I}_p$')
-plt.xscale('log')
+# plt.xscale('log')
 # plt.yscale('log')
 plt.grid(True)
 plt.legend()
@@ -162,9 +162,8 @@ plt.ylabel('Output current $\\tilde{I}_p$')
 
 
 plt.subplot(133)
-plt.xscale('log')
 plt.plot(eps_list, np.abs(output_vals(sqlam, beta, eps_list)[2]), 'k-', label = 'Power $\\tilde{P}_p$')
-plt.xscale('log')
+# plt.xscale('log')
 # plt.yscale('log')
 plt.grid(True)
 plt.legend()
