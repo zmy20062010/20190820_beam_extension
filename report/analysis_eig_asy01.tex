@@ -202,8 +202,26 @@ Among the four dimensionless parameters $\sigma$, $\beta$, $\delta$, and $r_d$, 
 \end{figure}
 
 
-In Figure~\ref{fig:fig_sol_analytic_disp_fun}, we depict the influence of the electromechanical coupling factor $\delta$ upon the normalized displacement response function $u(z)$. It is shown that, the parameter $\delta$ changes the function $u(z)$ through the change of the third boundary condition (\textcolor{red}{to be inserted}). When $\delta$ is zero, i.e., no electromechanical coupling is present, the system degenerate to the classical elastic cantilever beam problem, whose solution is real functions without any phase change in the $z$ direction. 
-
+In Figure~\ref{fig:fig_sol_analytic_disp_fun}, we depict the influence of the electromechanical coupling factor $\delta$ upon the normalized displacement response function $u(z)$. It is shown that, the parameter $\delta$ changes the function $u(z)$ through the change of the third boundary condition (\textcolor{red}{to be inserted}). When $\delta$ is zero, i.e., no electromechanical coupling is present, the system degenerate to the classical elastic cantilever beam problem, whose solution is real functions without any phase change in the $z$ direction. The solution can be analytically expressed as 
+\begin{equation}
+    \left\{\begin{aligned}
+        A_\mathcal{O} &= \frac{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } - \sin\sqrt{\sigma } \sinh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
+        B_\mathcal{O} &= \frac{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
+        C_\mathcal{O} &= \frac{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \sin\sqrt{\sigma } \sinh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
+        D_\mathcal{O} &= \frac{ -\cos\sqrt{\sigma } \sinh\sqrt{\sigma } - \sin\sqrt{\sigma } \cosh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}.
+    \end{aligned}\right.
+    \label{eq:eq_disp_func_coeffs_exps_zero}
+\end{equation}
+When $\delta$ is extremely large and can be seen as $\infty$ in mathematical sense, the analytical solution is expressed as
+\begin{equation}
+    \left\{\begin{aligned}
+        A_\infty &= \frac{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } }{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }, \\
+        B_\infty &= \frac{ \sin\sqrt{\sigma } \sinh\sqrt{\sigma } }{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }, \\
+        C_\infty &= \frac{ \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }, \\
+        D_\infty &= \frac{ - \sin\sqrt{\sigma } \sinh\sqrt{\sigma } }{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }.
+    \end{aligned}\right.
+    \label{eq:eq_disp_func_coeffs_exps_infty}
+\end{equation}
 
 In the following, we can obtain the corresponding displacement function $u(z)$ in terms of its amplitude and phase in Figure~\ref{fig:fig_sol_analytic_disp_fun}. 
 
