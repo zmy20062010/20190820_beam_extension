@@ -109,7 +109,7 @@ plt.ylim([-1.0e-2,0.1e-2])
 plt.tight_layout()
 
 
-plt.savefig('fig_sol_analytic_disp_fun.jpg',dpi=300)
+# plt.savefig('fig_sol_analytic_disp_fun.jpg',dpi=300)
 plt.savefig('fig_sol_analytic_disp_fun.eps')
 plt.savefig('fig_sol_analytic_disp_fun.pdf')
 plt.show()

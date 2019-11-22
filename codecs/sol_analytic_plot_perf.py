@@ -96,7 +96,7 @@ plt.xlabel('$\\delta$')
 plt.ylabel('power')
 
 plt.tight_layout()
-plt.savefig('fig_sol_analytic_perf_fun.jpg',dpi=300)
+# plt.savefig('fig_sol_analytic_perf_fun.jpg',dpi=300)
 plt.savefig('fig_sol_analytic_perf_fun.eps')
 plt.savefig('fig_sol_analytic_perf_fun.pdf')
 

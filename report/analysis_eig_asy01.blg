@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2016/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: analysis_eig_asy01.aux
 The style file: vancouver.bst
@@ -6,7 +6,7 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Database file #1: analysis_eig_asy.bib.bib
+Database file #1: analysis_eig_asy.bib
 You've used 2 entries,
             3170 wiz_defined-function locations,
             653 strings with 4900 characters,
