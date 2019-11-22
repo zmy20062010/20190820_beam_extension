@@ -164,34 +164,9 @@ Analytically, we can directly obtain the solution to this problem as
     \end{aligned}\right.
     \label{eq:eq_disp_func_coeffs_exps}
 \end{equation}
-According to equations (\ref{eq:eq_disp_func_general_coeffs}) and (\ref{eq:eq_disp_func_coeffs_exps}), it is seen that the dimensionless displacement amplitude function $u(z)$ is totally determined by the three dimensionless parameters $\sigma$, $\beta$, and $\delta$ introduced before. The resulting complex amplitudes $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ for output voltage $V_p(t)$, output current $I_p(t)$, and output power $P_p(t)$, respectively, can be formulated as follows
-\begin{equation}
-    \left\{\begin{aligned}
-        \tilde{V}_p &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} u^\prime(1), \\
-        &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}} + B_\delta \cos{\sqrt{\sigma}} + C_\delta \sinh{\sqrt{\sigma}} + D_\delta \cosh{\sqrt{\sigma}} \right) \\
-        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p}  \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }\\
-        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(\frac{e_p}{C_p}\right) \chi_p , \\
-        \tilde{I}_p &=  \tilde{V}_p / R_l = - \frac{ j \sigma \beta } {j \sigma \beta + 1} \left( \frac{\eta_b}{l_p} \right) \left( \frac{e_p}{C_p R_l} \right) \chi_p = \frac{ - j } {j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(e_p \sigma_b\right) \chi_p , \\
-        \tilde{P}_p &=  \tilde{V}_p^2 / R_l = \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left( \frac{e_p}{C_p R_l} \right) \left( \frac{ j \sigma \beta}{ j \sigma \beta + 1 } \right)^2 \chi_p^2∫,
-    \end{aligned}\right.
-    \label{eq:eq_peh_perfs_compact_form}
-\end{equation}
-in which we have used the notations that 
-\begin{equation}
-    \chi_p = u_1^\prime(1) = \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }.
-\end{equation}
-Clearly, output performance $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ of a classical piezoelectric cantilever energy harvester is heavily dependent on another dimensionless parameter $r_d = \eta_b/l_p$. To be more explicit, both $\tilde{V}_p$ and $\tilde{I}_p$ are linearly dependent on $r_d$ and as a result, $\tilde{P}_p$ shows a quadratic dependence on $r_d$.
-
-% In view of the above process, it is shown that the problem is determined by the following four dimensionless groups:
-% \begin{equation}
-%     \sigma = \sigma_b \sqrt{\frac{m_p l_p^4}{B_p}}, \quad \beta = R_l C_p \sqrt{\frac{B_p}{m_p l_p^4}}, \quad \delta = \frac{e_p^2 l_p}{C_p B_p}, \quad r_d = \frac{\eta_b}{l_p},
-% \end{equation}
-% where $\sigma$ is the dimensionless base excitation frequency, $\beta$ is the dimensionless electrical resonant frequency, $\delta$ is the dimensionless electromechanical coupling strength for the structure, and $r_d$ is the dimensionless base excitation amplitude. In fact, we have eight physical parameters in this problem: $m_p$, $l_p$, $B_p$, $e_p$, $C_p$, $R_l$, $\sigma_b$, and $\eta_b$, while four dimensions length $[\mathbf{L}]$, mass $[\mathbf{M}]$, time $[\mathbf{T}]$, and electrical current $[\mathbf{I}]$ are present. Thus according to the Buckingham's PI theorem, \cite{buckingham1914physically} we have four independent dimensionless groups, which is organized as above. 
-
-% Nonetheless, the tuning effect is minuscule in the way that compared to the non-piezoelectric case, amplitude of the displacement $u(z)$ is disturbed to a small degree, while the phase is little offset from a value of $0$. 
-
-
-Among the four dimensionless parameters $\sigma$, $\beta$, $\delta$, and $r_d$, $\sigma$ is the dimensionless base excitation frequency, $\beta$ is the dimensionless electrical resonant frequency, $\delta$ is the dimensionless electromechanical coupling strength for the structure, and $r_d$ is the dimensionless base excitation amplitude. As $\sigma$ and $\beta$ is determined by the base excitation and externally connected circuit respectively, only the parameter $\delta$ is fully determined by the structure itself. Hence we would like to investigate the influence of parameter $\delta$ upon the performance of a piezoelectric energy harvesting cantilever. By taking different values of $\delta$ and fixing the other three parameters $\sigma$, $\beta$, and $r_d$ according to the data shown in \cite{erturk2008distributed,erturk2009experimentally}, we calculate the displacement amplitude function $u(z)$ and the corresponding performance metrics $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$. The results are plotted in Figure~\ref{fig:fig_sol_analytic_disp_fun} and Figure~\ref{fig:fig_sol_analytic_perf_fun}.
+% and fixing the other three parameters $\sigma$, $\beta$, and $r_d$ according to the data shown in \cite{erturk2008distributed,erturk2009experimentally}
+% the performance of a piezoelectric energy harvesting cantilever. The results are plotted in Figure~\ref{fig:fig_sol_analytic_disp_fun}. and Figure~\ref{fig:fig_sol_analytic_perf_fun}.
+According to equations (\ref{eq:eq_disp_func_general_coeffs}) and (\ref{eq:eq_disp_func_coeffs_exps}), the dimensionless displacement amplitude function $u(z)$ is totally determined by the three dimensionless parameters $\sigma$, $\beta$, and $\delta$ introduced before. Among the dimensionless parameters, $\sigma$ is the dimensionless base excitation frequency, $\beta$ is the dimensionless electrical resonant frequency, and $\delta$ is the dimensionless electromechanical coupling strength for the structure. As $\sigma$ and $\beta$ is determined by the base excitation and externally connected circuit respectively, only the parameter $\delta$ is fully determined by the structure itself. Hence we would like to investigate the influence of parameter $\delta$ upon the solution displacement function $u(z)$. By taking different values of $\delta$ , we calculate the displacement amplitude function $u(z)$ and plot the results in Figure~\ref{fig:fig_sol_analytic_disp_fun}.
 
 
 \begin{figure}[!htbp]
@@ -202,17 +177,22 @@ Among the four dimensionless parameters $\sigma$, $\beta$, $\delta$, and $r_d$, 
 \end{figure}
 
 
-In Figure~\ref{fig:fig_sol_analytic_disp_fun}, we depict the influence of the electromechanical coupling factor $\delta$ upon the normalized displacement response function $u(z)$. It is shown that, the parameter $\delta$ changes the function $u(z)$ through the change of the third boundary condition (\textcolor{red}{to be inserted}). When $\delta$ is zero, i.e., no electromechanical coupling is present, the system degenerate to the classical elastic cantilever beam problem, whose solution is real functions without any phase change in the $z$ direction. The solution can be analytically expressed as 
+It is shown in Figure~\ref{fig:fig_sol_analytic_disp_fun}, the parameter $\delta$ changes the function $u(z)$ through the change of the third boundary condition (\textcolor{red}{to be inserted}). When $\delta$ is zero, i.e., no electromechanical coupling is present, the system degenerates to the classical elastic cantilever beam problem, whose solution is a real function. That is to say, the phase of $u(z)$ is a constant across the whole beam (in the range of $0 \leq z \leq 1$).
+Analytical expressions for the coefficients are 
 \begin{equation}
     \left\{\begin{aligned}
-        A_\mathcal{O} &= \frac{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } - \sin\sqrt{\sigma } \sinh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
-        B_\mathcal{O} &= \frac{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
-        C_\mathcal{O} &= \frac{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \sin\sqrt{\sigma } \sinh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
-        D_\mathcal{O} &= \frac{ -\cos\sqrt{\sigma } \sinh\sqrt{\sigma } - \sin\sqrt{\sigma } \cosh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}.
+        A_{\varnothing} &= \frac{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } - \sin\sqrt{\sigma } \sinh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
+        B_{\varnothing} &= \frac{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
+        C_{\varnothing} &= \frac{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \sin\sqrt{\sigma } \sinh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
+        D_{\varnothing} &= \frac{ -\cos\sqrt{\sigma } \sinh\sqrt{\sigma } - \sin\sqrt{\sigma } \cosh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}.
     \end{aligned}\right.
     \label{eq:eq_disp_func_coeffs_exps_zero}
 \end{equation}
-When the electromechanical coupling is extremely strong, and $\delta$ is extremely large and can be seen as $\infty$ in mathematical sense, the analytical solution for the coefficients is expressed as
+and the resulting dimensionless displacement function $u_{\varnothing} (z)$ is represented as
+\begin{equation}
+    u_{\varnothing} (z) = A_{\varnothing} \cos{\sqrt{\sigma}z} + B_{\varnothing} \sin{\sqrt{\sigma}z} + C_{\varnothing} \cosh{\sqrt{\sigma}z} + D_{\varnothing} \sinh{\sqrt{\sigma}z} - 1.
+\end{equation}
+When the electromechanical coupling is extremely strong, and $\delta$ is extremely large and can be seen as $\infty$ in mathematical sense. In this situation, the solution $u_\infty (z)$ is again real without any phase difference in the $z$ direction. The coefficients can be analytically expressed as 
 \begin{equation}
     \left\{\begin{aligned}
         A_\infty &= \frac{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } }{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }, \\
@@ -222,6 +202,45 @@ When the electromechanical coupling is extremely strong, and $\delta$ is extreme
     \end{aligned}\right.
     \label{eq:eq_disp_func_coeffs_exps_infty}
 \end{equation}
+and hence the dimensionless displacement function $u_{\infty} (z)$ is
+\begin{equation}
+    u_{\infty} (z) = A_{\infty} \cos{\sqrt{\sigma}z} + B_{\infty} \sin{\sqrt{\sigma}z} + C_{\infty} \cosh{\sqrt{\sigma}z} + D_{\infty} \sinh{\sqrt{\sigma}z} - 1.
+\end{equation}
+While a finite non-zero electromechanical coupling factor $\delta$ is present, which is expected in most applications, the resulting dimensionless displacement function $u(z)$ has varying magnitude and phase along the stream-wise direction or $z$ direction. However, it is seen from the right panel of Figure~\ref{fig:fig_sol_analytic_disp_fun} that for different values of $\delta$, the phase change of $u(z)$ is very small in the $z$ direction, actually in the order $10^{-2}$. 
+
+
+
+
+
+The resulting complex amplitudes $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ for output voltage $V_p(t)$, output current $I_p(t)$, and output power $P_p(t)$, respectively, can be formulated as follows 
+\begin{equation}
+    \left\{\begin{aligned}
+        \tilde{V}_p &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} u^\prime(1), \\
+        &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}} + B_\delta \cos{\sqrt{\sigma}} + C_\delta \sinh{\sqrt{\sigma}} + D_\delta \cosh{\sqrt{\sigma}} \right) \\
+        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p}  \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }\\
+        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(\frac{e_p}{C_p}\right) \chi_p , \\
+        \tilde{I}_p &=  \tilde{V}_p / R_l = - \frac{ j \sigma \beta } {j \sigma \beta + 1} \left( \frac{\eta_b}{l_p} \right) \left( \frac{e_p}{C_p R_l} \right) \chi_p , \\
+        \tilde{P}_p &=  \tilde{V}_p^2 / R_l = \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left( \frac{e_p}{C_p R_l} \right) \left( \frac{ j \sigma \beta}{ j \sigma \beta + 1 } \right)^2 \chi_p^2∫,
+    \end{aligned}\right.
+    \label{eq:eq_peh_perfs_compact_form}
+\end{equation}
+in which we have used the notations that 
+\begin{equation}
+    \chi_p = u_1^\prime(1) = \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }.
+\end{equation}
+Clearly, output performance $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ of a classical piezoelectric cantilever energy harvester is heavily dependent on another dimensionless parameter $r_d = \eta_b/l_p$. To be more explicit, both $\tilde{V}_p$ and $\tilde{I}_p$ are linearly dependent on $r_d$ and as a result, $\tilde{P}_p$ shows a quadratic dependence on $r_d$.
+
+
+
+
+
+
+
+
+
+
+
+
 
 In the following, we can obtain the corresponding displacement function $u(z)$ in terms of its amplitude and phase in Figure~\ref{fig:fig_sol_analytic_disp_fun}. 
 
@@ -230,7 +249,7 @@ For a typical piezoelectric cantilever energy harvester in the literature \cite{
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_perf_fun.jpg}
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_perf_fun}
     \caption{Voltage, current and power output for the piezoelectric cantilever energy harvester}
     \label{fig:fig_sol_analytic_perf_fun}
 \end{figure}
