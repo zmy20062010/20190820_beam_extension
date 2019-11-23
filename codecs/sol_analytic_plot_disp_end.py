@@ -77,39 +77,46 @@ def beam_disp_infty(x, arg_sqlam = sqlam, arg_beta = beta):
     return ue
 
 
-plt.figure(1, figsize=(12,6))
-print(sqlam,beta,eps)
-plt.subplot(121)
-plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta)), 'm-', label = '$\\delta = 0.0$', linewidth=3)
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.01)), 'b-.', label = '$\\delta = 0.01$')
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 0.1)), 'g-.', label = '$\\delta = 0.1$')
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 1.0)), 'k-.', label = '$\\delta = 1.0$')
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, 10.0)), 'c-', label = '$\\delta = 10.0$')
-plt.plot(x, np.abs(beam_disp_infty(x, sqlam, beta)), 'y-', label = '$\\delta = \\infty$', linewidth=3)
-plt.grid(True)
-plt.legend(loc='best')
-plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
-plt.ylabel('Amplitude of $u(z)$')
-plt.xlabel('Streamwise position $z$')
+
+x1 = 1.0
+delta_list = np.logspace(-4,4,801)
+
+fig, ax1 = plt.subplots(figsize=(12,6))
+
+ax2 = ax1.twinx()
+ax1.plot(delta_list, np.abs(beam_disp(x1, sqlam, beta, delta_list)), 'r-' , linewidth=3, label='$|u(1)|$')
+ax2.plot(delta_list, np.angle(beam_disp(x1, sqlam, beta, delta_list)), 'b--', linewidth=3, label='$\\angle u(1) $')
+
+ax1.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+ax2.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+ax1.set_xscale('log')
+ax1.grid(True)
 
 
-plt.subplot(122)
-plt.plot(x, np.angle(beam_disp_zero(x, sqlam, beta)), 'm-', label = '$\\delta = 0.0$', linewidth=3)
-plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.01)), 'b-.', label = '$\\delta = 0.01$')
-plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 0.1)), 'g-.', label = '$\\delta = 0.1$')
-plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 1.0)), 'k-.', label = '$\\delta = 1.0$')
-plt.plot(x, np.angle(beam_disp(x, sqlam, beta, 10.0)), 'c-', label = '$\\delta = 10.0$')
-plt.plot(x, np.angle(beam_disp_infty(x, sqlam, beta)), 'y--', label = '$\\delta = \\infty$', linewidth=3)
-plt.grid(True)
-plt.legend(loc='best')
-plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
-plt.xlabel('Streamwise position $z$')
-plt.ylabel('Phase of $u(z)$')
-plt.ylim([-1.0e-2,0.1e-2])
+ax1.set_xlabel('Electromechanical coupling factor $\\delta$')
+ax1.set_ylabel('Amplitude of $u(1)$', color='r')
+ax2.set_ylabel('Phase of $u(1)$', color='b')
+ax1.legend(loc = 'lower left')
+ax2.legend(loc = 'lower right')
+
 plt.tight_layout()
-
-
-plt.savefig('fig_sol_analytic_disp_fun.jpg',dpi=300)
-plt.savefig('fig_sol_analytic_disp_fun.eps')
-plt.savefig('fig_sol_analytic_disp_fun.pdf')
+plt.savefig('fig_sol_analytic_disp_end.jpg',dpi=300)
+plt.savefig('fig_sol_analytic_disp_end.eps')
+plt.savefig('fig_sol_analytic_disp_end.pdf')
 plt.show()
+
+
+
+
+
+
+
+# plt.xlabel('Streamwise position $z$')
+# plt.ylabel('Phase of $u(z)$')
+# plt.ylim([-1.0e-2,0.1e-2])
+
+
+
+
+
+

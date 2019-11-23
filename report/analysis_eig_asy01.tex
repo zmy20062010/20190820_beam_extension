@@ -172,7 +172,7 @@ According to equations (\ref{eq:eq_disp_func_general_coeffs}) and (\ref{eq:eq_di
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_fun.jpg}
-    \caption{Amplitude and phase of the displacement function $u(z)$ }
+    \caption{Amplitude and phase of the displacement function $u(z)$ for difference values of $\delta$ }
     \label{fig:fig_sol_analytic_disp_fun}
 \end{figure}
 
@@ -209,10 +209,18 @@ and hence the dimensionless displacement function $u_{\infty} (z)$ is
 While a finite non-zero electromechanical coupling factor $\delta$ is present, which is expected in most applications, the resulting dimensionless displacement function $u(z)$ has varying magnitude and phase along the stream-wise direction or $z$ direction. Nevertheless, it is seen from the right panel of Figure~\ref{fig:fig_sol_analytic_disp_fun} that for different values of $\delta$, the phase change of $u(z)$ is very small in the $z$ direction, actually in the order $10^{-2}$. 
 
 
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img_eig_asy/fig_sol_analytic_disp_end.jpg}
+    \caption{Amplitude and phase of the displacement function $u(z)$ at the position $z=1$ versus electromechanical coupling factor $\delta$. }
+    \label{fig:fig_sol_analytic_disp_end}
+\end{figure}
 
 
+To make it more clear, we plot the phase of $u(z)$ at $z=1$ versus different values of $\delta$ in Figure~\ref{fig:fig_sol_analytic_disp_end}. It is clear that with the increase of $\delta$, amplitude of the end displamcent $(z=1)$ of the beam $|u(z)|$ decreases, while its phase reaches a minimum at around $\delta = 10$. This also explains the fact expressed in Figure~\ref{fig:fig_sol_analytic_disp_fun} that the amplitude of displacement function $u_\delta (z)$ with $0 < \delta < \infty$ is always between that of $u_\varnothing (z)$ and $u_\infty (z)$.
 
-The resulting complex amplitudes $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ for output voltage $V_p(t)$, output current $I_p(t)$, and output power $P_p(t)$, respectively, can be formulated as follows 
+
+As for the output voltage $V_p(t)$, output current $I_p(t)$, and output power $P_p(t)$ for the classical piezoelectric cantilever energy harvester, their corresponding complex amplitudes $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ can be formulated as
 \begin{equation}
     \left\{\begin{aligned}
         \tilde{V}_p &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} u^\prime(1), \\
@@ -228,31 +236,17 @@ in which we have used the notations that
 \begin{equation}
     \chi_p = u_1^\prime(1) = \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }.
 \end{equation}
-Clearly, output performance $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ of a classical piezoelectric cantilever energy harvester is heavily dependent on another dimensionless parameter $r_d = \eta_b/l_p$. To be more explicit, both $\tilde{V}_p$ and $\tilde{I}_p$ are linearly dependent on $r_d$ and as a result, $\tilde{P}_p$ shows a quadratic dependence on $r_d$.
-
-
-
-
-
-
-
-
-
-
-
-
-
-In the following, we can obtain the corresponding displacement function $u(z)$ in terms of its amplitude and phase in Figure~\ref{fig:fig_sol_analytic_disp_fun}. 
-
-
-For a typical piezoelectric cantilever energy harvester in the literature \cite{erturk2008distributed,erturk2009experimentally}, this parameter $\delta$ is rather small
-
+Clearly, The three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are heavily dependent on another dimensionless parameter $r_d = \eta_b/l_p$. Formally, both $\tilde{V}_p$ and $\tilde{I}_p$ depend lineary upon $r_d$, while $\tilde{P}_p$ shows a quadratic dependence on $r_d$. However, it should be noted that parameter $\delta$ relies on $e_p$, $l_p$, $C_p$, and $B_p$, while the three measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are dimensional values and depend on $e_p$, $\sigma_b$, and $R_l$. As a result, the change of parameter $\delta$ results in the change of reference voltage $e_p / C_p$, reference current $e_p / (C_p R_l)$, and reference power $(e_p / C_p)[e_p / (C_p R_l)]$. Hence, we can relate the change of value $\delta$ to that of $e_p$, which in turn determines all the three output measures. Then by taking a series of values of $\delta$, we obtain the corresponding output measures and plot their amplitudes in Figure~\ref{fig:fig_sol_analytic_perf_fun}. 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_perf_fun}
     \caption{Voltage, current and power output for the piezoelectric cantilever energy harvester}
     \label{fig:fig_sol_analytic_perf_fun}
 \end{figure}
+% For a typical piezoelectric cantilever energy harvester in the literature \cite{erturk2008distributed,erturk2009experimentally}, this parameter $\delta$ is rather small
+
+
+It is seen from Figure~\ref{fig:fig_sol_analytic_perf_fun} that all the three measures show a maximum peak with the increase of $\delta$ at the approximate value of $\delta = 10$.
 
 
 Using the following regular expansion:
