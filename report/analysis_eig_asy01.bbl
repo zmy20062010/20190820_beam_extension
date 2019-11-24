@@ -1,3 +1,15 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{erturk2008distributed}
+Erturk A, Inman DJ.
+\newblock A distributed parameter electromechanical model for cantilevered
+  piezoelectric energy harvesters.
+\newblock Journal of vibration and acoustics. 2008;130(4):041002.
+
+\bibitem{erturk2009experimentally}
+Erturk A, Inman DJ.
+\newblock An experimentally validated bimorph cantilever model for
+  piezoelectric energy harvesting from base excitations.
+\newblock Smart materials and structures. 2009;18(2):025009.
 
 \end{thebibliography}

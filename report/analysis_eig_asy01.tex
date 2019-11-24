@@ -58,6 +58,8 @@ and
 \end{equation}
 
 
+\section{Theoretical solution to the problem}
+
 In the classical energy harvesting applications, the cantilever beam is subject to a periodical base excitation $w_b(t)$. Thus the dynamic response of the cantilever beam is decomposed as 
 \begin{equation}
     w(x,t) = w_b(t) + w_{rel}(x,t),
@@ -236,7 +238,7 @@ in which we have used the notations that
 \begin{equation}
     \chi_p = u_1^\prime(1) = \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }.
 \end{equation}
-Clearly, The three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are heavily dependent on another dimensionless parameter $r_d = \eta_b/l_p$. Formally, both $\tilde{V}_p$ and $\tilde{I}_p$ depend lineary upon $r_d$, while $\tilde{P}_p$ shows a quadratic dependence on $r_d$. However, it should be noted that parameter $\delta$ relies on $e_p$, $l_p$, $C_p$, and $B_p$, while the three measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are dimensional values and depend on $e_p$, $\sigma_b$, and $R_l$. As a result, the change of parameter $\delta$ results in the change of reference voltage $e_p / C_p$, reference current $e_p / (C_p R_l)$, and reference power $(e_p / C_p)[e_p / (C_p R_l)]$. Hence, we can relate the change of value $\delta$ to that of $e_p$, which in turn determines all the three output measures. Then by taking a series of values of $\delta$, we obtain the corresponding output measures and plot their amplitudes in Figure~\ref{fig:fig_sol_analytic_perf_fun}. 
+Clearly, The three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are heavily dependent on another dimensionless parameter $r_d = \eta_b/l_p$. Formally, both $\tilde{V}_p$ and $\tilde{I}_p$ depend lineary upon $r_d$, while $\tilde{P}_p$ shows a quadratic dependence on $r_d$. The only dependence upon $\delta$ is introduced in $\chi_p$. However, it should be noted that the parameter $\delta$ relies on $e_p$, $l_p$, $C_p$, and $B_p$, while the three measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are dimensional values and depend on $e_p$, $\sigma_b$, and $R_l$. As a result, the change of parameter $\delta$ results in the change of reference voltage $e_p / C_p$, reference current $e_p / (C_p R_l)$, and reference power $(e_p / C_p)[e_p / (C_p R_l)]$, and therefore the corresponding values of $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$. Hence, we may establish a bijective relation between $\delta$ and $e_p$, and relate the change of $\delta$ to that of $e_p$. In this way, we calculate the output measures at different values of $\delta$ and plot their amplitudes in Figure~\ref{fig:fig_sol_analytic_perf_fun}. 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_perf_fun}
@@ -246,7 +248,10 @@ Clearly, The three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_
 % For a typical piezoelectric cantilever energy harvester in the literature \cite{erturk2008distributed,erturk2009experimentally}, this parameter $\delta$ is rather small
 
 
-It is seen from Figure~\ref{fig:fig_sol_analytic_perf_fun} that all the three measures show a maximum peak with the increase of $\delta$ at the approximate value of $\delta = 10$.
+It is seen from Figure~\ref{fig:fig_sol_analytic_perf_fun} that all the three measures show a maximum peak with the increase of $\delta$ at the approximate value of $\delta = 10$. When $\delta$ is small, or equivalently, $e_p$ is small, amplitude of the three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ increase with the increase of $\delta$. Then after the critical value of $\delta$, a further increase of $\delta$ causes the decrease of output measures. Thus we come to a small conclusion that to obtain an optimal output performance, the electromechanical coupling factor $\delta$ should be set to an appropriate value. However, a direct calculation using the parameters introduced in the literature \cite{erturk2008distributed,erturk2009experimentally} shows that the parameter $\delta$ is rather small for a typical piezoelectric cantilever energy harvester. For example, for a piezoelectric voltage constant $e_{31} = -5.35\ C / m^2$, the value of $e_p$ is $-5.35 \times 10^{-5}\ C$, and the final value of $\delta$ is $0.028$. According to the properties of commonly used piezoelectric materials, the parameter $e_{31}$ is always in the range of several or several tens $C / m^2$ \textcolor{red}{reference to be inserted}. That is to say, the final value of $\delta$ can be seen always in the order of $10^{-2}$, which is a rather small value according to the diagram. Hence we could present an asymptotic analysis of the performance of the classical piezoelectric energy harvester. This is the subject of the following section.
+
+
+\section{Asymptotic analysis of the problem}
 
 
 Using the following regular expansion:

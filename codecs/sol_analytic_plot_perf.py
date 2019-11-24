@@ -73,27 +73,30 @@ for i in range(delta_list.size):
     cur_list[i] = output[2]
     pow_list[i] = output[3]
 
-plt.figure(1, figsize=(12,6))
+plt.figure(1, figsize=(12,5))
 plt.subplot(131)
 plt.plot(delta_list, np.abs(vol_list))
 plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
 plt.xscale('log')
-plt.xlabel('$\\delta$')
+plt.xlabel('Electromechanical coupling factor $\\delta$')
 plt.ylabel('voltage')
+plt.grid(True)
 
 plt.subplot(132)
 plt.plot(delta_list, np.abs(cur_list))
 plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
 plt.xscale('log')
-plt.xlabel('$\\delta$')
+plt.xlabel('Electromechanical coupling factor $\\delta$')
 plt.ylabel('current')
+plt.grid(True)
 
 plt.subplot(133)
 plt.plot(delta_list, np.abs(pow_list))
 plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
 plt.xscale('log')
-plt.xlabel('$\\delta$')
+plt.xlabel('Electromechanical coupling factor $\\delta$')
 plt.ylabel('power')
+plt.grid(True)
 
 plt.tight_layout()
 plt.savefig('fig_sol_analytic_perf_fun.jpg',dpi=300)

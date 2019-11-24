@@ -39,7 +39,8 @@ lamm  = me / mp
 laml  = le / lp
 lamh  = 0.0e0
 
-
+print(e31)
+print(ep)
 print(alpha*alpha)
 print(beta)
 print(alpha*alpha)
