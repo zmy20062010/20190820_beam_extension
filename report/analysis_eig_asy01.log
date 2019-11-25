@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  24 NOV 2019 16:41
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  25 NOV 2019 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -230,8 +230,9 @@ File: ./img_eig_asy/fig_sol_analytic_disp_fun.jpg Graphic file (type QTm)
  <use  "./img_eig_asy/fig_sol_analytic_disp_fun.jpg" > [3]
 File: ./img_eig_asy/fig_sol_analytic_disp_end.jpg Graphic file (type QTm)
 
-<use  "./img_eig_asy/fig_sol_analytic_disp_end.jpg" > [4]
+<use  "./img_eig_asy/fig_sol_analytic_disp_end.jpg" >
 Missing character: There is no ∫ in font cmr10!
+ [4]
 File: ./img_eig_asy/fig_sol_analytic_perf_fun.pdf Graphic file (type QTm)
 
 <use  "./img_eig_asy/fig_sol_analytic_perf_fun.pdf" > [5] [6] [7]

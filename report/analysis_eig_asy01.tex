@@ -17,6 +17,9 @@
 
 \maketitle
 
+
+\section{introduction}
+
 \section{Summary of the interested equations}
 
 The dynamic equations for a typical piezoelectric composite cantilever beam is 
@@ -253,20 +256,19 @@ It is seen from Figure~\ref{fig:fig_sol_analytic_perf_fun} that all the three me
 
 \section{Asymptotic analysis of the problem}
 
-
-Using the following regular expansion:
+Considering that the parameter $\delta$ is small, we expand the theoretical solution to the problem in terms of the small parameter $\delta$ using the following regular expansion:
 \begin{equation}
     \left\{\begin{aligned}
-        A_\epsilon &= A_0 + \epsilon A_1 + \epsilon^2 A_2 + \cdots, \\
-        B_\epsilon &= B_0 + \epsilon B_1 + \epsilon^2 B_2 + \cdots, \\
-        C_\epsilon &= C_0 + \epsilon C_1 + \epsilon^2 C_2 + \cdots, \\
-        D_\epsilon &= D_0 + \epsilon D_1 + \epsilon^2 D_2 + \cdots, 
+        A_\delta &= A_0 + \delta A_1 + \delta^2 A_2 + \cdots, \\
+        B_\delta &= B_0 + \delta B_1 + \delta^2 B_2 + \cdots, \\
+        C_\delta &= C_0 + \delta C_1 + \delta^2 C_2 + \cdots, \\
+        D_\delta &= D_0 + \delta D_1 + \delta^2 D_2 + \cdots. 
     \end{aligned}\right.
 \end{equation}
-we obtain the successive expansion problem:
+As a result, we obtain the following successive expansion problem:
 
 \noindent
-$O(\epsilon^0)$:
+$O(\delta^0)$:
 \begin{equation}
     \left\{\begin{aligned}
         A_0 + C_0 &= 1, \\
@@ -278,10 +280,10 @@ $O(\epsilon^0)$:
 The solution is
 \begin{equation}
     \left\{\begin{aligned}
-        A_0 &= \frac{1 + \cos\sqrt{\sigma} \cosh\sqrt{\sigma} - \sin\sqrt{\sigma} \sinh\sqrt{\sigma} }{2 + 2 \cos\sqrt{\sigma} \cosh\sqrt{\sigma} } \\
-        B_0 &= \frac{\cosh\sqrt{\sigma} \sin\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{2 + 2 \cos\sqrt{\sigma} \cosh\sqrt{\sigma} } \\
-        C_0 &= \frac{1 + \cos\sqrt{\sigma} \cosh\sqrt{\sigma} + \sin\sqrt{\sigma} \sinh\sqrt{\sigma} }{2 + 2 \cos\sqrt{\sigma} \cosh\sqrt{\sigma} } \\
-        D_0 &= -\frac{\cosh\sqrt{\sigma} \sin\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{2 + 2 \cos\sqrt{\sigma} \cosh\sqrt{\sigma} }
+        A_0 &= \frac{1 + \cos\sqrt{\sigma} \cosh\sqrt{\sigma} - \sin\sqrt{\sigma} \sinh\sqrt{\sigma} }{2 + 2 \cos\sqrt{\sigma} \cosh\sqrt{\sigma} }, \\
+        B_0 &= \frac{\cosh\sqrt{\sigma} \sin\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{2 + 2 \cos\sqrt{\sigma} \cosh\sqrt{\sigma} }, \\
+        C_0 &= \frac{1 + \cos\sqrt{\sigma} \cosh\sqrt{\sigma} + \sin\sqrt{\sigma} \sinh\sqrt{\sigma} }{2 + 2 \cos\sqrt{\sigma} \cosh\sqrt{\sigma} }, \\
+        D_0 &= -\frac{\cosh\sqrt{\sigma} \sin\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{2 + 2 \cos\sqrt{\sigma} \cosh\sqrt{\sigma} }.
     \end{aligned}\right.
 \end{equation}
 Hence we have
@@ -290,7 +292,7 @@ Hence we have
 \end{equation}
 
 \noindent
-$O(\epsilon^1)$:
+$O(\delta^1)$:
 \begin{equation}
     \left\{\begin{aligned}
         A_1 + C_1 &= 0, \\
@@ -318,7 +320,7 @@ Then we have
 \end{equation}
 
 \noindent
-$O(\epsilon^2)$:
+$O(\delta^2)$:
 \begin{equation}
     \left\{\begin{aligned}
         A_2 + C_2 &= 0, \\
@@ -340,10 +342,11 @@ The solution is
 \end{equation}
 \normalsize
 
+
 To get higher order expansions, we can use the following iteration method:
 
 \noindent
-$O(\epsilon^{k+1})\ (k\geq 1)$:
+$O(\delta^{k+1})\ (k\geq 1)$:
 \begin{equation}
     \left\{\begin{aligned}
         A_{k+1} + C_{k+1} &= 0, \\
@@ -384,6 +387,7 @@ and
     Q_0 = \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1}
 \end{equation}
 
+
 Hence it is shown that for $k \geq 0$
 \begin{equation}
     \begin{aligned}
@@ -391,6 +395,7 @@ Hence it is shown that for $k \geq 0$
         &= \left[- \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)  \right]^k \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)
     \end{aligned}
 \end{equation}
+
 
 As a result, we obtain that for $k \geq 0$
 \scriptsize
@@ -457,8 +462,6 @@ As a result, we obtain that for $k \geq 0$
 
 
 
-
-\section*{Reference}
 
 \bibliography{analysis_eig_asy.bib}
 \bibliographystyle{vancouver}
