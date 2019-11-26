@@ -18,7 +18,12 @@
 \maketitle
 
 
-\section{introduction}
+\section{Introduction}
+
+The soaring depletion of fossil fuels and the growing awareness of environmental protection renders the challenge of renewable and sustainable energy sources for scientists and engineers. Apart from nuclear energy, wind energy, and solar energy, ambient energy harvesting has been proposed as an alternative to batteries for more than twenty years. Numerous principles, mechanisms, implementations, and applications have been put forward to deepen the understanding of energy harvesting, to find the routine for the development of new devices, to apply the devices to new situations. Among all these devices, piezoelectric energy harvesting devices have attracted much attention due to their simplicity of structure and superiority of performance. 
+
+Generally a piezoelectric energy harvesting device consists of some piezoelectric elements and some vibration transduction structure for the hosting of these elements. A key problem in the research of piezoelectric element based energy harvesting is to improve the output of those devices. A key point is to understand the mechanics and coupling behind the devices.
+
 
 \section{Summary of the interested equations}
 
@@ -343,124 +348,136 @@ The solution is
 \normalsize
 
 
-To get higher order expansions, we can use the following iteration method:
 
-\noindent
-$O(\delta^{k+1})\ (k\geq 1)$:
+
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp}
+    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
+    \label{fig:fig_sol_analytic_disp_cmp}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{Appendices}
+
+The asymptotic expansion of equation (\ref{eq:eq_disp_func_coeffs_exps}) can be found using an iterative method. In fact, for higher order expansions ($k \geq 1$), we have the following iterative relation: 
 \begin{equation}
     \left\{\begin{aligned}
         A_{k+1} + C_{k+1} &= 0, \\
         B_{k+1} + D_{k+1} &= 0, \\
         \left( - A_{k+1} \cos{\sqrt{\sigma}} - B_{k+1} \sin{\sqrt{\sigma}} + C_{k+1} \cosh{\sqrt{\sigma}} + D_{k+1} \sinh{\sqrt{\sigma}} \right) &+ \\
         \frac{j \beta \sqrt{\sigma}}{ j\sigma \beta + 1 } \left( - A_{k} \sin{\sqrt{\sigma}} + B_{k} \cos{\sqrt{\sigma}} + C_{k} \sinh{\sqrt{\sigma}} + D_{k} \cosh{\sqrt{\sigma}} \right) &= 0, \\
-        A_{k+1} \sin{\sqrt{\sigma}} - B_{k+1} \cos{\sqrt{\sigma}} + C_{k+1} \sinh{\sqrt{\sigma}} + D_{k+1} \cosh{\sqrt{\sigma}} &= 0.
+        A_{k+1} \sin{\sqrt{\sigma}} - B_{k+1} \cos{\sqrt{\sigma}} + C_{k+1} \sinh{\sqrt{\sigma}} + D_{k+1} \cosh{\sqrt{\sigma}} &= 0,
     \end{aligned}\right.
 \end{equation}
-The solution is
+whose solution is expressed by
 \begin{equation}
     \left\{\begin{aligned}
-        A_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left(\frac{\cos\sqrt{\sigma }+\cosh\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right) \left( Q_k \right) \\
-        B_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( \frac{-\sinh\sqrt{\sigma }+\sin\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right) \left( Q_k \right) \\
-        C_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( -\frac{\cos\sqrt{\sigma }+\cosh\sqrt{\sigma }}{2 \cos\sqrt{\sigma } \cosh\sqrt{\sigma }+2} \right) \left( Q_k \right) \\
-        D_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( \frac{-\sin\sqrt{\sigma }+\sinh\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right) \left( Q_k \right) 
+        A_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left(\frac{\cos\sqrt{\sigma }+\cosh\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right) \left( Q_k \right), \\
+        B_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( \frac{-\sinh\sqrt{\sigma }+\sin\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right) \left( Q_k \right), \\
+        C_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( -\frac{\cos\sqrt{\sigma }+\cosh\sqrt{\sigma }}{2 \cos\sqrt{\sigma } \cosh\sqrt{\sigma }+2} \right) \left( Q_k \right), \\
+        D_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( \frac{-\sin\sqrt{\sigma }+\sinh\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right) \left( Q_k \right), 
     \end{aligned}\right.
 \end{equation}
-where for $k \geq 2$
+in which
 \begin{equation}
-    Q_k = - A_{k} \sin{\sqrt{\sigma}} + B_{k} \cos{\sqrt{\sigma}} + C_{k} \sinh{\sqrt{\sigma}} + D_{k} \cosh{\sqrt{\sigma}},
-\end{equation}
-and for $k \geq 0$
-\begin{equation}
-    \begin{aligned}
-        Q_{k+1} &= - A_{k+1} \sin{\sqrt{\sigma}} + B_{k+1} \cos{\sqrt{\sigma}} + C_{k+1} \sinh{\sqrt{\sigma}} + D_{k+1} \cosh{\sqrt{\sigma}} \\
-        &= - \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right) \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) Q_k,
-    \end{aligned}
-\end{equation}
-and
-\begin{equation}
-    \begin{aligned}
-        Q_{1} &= - A_1 \sin{\sqrt{\sigma}} + B_1 \cos{\sqrt{\sigma}} + C_1 \sinh{\sqrt{\sigma}} + D_1 \cosh{\sqrt{\sigma}} \\
-        &= \frac{j \beta  \sqrt{\sigma }}{1+j \beta  \sigma } \left(\frac{\sin\sqrt{\sigma } -\sinh\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)  \left( \frac{\cos\sqrt{\sigma } \sinh\sqrt{\sigma }+\sin\sqrt{\sigma } \cosh\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)
-    \end{aligned}
-\end{equation}
-\begin{equation}
-    Q_0 = \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1}
+    Q_k = - A_{k} \sin{\sqrt{\sigma}} + B_{k} \cos{\sqrt{\sigma}} + C_{k} \sinh{\sqrt{\sigma}} + D_{k} \cosh{\sqrt{\sigma}}.
 \end{equation}
 
 
-Hence it is shown that for $k \geq 0$
+In terms of $Q_k$ ($k \geq 0$), we have the following iterative relation
+% \begin{equation}
+%     \begin{aligned}
+%         Q_{k+1} &= - A_{k+1} \sin{\sqrt{\sigma}} + B_{k+1} \cos{\sqrt{\sigma}} + C_{k+1} \sinh{\sqrt{\sigma}} + D_{k+1} \cosh{\sqrt{\sigma}} \\
+%         &= - \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right) \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) Q_k,
+%     \end{aligned}
+% \end{equation}
 \begin{equation}
-    \begin{aligned}
-        Q_{k} &= - \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right) \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) Q_k \\
-        &= \left[- \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)  \right]^k \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)
-    \end{aligned}
+    Q_{k+1} = - \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right) \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) Q_k,
 \end{equation}
-
-
-As a result, we obtain that for $k \geq 0$
-\scriptsize
+and the initial two values $Q_0$ and $Q_1$:
+% \begin{equation}
+%     \begin{aligned}
+%         Q_{1} &= - A_1 \sin{\sqrt{\sigma}} + B_1 \cos{\sqrt{\sigma}} + C_1 \sinh{\sqrt{\sigma}} + D_1 \cosh{\sqrt{\sigma}} \\
+%         &= \frac{j \beta  \sqrt{\sigma }}{1+j \beta  \sigma } \left(\frac{\sin\sqrt{\sigma } -\sinh\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)  \left( \frac{\cos\sqrt{\sigma } \sinh\sqrt{\sigma }+\sin\sqrt{\sigma } \cosh\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)
+%     \end{aligned}
+% \end{equation}
+% \begin{equation}
+%     Q_0 = \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1}
+% \end{equation}
 \begin{equation}
     \left\{\begin{aligned}
-        A_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right)^{k+1} \left( \frac{ -\sin\sqrt{\sigma} \cosh\sqrt{\sigma} - \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)^k \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right) \left(\frac{\cos\sqrt{\sigma }+\cosh\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right) \\
-        B_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right)^{k+1}  \left( \frac{ -\sin\sqrt{\sigma} \cosh\sqrt{\sigma} - \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)^k \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right) \left( \frac{-\sinh\sqrt{\sigma }+\sin\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right) \\
-        C_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right)^{k+1}  \left( \frac{ -\sin\sqrt{\sigma} \cosh\sqrt{\sigma} - \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)^k \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right) \left( \frac{-\cos\sqrt{\sigma }-\cosh\sqrt{\sigma }}{2 \cos\sqrt{\sigma } \cosh\sqrt{\sigma }+2} \right) \\
-        D_{k+1} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right)^{k+1} \left( \frac{ -\sin\sqrt{\sigma} \cosh\sqrt{\sigma} - \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)^k \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right) \left( \frac{-\sin\sqrt{\sigma }+\sinh\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right)
+        Q_0 &= \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1}, \\
+        Q_{1} &= \frac{j \beta  \sqrt{\sigma }}{1+j \beta  \sigma } \left(\frac{\sin\sqrt{\sigma } -\sinh\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)  \left( \frac{\cos\sqrt{\sigma } \sinh\sqrt{\sigma }+\sin\sqrt{\sigma } \cosh\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right).
     \end{aligned}\right.
 \end{equation}
+Hence it is shown that for $k \geq 0$,
+% \begin{equation}
+%     \begin{aligned}
+%         Q_{k} &= - \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right) \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) Q_k \\
+%         &= \left[- \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)  \right]^k \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)
+%     \end{aligned}
+% \end{equation}
+\begin{equation}
+    Q_{k} = \left[- \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)  \right]^k \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right).
+\end{equation}
+As a result, we obtain that for $k \geq 1$,
+\footnotesize
+\begin{equation*}
+    \left\{\begin{aligned}
+        A_{k} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right)^{k} \left( \frac{ -\sin\sqrt{\sigma} \cosh\sqrt{\sigma} - \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)^{k-1} \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right) \left(\frac{\cos\sqrt{\sigma }+\cosh\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right), \\
+        B_{k} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right)^{k}  \left( \frac{ -\sin\sqrt{\sigma} \cosh\sqrt{\sigma} - \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)^{k-1} \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right) \left( \frac{-\sinh\sqrt{\sigma }+\sin\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right), \\
+        C_{k} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right)^{k}  \left( \frac{ -\sin\sqrt{\sigma} \cosh\sqrt{\sigma} - \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)^{k-1} \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right) \left( \frac{-\cos\sqrt{\sigma }-\cosh\sqrt{\sigma }}{2 \cos\sqrt{\sigma } \cosh\sqrt{\sigma }+2} \right), \\
+        D_{k} &= \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right)^{k} \left( \frac{ -\sin\sqrt{\sigma} \cosh\sqrt{\sigma} - \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)^{k-1} \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right) \left( \frac{-\sin\sqrt{\sigma }+\sinh\sqrt{\sigma }}{2 \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+2} \right).
+    \end{aligned}\right.
+\end{equation*}
 \normalsize
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \bibliography{analysis_eig_asy.bib}

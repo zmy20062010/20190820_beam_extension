@@ -128,15 +128,57 @@ def beam_disp_infty(x, arg_sqlam = sqlam, arg_beta = beta, arg_eps = eps):
     return ue
 
 
-plt.figure(1, figsize=(12,6))
-eps = 2
+plt.figure(1, figsize=(16,8))
+plt.subplot(221)
+eps = 0.01
 plt.plot(x, np.abs(beam_disp(x, sqlam, beta, eps)), 'r-', label = 'closed form')
 plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, eps)), 'b-.', label = '0th order')
 plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, eps)), 'k-', label = '1st order')
 plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, eps)), 'm-.', label = '2nd order')
 plt.legend(loc = 'upper left')
 plt.grid(True)
+plt.title('$\\delta = 0.01$')
 
+
+plt.subplot(222)
+eps = 0.1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, eps)), 'r-', label = 'closed form')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, eps)), 'b-.', label = '0th order')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, eps)), 'k-', label = '1st order')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, eps)), 'm-.', label = '2nd order')
+plt.legend(loc = 'upper left')
+plt.grid(True)
+plt.title('$\\delta = 0.1$')
+
+
+plt.subplot(223)
+eps = 1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, eps)), 'r-', label = 'closed form')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, eps)), 'b-.', label = '0th order')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, eps)), 'k-', label = '1st order')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, eps)), 'm-.', label = '2nd order')
+plt.legend(loc = 'upper left')
+plt.grid(True)
+plt.title('$\\delta = 1$')
+
+
+plt.subplot(224)
+eps = 10
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, eps)), 'r-', label = 'closed form')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, eps)), 'b-.', label = '0th order')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, eps)), 'k-', label = '1st order')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, eps)), 'm-.', label = '2nd order')
+plt.legend(loc = 'upper left')
+plt.grid(True)
+plt.title('$\\delta = 10$')
+
+
+
+
+plt.tight_layout()
+plt.savefig('fig_sol_analytic_disp_cmp.jpg',dpi=300)
+plt.savefig('fig_sol_analytic_disp_cmp.eps')
+plt.savefig('fig_sol_analytic_disp_cmp.pdf')
 
 plt.show()
 

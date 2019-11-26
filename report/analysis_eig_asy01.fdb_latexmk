@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex analysis_eig_asy01"] 1574659812 "analysis_eig_asy01.aux" "analysis_eig_asy01.bbl" "analysis_eig_asy01" 1574662622
+["bibtex analysis_eig_asy01"] 1574765111 "analysis_eig_asy01.aux" "analysis_eig_asy01.bbl" "analysis_eig_asy01" 1574765121
   "analysis_eig_asy.bib" 1574233754 1594 d377f27c53e26a52fb0cdfca90d49f35 ""
-  "analysis_eig_asy01.aux" 1574662622 1503 1e13d08a3a956d8421262dd630fa0bfe ""
+  "analysis_eig_asy01.aux" 1574765121 1757 4222a249e6b06169f89945722a5c1eba ""
   "analysis_eig_asy01.bcf" 0 -1 0 ""
   "d:/program/work/texlive/2016/texmf-dist/bibtex/bst/vancouver/vancouver.bst" 1491279624 38215 ea1386b2055049a8e03ec1b09fd54904 ""
   (generated)
   "analysis_eig_asy01.blg"
   "analysis_eig_asy01.bbl"
-["pdflatex"] 1574662621 "analysis_eig_asy01.tex" "analysis_eig_asy01.pdf" "analysis_eig_asy01" 1574662622
-  "analysis_eig_asy01.aux" 1574662622 1503 1e13d08a3a956d8421262dd630fa0bfe ""
-  "analysis_eig_asy01.bbl" 1574659812 520 6e79b09f195c5b4372250289c9e564da "bibtex analysis_eig_asy01"
-  "analysis_eig_asy01.tex" 1574662619 33266 1a60666a55db9b109c24adb101a3e77a ""
+["pdflatex"] 1574765120 "analysis_eig_asy01.tex" "analysis_eig_asy01.pdf" "analysis_eig_asy01" 1574765121
+  "analysis_eig_asy01.aux" 1574765121 1757 4222a249e6b06169f89945722a5c1eba ""
+  "analysis_eig_asy01.bbl" 1574765112 520 6e79b09f195c5b4372250289c9e564da "bibtex analysis_eig_asy01"
+  "analysis_eig_asy01.tex" 1574765119 36117 e6aedb5e43cfd517b76a81e8163c6565 ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1491278873 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1491278614 1004 54797486969f23fa377b128694d548df ""
   "d:/program/work/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1491278614 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -58,10 +58,11 @@
   "d:/program/work/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty" 1491279661 55589 34128738f682d033422ca125f82e5d62 ""
   "d:/program/work/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def" 1491279670 21052 2a1a30b53c57c3b04e71c305475a35fc ""
   "d:/program/work/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt" 1491279861 3520369 dc4f60a336f977ffde03988592eafdfa ""
+  "img_eig_asy/fig_sol_analytic_disp_cmp.pdf" 1574764487 21702 37bda5e29e9b0ea03a8c367a37b98c0d ""
   "img_eig_asy/fig_sol_analytic_disp_end.jpg" 1574563145 474982 95e5916d62c89e119d75449877a16fb5 ""
   "img_eig_asy/fig_sol_analytic_disp_fun.jpg" 1574563145 588845 45e356c31f43cb06f4a67aed86907005 ""
-  "img_eig_asy/fig_sol_analytic_perf_fun.pdf" 1574574657 20810 deec698c2ee4adf49f75694068c92a7d ""
+  "img_eig_asy/fig_sol_analytic_perf_fun.pdf" 1574582701 20809 f1b7c077a3e7a7fa895c920937a7840f ""
   (generated)
   "analysis_eig_asy01.pdf"
-  "analysis_eig_asy01.aux"
   "analysis_eig_asy01.log"
+  "analysis_eig_asy01.aux"
