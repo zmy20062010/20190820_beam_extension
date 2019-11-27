@@ -15,7 +15,7 @@ for k = 1:length(frlist)
     Iplist(k) = Ip;
     Pplist(k) = Pp;
 end
-
+semilogy(frlist, abs(Vplist)./wlist./wlist/xib, 'r');
 % subplot(131); semilogy(frlist, abs(Vplist)./wlist./wlist/xib, 'r');hold on;
 % subplot(132); semilogy(frlist, abs(Iplist)./wlist./wlist/xib, 'r');hold on;
 % subplot(133); semilogy(frlist, abs(Pplist)./wlist./wlist/xib, 'r');hold on;
@@ -30,7 +30,7 @@ end
 % save('bm_bim_base_Rl_1e3','frlist', 'Vplist', 'Iplist', 'Pplist', 'wlist', 'xib', 'Rl')
 % save('bm_bim_base_Rl_1e2','frlist', 'Vplist', 'Iplist', 'Pplist', 'wlist', 'xib', 'Rl')
 % save('bm_bim_base_Rl_1e1','frlist', 'Vplist', 'Iplist', 'Pplist', 'wlist', 'xib', 'Rl')
-save('bm_bim_base_Rl_1e0','frlist', 'Vplist', 'Iplist', 'Pplist', 'wlist', 'xib', 'Rl')
+% save('bm_bim_base_Rl_1e0','frlist', 'Vplist', 'Iplist', 'Pplist', 'wlist', 'xib', 'Rl')
 
 toc
 
