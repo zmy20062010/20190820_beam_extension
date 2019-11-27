@@ -18,7 +18,7 @@ fr   = 40
 Rl   = 45.0e3
 
 
-Bp = 2.0e0/3.0e0 * b * ( Ys * hs**3.0e0 + c11E * ((hs + hp)**3.0e0) - hs**3.0e0 )
+Bp = 2.0e0/3.0e0 * b * ( Ys*hs**3.0e0 + c11E*((hs+hp)**3.0e0 - hs**3.0e0) )
 Cp = ep33S * b * lp / 2.0e0 / hp
 ep = b * e31 * (hs + hp/2.0e0)
 mp = 2.0e0 * b * ( rhos * hs + rhop * hp )

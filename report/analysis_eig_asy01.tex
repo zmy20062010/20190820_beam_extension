@@ -177,8 +177,17 @@ Analytically, we can directly obtain the solution to this problem as
 \end{equation}
 % and fixing the other three parameters $\sigma$, $\beta$, and $r_d$ according to the data shown in \cite{erturk2008distributed,erturk2009experimentally}
 % the performance of a piezoelectric energy harvesting cantilever. The results are plotted in Figure~\ref{fig:fig_sol_analytic_disp_fun}. and Figure~\ref{fig:fig_sol_analytic_perf_fun}.
-According to equations (\ref{eq:eq_disp_func_general_coeffs}) and (\ref{eq:eq_disp_func_coeffs_exps}), the dimensionless displacement amplitude function $u(z)$ is totally determined by the three dimensionless parameters $\sigma$, $\beta$, and $\delta$ introduced before. Among the dimensionless parameters, $\sigma$ is the dimensionless base excitation frequency, $\beta$ is the dimensionless electrical resonant frequency, and $\delta$ is the dimensionless electromechanical coupling strength for the structure. As $\sigma$ and $\beta$ is determined by the base excitation and externally connected circuit respectively, only the parameter $\delta$ is fully determined by the structure itself. Hence we would like to investigate the influence of parameter $\delta$ upon the solution displacement function $u(z)$. By taking different values of $\delta$ , we calculate the displacement amplitude function $u(z)$ and plot the results in Figure~\ref{fig:fig_sol_analytic_disp_fun}.
 
+Firstly, to validate the closed form solution $u(z;\delta)$, we calcaulate the corresponding normalized output voltage $| \tilde{V}_p/(\sigma_b^2 \xi_b) |$ and plot the results with respect to the base excitation frequency $fr$ at different externally connected resistance $R_l$. The results are shown in Figure~\ref{fig:fig_sol_analytic_perf_vs_fr}. According to the results, our calculations show a good agreement with those presented in the reference. \cite{erturk2008distributed}. Thus we have validated the model and the results and made our preparations for future analysis. It should be noted that, out results show an obvious difference from those in the literature \cite{erturk2008distributed} near the resonant frequencies. This could explained as follows. In our numerical calculations, the frequency range can be chosen to be as small as possible. A finer calculation grid leads to a sharper resonant peak. Another point to be noted is that at the resonant peak, the output voltage should arrive at its maximum and its derivative with resepct to $fr$ should be zero and the second order derivative should be infinity. In this way, a small discrpency of the frequency from the resonant frequency leads to a large change in the normalized output voltage. 
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_perf_vs_fr}
+    \caption{Validation calculation of the normalized output voltage versus base excitation frequency for a unimorph piezoelectric cantilever energy harvester based on the data from \cite{erturk2008distributed}.}
+    \label{fig:fig_sol_analytic_perf_vs_fr}
+\end{figure}
+
+Secondly, according to equations (\ref{eq:eq_disp_func_general_coeffs}) and (\ref{eq:eq_disp_func_coeffs_exps}), the dimensionless displacement amplitude function $u(z)$ is totally determined by the three dimensionless parameters $\sigma$, $\beta$, and $\delta$ introduced before. Among the dimensionless parameters, $\sigma$ is the dimensionless base excitation frequency, $\beta$ is the dimensionless electrical resonant frequency, and $\delta$ is the dimensionless electromechanical coupling strength for the structure. As $\sigma$ and $\beta$ is determined by the base excitation and externally connected circuit respectively, only the parameter $\delta$ is fully determined by the structure itself. Hence we would like to investigate the influence of parameter $\delta$ upon the solution displacement function $u(z)$. By taking different values of $\delta$ , we calculate the displacement amplitude function $u(z)$ and plot the results in Figure~\ref{fig:fig_sol_analytic_disp_fun}.
 
 \begin{figure}[!htbp]
     \centering
@@ -186,6 +195,9 @@ According to equations (\ref{eq:eq_disp_func_general_coeffs}) and (\ref{eq:eq_di
     \caption{Amplitude and phase of the displacement function $u(z)$ for difference values of $\delta$ }
     \label{fig:fig_sol_analytic_disp_fun}
 \end{figure}
+
+
+
 
 
 It is shown in Figure~\ref{fig:fig_sol_analytic_disp_fun}, the parameter $\delta$ changes the function $u(z)$ through the change of the third boundary condition (\textcolor{red}{to be inserted}). When $\delta$ is zero, i.e., no electromechanical coupling is present, the system degenerates to the classical elastic cantilever beam problem, whose solution is a real function. That is to say, the phase of $u(z)$ is a constant across the whole beam (in the range of $0 \leq z \leq 1$).
@@ -366,7 +378,10 @@ where the terms $u_0 (z)$, $u_1(z)$, and $u_2 (z)$ are defined as
 \end{equation}
 
 
-For different values of $\delta$ and $\sigma$, we calculate the three approximations $u^{(0)}(z)$, $u^{(1)}(z)$, and $u^{(2)}(z)$, and the closed form solution $u_\delta(z)$ In Figure~\ref{fig:fig_sol_analytic_disp_cmp}.
+For different values of $\delta$ and $\sigma$, we calculate the three approximations $u^{(0)}(z)$, $u^{(1)}(z)$, and $u^{(2)}(z)$, and the closed form solution $u_\delta(z)$.
+
+
+In Figure~\ref{fig:fig_sol_analytic_disp_cmp}.
 
 
 

@@ -17,7 +17,7 @@ d31  = -190.0e-12
 e31  = d31 * c11E
 # e31  = -5.35
 # external circuit and excitation
-fr   = 150
+fr   = 40
 Rl   = 10.0e3
 
 
