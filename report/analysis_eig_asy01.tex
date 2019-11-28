@@ -258,6 +258,7 @@ As for the output voltage $V_p(t)$, output current $I_p(t)$, and output power $P
 in which we have used the notations that 
 \begin{equation}
     \chi_p = u_1^\prime(1) = \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }.
+    \label{eq:eq_peh_perfs_compact_form_end_ders}
 \end{equation}
 Clearly, The three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are heavily dependent on another dimensionless parameter $r_d = \eta_b/l_p$. Formally, both $\tilde{V}_p$ and $\tilde{I}_p$ depend lineary upon $r_d$, while $\tilde{P}_p$ shows a quadratic dependence on $r_d$. The only dependence upon $\delta$ is introduced in $\chi_p$. However, it should be noted that the parameter $\delta$ relies on $e_p$, $l_p$, $C_p$, and $B_p$, while the three measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are dimensional values and depend on $e_p$, $\sigma_b$, and $R_l$. As a result, the change of parameter $\delta$ results in the change of reference voltage $e_p / C_p$, reference current $e_p / (C_p R_l)$, and reference power $(e_p / C_p)[e_p / (C_p R_l)]$, and therefore the corresponding values of $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$. Hence, we may establish a bijective relation between $\delta$ and $e_p$, and relate the change of $\delta$ to that of $e_p$. In this way, we calculate the output measures at different values of $\delta$ and plot their amplitudes in Figure~\ref{fig:fig_sol_analytic_perf_fun}. 
 \begin{figure}[!htbp]
@@ -378,46 +379,102 @@ where the terms $u_0 (z)$, $u_1(z)$, and $u_2 (z)$ are defined as
 \end{equation}
 
 
-For different values of $\delta$ and $\sigma$, we calculate the three approximations $u^{(0)}(z)$, $u^{(1)}(z)$, and $u^{(2)}(z)$, and the closed form solution $u_\delta(z)$.
+For different values of $\delta$ and $\sigma$ (Here in this simulation, the value of $\sigma$ is changed through the variance of base excitation frequency $f_b$), the asymptotic approximations of the dimensionless relative beam displacement function $u(z;\delta)$ up to the second order $u^{(0)}(z)$, $u^{(1)}(z)$, and $u^{(2)}(z)$ are calculated and compared to the closed solution $u(z;\delta)$ itself. The results are shown in Figure~\ref{fig:fig_sol_analytic_disp_cmp_fr001}, \ref{fig:fig_sol_analytic_disp_cmp_fr020}, \ref{fig:fig_sol_analytic_disp_cmp_fr040}, \ref{fig:fig_sol_analytic_disp_cmp_fr045}, \ref{fig:fig_sol_analytic_disp_cmp_fr060}, \ref{fig:fig_sol_analytic_disp_cmp_fr080}, \ref{fig:fig_sol_analytic_disp_cmp_fr100}. 
 
 
-In Figure~\ref{fig:fig_sol_analytic_disp_cmp}.
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr001}
+    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
+    \label{fig:fig_sol_analytic_disp_cmp_fr001}
+\end{figure}
+
+
+
+Notice from Figure~\ref{fig:fig_sol_analytic_perf_vs_fr} that the first mode resonant frequency for the device is around $45\ Hz$. It is seen from these results that a smaller value of $\delta$ results in a better approximation, whatever the value of $f_b$. This is consistent with the philosophy behind asymptotic expansion. Besides, for the frequency away from the resonant frequency, the approximation results are relatively accurate in the range of $\delta \leq 0.1$ depending on the value of $f_b$. While when the base exciation frequency $f_b$ is close to a resonance, for exmaple $f_b = 45\ Hz$, the approximation results are not accurate even at the value of $\delta = 0.01$. That is to say, the asymptotic expansion in terms of $\delta$ is not uniform with respect to parameter $\sigma$. Especially, the existence of resonance actually restrict the behavior of the asymptotic expansion. Around the resonance the expansion will show low accuracy, while away from the resonance, the expansion accuracy is easily retained. Nonetheless, for commonly used piezoelectric materials and energy harvesting device configuration, the value of $\delta$ is usually in the range of $10^{-2}$. Hence, it is generally validated to use the asymptotic expansion method to approximate the dimensionless displacement function $u(z;\delta)$. Furtherly, in view of the aprroximating performances of the asymptotic expansions to different orders, it suffices to keep only the $0th$ order terms. Then, we have that 
+\begin{equation}
+    u(z;\delta) \approx u^{(0)}(z) = A_0 \cos{\sqrt{\sigma}z} + B_0 \sin{\sqrt{\sigma}z} + C_0 \cosh{\sqrt{\sigma}z} + D_0 \sinh{\sqrt{\sigma}z} - 1.
+\end{equation}
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr020}
+    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
+    \label{fig:fig_sol_analytic_disp_cmp_fr020}
+\end{figure}
+
+
+This is exactly the displacement function of a pure elastic cantilever beam. It means that for most piezoelectric energy harvesting devices, due to the fact that the electromechanical coupling factor is relatively small, the displacement function is not much affected. In this way, we have indeed uncoupled the electrical part and elastic part of a piezoelectric energy harvesting device. It should be noted that the approximation is not valid near the resonant points.
+
+
 
 
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp}
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr040}
     \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
-    \label{fig:fig_sol_analytic_disp_cmp}
+    \label{fig:fig_sol_analytic_disp_cmp_fr040}
 \end{figure}
 
 
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr045}
+    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
+    \label{fig:fig_sol_analytic_disp_cmp_fr045}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr060}
+    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
+    \label{fig:fig_sol_analytic_disp_cmp_fr060}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr080}
+    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
+    \label{fig:fig_sol_analytic_disp_cmp_fr080}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr100}
+    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
+    \label{fig:fig_sol_analytic_disp_cmp_fr100}
+\end{figure}
+
+
+Theoretically, the derivative of displacement funtion $u(z;\delta)$ is 
+\begin{equation}
+    u^{\prime}(z;\delta) = \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}z} + B_\delta \cos{\sqrt{\sigma}z} + C_\delta \sinh{\sqrt{\sigma}z} + D_\delta \cosh{\sqrt{\sigma}z} \right).
+\end{equation}
+We calculate this funciton because that the output performance are closely related to the first order derivative of the displacement function at the free end of the cantilever beam. According to equation (\ref{eq:eq_peh_perfs_compact_form_end_ders}), we can easily calculate the derivative function of the beam and show the results in the Figure \textcolor{red}{to be added}. Similarly, we calculate the derivative function $u^{\prime}(z;\delta)$ at the free end with respect to different values of $\delta$ and $\sigma$ and plot the results in the Figure \textcolor{red}{to be added}. 
+
+
+\begin{equation}
+    \left\{\begin{aligned}
+        \tilde{V}_p &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} u^\prime(1), \\
+        &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}} + B_\delta \cos{\sqrt{\sigma}} + C_\delta \sinh{\sqrt{\sigma}} + D_\delta \cosh{\sqrt{\sigma}} \right) \\
+        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p}  \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }\\
+        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(\frac{e_p}{C_p}\right) \chi_p , \\
+        \tilde{I}_p &=  \tilde{V}_p / R_l = - \frac{ j \sigma \beta } {j \sigma \beta + 1} \left( \frac{\eta_b}{l_p} \right) \left( \frac{e_p}{C_p R_l} \right) \chi_p , \\
+        \tilde{P}_p &=  \tilde{V}_p^2 / R_l = \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left( \frac{e_p}{C_p R_l} \right) \left( \frac{ j \sigma \beta}{ j \sigma \beta + 1 } \right)^2 \chi_p^2∫,
+    \end{aligned}\right.
+    \label{eq:eq_peh_perfs_compact_form_approx}
+\end{equation}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\section{Conclusion}
 
 
 
@@ -511,6 +568,10 @@ As a result, we obtain that for $k \geq 1$,
     \end{aligned}\right.
 \end{equation*}
 \normalsize
+
+
+
+\section*{Acknowledgements}
 
 
 \bibliography{analysis_eig_asy.bib}

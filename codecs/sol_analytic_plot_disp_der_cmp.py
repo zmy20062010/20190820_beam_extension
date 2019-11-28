@@ -42,7 +42,7 @@ fr_list = np.logspace(0.0, 3.0, 3001)
 sqlam_list = np.sqrt(2 * np.pi * fr_list * np.sqrt(mp * lp**4.0e0 / Bp))
 x = np.linspace(0.0, 1.0, 10001)
 
-def beam_disp(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
+def beam_disp_der(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     #########  Closed form solutions
     coeff_denom = 2.0 * ( 1 + np.cos(arg_sqlam)*np.cosh(arg_sqlam) + ( 1j * arg_beta * arg_sqlam * arg_delta) / (1 + 1j * arg_beta * arg_sqlam * arg_sqlam ) * ( np.sin(arg_sqlam)*np.cosh(arg_sqlam) + np.cos(arg_sqlam)*np.sinh(arg_sqlam) )  )
     Ae = ( 1 + np.cos(arg_sqlam)*np.cosh(arg_sqlam) - np.sin(arg_sqlam)*np.sinh(arg_sqlam) + ( 2 * 1j * arg_beta * arg_sqlam * arg_delta) / (1 + 1j * arg_beta * arg_sqlam * arg_sqlam ) * np.cos(arg_sqlam)*np.sinh(arg_sqlam) ) / coeff_denom
@@ -50,14 +50,23 @@ def beam_disp(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     Ce = 1.0 - Ae
     De = - Be
     #########  Expansion for the function
-    ue = Ae*np.cos(arg_sqlam*x) + Be*np.sin(arg_sqlam*x) + Ce*np.cosh(arg_sqlam*x) + De*np.sinh(arg_sqlam*x) - 1.0
-    return ue
-
+    ude = - Ae*np.sin(arg_sqlam*x) + Be*np.cos(arg_sqlam*x) + Ce*np.sinh(arg_sqlam*x) + De*np.cosh(arg_sqlam*x)
+    return ude * arg_sqlam
+def beam_disp_der2(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
+    #########  Closed form solutions
+    coeff_denom = 2.0 * ( 1 + np.cos(arg_sqlam)*np.cosh(arg_sqlam) + ( 1j * arg_beta * arg_sqlam * arg_delta) / (1 + 1j * arg_beta * arg_sqlam * arg_sqlam ) * ( np.sin(arg_sqlam)*np.cosh(arg_sqlam) + np.cos(arg_sqlam)*np.sinh(arg_sqlam) )  )
+    Ae = ( 1 + np.cos(arg_sqlam)*np.cosh(arg_sqlam) - np.sin(arg_sqlam)*np.sinh(arg_sqlam) + ( 2 * 1j * arg_beta * arg_sqlam * arg_delta) / (1 + 1j * arg_beta * arg_sqlam * arg_sqlam ) * np.cos(arg_sqlam)*np.sinh(arg_sqlam) ) / coeff_denom
+    Be = ( np.sin(arg_sqlam)*np.cosh(arg_sqlam) + np.cos(arg_sqlam)*np.sinh(arg_sqlam) + ( 2 * 1j * arg_beta * arg_sqlam * arg_delta) / (1 + 1j * arg_beta * arg_sqlam * arg_sqlam ) * np.sin(arg_sqlam)*np.sinh(arg_sqlam) ) / coeff_denom
+    Ce = 1.0 - Ae
+    De = - Be
+    #########  Expansion for the function
+    ude = - Ae*np.cos(arg_sqlam*x) - Be*np.sin(arg_sqlam*x) + Ce*np.cosh(arg_sqlam*x) + De*np.sinh(arg_sqlam*x)
+    return ude * arg_sqlam * arg_sqlam
 # plt.figure(1, figsize=(16,8))
 # plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
 # plt.show()
 
-def beam_disp_zero(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
+def beam_disp_der_zero(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     #########  Closed form solutions
     coeff_denom = 2.0 * ( 1 + np.cos(arg_sqlam)*np.cosh(arg_sqlam) )
     Ae = ( 1 + np.cos(arg_sqlam)*np.cosh(arg_sqlam) - np.sin(arg_sqlam)*np.sinh(arg_sqlam) ) / coeff_denom
@@ -68,7 +77,7 @@ def beam_disp_zero(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     ue = Ae*np.cos(arg_sqlam*x) + Be*np.sin(arg_sqlam*x) + Ce*np.cosh(arg_sqlam*x) + De*np.sinh(arg_sqlam*x) - 1.0
     return ue
 
-def beam_disp_one(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
+def beam_disp_der_one(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     #########  Zeroth order coefficients
     coeff_denom = 2.0 * ( 1 + np.cos(arg_sqlam)*np.cosh(arg_sqlam) )
     A0 = ( 1 + np.cos(arg_sqlam)*np.cosh(arg_sqlam) - np.sin(arg_sqlam)*np.sinh(arg_sqlam) ) / coeff_denom
@@ -89,7 +98,7 @@ def beam_disp_one(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     
     return u0 + arg_delta * u1
 
-def beam_disp_two(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
+def beam_disp_der_two(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     #########  Zeroth order coefficients
     coeff_denom = 2.0 * ( 1 + np.cos(arg_sqlam)*np.cosh(arg_sqlam) )
     A0 = ( 1 + np.cos(arg_sqlam)*np.cosh(arg_sqlam) - np.sin(arg_sqlam)*np.sinh(arg_sqlam) ) / coeff_denom
@@ -119,7 +128,7 @@ def beam_disp_two(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     
     return u0 + arg_delta * u1 + arg_delta * arg_delta * u2
 
-def beam_disp_infty(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
+def beam_disp_der_infty(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     #########  Closed form solutions
     coeff_denom = np.sin(arg_sqlam)*np.cosh(arg_sqlam) + np.cos(arg_sqlam)*np.sinh(arg_sqlam)
     Ae = np.cos(arg_sqlam)*np.sinh(arg_sqlam) / coeff_denom
@@ -133,56 +142,75 @@ def beam_disp_infty(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
 
 
 plt.figure(1, figsize=(16,8))
-plt.subplot(221)
+
 delta = 0.01
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
+plt.plot(x, np.abs(beam_disp_der(x, sqlam, beta, delta)), 'r-', label = 'closed form')
+plt.plot(x, np.abs(beam_disp_der2(x, sqlam, beta, delta)), 'b-', label = 'closed form')
+
 plt.legend(loc = 'upper left')
 plt.grid(True)
 plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
 
 
-plt.subplot(222)
-delta = 0.1
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
-plt.legend(loc = 'upper left')
-plt.grid(True)
-plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
 
 
-plt.subplot(223)
-delta = 1
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
-plt.legend(loc = 'upper left')
-plt.grid(True)
-plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
 
 
-plt.subplot(224)
-delta = 10
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
-plt.legend(loc = 'upper left')
-plt.grid(True)
-plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
+
+
+
+
+# plt.figure(1, figsize=(16,8))
+# plt.subplot(221)
+# delta = 0.01
+# plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
+# plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
+# plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
+# plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
+# plt.legend(loc = 'upper left')
+# plt.grid(True)
+# plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
+
+
+# plt.subplot(222)
+# delta = 0.1
+# plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
+# plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
+# plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
+# plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
+# plt.legend(loc = 'upper left')
+# plt.grid(True)
+# plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
+
+
+# plt.subplot(223)
+# delta = 1
+# plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
+# plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
+# plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
+# plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
+# plt.legend(loc = 'upper left')
+# plt.grid(True)
+# plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
+
+
+# plt.subplot(224)
+# delta = 10
+# plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
+# plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
+# plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
+# plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
+# plt.legend(loc = 'upper left')
+# plt.grid(True)
+# plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
 
 
 
 
 plt.tight_layout()
-plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.jpg',dpi=300)
-plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.eps')
-plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.pdf')
+# plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.jpg',dpi=300)
+# plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.eps')
+# plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.pdf')
 
 plt.show()
 
