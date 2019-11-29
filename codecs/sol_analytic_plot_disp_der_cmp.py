@@ -62,9 +62,6 @@ def beam_disp_der2(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     #########  Expansion for the function
     ude = - Ae*np.cos(arg_sqlam*x) - Be*np.sin(arg_sqlam*x) + Ce*np.cosh(arg_sqlam*x) + De*np.sinh(arg_sqlam*x)
     return ude * arg_sqlam * arg_sqlam
-# plt.figure(1, figsize=(16,8))
-# plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-# plt.show()
 
 def beam_disp_der_zero(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
     #########  Closed form solutions
@@ -74,7 +71,8 @@ def beam_disp_der_zero(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta)
     Ce = 1.0 - Ae
     De = - Be
     #########  Expansion for the function
-    ue = Ae*np.cos(arg_sqlam*x) + Be*np.sin(arg_sqlam*x) + Ce*np.cosh(arg_sqlam*x) + De*np.sinh(arg_sqlam*x) - 1.0
+    ue = -Ae*np.sin(arg_sqlam*x) + Be*np.cos(arg_sqlam*x) + Ce*np.sinh(arg_sqlam*x) + De*np.cosh(arg_sqlam*x)
+    ue = ue * arg_sqlam
     return ue
 
 def beam_disp_der_one(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
@@ -140,79 +138,123 @@ def beam_disp_der_infty(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta
     return ue
 
 
-
-plt.figure(1, figsize=(16,8))
-
-delta = 0.01
-plt.plot(x, np.abs(beam_disp_der(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-plt.plot(x, np.abs(beam_disp_der2(x, sqlam, beta, delta)), 'b-', label = 'closed form')
-
-plt.legend(loc = 'upper left')
-plt.grid(True)
-plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
-
-
-
-
-
-
-
-
-
+###############################################################################
+###############################################################################
 
 # plt.figure(1, figsize=(16,8))
-# plt.subplot(221)
+
 # delta = 0.01
-# plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-# plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-# plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-# plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
+# plt.plot(x, np.abs(beam_disp_der(x, sqlam, beta, delta)), 'r-', label = 'closed form')
+# plt.plot(x, np.abs(beam_disp_der2(x, sqlam, beta, delta)), 'b-', label = 'closed form')
+
 # plt.legend(loc = 'upper left')
 # plt.grid(True)
 # plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
-
-
-# plt.subplot(222)
-# delta = 0.1
-# plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-# plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-# plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-# plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
-# plt.legend(loc = 'upper left')
-# plt.grid(True)
-# plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
-
-
-# plt.subplot(223)
-# delta = 1
-# plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-# plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-# plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-# plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
-# plt.legend(loc = 'upper left')
-# plt.grid(True)
-# plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
-
-
-# plt.subplot(224)
-# delta = 10
-# plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-# plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-# plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-# plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
-# plt.legend(loc = 'upper left')
-# plt.grid(True)
-# plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
+# plt.show()
 
 
 
+###############################################################################
+###############################################################################
 
+plt.figure(2, figsize=(16,8))
+delta_list = np.logspace(-4,4,801)
+x1 = 1.0
+
+fr = 1
+sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'r->', label = '$f_b =$ {} $Hz$'.format(fr))
+
+fr = 20
+sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'r--', label = '$f_b =$ {} $Hz$'.format(fr), linewidth=6)
+
+fr = 45
+sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'b-.', label = '$f_b =$ {} $Hz$'.format(fr), linewidth=6)
+
+fr = 45.2
+sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'k-s', label = '$f_b =$ {} $Hz$'.format(fr))
+
+fr = 50
+sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'c-d', label = '$f_b =$ {} $Hz$'.format(fr))
+
+fr = 60
+sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'y-*', label = '$f_b =$ {} $Hz$'.format(fr))
+
+fr = 70
+sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'm-o', label = '$f_b =$ {} $Hz$'.format(fr))
+
+fr = 71.8
+sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'g-p', label = '$f_b =$ {} $Hz$'.format(fr))
+
+fr = 80
+sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'k-.', label = '$f_b =$ {} $Hz$'.format(fr))
+
+fr = 100
+sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'm--', label = '$f_b =$ {} $Hz$'.format(fr))
+
+plt.xscale('log')
+plt.yscale('log')
+plt.legend(loc = 'best', ncol = 2)
+plt.xlabel('Electromechanical coupling factor $\\delta$', fontsize=16)
+plt.ylabel('Output index $\\chi_p$', fontsize=16)
+# plt.title('End displacement slope $u^\\prime(1)$ at $fr =$ {}'.format(fr))
+plt.grid(True)
 plt.tight_layout()
-# plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.jpg',dpi=300)
-# plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.eps')
-# plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.pdf')
-
+plt.savefig('./img/fig_sol_analytic_out_index_vs_delta.jpg',dpi=300)
+plt.savefig('./img/fig_sol_analytic_out_index_vs_delta.eps')
+plt.savefig('./img/fig_sol_analytic_out_index_vs_delta.pdf')
 plt.show()
+
+
+###############################################################################
+###############################################################################
+# fig, ax = plt.subplots(figsize=(12, 6))
+# fr_list = np.logspace(0.0, 3.0, 3001)
+# sqlam_list = np.sqrt(2 * np.pi * fr_list * np.sqrt(mp * lp**4.0e0 / Bp))
+# x1 = 1.0
+
+# plt.plot(fr_list, np.abs(beam_disp_der_zero(x1, sqlam_list, beta, delta)), 'y--', label = '$\\delta =$ {}'.format(0.0))
+# delta = 0.01
+# plt.plot(fr_list, np.abs(beam_disp_der(x1, sqlam_list, beta, delta)), 'r-', label = '$\\delta =$ {}'.format(delta))
+# delta = 0.1
+# plt.plot(fr_list, np.abs(beam_disp_der(x1, sqlam_list, beta, delta)), 'b--', label = '$\\delta =$ {}'.format(delta))
+# delta = 1
+# plt.plot(fr_list, np.abs(beam_disp_der(x1, sqlam_list, beta, delta)), 'k-.', label = '$\\delta =$ {}'.format(delta))
+# delta = 10
+# plt.plot(fr_list, np.abs(beam_disp_der(x1, sqlam_list, beta, delta)), 'c-d', label = '$\\delta =$ {}'.format(delta))
+# delta = 100
+# plt.plot(fr_list, np.abs(beam_disp_der(x1, sqlam_list, beta, delta)), 'm-p', label = '$\\delta =$ {}'.format(delta))
+
+
+# plt.legend(loc='lower right', ncol=2)
+# plt.grid(True)
+# # plt.xscale('log')
+# plt.yscale('log')
+# plt.xlabel('Base excitation frequency $f_b$', fontsize=16)
+# plt.ylabel('Output index $\\chi_p$', fontsize=16)
+# # plt.arrow(0.6, 0.7, -0.1, -0.4, transform=ax.transAxes, length_includes_head=True, head_width=0.05, head_length=0.1, fc='k', ec='k')
+# plt.annotate('', xy=(0.5, 0.2), xytext=(0.6, 0.7), 
+#             xycoords='axes fraction',
+#             arrowprops=dict(facecolor='black', shrink=0.0)
+#             )
+# plt.text(0.55, 0.72, '$\\delta$ increases', 
+#         transform=ax.transAxes, fontsize=16)
+
+
+# plt.tight_layout()
+# plt.savefig('./img/fig_sol_analytic_out_index_vs_fr.jpg',dpi=300)
+# plt.savefig('./img/fig_sol_analytic_out_index_vs_fr.eps')
+# plt.savefig('./img/fig_sol_analytic_out_index_vs_fr.pdf')
+# plt.show()
 
 
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.1)  28 NOV 2019 18:39
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.1)  29 NOV 2019 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -261,16 +261,22 @@ File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr100.pdf Graphic file (type QTm)
 
 
 <use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr100.pdf" >
-Missing character: There is no ∫ in font cmr10!
- [10] [11] [12]
-(./analysis_eig_asy01.bbl) [13] (./analysis_eig_asy01.aux) ) 
+File: ./img_eig_asy/fig_sol_analytic_out_index_vs_delta.pdf Graphic file (type 
+QTm)
+
+<use  "./img_eig_asy/fig_sol_analytic_out_index_vs_delta.pdf" > [10] [11]
+[12]
+File: ./img_eig_asy/fig_sol_analytic_out_index_vs_fr.pdf Graphic file (type QTm
+)
+ <use  "./img_eig_asy/fig_sol_analytic_out_index_vs_fr.pdf" > [13]
+(./analysis_eig_asy01.bbl [14]) [15] (./analysis_eig_asy01.aux) ) 
 Here is how much of TeX's memory you used:
- 2548 strings out of 493068
- 33257 string characters out of 6131911
- 122292 words of memory out of 5000000
- 6438 multiletter control sequences out of 15000+600000
+ 2555 strings out of 493068
+ 33554 string characters out of 6131911
+ 122322 words of memory out of 5000000
+ 6443 multiletter control sequences out of 15000+600000
  10040 words of font info for 47 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  27i,11n,35p,1616b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on analysis_eig_asy01.xdv (13 pages, 208640 bytes).
+Output written on analysis_eig_asy01.xdv (15 pages, 226052 bytes).

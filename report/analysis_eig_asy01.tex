@@ -451,21 +451,50 @@ This is exactly the displacement function of a pure elastic cantilever beam. It 
 \end{figure}
 
 
-Theoretically, the derivative of displacement funtion $u(z;\delta)$ is 
+Theoretically, the first order derivative of the dimensionless relative displacement funtion $u(z;\delta)$ is 
 \begin{equation}
     u^{\prime}(z;\delta) = \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}z} + B_\delta \cos{\sqrt{\sigma}z} + C_\delta \sinh{\sqrt{\sigma}z} + D_\delta \cosh{\sqrt{\sigma}z} \right).
 \end{equation}
-We calculate this funciton because that the output performance are closely related to the first order derivative of the displacement function at the free end of the cantilever beam. According to equation (\ref{eq:eq_peh_perfs_compact_form_end_ders}), we can easily calculate the derivative function of the beam and show the results in the Figure \textcolor{red}{to be added}. Similarly, we calculate the derivative function $u^{\prime}(z;\delta)$ at the free end with respect to different values of $\delta$ and $\sigma$ and plot the results in the Figure \textcolor{red}{to be added}. 
+\begin{equation}
+    \chi_p = u_1^\prime(1) = \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }.
+    \label{eq:eq_peh_perfs_compact_form_end_ders1}
+\end{equation}
+The value of this function at the free end ($z=1$) is just the output index $\chi_p$ according to equation (\ref{eq:eq_peh_perfs_compact_form_end_ders}). To see the influences of $\delta$ and $f_b$, therefore $\sigma$, upon $\chi_p$, we firslty calcualte the values of $\chi_p$ for different values of $\delta$ by fixing the value of $f_b$ to be some discrete values. The results are shown in Figure~\ref{fig:fig_sol_analytic_out_index_vs_delta}. 
 
 
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_out_index_vs_delta}
+    \caption{Output index $\chi_p$ as a function of electromechanical coupling factor $\delta$ at different values of base excitation frequency $f_b$.}
+    \label{fig:fig_sol_analytic_out_index_vs_delta}
+\end{figure}
+
+
+It is seen that the dependence of $\chi_p$ upon $\delta$ shows two different modes in the frequency range of $1\ - \ 100\ Hz$. For the frequencies of $45.2\ Hz \leq f_b \leq 71.8\ Hz$, a peak corresponding to a critical value of $\delta_p$ is present in the considered range of $\delta$. When $\delta$ is smaller than $\delta_p$, the output index $\chi_p$ increases along with $\delta$, and when $\delta$ is larger than $\delta_p$, the output index $\chi_p$ decreases with the increase of $\delta$. On the other hand, for the frequency range of $f_b \leq 45\ Hz$ or $f_b \geq 80\ Hz$, the output index $\chi_p$ shows a monotonical decrease with respect to the increase $\delta$.
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_out_index_vs_fr}
+    \caption{Output index $\chi_p$ as a function of base excitation frequency $f_b$ at different values of electromechanical coupling factor $\delta$.}
+    \label{fig:fig_sol_analytic_out_index_vs_fr}
+\end{figure}
+
+
+Alternatively, by fixing the values of $\delta$ to a discrete set of numbers, we calculate the values of $\chi_p$ in relation to different values of $f_b$. This is very similar to a frequency response of the output index as a function of $\sigma$. The results are shown in Figure~\ref{fig:fig_sol_analytic_out_index_vs_fr}. It is clearly shown that with the increase of electromechanical coupling factor $\delta$, the resonant frequencies to the system increase with the increase of $\delta$. This is clearly shown in the shift to the right of the frequency response curve. Besides, we add in this figure the case where $\delta = 0.0$ as a reference. Simple comparisons show that the discrepency between the frequency response curves related to the case of $\delta = 0$, $\delta=0.01$, and $\delta = 0.1$ is small. A direct conclusion is that for relatively small values of electromechanical coupling factor $\delta$, the output index $\chi_p$ can be approximated by 
+\begin{equation}
+    \chi_p \approx \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } }.
+\end{equation}
+
+As a result, the output performance measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ can be approximated by 
 \begin{equation}
     \left\{\begin{aligned}
-        \tilde{V}_p &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} u^\prime(1), \\
-        &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}} + B_\delta \cos{\sqrt{\sigma}} + C_\delta \sinh{\sqrt{\sigma}} + D_\delta \cosh{\sqrt{\sigma}} \right) \\
-        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p}  \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }\\
-        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(\frac{e_p}{C_p}\right) \chi_p , \\
+        \tilde{V}_p &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(\frac{e_p}{C_p}\right) \chi_p , \\
+        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(\frac{e_p}{C_p}\right) \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } } , \\
         \tilde{I}_p &=  \tilde{V}_p / R_l = - \frac{ j \sigma \beta } {j \sigma \beta + 1} \left( \frac{\eta_b}{l_p} \right) \left( \frac{e_p}{C_p R_l} \right) \chi_p , \\
-        \tilde{P}_p &=  \tilde{V}_p^2 / R_l = \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left( \frac{e_p}{C_p R_l} \right) \left( \frac{ j \sigma \beta}{ j \sigma \beta + 1 } \right)^2 \chi_p^2∫,
+        &= - \frac{ j \sigma \beta } {j \sigma \beta + 1} \left( \frac{\eta_b}{l_p} \right) \left( \frac{e_p}{C_p R_l} \right) \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } }, \\
+        \tilde{P}_p &=  \tilde{V}_p^2 / R_l = \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left( \frac{e_p}{C_p R_l} \right) \left( \frac{ j \sigma \beta}{ j \sigma \beta + 1 } \right)^2 \chi_p^2, \\
+        &= \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left( \frac{e_p}{C_p R_l} \right) \left( \frac{ j \sigma \beta}{ j \sigma \beta + 1 } \right)^2 \left( \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } } \right)^2.
     \end{aligned}\right.
     \label{eq:eq_peh_perfs_compact_form_approx}
 \end{equation}
