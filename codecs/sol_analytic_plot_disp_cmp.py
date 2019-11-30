@@ -180,9 +180,9 @@ plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(de
 
 
 plt.tight_layout()
-plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.jpg',dpi=300)
-plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.eps')
-plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.pdf')
+# plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.jpg',dpi=300)
+# plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.eps')
+# plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.pdf')
 
 plt.show()
 

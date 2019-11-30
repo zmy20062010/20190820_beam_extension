@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.1)  29 NOV 2019 18:33
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.1)  30 NOV 2019 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -220,16 +220,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-] [2]
+] [2] [3]
 File: ./img_eig_asy/fig_sol_analytic_perf_vs_fr.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_perf_vs_fr.pdf" > [3]
+ <use  "./img_eig_asy/fig_sol_analytic_perf_vs_fr.pdf" >
 File: ./img_eig_asy/fig_sol_analytic_disp_fun.jpg Graphic file (type QTm)
 
 <use  "./img_eig_asy/fig_sol_analytic_disp_fun.jpg" > [4]
 File: ./img_eig_asy/fig_sol_analytic_disp_end.jpg Graphic file (type QTm)
 
-<use  "./img_eig_asy/fig_sol_analytic_disp_end.jpg" > [5]
+<use  "./img_eig_asy/fig_sol_analytic_disp_end.jpg" >
 Missing character: There is no ∫ in font cmr10!
+ [5]
 File: ./img_eig_asy/fig_sol_analytic_perf_fun.pdf Graphic file (type QTm)
 
 <use  "./img_eig_asy/fig_sol_analytic_perf_fun.pdf" > [6] [7]
@@ -240,7 +241,7 @@ File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr001.pdf Graphic file (type QTm)
 File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr020.pdf Graphic file (type QTm)
 
 
-<use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr020.pdf" > [9]
+<use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr020.pdf" >
 File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr040.pdf Graphic file (type QTm)
 
 
@@ -264,19 +265,31 @@ File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr100.pdf Graphic file (type QTm)
 File: ./img_eig_asy/fig_sol_analytic_out_index_vs_delta.pdf Graphic file (type 
 QTm)
 
-<use  "./img_eig_asy/fig_sol_analytic_out_index_vs_delta.pdf" > [10] [11]
-[12]
+<use  "./img_eig_asy/fig_sol_analytic_out_index_vs_delta.pdf" > [9] [10]
+[11] [12]
 File: ./img_eig_asy/fig_sol_analytic_out_index_vs_fr.pdf Graphic file (type QTm
 )
  <use  "./img_eig_asy/fig_sol_analytic_out_index_vs_fr.pdf" > [13]
-(./analysis_eig_asy01.bbl [14]) [15] (./analysis_eig_asy01.aux) ) 
+File: ./img_eig_asy/fig_sol_analytic_out_index_contour.pdf Graphic file (type Q
+Tm)
+
+<use  "./img_eig_asy/fig_sol_analytic_out_index_contour.pdf" >
+File: ./img_eig_asy/fig_sol_analytic_out_vol_contour.pdf Graphic file (type QTm
+)
+
+<use  "./img_eig_asy/fig_sol_analytic_out_vol_contour.pdf" >
+File: ./img_eig_asy/fig_sol_analytic_out_pow_contour.pdf Graphic file (type QTm
+)
+
+<use  "./img_eig_asy/fig_sol_analytic_out_pow_contour.pdf" > [14] [15]
+(./analysis_eig_asy01.bbl [16]) [17] (./analysis_eig_asy01.aux) ) 
 Here is how much of TeX's memory you used:
- 2555 strings out of 493068
- 33554 string characters out of 6131911
- 122322 words of memory out of 5000000
- 6443 multiletter control sequences out of 15000+600000
+ 2564 strings out of 493068
+ 33932 string characters out of 6131911
+ 122352 words of memory out of 5000000
+ 6449 multiletter control sequences out of 15000+600000
  10040 words of font info for 47 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  27i,11n,35p,1616b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on analysis_eig_asy01.xdv (15 pages, 226052 bytes).
+Output written on analysis_eig_asy01.xdv (17 pages, 236756 bytes).

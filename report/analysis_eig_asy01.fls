@@ -92,6 +92,9 @@ INPUT ./img_eig_asy/fig_sol_analytic_disp_cmp_fr080.pdf
 INPUT ./img_eig_asy/fig_sol_analytic_disp_cmp_fr100.pdf
 INPUT ./img_eig_asy/fig_sol_analytic_out_index_vs_delta.pdf
 INPUT ./img_eig_asy/fig_sol_analytic_out_index_vs_fr.pdf
+INPUT ./img_eig_asy/fig_sol_analytic_out_index_contour.pdf
+INPUT ./img_eig_asy/fig_sol_analytic_out_vol_contour.pdf
+INPUT ./img_eig_asy/fig_sol_analytic_out_pow_contour.pdf
 INPUT analysis_eig_asy01.bbl
 INPUT analysis_eig_asy01.bbl
 INPUT analysis_eig_asy01.aux

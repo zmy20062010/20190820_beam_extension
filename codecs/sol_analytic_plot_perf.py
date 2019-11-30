@@ -1,5 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import matplotlib.ticker as ticker
+import matplotlib.colors as colors
 
 # beam base structure material constants
 lp   =  50.0e-3
@@ -73,43 +76,43 @@ for i in range(delta_list.size):
     cur_list[i] = output[2]
     pow_list[i] = output[3]
 
-plt.figure(1, figsize=(12,5))
-plt.subplot(131)
-plt.plot(delta_list, np.abs(vol_list))
-plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
-plt.xscale('log')
-plt.xlabel('Electromechanical coupling factor $\\delta$')
-plt.ylabel('voltage')
-plt.grid(True)
 
-plt.subplot(132)
-plt.plot(delta_list, np.abs(cur_list))
-plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
-plt.xscale('log')
-plt.xlabel('Electromechanical coupling factor $\\delta$')
-plt.ylabel('current')
-plt.grid(True)
+# plt.figure(1, figsize=(12,5))
+# plt.subplot(131)
+# plt.plot(delta_list, np.abs(vol_list))
+# plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+# plt.xscale('log')
+# plt.xlabel('Electromechanical coupling factor $\\delta$')
+# plt.ylabel('voltage')
+# plt.grid(True)
 
-plt.subplot(133)
-plt.plot(delta_list, np.abs(pow_list))
-plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
-plt.xscale('log')
-plt.xlabel('Electromechanical coupling factor $\\delta$')
-plt.ylabel('power')
-plt.grid(True)
+# plt.subplot(132)
+# plt.plot(delta_list, np.abs(cur_list))
+# plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+# plt.xscale('log')
+# plt.xlabel('Electromechanical coupling factor $\\delta$')
+# plt.ylabel('current')
+# plt.grid(True)
 
-plt.tight_layout()
-plt.savefig('fig_sol_analytic_perf_fun.jpg',dpi=300)
-plt.savefig('fig_sol_analytic_perf_fun.eps')
-plt.savefig('fig_sol_analytic_perf_fun.pdf')
+# plt.subplot(133)
+# plt.plot(delta_list, np.abs(pow_list))
+# plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+# plt.xscale('log')
+# plt.xlabel('Electromechanical coupling factor $\\delta$')
+# plt.ylabel('power')
+# plt.grid(True)
 
-plt.show()
+# plt.tight_layout()
+# # plt.savefig('fig_sol_analytic_perf_fun.jpg',dpi=300)
+# # plt.savefig('fig_sol_analytic_perf_fun.eps')
+# # plt.savefig('fig_sol_analytic_perf_fun.pdf')
 
-
-
+# plt.show()
 
 
-# print(delta_list.shape, ue1_list.shape)
+
+
+
 
 # plt.figure(2, figsize=(16,6))
 
@@ -148,31 +151,8 @@ plt.show()
 
 # plt.tight_layout()
 
-# plt.savefig('fig_sol_analytic_perf_fun.jpg',dpi=300)
-# plt.savefig('fig_sol_analytic_perf_fun.eps')
-# plt.savefig('fig_sol_analytic_perf_fun.pdf')
+# # plt.savefig('fig_sol_analytic_perf_fun.jpg',dpi=300)
+# # plt.savefig('fig_sol_analytic_perf_fun.eps')
+# # plt.savefig('fig_sol_analytic_perf_fun.pdf')
 
-# plt.show()
-
-
-
-
-
-
-# sqlam_list = np.linspace(0.0,100.0,10001)
-# outperfs = output_vals(sqlam_list, beta, 0.0)
-# plt.plot(sqlam_list, np.abs(outperfs[0]), 'r-', label = 'vol')
-# outperfs = output_vals(sqlam_list, beta, 0.05)
-# plt.plot(sqlam_list, np.abs(outperfs[0]), 'g-', label = 'vol')
-# outperfs = output_vals(sqlam_list, beta, 0.1)
-# plt.plot(sqlam_list, np.abs(outperfs[0]), 'b-', label = 'vol')
-# outperfs = output_vals(sqlam_list, beta, 0.5)
-# plt.plot(sqlam_list, np.abs(outperfs[0]), 'c-', label = 'vol')
-# outperfs = output_vals(sqlam_list, beta, 1.0)
-# plt.plot(sqlam_list, np.abs(outperfs[0]), 'k-', label = 'vol')
-# outperfs = output_vals(sqlam_list, beta, 5.0)
-# plt.plot(sqlam_list, np.abs(outperfs[0]), 'm-', label = 'vol')
-# plt.xscale('log')
-# plt.yscale('log')
-# plt.grid(True)
 # plt.show()

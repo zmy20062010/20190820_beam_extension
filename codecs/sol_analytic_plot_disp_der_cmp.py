@@ -1,5 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import matplotlib.ticker as ticker
+import matplotlib.colors as colors
 
 
 # beam base structure material constants
@@ -157,66 +160,67 @@ def beam_disp_der_infty(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta
 ###############################################################################
 ###############################################################################
 
-plt.figure(2, figsize=(16,8))
-delta_list = np.logspace(-4,4,801)
-x1 = 1.0
+# plt.figure(2, figsize=(16,8))
+# delta_list = np.logspace(-4,4,801)
+# x1 = 1.0
 
-fr = 1
-sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
-plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'r->', label = '$f_b =$ {} $Hz$'.format(fr))
+# fr = 1
+# sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+# plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'r->', label = '$f_b =$ {} $Hz$'.format(fr))
 
-fr = 20
-sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
-plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'r--', label = '$f_b =$ {} $Hz$'.format(fr), linewidth=6)
+# fr = 20
+# sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+# plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'r--', label = '$f_b =$ {} $Hz$'.format(fr), linewidth=6)
 
-fr = 45
-sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
-plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'b-.', label = '$f_b =$ {} $Hz$'.format(fr), linewidth=6)
+# fr = 45
+# sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+# plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'b-.', label = '$f_b =$ {} $Hz$'.format(fr), linewidth=6)
 
-fr = 45.2
-sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
-plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'k-s', label = '$f_b =$ {} $Hz$'.format(fr))
+# fr = 45.2
+# sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+# plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'k-s', label = '$f_b =$ {} $Hz$'.format(fr))
 
-fr = 50
-sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
-plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'c-d', label = '$f_b =$ {} $Hz$'.format(fr))
+# fr = 50
+# sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+# plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'c-d', label = '$f_b =$ {} $Hz$'.format(fr))
 
-fr = 60
-sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
-plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'y-*', label = '$f_b =$ {} $Hz$'.format(fr))
+# fr = 60
+# sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+# plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'y-*', label = '$f_b =$ {} $Hz$'.format(fr))
 
-fr = 70
-sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
-plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'm-o', label = '$f_b =$ {} $Hz$'.format(fr))
+# fr = 70
+# sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+# plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'm-o', label = '$f_b =$ {} $Hz$'.format(fr))
 
-fr = 71.8
-sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
-plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'g-p', label = '$f_b =$ {} $Hz$'.format(fr))
+# fr = 71.8
+# sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+# plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'g-p', label = '$f_b =$ {} $Hz$'.format(fr))
 
-fr = 80
-sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
-plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'k-.', label = '$f_b =$ {} $Hz$'.format(fr))
+# fr = 80
+# sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+# plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'k-.', label = '$f_b =$ {} $Hz$'.format(fr))
 
-fr = 100
-sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
-plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'm--', label = '$f_b =$ {} $Hz$'.format(fr))
+# fr = 100
+# sqlam = np.sqrt(2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp))
+# plt.plot(delta_list, np.abs(beam_disp_der(x1, sqlam, beta, delta_list)), 'm--', label = '$f_b =$ {} $Hz$'.format(fr))
 
-plt.xscale('log')
-plt.yscale('log')
-plt.legend(loc = 'best', ncol = 2)
-plt.xlabel('Electromechanical coupling factor $\\delta$', fontsize=16)
-plt.ylabel('Output index $\\chi_p$', fontsize=16)
-# plt.title('End displacement slope $u^\\prime(1)$ at $fr =$ {}'.format(fr))
-plt.grid(True)
-plt.tight_layout()
-plt.savefig('./img/fig_sol_analytic_out_index_vs_delta.jpg',dpi=300)
-plt.savefig('./img/fig_sol_analytic_out_index_vs_delta.eps')
-plt.savefig('./img/fig_sol_analytic_out_index_vs_delta.pdf')
-plt.show()
+# plt.xscale('log')
+# plt.yscale('log')
+# plt.legend(loc = 'best', ncol = 2)
+# plt.xlabel('Electromechanical coupling factor $\\delta$', fontsize=16)
+# plt.ylabel('Output index $\\chi_p$', fontsize=16)
+# # plt.title('End displacement slope $u^\\prime(1)$ at $fr =$ {}'.format(fr))
+# plt.grid(True)
+# plt.tight_layout()
+# # plt.savefig('./img/fig_sol_analytic_out_index_vs_delta.jpg',dpi=300)
+# # plt.savefig('./img/fig_sol_analytic_out_index_vs_delta.eps')
+# # plt.savefig('./img/fig_sol_analytic_out_index_vs_delta.pdf')
+# plt.show()
 
 
 ###############################################################################
 ###############################################################################
+
 # fig, ax = plt.subplots(figsize=(12, 6))
 # fr_list = np.logspace(0.0, 3.0, 3001)
 # sqlam_list = np.sqrt(2 * np.pi * fr_list * np.sqrt(mp * lp**4.0e0 / Bp))
@@ -258,68 +262,29 @@ plt.show()
 
 
 
+###############################################################################
+###############################################################################
+plt.figure(4, figsize=(12,6))
 
+x1 = 1.0
+delta_list = np.logspace(-4, 4, 801)
+fr_list    = np.logspace(0.0, 3.0, 301)
+sqlam_list = np.sqrt(2 * np.pi * fr_list * np.sqrt(mp * lp**4.0e0 / Bp))
+lam_list, del_list = np.meshgrid(sqlam_list, delta_list)
+ind_out = np.abs(beam_disp_der(x1, lam_list, beta, del_list))
+frs_list, del_list = np.meshgrid(fr_list, delta_list)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+plt.contourf(frs_list, del_list, ind_out,levels=np.logspace(-5,5,21), locator=ticker.LogLocator(), cmap=cm.jet)
+plt.xscale('log')
+plt.yscale('log')
+plt.xlabel('Base excitation frequency $f_b$ $(Hz)$', fontsize=16)
+plt.ylabel('Electromechanical coupling factor $\\delta$', fontsize=16)
+plt.colorbar(orientation="vertical", fraction=0.05)
+plt.axis(aspect='image')
+plt.tight_layout()
+plt.savefig('./img/fig_sol_analytic_out_index_contour.jpg',dpi=300)
+plt.savefig('./img/fig_sol_analytic_out_index_contour.eps')
+plt.savefig('./img/fig_sol_analytic_out_index_contour.pdf')
+plt.show()
 
 

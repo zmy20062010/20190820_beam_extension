@@ -32,7 +32,7 @@ nu    = 2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp)
 
 sqlam = np.sqrt(nu)
 delta = alpha*alpha
-
+print(delta)
 xib = 0.5e-3
 rd = xib / lp
 rv = ep / Cp
@@ -118,14 +118,14 @@ plt.plot(fr_list, np.abs(vol_list)/wr_list/wr_list/xib, 'k', label='$R_l = 10^6 
 
 plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
 plt.yscale('log')
-plt.xlabel('Base excitation frequency ($Hz$)')
+plt.xlabel('Base excitation frequency $f_b$ ($Hz$)')
 plt.ylabel('Normalized output voltage $| \\tilde{V}_p/(\\sigma_b^2 \\xi_b) |$ ($V \\cdot s^2 / m$)')
 plt.grid(True)
 plt.legend()
 
 plt.tight_layout()
-plt.savefig('fig_sol_analytic_perf_vs_fr.jpg',dpi=300)
-plt.savefig('fig_sol_analytic_perf_vs_fr.eps')
-plt.savefig('fig_sol_analytic_perf_vs_fr.pdf')
+# plt.savefig('fig_sol_analytic_perf_vs_fr.jpg',dpi=300)
+# plt.savefig('fig_sol_analytic_perf_vs_fr.eps')
+# plt.savefig('fig_sol_analytic_perf_vs_fr.pdf')
 
 plt.show()

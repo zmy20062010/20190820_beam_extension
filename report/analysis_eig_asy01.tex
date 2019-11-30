@@ -25,6 +25,18 @@ The soaring depletion of fossil fuels and the growing awareness of environmental
 Generally a piezoelectric energy harvesting device consists of some piezoelectric elements and some vibration transduction structure for the hosting of these elements. A key problem in the research of piezoelectric element based energy harvesting is to improve the output of those devices. A key point is to understand the mechanics and coupling behind the devices.
 
 
+\section{Outline of the paper}
+The outline of the paper should be as follows:
+\begin{itemize}
+    \item To obtain the closed form solution of the CPEH problem using the harmonic balance method
+    \item Analyze the dependence of relative displacement function $u(z;\delta)$
+    \item Tackling the dependence of output index $\chi_p$ and output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ upon the electromechanical coupling factor $\delta$ and base excitation frequency $f_b$
+    \item Derive the asymptotic expansion of the CPEH problem for the displacement function $u(z;\delta)$ and the output index $\chi_p$
+    \item Explore the approximation error of the asymptotic expansion and provide some clues to improve the performance
+\end{itemize}
+
+
+
 
 \section{Summary of the interested equations}
 
@@ -498,6 +510,38 @@ As a result, the output performance measures $\tilde{V}_p$, $\tilde{I}_p$, and $
     \end{aligned}\right.
     \label{eq:eq_peh_perfs_compact_form_approx}
 \end{equation}
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_out_index_contour}
+    \caption{Output index $\chi_p$ as a function of base excitation frequency $f_b$ and electromechanical coupling factor $\delta$.}
+    \label{fig:fig_sol_analytic_out_index_contour}
+\end{figure}
+
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_out_vol_contour}
+    \caption{Output voltage $\tilde{V}_p$ as a function of base excitation frequency $f_b$ and electromechanical coupling factor $\delta$.}
+    \label{fig:fig_sol_analytic_out_vol_contour}
+\end{figure}
+
+
+
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_out_pow_contour}
+    \caption{Output voltage $\tilde{P}_p$ as a function of base excitation frequency $f_b$ and electromechanical coupling factor $\delta$.}
+    \label{fig:fig_sol_analytic_out_pow_contour}
+\end{figure}
+
+
+
+
+
 
 
 
