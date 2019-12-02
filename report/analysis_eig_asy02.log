@@ -1,10 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  1 DEC 2019 19:01
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.4)  2 DEC 2019 19:29
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/maureen/github/20190820_beam_extension/report/analysis_eig_asy02.tex
-(d:/maureen/github/20190820_beam_extension/report/analysis_eig_asy02.tex
+**./analysis_eig_asy02.tex
+(./analysis_eig_asy02.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (d:/program/work/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -23,21 +22,25 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/10 v2.15b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 (d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen103
-)) (d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
-) (d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count87
@@ -77,39 +80,52 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
-) (d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+))
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
- (d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
-) (d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
- (d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 96.
- (d:/program/work/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def
-File: xetex.def 2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Live/RRM/JK)
- (d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+
+(d:/program/work/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
+
+(d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
-) (d:/program/work/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- (d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 225.
@@ -121,14 +137,18 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (d:/program/work/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
- (d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+
+(d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
-) (d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) (d:/program/work/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+)
+(d:/program/work/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count99
@@ -143,7 +163,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen120
 \Gm@layoutvoffset=\dimen121
 \Gm@dimlist=\toks20
-) (./analysis_eig_asy02.aux)
+)
+(./analysis_eig_asy02.aux)
 \openout1 = `analysis_eig_asy02.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -198,72 +219,127 @@ LaTeX Font Info:    Try loading font information for U+msa on input line 22.
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 22.
- (d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
- (d:/program/work/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+
+(d:/program/work/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+Missing character: There is no ’ in font cmr10!
  [1
 
-] [2]
+]
+Overfull \hbox (2.63495pt too wide) in paragraph at lines 55--56
+[]\OT1/cmr/m/n/10 The early mod-el-ing at-tempts of piezo-elec-tric en-ergy har
+-vesters em-ployed single-degree-of-freedom
+ []
+
+Missing character: There is no – in font cmr10!
+Missing character: There is no ’ in font cmr10!
 Missing character: There is no – in font cmr10!
 Missing character: There is no – in font cmr10!
 Missing character: There is no – in font cmr10!
 Missing character: There is no – in font cmr10!
 Missing character: There is no – in font cmr10!
- [3] [4]
+[2]
+Missing character: There is no – in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+ [3]
+Missing character: There is no ‘ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no – in font cmr10!
+ [4] [5] [6]
+Missing character: There is no – in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no – in font cmr10!
+ [7] [8]
 Missing character: There is no ’ in font cmr10!
 Missing character: There is no ’ in font cmr10!
 Missing character: There is no ‘ in font cmr10!
 Missing character: There is no ’ in font cmr10!
 Missing character: There is no ’ in font cmr10!
- [5]
+ [9]
 Missing character: There is no – in font cmr10!
- [6] [7]
+ [10] [11]
 File: ./img_eig_asy/fig_sol_analytic_perf_vs_fr.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_perf_vs_fr.pdf" >
+
+<use  "./img_eig_asy/fig_sol_analytic_perf_vs_fr.pdf" >
 File: ./img_eig_asy/fig_sol_analytic_disp_fun.jpg Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_disp_fun.jpg" > [8] [9]
+
+<use  "./img_eig_asy/fig_sol_analytic_disp_fun.jpg" > [12] [13]
 File: ./img_eig_asy/fig_sol_analytic_disp_end.jpg Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_disp_end.jpg" > [10]
+
+<use  "./img_eig_asy/fig_sol_analytic_disp_end.jpg" > [14]
 Missing character: There is no ∫ in font cmr10!
 File: ./img_eig_asy/fig_sol_analytic_perf_fun.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_perf_fun.pdf" > [11] [12]
+
+<use  "./img_eig_asy/fig_sol_analytic_perf_fun.pdf" > [15] [16]
 File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr001.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr001.pdf" > [13]
+
+
+<use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr001.pdf" > [17]
 File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr020.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr020.pdf" > [14]
+
+
+<use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr020.pdf" > [18]
 File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr040.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr040.pdf" >
+
+
+<use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr040.pdf" >
 File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr045.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr045.pdf" >
+
+
+<use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr045.pdf" >
 File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr060.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr060.pdf" >
+
+
+<use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr060.pdf" >
 File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr080.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr080.pdf" >
+
+
+<use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr080.pdf" >
 File: ./img_eig_asy/fig_sol_analytic_disp_cmp_fr100.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr100.pdf" >
-File: ./img_eig_asy/fig_sol_analytic_out_index_vs_delta.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_out_index_vs_delta.pdf" > [15] [16] [17]
-File: ./img_eig_asy/fig_sol_analytic_out_index_vs_fr.pdf Graphic file (type QTm)
+
+
+<use  "./img_eig_asy/fig_sol_analytic_disp_cmp_fr100.pdf" >
+File: ./img_eig_asy/fig_sol_analytic_out_index_vs_delta.pdf Graphic file (type 
+QTm)
+
+<use  "./img_eig_asy/fig_sol_analytic_out_index_vs_delta.pdf" > [19] [20]
+[21]
+File: ./img_eig_asy/fig_sol_analytic_out_index_vs_fr.pdf Graphic file (type QTm
+)
  <use  "./img_eig_asy/fig_sol_analytic_out_index_vs_fr.pdf" >
-File: ./img_eig_asy/fig_sol_analytic_out_index_contour.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_out_index_contour.pdf" >
-File: ./img_eig_asy/fig_sol_analytic_out_vol_contour.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_out_vol_contour.pdf" >
-File: ./img_eig_asy/fig_sol_analytic_out_pow_contour.pdf Graphic file (type QTm)
- <use  "./img_eig_asy/fig_sol_analytic_out_pow_contour.pdf" > [18] [19] [20] (./analysis_eig_asy02.bbl) [21] (./analysis_eig_asy02.aux) ) 
+File: ./img_eig_asy/fig_sol_analytic_out_index_contour.pdf Graphic file (type Q
+Tm)
+
+<use  "./img_eig_asy/fig_sol_analytic_out_index_contour.pdf" >
+File: ./img_eig_asy/fig_sol_analytic_out_vol_contour.pdf Graphic file (type QTm
+)
+
+<use  "./img_eig_asy/fig_sol_analytic_out_vol_contour.pdf" >
+File: ./img_eig_asy/fig_sol_analytic_out_pow_contour.pdf Graphic file (type QTm
+)
+
+<use  "./img_eig_asy/fig_sol_analytic_out_pow_contour.pdf" > [22] [23] [24]
+(./analysis_eig_asy02.bbl) [25] (./analysis_eig_asy02.aux) ) 
 Here is how much of TeX's memory you used:
- 2719 strings out of 493591
- 35959 string characters out of 6141517
- 119107 words of memory out of 5000000
- 6092 multiletter control sequences out of 15000+600000
+ 2726 strings out of 493591
+ 35954 string characters out of 6141517
+ 119136 words of memory out of 5000000
+ 6100 multiletter control sequences out of 15000+600000
  11495 words of font info for 45 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 27i,11n,35p,1663b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,35p,2073b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on analysis_eig_asy02.pdf (21 pages).
+Output written on analysis_eig_asy02.pdf (25 pages).

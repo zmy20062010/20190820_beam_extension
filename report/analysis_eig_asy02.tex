@@ -39,12 +39,174 @@ The outline of the paper should be as follows:
 \section{Introduction}
 
 
-With the rapid development of economy and technology, 
+In the past decades, renewable and sustainable energy has attracted a great deal of attention with the rapid development of our society and economy. On one hand, emerging concerns have been placed upon the limited future availability of fossil fuels. On the other hand, the growing awareness of environmental protection has posted a new challenge to develop environmentally friendly ways of energy capture and consumption. In view of these challenges, reseachers have put forwad a number of promising energy sources, such as wind energy, solar energy, nuclear energy, and etc., to tackle the problem of depleting fossil fuels. Besides, a method of extracting energy from ambient environment to power low-power electronics, namely energy harvesting, has received a lot of attentions with the prospect of partially or fully replacing batteries and creating totally sustainable electronic devices.  
 
 
-The soaring depletion of fossil fuels and the growing awareness of environmental protection renders the challenge of renewable and sustainable energy sources for scientists and engineers. Apart from nuclear energy, wind energy, and solar energy, ambient energy harvesting has been proposed as an alternative to batteries for more than twenty years. Numerous principles, mechanisms, implementations, and applications have been put forward to deepen the understanding of energy harvesting, to find the routine for the development of new devices, to apply the devices to new situations. Among all these devices, piezoelectric energy harvesting devices have attracted much attention due to their simplicity of structure and superiority of performance. 
+Numerous principles, mechanisms, implementations, and applications of energy harvesting devices have been put forward since their first appearance in the 1990s, \cite{beeby2006energy,anton2007review,zhou2018review,safaei2019review} among which the harvesting of mechanical energy enjoys the most widespread investigations. Mechanical energy harvesting can be devided into several types: electromagnetic energy harvesting, electrostatic energy harvesting, piezoelectric energy harvesting and triboelectric energy harvesting, based on the underlying physics. The focus of this manuscript is piezoelectric energy harvesting devices, which rely on the direct piezoelectric effect to convert structural vibration energy into electrical energy. 
 
-Generally a piezoelectric energy harvesting device consists of some piezoelectric elements and some vibration transduction structure for the hosting of these elements. A key problem in the research of piezoelectric element based energy harvesting is to improve the output of those devices. A key point is to understand the mechanics and coupling behind the devices.
+A typical piezoelectric energy harvesting device is a composite structure composed of some piezoelectric elements and a vibration transduction mechanism. The composite structure is generally attached to a host structure subject to ambient vibration. The vibration of host structure is converted to the vibration of piezoelectric elements via the vibration transduction mechanism, which is then converted into electricity via the direct piezoelectric effect. Most of the piezoelectric energy harvesting devices work in the resonant mode. The peak power is achieved when the driving frequency matches the device’s
+resonance. \cite{roundy2003study} That is to say, frequency of the ambient vibration must match that of the piezoelectric energy harvesting device. 
+
+The transducer materials for energy conversion include PZT, PVDF and the newly emerged ferroelectric relaxors such as PMN-PT [30, 50]. They have been used in
+various types of structures to serve specific purposes, such as cantilever beams in transverse excitation bases [1, 16, 35] and plates (diaphragms) in pressure-loaded environments [17, 32]. The layout of electrodes on the plate's surfaces has to be carefully patterned to avoid charge cancellation [18, 41]. The design of generators based on non-resonant excitations has also received considerable recent attention [3, 37, 42, 52].
+
+In addition to experimental researches on possible mechanisms and applications of such energy harvesters, researchers have also proposed various mathematical models to guide the design and optimization of piezoelectric energy harvesters. Although the implementation of piezoelectric energy harvesting for charging a real battery in an efficient way is much more sophisticated due to the presence of AC-to-DC (alternating current-to-direct current) conversion process \cite{shu2006analysis,shu2007improved,qiu2009comparison}, researchers have considered a resistive electrical load in the circuit to come up with a simple model for predicting the electrical outputs for a given base excitation input. The coupled problem of predicting the voltage across the resistive electrical load connected to the electrodes of a vibrating harvester under base excitation has been investigated by many authors. 
+
+The early modeling attempts of piezoelectric energy harvesters employed single-degree-of-freedom (SDOF) solutions. SDOF modeling is a convenient modeling approach since the electrical domain already consists of lumped parameters: a capacitor (due to the internal capacitance of piezoceramic) and a resistor (due to an external load resistance). Hence, the only thing required is to obtain the lumped parameters representing the mechanical domain so that the mechanical equilibrium and electrical loop equations can be coupled through the piezoelectric constitutive equations.
+
+Although SDOF modeling gives initial insights into the problems by allowing simple expressions, it is an approximation limited to a single vibration mode and it lacks important aspects of the physical system, such as the dynamic mode shape and accurate strain distribution as well as their effects on the electrical response. Since cantilever harvesters are excited due to th motion of their base, the well-known SDOF harmonic base excitation relation taken from the elementary vibration texts has been used in the energy harvesting literature both for modeling and studying the optimization of energy harvesting. It was recently shown [18] that the traditional form of the SDOF harmonic base excitation relation may yield highly inaccurate results both for the transverse and longitudinal vibrations of cantilevered harvesters depending on the tip (proof) mass to beam / bar mass ratio. Correction factors were derived [18] to improve the predictions of SDOF electromechanical relations [15] of cantilevered harvesters under base excitation.
+
+
+
+As an improved modeling approach, the Rayleigh–Ritz type discrete formulation derived by Hagood et al [19] (based on the generalized Hamilton’s principle for electromechanical systems due to Crandall et al [20]) was employed by Sodano et al [21] and duToit et al [15] for modeling of cantilevered piezoelectric energy harvesters (based on the Euler–Bernoulli beam theory). The Rayleigh–Ritz solution gives a discrete model of the distributed parameter system and it is a more accurate approximation compared to SDOF modeling. In order to represent the electrical outputs analytically, Lu et al [22] used the vibration mode shapes obtained from the Euler–Bernoulli beam theory and the piezoelectric constitutive relation [16] that gives the electric displacement to relate the electrical outputs to the mechanical mode shape. Similar models were given by Chen et al [23] and Lin et al [24] where the electrical response is expressed in terms of the beam vibration response. The issues in these analytical modeling attempts include not considering the resonance phenomenon and modal expansion as well as oversimplified modeling of piezoelectric coupling in the beam equation as viscous damping [22–24]. As shown in this work, representing the effect of piezoelectric coupling in the beam equation as viscous damping fails in predicting the coupled system dynamics of a piezoelectric energy harvester, although this approach works for certain electromagnetic energy harvesters [1]. In terms of analytical modeling, more recently, Ajitsaria et al [25] presented a bimorph cantilever model, where they attempted to combine the static sensing/actuation equations (with constant radius of curvature and a static tip force) with the dynamic Euler–Bernoulli beam equation (where the radius of curvature varies) under base excitation (where there is no tip force). Thus, highly different modeling approaches have appeared in the literature during the past five years and some of them might be misleading due to weak mathematical assumptions involved [26]. 
+
+Recently, Erturk and Inman [27] have presented the analytical solution to the coupled problem of a unimorph piezoelectric energy harvester configuration based on the Euler–Bernoulli assumptions. They obtained the coupled voltage response across the resistive load and the coupled vibration response of the harvester explicitly for harmonic base excitations in the form of translation with small rotation. The short circuit and open circuit trends and the effect of piezoelectric coupling were investigated extensively [27]. Later, Elvin and Elvin [28] have observed the convergence of the Rayleigh–Ritz type of solution formerly introduced by Hagood et al [19] to the analytical solution given by Erturk and Inman [27] when sufficient number of vibration modes is used with appropriate admissible functions.
+
+This paper presents the application of the coupled distributed parameter solution [27] to bimorph cantilever configurations with series and parallel connections of piezoceramic layers. The steady state voltage response and vibration response expressions are derived for harmonic excitation of the base at an arbitrary excitation frequency (in the form of translation in the transverse direction with small rotation). Then, by using the complete (multi-mode) solutions, the response expressions are reduced to simple but accurate single-mode relations. The single-mode relations can be used instead of the multi-mode relations for modal excitations (i.e., for excitations around resonance) of cantilevered bimorphs since the resonance excitation is the main concern in vibration- based energy harvesting. The electromechanical FRFs that give the voltage output and vibration response-to-translational and rotational base acceleration relations are extracted from the multi-mode and single-mode solutions. Experimental validation of the analytical formulation is given for a bimorph cantilever with a tip mass. It is shown that the single-mode analytical relations proposed here are very accurate in predicting the voltage output and vibration response FRFs. The bimorph device is analyzed extensively for the short circuit and open circuit resonance frequency excitations by using different resistive loads and it is observed that the analytical model can successfully predict the coupled system dynamics.
+
+
+
+Here in this contribution, we focus on the closed-form solution to the classical model of a piezoelectric cantilever energy harvester. Based on the Euler-Bernoulli beam model and the linear piezoelectric relations, electromechanical model of the energy harvester is established, which is then converted to a boundary value problem of ordinary differential equations using the harmonic balance method. Closed form solution of the relative displacement function of the cantilever beam as well as the output performance measures is analyzed and numerically investigated. Asymptotic expansions of the relative displacement function are calculated to obtain approximate expressions for the output index and the related output performance measures. Advices are then given in terms of the structure design and performance optimization of piezoelectric energy harvesters. 
+
+\begin{quote}
+    Power harvesting refers to energy retraction from ambient
+    surroundings and converting it into useful electric energy. With
+    advances in wireless technology and low-power electronics,
+    energy harvesting from environmental resources has the
+    potential to power mobile and wireless microsystems where
+    battery replacement is either practically impossible or
+    prohibitively expensive [7, 26, 31, 48]. Due to the ubiquitous
+    presence of ambient vibrations, extensive research efforts
+    have been made for converting mechanical energy into
+    electrical power through piezoelectric, electromagnetic and
+    capacitive transducers [36, 40]. Amongst them, piezoelectric
+    vibration-to-electricity converters have been viewed as being
+    superior to other means, as they have high electromechanical
+    coupling, no external voltage source requirement and they
+    are particularly attractive for use in MEMS [15, 20, 40] and
+    nanosystems [28, 38]. As a result, the use of piezoelectric
+    materials for scavenging energy from ambient vibration
+    sources has recently witnessed a dramatic rise for power
+    harvesting [5, 13, 24, 25, 49, 56].
+    
+    A vibration-based piezoelectric energy harvesting system
+    includes three essential components: an oscillator, a
+    piezoelectric medium and an energy storage circuit, as
+    demonstrated in figure 1. An oscillator is designed to transmit
+    ambient vibrations into mechanical strain energy which is
+    converted into electrical energy via the direct piezoelectric
+    effect. The generated charges are accumulated through an
+    interfacing circuit for AC/DC conversion and presented to
+    a load circuit. Precisely, the power generator is typically
+    designed as a resonant oscillator since the peak power is
+    achieved when the driving frequency matches the device’s
+    resonance [40]. The transducer materials for energy conversion
+    include PZT, PVDF and the newly emerged ferroelectric
+    relaxors such as PMN-PT [30, 50]. They have been used in
+    various types of structures to serve specific purposes, such as
+    cantilever beams in transverse excitation bases [1, 16, 35] and
+    plates (diaphragms) in pressure-loaded environments [17, 32].
+    The layout of electrodes on the plate’s surfaces has to be
+    carefully patterned to avoid charge cancellation [18, 41]. The
+    design of generators based on non-resonant excitations has also
+    received considerable recent attention [3, 37, 42, 52].
+    
+    The circuit design is required for electrical compatibility
+    and maximum power transfer to the load. It consists of
+    AC/DC interfacing electronics connecting the piezoelectric
+    element to the terminal electric load. Power optimization
+    schemes therefore depend not only on the mechanical
+    solicitation, but also on the specific types of interfacing
+    circuits. This motivates a variety of research efforts for
+    proposing appropriate electronic interfaces. The most common
+    one is the standard interface which includes an AC/DC rectifier
+    followed by a filtering capacitance, as shown in the middle
+    of figure 1. Ottman et al [33] have studied the electrical
+    behavior of this standard system based on the uncoupled model
+    which simplifies the vibrating piezoelectric structure as the
+    current source in parallel with its internal capacitance. They
+    further developed adaptive DC/DC converters for impedance
+    matching [34]. Shu and Lien [44] subsequently proposed
+    an improved analysis for optimizing AC/DC power extraction
+    without the uncoupled assumption. They also investigated
+    the relation between electrically induced damping and
+    conversion efficiency for a rectified piezoelectric device [45]
+    (cf [22, 23, 39]). The result shows that optimization criteria
+    vary according to the relative strength of electromechanical
+    coupling to mechanical damping ratio. Guan and Liao [10, 11]
+    analyzed the charge/discharge efficiencies for several different
+    energy storage devices. Wu et al [54] and Wickenheiser et al
+    [53] investigated the transient behavior of a storage capacitor
+    under charging. Liu et al [27] used the switch-mode power
+    electronics to develop a scheme for active energy harvesting.
+    Based on the beam model, Huetal[14] numerically studied the
+    interaction between the piezoelectric vibrating structure and
+    the storage circuit.
+    
+    Another recently emerged energy harvesting circuit is the
+    ‘synchronized switch harvesting on inductor’ (SSHI) interface
+    which is added to the piezoelectric element together with the
+    standard DC technique, as also illustrated in the middle of
+    figure 1. This technique was proposed by Guyomar and his
+    co-workers [2, 12, 19, 21, 29] who have shown that power is
+    boosted significantly in a weakly coupled electromechanical
+    system. However, the effect of frequency deviation from
+    resonance on the electrical behavior of an SSHI system is not
+    taken into account in the original analysis. Instead, Shu et al
+    [46] have proposed several improved estimates for the parallel-
+    SSHI circuit accounting for this effect. They have shown that
+    the electrical response of a parallel-SSHI system is similar to
+    that of a strongly coupled electromechanical standard system
+    operated at the short circuit resonance. Furthermore, this
+    technique improves the scavenger’s bandwidth significantly
+    in comparison to the standard technique. Here, we
+    provide another improved analysis for electrical performance
+    evaluation of a series-SSHI system. It takes into account the
+    full electromechanical coupling response and vibration phase-
+    shift effect, and therefore the analysis is capable of revealing
+    the system characteristics in the vicinity of resonance. The
+    results show that the electrical behaviors of these two ideal
+    SSHI systems are conjugate with each other in comparison
+    to the standard technique. However, they exhibit a dissimilar
+    response if the effect of diode loss is considered. It turns out the
+    feature of wide band could be lost in practical devices endowed
+    with series-SSHI circuits. Finally, some of our preliminary
+    results have been reported in a conference paper [47]. Here,
+    we systematically derive the main results with numerical
+    validation and provide discussions concerning electrical loss
+    in detail.
+    
+    This paper is organized as follows. First a piezoelectric
+    transducer is modeled as a lumped single-degree-of-freedom
+    system undergoing periodic forcing in section 2. A number
+    of research efforts based on the distributed parameter methods
+    have been made for analyzing a vibrating piezoelectric
+    structure connected to a single resistor [4, 8, 9, 16, 43].
+    They show advantages in predicting the model shapes, strain
+    distribution and energy harvesting performance based on
+    geometry and material properties of a structure. However,
+    difficulties arise if the nonlinear interfacing circuits are
+    taken into account in analysis [14]. Limited success has
+    been achieved by bridging structural modeling and circuit
+    simulation such as coupled FEM–SPICE models [6, 55].
+    Hence, if the focus is the overall electrical behavior rather than
+    the detailed response at each specific point of a structure, the
+    reduced model suffices the need for harvesting circuit design.
+    Subsequently, an energy harvester using the standard circuit
+    is introduced in section 2.1 and the electrical response of a
+    series-SSHI system is analyzed in detail in section 2.2. The
+    harvested power is derived and expressed explicitly in terms of
+    several dimensionless system parameters. The operating points
+    for achieving optimal power is also discussed there. For the
+    purpose of comparison, the electrical behavior of a parallel-
+    SSHI system is briefly reviewed in section 2.3. Next, the results
+    are numerically validated in section 3.1 and are discussed
+    under the case of non-ideal voltage inversion in section 3.2 and
+    the case of diode loss in section 3.3. The conclusions are made
+    in section 4.
+\end{quote}
+
+
 
 
 

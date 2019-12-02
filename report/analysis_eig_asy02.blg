@@ -7,44 +7,44 @@ Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: analysis_eig_asy.bib.bib
-You've used 2 entries,
+You've used 10 entries,
             3170 wiz_defined-function locations,
-            653 strings with 4900 characters,
-and the built_in function-call counts, 2720 in all, are:
-= -- 350
-> -- 16
+            706 strings with 6320 characters,
+and the built_in function-call counts, 15218 in all, are:
+= -- 1960
+> -- 112
 < -- 0
-+ -- 8
-- -- 4
-* -- 208
-:= -- 307
-add.period$ -- 8
-call.type$ -- 2
++ -- 56
+- -- 28
+* -- 1196
+:= -- 1635
+add.period$ -- 40
+call.type$ -- 10
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 280
-empty$ -- 253
-format.name$ -- 6
-if$ -- 641
+cite$ -- 10
+duplicate$ -- 1500
+empty$ -- 1422
+format.name$ -- 38
+if$ -- 3598
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 20
-newline$ -- 13
-num.names$ -- 2
-pop$ -- 32
+int.to.str$ -- 10
+missing$ -- 108
+newline$ -- 53
+num.names$ -- 10
+pop$ -- 177
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 32
+skip$ -- 167
 stack$ -- 0
-substring$ -- 444
-swap$ -- 46
+substring$ -- 2630
+swap$ -- 242
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 16
-width$ -- 3
-write$ -- 24
+while$ -- 91
+width$ -- 12
+write$ -- 112

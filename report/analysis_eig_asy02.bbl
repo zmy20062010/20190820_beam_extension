@@ -1,4 +1,49 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{beeby2006energy}
+Beeby SP, Tudor MJ, White N.
+\newblock Energy harvesting vibration sources for microsystems applications.
+\newblock Measurement science and technology. 2006;17(12):R175.
+
+\bibitem{anton2007review}
+Anton SR, Sodano HA.
+\newblock A review of power harvesting using piezoelectric materials
+  (2003--2006).
+\newblock Smart materials and Structures. 2007;16(3):R1.
+
+\bibitem{zhou2018review}
+Zhou M, Al-Furjan MSH, Zou J, Liu W.
+\newblock A review on heat and mechanical energy harvesting from
+  human--Principles, prototypes and perspectives.
+\newblock Renewable and Sustainable Energy Reviews. 2018;82:3582--3609.
+
+\bibitem{safaei2019review}
+Safaei M, Sodano HA, Anton SR.
+\newblock A review of energy harvesting using piezoelectric materials:
+  state-of-the-art a decade later (2008--2018).
+\newblock Smart Materials and Structures. 2019;28(11):113001.
+
+\bibitem{roundy2003study}
+Roundy S, Wright PK, Rabaey J.
+\newblock A study of low level vibrations as a power source for wireless sensor
+  nodes.
+\newblock Computer communications. 2003;26(11):1131--1144.
+
+\bibitem{shu2006analysis}
+Shu Y, Lien I.
+\newblock Analysis of power output for piezoelectric energy harvesting systems.
+\newblock Smart materials and structures. 2006;15(6):1499.
+
+\bibitem{shu2007improved}
+Shu Y, Lien I, Wu W.
+\newblock An improved analysis of the SSHI interface in piezoelectric energy
+  harvesting.
+\newblock Smart Materials and Structures. 2007;16(6):2253.
+
+\bibitem{qiu2009comparison}
+Qiu J, Jiang H, Ji H, Zhu K.
+\newblock Comparison between four piezoelectric energy harvesting circuits.
+\newblock Frontiers of Mechanical Engineering in China. 2009;4(2):153--159.
 
 \bibitem{erturk2008distributed}
 Erturk A, Inman DJ.
