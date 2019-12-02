@@ -37,15 +37,17 @@ The outline of the paper should be as follows:
 \end{itemize}
 
 \section{Introduction}
+ 
+ 
+The soaring development of wireless sensor networks (WSNs) and Internet of Things (IoTs) has intrigued the research into sustainable and renewable energy sources for low-power electronics in the past decade. Nearly all the devices are currently using batteries as power sources. Extracting energy from the ambient environment and converting it into electricity, or energy harvesting, has been the focus of many researchers, aiming at partially or even fully replacing currently used batteries.  
+ 
+ 
+In the past decades, renewable and sustainable energy has attracted a great deal of attention with the rapid development of our society and economy. On one hand, emerging concerns have been placed upon the limited future availability of fossil fuels. On the other hand, the growing awareness of environmental protection has posted a new challenge to develop environmentally friendly ways of energy capture and consumption. In view of these challenges, researchers have put forward a number of promising energy sources, such as wind energy, solar energy, nuclear energy, and etc., to tackle the problem of depleting fossil fuels. Besides, a method of extracting energy from ambient environment to power low-power electronics, namely energy harvesting, has received a lot of attentions with the prospect of partially or fully replacing batteries and creating totally sustainable electronic devices. 
 
 
-In the past decades, renewable and sustainable energy has attracted a great deal of attention with the rapid development of our society and economy. On one hand, emerging concerns have been placed upon the limited future availability of fossil fuels. On the other hand, the growing awareness of environmental protection has posted a new challenge to develop environmentally friendly ways of energy capture and consumption. In view of these challenges, reseachers have put forwad a number of promising energy sources, such as wind energy, solar energy, nuclear energy, and etc., to tackle the problem of depleting fossil fuels. Besides, a method of extracting energy from ambient environment to power low-power electronics, namely energy harvesting, has received a lot of attentions with the prospect of partially or fully replacing batteries and creating totally sustainable electronic devices.  
+Numerous principles, mechanisms, implementations, and applications of energy harvesting devices have been put forward since their first appearance in the 1990s, \cite{beeby2006energy,anton2007review,zhou2018review,safaei2019review} among which the harvesting of mechanical energy enjoys the most widespread investigations. Mechanical energy harvesting can be divided into several types: electromagnetic energy harvesting, electrostatic energy harvesting, piezoelectric energy harvesting and triboelectric energy harvesting, based on the underlying physics. The focus of this manuscript is piezoelectric energy harvesting devices, which rely on the direct piezoelectric effect to convert structural vibration energy into electrical energy. 
 
-
-Numerous principles, mechanisms, implementations, and applications of energy harvesting devices have been put forward since their first appearance in the 1990s, \cite{beeby2006energy,anton2007review,zhou2018review,safaei2019review} among which the harvesting of mechanical energy enjoys the most widespread investigations. Mechanical energy harvesting can be devided into several types: electromagnetic energy harvesting, electrostatic energy harvesting, piezoelectric energy harvesting and triboelectric energy harvesting, based on the underlying physics. The focus of this manuscript is piezoelectric energy harvesting devices, which rely on the direct piezoelectric effect to convert structural vibration energy into electrical energy. 
-
-A typical piezoelectric energy harvesting device is a composite structure composed of some piezoelectric elements and a vibration transduction mechanism. The composite structure is generally attached to a host structure subject to ambient vibration. The vibration of host structure is converted to the vibration of piezoelectric elements via the vibration transduction mechanism, which is then converted into electricity via the direct piezoelectric effect. Most of the piezoelectric energy harvesting devices work in the resonant mode. The peak power is achieved when the driving frequency matches the device’s
-resonance. \cite{roundy2003study} That is to say, frequency of the ambient vibration must match that of the piezoelectric energy harvesting device. 
+A typical piezoelectric energy harvesting device is a composite structure composed of some piezoelectric elements and a vibration transduction mechanism. The composite structure is generally attached to a host structure subject to ambient vibration. The vibration of host structure is converted to the vibration of piezoelectric elements via the vibration transduction mechanism, which is then converted into electricity via the direct piezoelectric effect. Most of the piezoelectric energy harvesting devices work in the resonant mode. The peak power is achieved when the driving frequency matches the device's resonance. \cite{roundy2003study} That is to say, frequency of the ambient vibration must match that of the piezoelectric energy harvesting device. 
 
 The transducer materials for energy conversion include PZT, PVDF and the newly emerged ferroelectric relaxors such as PMN-PT [30, 50]. They have been used in
 various types of structures to serve specific purposes, such as cantilever beams in transverse excitation bases [1, 16, 35] and plates (diaphragms) in pressure-loaded environments [17, 32]. The layout of electrodes on the plate's surfaces has to be carefully patterned to avoid charge cancellation [18, 41]. The design of generators based on non-resonant excitations has also received considerable recent attention [3, 37, 42, 52].
@@ -66,7 +68,7 @@ This paper presents the application of the coupled distributed parameter solutio
 
 
 
-Here in this contribution, we focus on the closed-form solution to the classical model of a piezoelectric cantilever energy harvester. Based on the Euler-Bernoulli beam model and the linear piezoelectric relations, electromechanical model of the energy harvester is established, which is then converted to a boundary value problem of ordinary differential equations using the harmonic balance method. Closed form solution of the relative displacement function of the cantilever beam as well as the output performance measures is analyzed and numerically investigated. Asymptotic expansions of the relative displacement function are calculated to obtain approximate expressions for the output index and the related output performance measures. Advices are then given in terms of the structure design and performance optimization of piezoelectric energy harvesters. 
+Here in this contribution, we focus on the closed-form solution to the classical model of a piezoelectric cantilever energy harvester. Based on the Euler-Bernoulli beam model and the linear piezoelectric relations, electromechanical model of the energy harvester is established, and then converted to a boundary value problem of ordinary differential equations using the harmonic balance method. Closed form solution of the relative displacement function of the cantilever beam as well as the output performance measures is analyzed and numerically investigated. Asymptotic expansions of the relative displacement function are calculated to obtain approximate expressions for the output index and the related output performance measures. Tips are then provided in terms of the structure design and performance optimization of piezoelectric energy harvesters. 
 
 \begin{quote}
     Power harvesting refers to energy retraction from ambient
@@ -245,18 +247,32 @@ energy harvesting from vortex-induced vibration by introducing nonlinear attract
 et al. [24,25] evaluated the performance of energy generators that harvest energy from unsteady and turbulent
 fluid flow by using piezoelectric cantilever beam.
 
-Harvesting wind energy by exploiting the galloping induced by wind, Zhao et al. [26] studied the effect
-of tip body on the performance of the piezoelectric energy harvester, and recommended that the tip of square
-section should be used for galloping energy harvesters. Ewere et al. [27] considered a galloping piezoelectric
-energy harvester (GPEH) with a rectangular and square prism as the tip bluff body, respectively. Moreover,
-they proposed an improved GPEH by introducing a bump stop [28]. Sirohi and Mahadik [29] developed a
-galloping piezoelectric beam with a D-shaped cross-sectional tip body. For the wind energy harvesting device,
-an approximated distributed-parameter model was used to predict dynamic response and power output of
-wind energy harvesting devices. For example, Abdelkefi et al. [30] developed a coupled nonlinear distributedparameter model to determine the effects of the cross-sectional geometry, load resistance and wind speed
-on the level of the harvester power. Zhao et al. [31] proposed a 2-degree-of freedom (2DOF) piezoelectric
-aeroelastic energy harvester with a cut-out cantilever and two magnets. Hu et al. [32] found that attaching
-fins to the leading edge significantly improves the efficiency of the harvester. Furthermore, some works about
-the mechanical response of piezoelectric energy harvesters under combined galloping and base excitations
+Harvesting wind energy by exploiting the galloping induced by wind, 
+Zhao et al. [26] studied the effect
+of tip body on the performance of the piezoelectric energy harvester, 
+and recommended that the tip of square
+section should be used for galloping energy harvesters. Ewere et al. 
+[27] considered a galloping piezoelectric
+energy harvester (GPEH) with a rectangular and square prism as the 
+tip bluff body, respectively. Moreover,
+they proposed an improved GPEH by introducing a bump stop [28]. 
+Sirohi and Mahadik [29] developed a
+galloping piezoelectric beam with a D-shaped cross-sectional tip 
+body. For the wind energy harvesting device,
+an approximated distributed-parameter model was used to predict 
+dynamic response and power output of
+wind energy harvesting devices. For example, Abdelkefi et al. [30] 
+developed a coupled nonlinear distributedparameter model to 
+determine the effects of the cross-sectional geometry, load 
+resistance and wind speed
+on the level of the harvester power. Zhao et al. [31] proposed 
+a 2-degree-of freedom (2DOF) piezoelectric
+aeroelastic energy harvester with a cut-out cantilever and two 
+magnets. Hu et al. [32] found that attaching
+fins to the leading edge significantly improves the efficiency 
+of the harvester. Furthermore, some works about
+the mechanical response of piezoelectric energy harvesters under 
+combined galloping and base excitations
 [33–35] are also reported.
 
 To reduce the cost of piezoelectric wind energy harvesters, the shape of the cantilever beam should be optimized. However, works about the effect of shape of the cantilever beam on the energy harvesting performance
@@ -277,7 +293,7 @@ newpage
 
 
 Power harvesting refers to energy retraction from ambient
-surroundingsand convertingitintouseful electric energy. With
+surroundings and converting it into useful electric energy. With
 advances in wireless technology and low-power electronics,
 energy harvesting from environmental resources has the
 potential to power mobile and wireless microsystems where
@@ -307,7 +323,7 @@ interfacing circuit for AC/DC conversion and presented to
 a load circuit. Precisely, the power generator is typically
 designed as a resonant oscillator since the peak power is
 achieved when the driving frequency matches the device’s
-resonance [40]. The transducermaterialsfor energyconversion
+resonance [40]. The transducer materials for energy conversion
 include PZT, PVDF and the newly emerged ferroelectric
 relaxors such as PMN-PT [30, 50]. They have been used in
 various types of structures to serve specific purposes, such as
@@ -315,7 +331,7 @@ cantilever beams in transverse excitation bases [1, 16, 35] and
 plates (diaphragms) in pressure-loaded environments [17, 32].
 The layout of electrodes on the plate’s surfaces has to be
 carefully patterned to avoid charge cancellation [18, 41]. The
-designofgenerators based onnon-resonantexcitationshasalso
+design of generators based on non-resonant excitations has also
 received considerable recent attention [3, 37, 42, 52].
 
 The circuit design is required for electrical compatibility
