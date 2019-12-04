@@ -57,11 +57,6 @@ Crandall SH.
 \newblock Dynamics of mechanical and electromechanical systems.
 \newblock McGraw-Hill; 1968.
 
-\bibitem{kreyszig1978introductory}
-Kreyszig E.
-\newblock Introductory functional analysis with applications. vol.~1.
-\newblock wiley New York; 1978.
-
 \bibitem{hagood1990modelling}
 Hagood NW, Chung WH, Von~Flotow A.
 \newblock Modelling of piezoelectric actuator dynamics for active structural
@@ -92,6 +87,11 @@ Ajitsaria J, Choe SY, Shen D, Kim D.
 \newblock Modeling and analysis of a bimorph piezoelectric cantilever beam for
   voltage generation.
 \newblock Smart Materials and Structures. 2007;16(2):447.
+
+\bibitem{kreyszig1978introductory}
+Kreyszig E.
+\newblock Introductory functional analysis with applications. vol.~1.
+\newblock wiley New York; 1978.
 
 \bibitem{erturk2008distributed}
 Erturk A, Inman DJ.

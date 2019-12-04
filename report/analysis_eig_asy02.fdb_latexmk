@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex analysis_eig_asy02"] 1575377512 "analysis_eig_asy02.aux" "analysis_eig_asy02.bbl" "analysis_eig_asy02" 1575385093
+["bibtex analysis_eig_asy02"] 1575464557 "analysis_eig_asy02.aux" "analysis_eig_asy02.bbl" "analysis_eig_asy02" 1575465560
   "/usr/share/texlive/texmf-dist/bibtex/bst/vancouver/vancouver.bst" 1403994424 38215 ea1386b2055049a8e03ec1b09fd54904 ""
-  "analysis_eig_asy.bib" 1575290084 3788 0238b4aa5056de691eaa5e5fc01f3f18 ""
-  "analysis_eig_asy02.aux" 1575385093 5975 913cd4e8d82702947d36455b6ef8f57c ""
+  "analysis_eig_asy.bib" 1575460605 7262 c8d1e1e950bf0257c404450152b33ea7 ""
+  "analysis_eig_asy02.aux" 1575465560 6540 1d07d789cf0ff9b594f52ddf1ba0ee1a ""
   "analysis_eig_asy02.bcf" 0 -1 0 ""
   (generated)
   "analysis_eig_asy02.blg"
   "analysis_eig_asy02.bbl"
-["pdflatex"] 1575385092 "analysis_eig_asy02.tex" "/home/myzhou/Documents/github/20190820_beam_extension/report/analysis_eig_asy02.pdf" "analysis_eig_asy02" 1575385093
+["pdflatex"] 1575465559 "analysis_eig_asy02.tex" "/home/myzhou/Documents/github/20190820_beam_extension/report/analysis_eig_asy02.pdf" "analysis_eig_asy02" 1575465560
   "./img_eig_asy/fig_sol_analytic_disp_cmp_fr001.pdf" 1575201762 24032 af3a4b1461eaf9754c11098019243217 ""
   "./img_eig_asy/fig_sol_analytic_disp_cmp_fr020.pdf" 1575201762 25444 bd97eb4ccc073731d0c5e4e97af964fb ""
   "./img_eig_asy/fig_sol_analytic_disp_cmp_fr040.pdf" 1575201762 23804 c71221012635bac2b76e60b6240f3a71 ""
@@ -25,7 +25,7 @@
   "./img_eig_asy/fig_sol_analytic_perf_fun.pdf" 1574773635 20809 f1b7c077a3e7a7fa895c920937a7840f ""
   "./img_eig_asy/fig_sol_analytic_perf_vs_fr.pdf" 1574864541 43228 3638f79f68910946456acac8765e024e ""
   "/etc/texmf/web2c/texmf.cnf" 1561538019 1101 af7716885e081ab43982cab7b4672c1a ""
-  "/home/myzhou/Documents/github/20190820_beam_extension/report/analysis_eig_asy02.aux" 1575385093 5975 913cd4e8d82702947d36455b6ef8f57c ""
+  "/home/myzhou/Documents/github/20190820_beam_extension/report/analysis_eig_asy02.aux" 1575465560 6540 1d07d789cf0ff9b594f52ddf1ba0ee1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -78,9 +78,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1561538075 3472812 f2d1272b34cbbbf6054c8b0420f29825 ""
-  "analysis_eig_asy02.aux" 1575385093 5975 913cd4e8d82702947d36455b6ef8f57c ""
-  "analysis_eig_asy02.bbl" 1575377512 2193 d054c2b412f31c8253bb6355aa997f43 "bibtex analysis_eig_asy02"
-  "analysis_eig_asy02.tex" 1575385088 81451 40dad5669029b57e14734c4454d3588c ""
+  "analysis_eig_asy02.aux" 1575465560 6540 1d07d789cf0ff9b594f52ddf1ba0ee1a ""
+  "analysis_eig_asy02.bbl" 1575464558 3745 51416ec8af1bd7e2c7ccfd2b3fd8db33 "bibtex analysis_eig_asy02"
+  "analysis_eig_asy02.tex" 1575465559 69965 54ede351bbcb2455517d5b0bce843d32 ""
   "img_eig_asy/fig_sol_analytic_disp_cmp_fr001.pdf" 1575201762 24032 af3a4b1461eaf9754c11098019243217 ""
   "img_eig_asy/fig_sol_analytic_disp_cmp_fr020.pdf" 1575201762 25444 bd97eb4ccc073731d0c5e4e97af964fb ""
   "img_eig_asy/fig_sol_analytic_disp_cmp_fr040.pdf" 1575201762 23804 c71221012635bac2b76e60b6240f3a71 ""
@@ -99,7 +99,7 @@
   "img_eig_asy/fig_sol_analytic_perf_vs_fr.pdf" 1574864541 43228 3638f79f68910946456acac8765e024e ""
   (generated)
   "analysis_eig_asy02.aux"
+  "/home/myzhou/Documents/github/20190820_beam_extension/report/analysis_eig_asy02.pdf"
+  "/home/myzhou/Documents/github/20190820_beam_extension/report/analysis_eig_asy02.log"
   "analysis_eig_asy02.log"
   "analysis_eig_asy02.pdf"
-  "/home/myzhou/Documents/github/20190820_beam_extension/report/analysis_eig_asy02.log"
-  "/home/myzhou/Documents/github/20190820_beam_extension/report/analysis_eig_asy02.pdf"

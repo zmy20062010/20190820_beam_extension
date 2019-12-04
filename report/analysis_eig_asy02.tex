@@ -36,6 +36,7 @@ The outline of the paper should be as follows:
     \item Explore the approximation error of the asymptotic expansion and provide some clues to improve the performance
 \end{itemize}
 
+\newpage
 \section{Introduction}
  
 The soaring development of wireless sensor networks (WSNs) and Internet of Things (IoTs) in the past decades has intrigued the research into sustainable and renewable energy sources for low-power electronics. The primary research goal is to partially or even fully replace currently used battery power or utility wall power, which are generally expensive, inconvenient, and sometimes impossible. To this end, much attention has been paid to energy harvesters, which convert the available energy in the ambient environment into usable electricity. A number of principles, mechanisms, and implementations of energy harvesters have been put forward since their first appearance in the 1990s, \cite{beeby2006energy,anton2007review,zhou2018review,safaei2019review} among which piezoelectric vibration energy harvesters (PVEHs) have gained the most widespread research popularity. 
@@ -44,180 +45,24 @@ PVEHs are typically composite structures made up of some piezoelectric elements 
 
 A most direct and simple approach is to use the single-degree-of-freedom (SDOF) approximation, in which the electrical domain and the mechanical domain are using SDOF resonator models respectively. Besides, the electromechanical coupling between these two domains is represented by a constant coefficient. \cite{roundy2003study,dutoit2005design} This lumped-parameter model provides fruitful insights into the mechanism and dynamics behind the energy harvesting process and has been employed in the performance improvement and optimization of PVEHs. \cite{stephen2006energy,cottone2009nonlinear} However, it has been shown that this model only applies to one vibration mode and exhibits considerable inaccuracy in some circumstances. \cite{erturk2008mechanical}
 
-A different yet improved approach is to resort to the Rayleigh-Ritz method. 
+A different yet improved approach is to resort to the Rayleigh-Ritz method. In this approach, electromechanical model of the PVEHs in the variational form is established based on the generalized Hamilton's principle, \cite{crandall1968dynamics} which is then discretized to a finite-dimension matrix-form state space model using the Rayleigh-Ritz method. \cite{hagood1990modelling} This approach can easily be modified to admit finite element analysis and be appropriate for numerical computation. Although experimentally validated and theoretically refined, \cite{sodano2004estimation,lu2003modeling,chen2006analytical,ajitsaria2007modeling} this kind of method does not reflect the resonance phenomenon and the related modal expansions. 
+
+To address the issues, an infinitely expansion method is developed based on the theory of functional analysis. \cite{kreyszig1978introductory} Mechanical part of the PVEH is modeled using a partial differential equation with the help of Euler-Bernoulli assumptions, while the electrical part is described with an ordinary differential equation provided that a pure resistive load is connected to the PVEH. \cite{erturk2008distributed} Using the classical eigenfunctions of a cantilever beam as the basis functions, the derived system of equations is formally expanded to obtain an infinite series of sub-systems of ordinary differential equations. This method has been validated and applied to PVEHs with end mass \cite{erturk2009experimentally}, to optimize the electrode coverage and some other circumstances. Besides, taking into account the output AC-to-DC circuit, Liao et al \cite{liao2012optimal} investigate the placement of piezo plates. 
+
+Electrode coverage, piezoelectric material placement, beam shapes.
+
+However, this method fails to give a closed-form solution to the problem and does not use the accurate mode shapes. In principle, the expansion is a kind of approximation and do not take into account the piezoelectric torque. 
+
+mode shape inaccurate for the basis functions chosen.
+no closed-form analytical expressions derived, which leads to the approximative nature. 
 
 
-the eigenfunction expansion method. In this approach, electromechanical model of the PVEHs is established based on the generalized Hamilton's principle. \cite{crandall1968dynamics} 
+Elvin and Elvin [28] have observed the convergence of the Rayleigh–Ritz type of solution formerly introduced by Hagood et al [19] to the analytical solution given by Erturk and Inman [27] when sufficient number of vibration modes is used with appropriate admissible functions.
 
-
-
-Based on the 
-
-
-
-
-theory of functional analysis, \cite{kreyszig1978introductory} the variational formulation is converted into an infinite-dimension matrix-form state space model 
-
-
-and then truncated using the Rayleigh-Ritz method \cite{hagood1990modelling} to obtain 
-
-
-finite element modeling method. 
-
-\cite{sodano2004estimation,lu2003modeling,chen2006analytical,ajitsaria2007modeling}
-
-
-
-As an improved modeling approach, the Rayleigh–Ritz type discrete formulation derived by Hagood et al [19] (based on the generalized Hamilton's principle for electromechanical systems due to Crandall et al [20]) was employed by Sodano et al [21] and duToit et al [15] for modeling of cantilevered piezoelectric energy harvesters (based on the Euler–Bernoulli beam theory). The Rayleigh–Ritz solution gives a discrete model of the distributed parameter system and it is a more accurate approximation compared to SDOF modeling. In order to represent the electrical outputs analytically, Lu et al [22] used the vibration mode shapes obtained from the Euler–Bernoulli beam theory and the piezoelectric constitutive relation [16] that gives the electric displacement to relate the electrical outputs to the mechanical mode shape. Similar models were given by Chen et al [23] and Lin et al [24] where the electrical response is expressed in terms of the beam vibration response. The issues in these analytical modeling attempts include not considering the resonance phenomenon and modal expansion as well as oversimplified modeling of piezoelectric coupling in the beam equation as viscous damping [22–24]. As shown in this work, representing the effect of piezoelectric coupling in the beam equation as viscous damping fails in predicting the coupled system dynamics of a piezoelectric energy harvester, although this approach works for certain electromagnetic energy harvesters [1]. In terms of analytical modeling, more recently, Ajitsaria et al [25] presented a bimorph cantilever model, where they attempted to combine the static sensing/actuation equations (with constant radius of curvature and a static tip force) with the dynamic Euler–Bernoulli beam equation (where the radius of curvature varies) under base excitation (where there is no tip force). Thus, highly different modeling approaches have appeared in the literature during the past five years and some of them might be misleading due to weak mathematical assumptions involved [26]. 
-
-Recently, Erturk and Inman [27] have presented the analytical solution to the coupled problem of a unimorph piezoelectric energy harvester configuration based on the Euler–Bernoulli assumptions. They obtained the coupled voltage response across the resistive load and the coupled vibration response of the harvester explicitly for harmonic base excitations in the form of translation with small rotation. The short circuit and open circuit trends and the effect of piezoelectric coupling were investigated extensively [27]. Later, Elvin and Elvin [28] have observed the convergence of the Rayleigh–Ritz type of solution formerly introduced by Hagood et al [19] to the analytical solution given by Erturk and Inman [27] when sufficient number of vibration modes is used with appropriate admissible functions.
-
-This paper presents the application of the coupled distributed parameter solution [27] to bimorph cantilever configurations with series and parallel connections of piezoceramic layers. The steady state voltage response and vibration response expressions are derived for harmonic excitation of the base at an arbitrary excitation frequency (in the form of translation in the transverse direction with small rotation). Then, by using the complete (multi-mode) solutions, the response expressions are reduced to simple but accurate single-mode relations. The single-mode relations can be used instead of the multi-mode relations for modal excitations (i.e., for excitations around resonance) of cantilevered bimorphs since the resonance excitation is the main concern in vibration- based energy harvesting. The electromechanical FRFs that give the voltage output and vibration response-to-translational and rotational base acceleration relations are extracted from the multi-mode and single-mode solutions. Experimental validation of the analytical formulation is given for a bimorph cantilever with a tip mass. It is shown that the single-mode analytical relations proposed here are very accurate in predicting the voltage output and vibration response FRFs. The bimorph device is analyzed extensively for the short circuit and open circuit resonance frequency excitations by using different resistive loads and it is observed that the analytical model can successfully predict the coupled system dynamics.
 
 
 
 Here in this contribution, we focus on the closed-form solution to the classical model of a piezoelectric cantilever energy harvester. Based on the Euler-Bernoulli beam model and the linear piezoelectric relations, electromechanical model of the energy harvester is established, and then converted to a boundary value problem of ordinary differential equations using the harmonic balance method. Closed form solution of the relative displacement function of the cantilever beam as well as the output performance measures is analyzed and numerically investigated. Asymptotic expansions of the relative displacement function are calculated to obtain approximate expressions for the output index and the related output performance measures. Tips are then provided in terms of the structure design and performance optimization of piezoelectric energy harvesters. 
-
-\begin{quote}
-    Power harvesting refers to energy retraction from ambient
-    surroundings and converting it into useful electric energy. With
-    advances in wireless technology and low-power electronics,
-    energy harvesting from environmental resources has the
-    potential to power mobile and wireless microsystems where
-    battery replacement is either practically impossible or
-    prohibitively expensive [7, 26, 31, 48]. Due to the ubiquitous
-    presence of ambient vibrations, extensive research efforts
-    have been made for converting mechanical energy into
-    electrical power through piezoelectric, electromagnetic and
-    capacitive transducers [36, 40]. Amongst them, piezoelectric
-    vibration-to-electricity converters have been viewed as being
-    superior to other means, as they have high electromechanical
-    coupling, no external voltage source requirement and they
-    are particularly attractive for use in MEMS [15, 20, 40] and
-    nanosystems [28, 38]. As a result, the use of piezoelectric
-    materials for scavenging energy from ambient vibration
-    sources has recently witnessed a dramatic rise for power
-    harvesting [5, 13, 24, 25, 49, 56].
-    
-    A vibration-based piezoelectric energy harvesting system
-    includes three essential components: an oscillator, a
-    piezoelectric medium and an energy storage circuit, as
-    demonstrated in figure 1. An oscillator is designed to transmit
-    ambient vibrations into mechanical strain energy which is
-    converted into electrical energy via the direct piezoelectric
-    effect. The generated charges are accumulated through an
-    interfacing circuit for AC/DC conversion and presented to
-    a load circuit. Precisely, the power generator is typically
-    designed as a resonant oscillator since the peak power is
-    achieved when the driving frequency matches the device’s
-    resonance [40]. The transducer materials for energy conversion
-    include PZT, PVDF and the newly emerged ferroelectric
-    relaxors such as PMN-PT [30, 50]. They have been used in
-    various types of structures to serve specific purposes, such as
-    cantilever beams in transverse excitation bases [1, 16, 35] and
-    plates (diaphragms) in pressure-loaded environments [17, 32].
-    The layout of electrodes on the plate’s surfaces has to be
-    carefully patterned to avoid charge cancellation [18, 41]. The
-    design of generators based on non-resonant excitations has also
-    received considerable recent attention [3, 37, 42, 52].
-    
-    The circuit design is required for electrical compatibility
-    and maximum power transfer to the load. It consists of
-    AC/DC interfacing electronics connecting the piezoelectric
-    element to the terminal electric load. Power optimization
-    schemes therefore depend not only on the mechanical
-    solicitation, but also on the specific types of interfacing
-    circuits. This motivates a variety of research efforts for
-    proposing appropriate electronic interfaces. The most common
-    one is the standard interface which includes an AC/DC rectifier
-    followed by a filtering capacitance, as shown in the middle
-    of figure 1. Ottman et al [33] have studied the electrical
-    behavior of this standard system based on the uncoupled model
-    which simplifies the vibrating piezoelectric structure as the
-    current source in parallel with its internal capacitance. They
-    further developed adaptive DC/DC converters for impedance
-    matching [34]. Shu and Lien [44] subsequently proposed
-    an improved analysis for optimizing AC/DC power extraction
-    without the uncoupled assumption. They also investigated
-    the relation between electrically induced damping and
-    conversion efficiency for a rectified piezoelectric device [45]
-    (cf [22, 23, 39]). The result shows that optimization criteria
-    vary according to the relative strength of electromechanical
-    coupling to mechanical damping ratio. Guan and Liao [10, 11]
-    analyzed the charge/discharge efficiencies for several different
-    energy storage devices. Wu et al [54] and Wickenheiser et al
-    [53] investigated the transient behavior of a storage capacitor
-    under charging. Liu et al [27] used the switch-mode power
-    electronics to develop a scheme for active energy harvesting.
-    Based on the beam model, Huetal[14] numerically studied the
-    interaction between the piezoelectric vibrating structure and
-    the storage circuit.
-    
-    Another recently emerged energy harvesting circuit is the
-    ‘synchronized switch harvesting on inductor’ (SSHI) interface
-    which is added to the piezoelectric element together with the
-    standard DC technique, as also illustrated in the middle of
-    figure 1. This technique was proposed by Guyomar and his
-    co-workers [2, 12, 19, 21, 29] who have shown that power is
-    boosted significantly in a weakly coupled electromechanical
-    system. However, the effect of frequency deviation from
-    resonance on the electrical behavior of an SSHI system is not
-    taken into account in the original analysis. Instead, Shu et al
-    [46] have proposed several improved estimates for the parallel-
-    SSHI circuit accounting for this effect. They have shown that
-    the electrical response of a parallel-SSHI system is similar to
-    that of a strongly coupled electromechanical standard system
-    operated at the short circuit resonance. Furthermore, this
-    technique improves the scavenger’s bandwidth significantly
-    in comparison to the standard technique. Here, we
-    provide another improved analysis for electrical performance
-    evaluation of a series-SSHI system. It takes into account the
-    full electromechanical coupling response and vibration phase-
-    shift effect, and therefore the analysis is capable of revealing
-    the system characteristics in the vicinity of resonance. The
-    results show that the electrical behaviors of these two ideal
-    SSHI systems are conjugate with each other in comparison
-    to the standard technique. However, they exhibit a dissimilar
-    response if the effect of diode loss is considered. It turns out the
-    feature of wide band could be lost in practical devices endowed
-    with series-SSHI circuits. Finally, some of our preliminary
-    results have been reported in a conference paper [47]. Here,
-    we systematically derive the main results with numerical
-    validation and provide discussions concerning electrical loss
-    in detail.
-    
-    This paper is organized as follows. First a piezoelectric
-    transducer is modeled as a lumped single-degree-of-freedom
-    system undergoing periodic forcing in section 2. A number
-    of research efforts based on the distributed parameter methods
-    have been made for analyzing a vibrating piezoelectric
-    structure connected to a single resistor [4, 8, 9, 16, 43].
-    They show advantages in predicting the model shapes, strain
-    distribution and energy harvesting performance based on
-    geometry and material properties of a structure. However,
-    difficulties arise if the nonlinear interfacing circuits are
-    taken into account in analysis [14]. Limited success has
-    been achieved by bridging structural modeling and circuit
-    simulation such as coupled FEM–SPICE models [6, 55].
-    Hence, if the focus is the overall electrical behavior rather than
-    the detailed response at each specific point of a structure, the
-    reduced model suffices the need for harvesting circuit design.
-    Subsequently, an energy harvester using the standard circuit
-    is introduced in section 2.1 and the electrical response of a
-    series-SSHI system is analyzed in detail in section 2.2. The
-    harvested power is derived and expressed explicitly in terms of
-    several dimensionless system parameters. The operating points
-    for achieving optimal power is also discussed there. For the
-    purpose of comparison, the electrical behavior of a parallel-
-    SSHI system is briefly reviewed in section 2.3. Next, the results
-    are numerically validated in section 3.1 and are discussed
-    under the case of non-ideal voltage inversion in section 3.2 and
-    the case of diode loss in section 3.3. The conclusions are made
-    in section 4.
-\end{quote}
-
-
-
 
 
 \newpage
