@@ -29,21 +29,69 @@ Roundy S, Wright PK, Rabaey J.
   nodes.
 \newblock Computer communications. 2003;26(11):1131--1144.
 
-\bibitem{shu2006analysis}
-Shu Y, Lien I.
-\newblock Analysis of power output for piezoelectric energy harvesting systems.
-\newblock Smart materials and structures. 2006;15(6):1499.
+\bibitem{dutoit2005design}
+Dutoit NE, Wardle BL, Kim SG.
+\newblock Design considerations for MEMS-scale piezoelectric mechanical
+  vibration energy harvesters.
+\newblock Integrated ferroelectrics. 2005;71(1):121--160.
 
-\bibitem{shu2007improved}
-Shu Y, Lien I, Wu W.
-\newblock An improved analysis of the SSHI interface in piezoelectric energy
+\bibitem{stephen2006energy}
+Stephen NG.
+\newblock On energy harvesting from ambient vibration.
+\newblock Journal of sound and vibration. 2006;293(1-2):409--425.
+
+\bibitem{cottone2009nonlinear}
+Cottone F, Vocca H, Gammaitoni L.
+\newblock Nonlinear energy harvesting.
+\newblock Physical Review Letters. 2009;102(8):080601.
+
+\bibitem{erturk2008mechanical}
+Erturk A, Inman DJ.
+\newblock On mechanical modeling of cantilevered piezoelectric vibration energy
+  harvesters.
+\newblock Journal of intelligent material systems and structures.
+  2008;19(11):1311--1325.
+
+\bibitem{crandall1968dynamics}
+Crandall SH.
+\newblock Dynamics of mechanical and electromechanical systems.
+\newblock McGraw-Hill; 1968.
+
+\bibitem{kreyszig1978introductory}
+Kreyszig E.
+\newblock Introductory functional analysis with applications. vol.~1.
+\newblock wiley New York; 1978.
+
+\bibitem{hagood1990modelling}
+Hagood NW, Chung WH, Von~Flotow A.
+\newblock Modelling of piezoelectric actuator dynamics for active structural
+  control.
+\newblock Journal of intelligent material systems and structures.
+  1990;1(3):327--354.
+
+\bibitem{sodano2004estimation}
+Sodano HA, Park G, Inman D.
+\newblock Estimation of electric charge output for piezoelectric energy
   harvesting.
-\newblock Smart Materials and Structures. 2007;16(6):2253.
+\newblock Strain. 2004;40(2):49--58.
 
-\bibitem{qiu2009comparison}
-Qiu J, Jiang H, Ji H, Zhu K.
-\newblock Comparison between four piezoelectric energy harvesting circuits.
-\newblock Frontiers of Mechanical Engineering in China. 2009;4(2):153--159.
+\bibitem{lu2003modeling}
+Lu F, Lee H, Lim S.
+\newblock Modeling and analysis of micro piezoelectric power generators for
+  micro-electromechanical-systems applications.
+\newblock Smart Materials and Structures. 2003;13(1):57.
+
+\bibitem{chen2006analytical}
+Chen SN, Wang GJ, Chien MC.
+\newblock Analytical modeling of piezoelectric vibration-induced micro power
+  generator.
+\newblock Mechatronics. 2006;16(7):379--387.
+
+\bibitem{ajitsaria2007modeling}
+Ajitsaria J, Choe SY, Shen D, Kim D.
+\newblock Modeling and analysis of a bimorph piezoelectric cantilever beam for
+  voltage generation.
+\newblock Smart Materials and Structures. 2007;16(2):447.
 
 \bibitem{erturk2008distributed}
 Erturk A, Inman DJ.
