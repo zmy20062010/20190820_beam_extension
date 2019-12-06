@@ -111,4 +111,25 @@ Erturk A, Tarazaga PA, Farmer JR, Inman DJ.
   energy harvesting from cantilevered beams.
 \newblock Journal of Vibration and Acoustics. 2009;131(1):011010.
 
+\bibitem{shu2006analysis}
+Shu Y, Lien I.
+\newblock Analysis of power output for piezoelectric energy harvesting systems.
+\newblock Smart materials and structures. 2006;15(6):1499.
+
+\bibitem{shu2007improved}
+Shu Y, Lien I, Wu W.
+\newblock An improved analysis of the SSHI interface in piezoelectric energy
+  harvesting.
+\newblock Smart Materials and Structures. 2007;16(6):2253.
+
+\bibitem{qiu2009comparison}
+Qiu J, Jiang H, Ji H, Zhu K.
+\newblock Comparison between four piezoelectric energy harvesting circuits.
+\newblock Frontiers of Mechanical Engineering in China. 2009;4(2):153--159.
+
+\bibitem{weaver1990vibration}
+Weaver~Jr W, Timoshenko SP, Young DH.
+\newblock Vibration problems in engineering.
+\newblock John Wiley \& Sons; 1990.
+
 \end{thebibliography}

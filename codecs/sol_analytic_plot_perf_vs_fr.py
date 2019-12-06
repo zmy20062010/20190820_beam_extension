@@ -66,7 +66,7 @@ pow_list = np.zeros(np.shape(sqlam_list), dtype=complex)
 
 
 
-plt.figure(1, figsize=(12,5))
+plt.figure(1, figsize=(8,6))
 
 Rl = 1.0e2
 for i in range(sqlam_list.size):
@@ -76,7 +76,7 @@ for i in range(sqlam_list.size):
 
     ue1_list[i] = output[0]
     vol_list[i] = output[1]
-plt.plot(fr_list, np.abs(vol_list)/wr_list/wr_list/xib, 'r', label='$R_l = 10^2 \\Omega$')
+plt.plot(fr_list, np.abs(vol_list)/wr_list/wr_list/xib, 'r.', label='$R_l = 10^2 \\Omega$')
 Rl = 1.0e3
 for i in range(sqlam_list.size):
     sqlam  = sqlam_list[i]
@@ -85,7 +85,7 @@ for i in range(sqlam_list.size):
 
     ue1_list[i] = output[0]
     vol_list[i] = output[1]
-plt.plot(fr_list, np.abs(vol_list)/wr_list/wr_list/xib, 'b', label='$R_l = 10^3 \\Omega$')
+plt.plot(fr_list, np.abs(vol_list)/wr_list/wr_list/xib, 'b--', label='$R_l = 10^3 \\Omega$')
 Rl = 1.0e4
 for i in range(sqlam_list.size):
     sqlam  = sqlam_list[i]
@@ -94,7 +94,7 @@ for i in range(sqlam_list.size):
 
     ue1_list[i] = output[0]
     vol_list[i] = output[1]
-plt.plot(fr_list, np.abs(vol_list)/wr_list/wr_list/xib, 'c', label='$R_l = 10^4 \\Omega$')
+plt.plot(fr_list, np.abs(vol_list)/wr_list/wr_list/xib, 'c-.', label='$R_l = 10^4 \\Omega$')
 Rl = 1.0e5
 for i in range(sqlam_list.size):
     sqlam  = sqlam_list[i]
@@ -103,7 +103,7 @@ for i in range(sqlam_list.size):
 
     ue1_list[i] = output[0]
     vol_list[i] = output[1]
-plt.plot(fr_list, np.abs(vol_list)/wr_list/wr_list/xib, 'm', label='$R_l = 10^5 \\Omega$')
+plt.plot(fr_list, np.abs(vol_list)/wr_list/wr_list/xib, 'm--', label='$R_l = 10^5 \\Omega$')
 Rl = 1.0e6
 for i in range(sqlam_list.size):
     sqlam  = sqlam_list[i]
@@ -118,14 +118,16 @@ plt.plot(fr_list, np.abs(vol_list)/wr_list/wr_list/xib, 'k', label='$R_l = 10^6 
 
 plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
 plt.yscale('log')
-plt.xlabel('Base excitation frequency $f_b$ ($Hz$)')
-plt.ylabel('Normalized output voltage $| \\tilde{V}_p/(\\sigma_b^2 \\xi_b) |$ ($V \\cdot s^2 / m$)')
+plt.xlabel('Base excitation frequency $f_b$ ($Hz$)', fontsize=16)
+plt.ylabel('Normalized output voltage $| \\tilde{V}_p/(\\sigma_b^2 \\eta_b) |$ ($V \\cdot s^2 / m$)', fontsize=16)
 plt.grid(True)
-plt.legend()
+lgd = plt.legend(loc='center left', bbox_to_anchor=(1, 0.5),
+          fancybox=True, shadow=True)
 
-plt.tight_layout()
-# plt.savefig('fig_sol_analytic_perf_vs_fr.jpg',dpi=300)
-# plt.savefig('fig_sol_analytic_perf_vs_fr.eps')
-# plt.savefig('fig_sol_analytic_perf_vs_fr.pdf')
+
+# plt.tight_layout()
+plt.savefig('fig_sol_analytic_perf_vs_fr.jpg',dpi=300, bbox_extra_artists=(lgd,), bbox_inches='tight')
+plt.savefig('fig_sol_analytic_perf_vs_fr.eps', bbox_extra_artists=(lgd,), bbox_inches='tight')
+plt.savefig('fig_sol_analytic_perf_vs_fr.pdf', bbox_extra_artists=(lgd,), bbox_inches='tight')
 
 plt.show()

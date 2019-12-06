@@ -52,45 +52,33 @@ To address the issues, a formal expansion method is developed based on the theor
 Here in this contribution, we focus on an exact analytical model classical PVEHs. Based on the Euler-Bernoulli beam model and the linear piezoelectric relations, electromechanical model of the energy harvester is established, and then converted to a boundary value problem of ordinary differential equations using the harmonic balance method. Closed-form solution of the relative displacement function of the cantilever beam as well as the output performance measures is analyzed and numerically investigated. Asymptotic expansions of the relative displacement function are calculated to obtain approximate expressions for the output index and the related output performance measures. Tips are then provided in terms of the structure design and performance optimization of piezoelectric energy harvesters. 
 
 
-\section{Summary of the interested equations}
+\section{Mathematical model for a typical PVEH}
 
-As shown in Figure~\ref{fig:fig_pveh}, a typical PVEH is composed of composite cantilever beam and attached to a host structure. An external pure resistance is connected to piezoelectric elements, usually in the forms of films or plates. Actually, this is a little bit of an oversimplification in the sense that practical electrical loads usually involves capacitors and inductors and that some interface circuits and power management circuits are usually needed to achieve a better energy harvesting performance. \textcolor{red}{refs to be added} Nonetheless, the pure resistant load is widely used for the sake of simplicity.
+As shown in Figure~\ref{fig:fig_pveh}, a typical PVEH is composed of a piezoelectric composite cantilever beam attached to a host structure. For the sake of simplicity, a pure resistor is generally connected to the piezoelectric elements to represent practical electrical loads. Actually, this is a little bit of an oversimplification in the sense that no external capcitors and inductors are included in the system and that extra interface circuits and power management circuits are usually needed to achieve a better energy harvesting performance. \cite{shu2006analysis,shu2007improved,qiu2009comparison} 
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.6\textwidth]{./img_eig_asy/fig_pveh}
-    \caption{Schematic diagram of a typical PVEH.}
+    \includegraphics[width=0.8\textwidth]{./img_eig_asy/fig_pveh}
+    \caption{Schematic diagram of a typical PVEH. The bimorph structure of the PVEH is just for demonstration. Actually, many different configurations can be adopted. }
     \label{fig:fig_pveh}
 \end{figure}
 
-
-
-
-
-The dynamic equations for a typical piezoelectric composite cantilever beam is 
+Based on the Euler-Bernoulli assumptions, mechanical response of the piezoelectric composite beam is described by the classical equations
 \begin{equation}
     B_p \frac{\partial^4 w(x,t)}{\partial x^4} + m_p \frac{\partial^2 w(x,t)}{\partial t^2} = 0,
 \end{equation}
-where $B_p$ is the equivalent bending stiffness and $m_p$ is the line mass density of the piezoelectric cantilever beam. If the piezoelectric elements attached to the cantilever beam is connected to an external electrical load $R_l$, we have 
+where $w(x,t)$ denotes the displacement function of the composite beam, $B_p$ is the equivalent bending stiffness and $m_p$ is the line mass density of the piezoelectric cantilever beam. If the piezoelectric elements attached to the cantilever beam is connected to an external electrical load $R_l$, we have 
 \begin{equation}
-    \frac{d Q_p(t)}{d t} + \frac{V_p(t)}{R_l} = 0.
+    \frac{d Q_p(t)}{d t} + \frac{V_p(t)}{R_l} = 0,
 \end{equation}
-For the underlying physics, we have the following constitutive equations
-\begin{equation}
-    \begin{aligned}
-        M_p(x,t) &= B_p \frac{\partial^2 w(x,t)}{\partial x^2} - e_p V_p(t), \\
-        q_p(x,t) &= e_p \frac{\partial^2 w(x,t)}{\partial x^2} + \varepsilon_p V_p(t),
-    \end{aligned}
-\end{equation}
-or equivalently,
+in which $Q_p(t)$ is the accumulated charge on the electrodes, and $V_p(t)$ is the voltage output across the load resistor $R_l$. Deriving from the classic piezoelectric constitutive relations, we have 
 \begin{equation}
     \left\{\begin{aligned}
         M_p(x,t) &= B_p \frac{\partial^2 w(x,t)}{\partial x^2} - e_p V_p(t), \\
-        Q_p(x,t) &= e_p \left.\left[ \frac{\partial w(x,t)}{\partial x} \right]\right|_0^{l_p} + C_p V_p(t).
+        Q_p(x,t) &= e_p \left.\left[ \frac{\partial w(x,t)}{\partial x} \right]\right|_0^{l_p} + C_p V_p(t),
     \end{aligned}\right.
 \end{equation}
-
-One end of the cantilever beam is fixed while the other end is free. So the boundary conditions are
+where $e_p$ is the piezoelectric coupling coefficient, $C_p$ is the equivalent internal capacitance of the piezoelectric elements, and $l_p$ is the length of the composite beam. As one end of the cantilever beam is attached to the host structure and subject to base excitation. The boundary conditions for the problems are 
 \begin{equation}
     \left\{\begin{aligned}
         w(0,t) &= w_b(t), \\
@@ -101,75 +89,57 @@ and
 \begin{equation}
     \left\{\begin{aligned}
         M_p(l_p,t) &= B_p \frac{\partial^2 w(l_p,t)}{\partial x^2} - e_p V_p(t) = 0, \\
-        N_p(l_p,t) &= \frac{\partial M_p(l_p,t)}{\partial x} = B_p \frac{\partial^3 w(l_p,t)}{\partial x^3} = 0.
+        N_p(l_p,t) &= \frac{\partial M_p(l_p,t)}{\partial x} = B_p \frac{\partial^3 w(l_p,t)}{\partial x^3} = 0,
     \end{aligned}\right.
 \end{equation}
-
-
-\section{Theoretical solution to the problem}
-
-In the classical energy harvesting applications, the cantilever beam is subject to a periodical base excitation $w_b(t)$. Thus the dynamic response of the cantilever beam is decomposed as 
+where $w_b(t)$ is the base excitation displacement, $M_p$ and $N_p$ are the total moment and shear force in the cross section respectively. To make things simpler, the displacement function $w(x,t)$ is be decomposed as 
 \begin{equation}
     w(x,t) = w_b(t) + w_{rel}(x,t),
 \end{equation}
-where $w_{rel}(x,t)$ is the relative displacement function of the cantilever beam. In this way, the system is converted into 
-\begin{equation}
-    B_p \frac{\partial^4 w_{rel}(x,t)}{\partial x^4} + m_p \frac{\partial^2 w_{rel}(x,t)}{\partial t^2} = - m_p \frac{\partial^2 w_{b}(t)}{\partial t^2},
-\end{equation}
-\begin{equation}
-    e_p \left.\left[ \frac{\partial^2 w_{rel}(x,t)}{\partial x \partial t}\right]\right|_0^{l_p} + C_p \frac{d V_p(t)}{d t} + \frac{V_p(t)}{R_l} = 0.
-\end{equation}
-\begin{equation}
-    \left\{\begin{aligned}
-        w_{rel}(0,t) &= 0, \\
-        \frac{\partial w_{rel}(0,t)}{\partial x} &= 0,
-    \end{aligned}\right.
-\end{equation}
-and
-\begin{equation}
-    \left\{\begin{aligned}
-        B_p \frac{\partial^2 w_{rel}(l_p,t)}{\partial x^2} - e_p V_p(t) &= 0, \\
-        \frac{\partial^3 w_{rel}(l_p,t)}{\partial x^3} &= 0.
-    \end{aligned}\right.
-\end{equation}
-
-Considering a sinusoidal base excitation
+where $w_{rel}(x,t)$ is the relative displacement function of the composite beam. We are principally interested in a sinusoidal base excitation $w_b(t)$ which is given by
 \begin{equation}
     w_b(t) = \eta_b e^{j \sigma_b t}
 \end{equation}
-where $\xi_b$ is usually a real vibration amplitude, the steady state solution for the above system can be reasonably set as
+where $\eta_b$ is the amplitude of base excitation, and $\sigma_b = 2 \pi f_b$ is the angular frequency of base excitation with $f_b$ being the base excitation frequency. Here we use a simplified version of complex representation of a periodical signal. The term $e^{j \sigma_b t}$ should actually be $Re\left\{e^{j \sigma_b t}\right\}$. Nevertheless, this won't cause any problem in the following text and serves to simplify the calculation process. It should be noted that the amplitude $\eta_b$ is generally a real number as we assume the base excitation always possesses zero phase angle. 
+
+Considering the steady state response of the PVEH to base excitation $w_b(t)$, the relative displacement function $w_{rel}(x,t)$ and output voltage $V_p(t)$ can then reasonably be represented as 
 \begin{equation}
     w_{rel}(x,t) = \eta_{rel}(x) e^{j \sigma_b t},\quad V_p(t) = \tilde{V}_p e^{j \sigma_b t},
 \end{equation}
-where $\eta_{rel}(x)$ and $\tilde{V}_p$ are complex amplitudes. Then the above system is again simplified as 
+respectively, where $\eta_{rel}(x)$ and $\tilde{V}_p$ are complex amplitudes. In this way, the above model for the PVEH is simplified as 
+\begin{subequations}
 \begin{equation}
     B_p \frac{\partial^4 \eta_{rel}(x)}{\partial x^4} - m_p \sigma_b^2 \eta_{rel}(x) = m_p \sigma_b^2 \eta_{b},
+    \label{eq:eq_dimensional_system_dynamics}
 \end{equation}
 \begin{equation}
-    \left\{\begin{aligned}
-        \eta_{rel}(0) &= 0, \\
-        \frac{\partial \eta_{rel}(0)}{\partial x} &= 0,
-    \end{aligned}\right.
+    \eta_{rel}(0) = 0,
+    \label{eq:eq_dimensional_system_bc0_disp}
 \end{equation}
-and
 \begin{equation}
-    \left\{\begin{aligned}
-        B_p \frac{\partial^2 \eta_{rel}(l_p)}{\partial x^2} + \frac{j \sigma_b R_l }{1 + j \sigma_b C_p R_l } e_p^2 \frac{\partial \eta_{rel}(l_p)}{\partial x} &= 0, \\
-        \frac{\partial^3 \eta_{rel}(l_p)}{\partial x^3} &= 0.
-    \end{aligned}\right.
+    \frac{\partial \eta_{rel}(0)}{\partial x} = 0,
+    \label{eq:eq_dimensional_system_bc0_slope}
 \end{equation}
-\textcolor{red}{Note that here we assume a sinusoidal steady state response, which is not actually validated theoretically. }
+\begin{equation}
+    B_p \frac{\partial^2 \eta_{rel}(l_p)}{\partial x^2} + \frac{j \sigma_b R_l }{1 + j \sigma_b C_p R_l } e_p^2 \frac{\partial \eta_{rel}(l_p)}{\partial x} = 0, \\
+    \label{eq:eq_dimensional_system_bc1_torque}
+\end{equation}
+\begin{equation}
+    \frac{\partial^3 \eta_{rel}(l_p)}{\partial x^3} = 0.
+    \label{eq:eq_dimensional_system_bc1_force}
+\end{equation}
+\end{subequations}
+Here some discussions are to be made. Due to the existence of piezoelectric effect, the boundary conditions (\ref{eq:eq_dimensional_system_bc1_torque}) is tuned and deviates from the case of a pure elastic cantilever beam. \cite{weaver1990vibration} Hence for the related free vibration problem, the eigenvalue and eigenfunctions are different from that of a pure elastic cantilever beam, which is adopted in the work by Erturk and Inman \cite{erturk2008distributed,erturk2009experimentally}. Therefore the method used by Erturk and Inman \cite{erturk2008distributed,erturk2009experimentally} to expand the relative displacement function $\eta_{rel}(x)$ in terms of the eigenfunctions for a pure elastic cantilever beam is a formal one in the sense that the boundary conditions are not fulfilled by the eigenfunctions. Nonetheless, due to the orthogonality of the eigenfunctions, the expansion is mathematically feasible and a considerable accuracy can be achieved when the number of terms of expansion is large enough. This is not a perfect solution. We would like in the following to derive an exact solution to the steady state response.
 
-
-Obviously we can have the following dimensionless scheme:
+To enhance the universality of our solution, we adopt the following dimensionless scheme
 \begin{equation}
-    \eta_{rel} \sim u \eta_b ,\quad x \sim z l_p 
+    u = \eta_{rel} / \eta_b ,\quad z = x / l_p 
 \end{equation}
-and therefore the following dimensionless parameters
+and therefore obtain the following dimensionless parameters
 \begin{equation}
     \sigma = \sigma_b \sqrt{\frac{m_p l_p^4}{B_p}}, \quad \beta = R_l C_p \sqrt{\frac{B_p}{m_p l_p^4}}, \quad \delta = \frac{e_p^2 l_p}{C_p B_p}.
 \end{equation}
-Now, we reach the following dimensionless system of boundary value problem
+Now, the above problem is converted into the following system of boundary value problem
 \begin{equation}
     \left\{\begin{aligned}
         u^{\prime\prime\prime\prime} -\sigma^2 u &= \sigma^2, \\
@@ -178,21 +148,19 @@ Now, we reach the following dimensionless system of boundary value problem
         u^{\prime\prime}(1)  + \frac{j \beta \sigma }{1 + j \beta \sigma } \delta u^{\prime}(1) &= 0, \\
         u^{\prime\prime\prime}(1) &= 0,
     \end{aligned}\right.
+    \label{eq:eq_dimensionless_system_all}
 \end{equation}
-where the prime denotes the derivative with respect to $z$. The analytical solution to this problem can be formulated as
+where the prime denotes the derivative with respect to $z$.
+
+
+\section{Theoretical analysis of the model}
+
+The boundary value problem (\ref{eq:eq_dimensionless_system_all}) is a linear problem depending on the three dimensionless parameters $\beta$, $\sigma$, and $\delta$. Due to the presence of complex tuning terms in the boundary conditions, the solution $u(z)$ is generically a complex function. The analytical solution to this problem can be formulated as
 \begin{equation}
-    u(z;\delta) = A_\delta \cos{\sqrt{\sigma}z} + B_\delta \sin{\sqrt{\sigma}z} + C_\delta \cosh{\sqrt{\sigma}z} + D_\delta \sinh{\sqrt{\sigma}z} - 1
+    u(z;\delta) = A_\delta \cos{\sqrt{\sigma}z} + B_\delta \sin{\sqrt{\sigma}z} + C_\delta \cosh{\sqrt{\sigma}z} + D_\delta \sinh{\sqrt{\sigma}z} - 1.
     \label{eq:eq_disp_func_general_coeffs}
 \end{equation}
-and hence
-\begin{equation}
-    \begin{aligned}
-        u^{\prime}(z;\delta) &= \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}z} + B_\delta \cos{\sqrt{\sigma}z} + C_\delta \sinh{\sqrt{\sigma}z} + D_\delta \cosh{\sqrt{\sigma}z} \right), \\
-        u^{\prime\prime}(z;\delta) &= \sigma  \left( - A_\delta \cos{\sqrt{\sigma}z} - B_\delta \sin{\sqrt{\sigma}z} + C_\delta \cosh{\sqrt{\sigma}z} + D_\delta \sinh{\sqrt{\sigma}z} \right), \\
-        u^{\prime\prime\prime}(z;\delta) &= \sigma^{3/2} \left( A_\delta \sin{\sqrt{\sigma}z} - B_\delta \cos{\sqrt{\sigma}z} + C_\delta \sinh{\sqrt{\sigma}z} + D_\delta \cosh{\sqrt{\sigma}z} \right). 
-    \end{aligned}
-\end{equation}
-The coefficients $A_\delta$, $B_\delta$, $C_\delta$, and $D_\delta$ are then subject to the following linear system of equations:
+Here we use the notation $u(z;\delta)$ to emphasize the dependence of the function $u(z)$ upon parameter $\delta$. In the following text, we will frequently use these two notations interchangeably unless otherwise declared. The coefficients $A_\delta$, $B_\delta$, $C_\delta$, and $D_\delta$ are then subject to the following linear system of equations:
 \begin{equation}
     \left\{\begin{aligned}
         A_\delta + C_\delta &= 1, \\
@@ -202,8 +170,6 @@ The coefficients $A_\delta$, $B_\delta$, $C_\delta$, and $D_\delta$ are then sub
         A_\delta \sin{\sqrt{\sigma}} - B_\delta \cos{\sqrt{\sigma}} + C_\delta \sinh{\sqrt{\sigma}} + D_\delta \cosh{\sqrt{\sigma}} &= 0.
     \end{aligned}\right.
 \end{equation}
-
-
 Analytically, we can directly obtain the solution to this problem as 
 \begin{equation}
     \left\{\begin{aligned}
@@ -214,92 +180,83 @@ Analytically, we can directly obtain the solution to this problem as
     \end{aligned}\right.
     \label{eq:eq_disp_func_coeffs_exps}
 \end{equation}
-% and fixing the other three parameters $\sigma$, $\beta$, and $r_d$ according to the data shown in \cite{erturk2008distributed,erturk2009experimentally}
-% the performance of a piezoelectric energy harvesting cantilever. The results are plotted in Figure~\ref{fig:fig_sol_analytic_disp_fun}. and Figure~\ref{fig:fig_sol_analytic_perf_fun}.
 
-Firstly, to validate the closed form solution $u(z;\delta)$, we calculate the corresponding normalized output voltage $| \tilde{V}_p/(\sigma_b^2 \xi_b) |$ and plot the results with respect to the base excitation frequency $fr$ at different externally connected resistance $R_l$. The results are shown in Figure~\ref{fig:fig_sol_analytic_perf_vs_fr}. According to the results, our calculations show a good agreement with those presented in the reference. \cite{erturk2008distributed}. Thus we have validated the model and the results and made our preparations for future analysis. It should be noted that, out results show an obvious difference from those in the literature \cite{erturk2008distributed} near the resonant frequencies. This could explained as follows. In our numerical calculations, the frequency range can be chosen to be as small as possible. A finer calculation grid leads to a sharper resonant peak. Another point to be noted is that at the resonant peak, the output voltage should arrive at its maximum and its derivative with respect to $fr$ should be zero and the second order derivative should be infinity. In this way, a small discrepancy of the frequency from the resonant frequency leads to a large change in the normalized output voltage. 
+Equations (\ref{eq:eq_disp_func_general_coeffs}) and (\ref{eq:eq_disp_func_coeffs_exps}) suffice to determine the analytical solution to the problem (\ref{eq:eq_dimensionless_system_all}). To validate this form of solution expressions for $u(z;\delta)$, we use the physical and mechanical parameters shown in \cite{erturk2008distributed} and calculate the dimensionless relative displacement function $u(z;\delta)$ and the corresponding normalized output voltage $| \tilde{V}_p/(\sigma_b^2 \eta_b) |$ at different base excitation frequency $f_b$ and load resistance $R_l$. The results are presented in Figure~\ref{fig:fig_sol_analytic_perf_vs_fr_mod}, where Figure~\ref{fig:fig_sol_analytic_perf_vs_fr_mod}(a) contains the results calculated by our method and Figure~\ref{fig:fig_sol_analytic_perf_vs_fr_mod}(b) is adapted from the reference \cite{erturk2008distributed}. It is seen that the two sets of results are close to each other, especially at small values of $f_b$. No obvious difference is present for the resonant frequency of the first order resonant mode. However the calculated resonant frequency for higher order resonant mode is clearly different. The third order resonant frequency is smaller than $800\ Hz$ in our model but larger than $800\ Hz$ in the model by Erturk and Inman \cite{erturk2008distributed}. Besides, the behaviors of the two solutions are different around the resonance. Our model predict a sharper peak. This could explained as follows. In the numerical calculations of our model, the grid steps for frequency can be chosen to be as small as possible. A finer calculation grid leads to a sharper resonant peak. Besides, the calculation of the model by Erturk and Inman \cite{erturk2008distributed} always involves with the truncation of the infinite expansion into finite terms, which introduces considerable error for larger values of $f_b$, especially at resonance. 
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_perf_vs_fr}
-    \caption{Validation calculation of the normalized output voltage versus base excitation frequency for a unimorph piezoelectric cantilever energy harvester based on the data from \cite{erturk2008distributed}.}
-    \label{fig:fig_sol_analytic_perf_vs_fr}
+    \includegraphics[width=0.8\textwidth]{./img_eig_asy/fig_sol_analytic_perf_vs_fr_mod}
+    \caption{Comparison of the currently obtained results (a) with that (b) by Erturk and Inman \cite{erturk2008distributed}.}
+    \label{fig:fig_sol_analytic_perf_vs_fr_mod}
 \end{figure}
 
-Secondly, according to equations (\ref{eq:eq_disp_func_general_coeffs}) and (\ref{eq:eq_disp_func_coeffs_exps}), the dimensionless displacement amplitude function $u(z)$ is totally determined by the three dimensionless parameters $\sigma$, $\beta$, and $\delta$ introduced before. Among the dimensionless parameters, $\sigma$ is the dimensionless base excitation frequency, $\beta$ is the dimensionless electrical resonant frequency, and $\delta$ is the dimensionless electromechanical coupling strength for the structure. As $\sigma$ and $\beta$ is determined by the base excitation and externally connected circuit respectively, only the parameter $\delta$ is fully determined by the structure itself. Hence we would like to investigate the influence of parameter $\delta$ upon the solution displacement function $u(z)$. By taking different values of $\delta$ , we calculate the displacement amplitude function $u(z)$ and plot the results in Figure~\ref{fig:fig_sol_analytic_disp_fun}.
+
+After validation, we are interested in the influence of parameter value $\delta$ upon the resulting dimensionless relative displacement function $u(z;\delta)$. According to equations (\ref{eq:eq_disp_func_general_coeffs}) and (\ref{eq:eq_disp_func_coeffs_exps}), the dimensionless relative displacement function $u(z;\delta)$ is completely determined by the three dimensionless parameters $\sigma$, $\beta$, and $\delta$. which can be interpreted as the dimensionless base excitation frequency, the dimensionless electrical resonant frequency, and the dimensionless electromechanical coupling strength for the PVEH respectively. As $\sigma$ and $\beta$ is determined by the base excitation $f_b$ and externally connected load $R_l$ respectively, only the parameter $\delta$ is fully determined by the structure itself. By taking different values of $\delta$ , we calculate the dimensionless relative displacement function $u(z;\delta)$ and plot the results in Figure~\ref{fig:fig_sol_analytic_disp_fun}.
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_fun.jpg}
-    \caption{Amplitude and phase of the displacement function $u(z)$ for difference values of $\delta$ }
+    \caption{Modulus (left panel) and phase (left panel) of the displacement function $u(z;\delta)$ for different values of $\delta$. Note that for the case of $\delta = 0$ and $\delta = \infty$, the phase is always zero and hence invisible in the figure. The results are calculated at the parameter value of $\beta = 0.064$ and $\sigma = 1.557$.}
     \label{fig:fig_sol_analytic_disp_fun}
 \end{figure}
 
-
-
-
-
-It is shown in Figure~\ref{fig:fig_sol_analytic_disp_fun}, the parameter $\delta$ changes the function $u(z)$ through the change of the third boundary condition (\textcolor{red}{to be inserted}). When $\delta$ is zero, i.e., no electromechanical coupling is present, the system degenerates to the classical elastic cantilever beam problem, whose solution is a real function. That is to say, the phase of $u(z)$ is a constant across the whole beam (in the range of $0 \leq z \leq 1$).
-Analytical expressions for the coefficients are 
+It is shown in Figure~\ref{fig:fig_sol_analytic_disp_fun} that the parameter $\delta$ changes the function $u(z;\delta)$ through the change of the third boundary condition in the system (\ref{eq:eq_dimensionless_system_all}). When $\delta$ is zero, i.e., no electromechanical coupling is present, the system degenerates to the classical elastic cantilever beam problem, whose solution is a real function. That is to say, the phase of $u(z;\delta)$ is constantly zero across the whole beam (in the range of $0 \leq z \leq 1$).
+Analytical expressions for the coefficients in this case are 
 \begin{equation}
     \left\{\begin{aligned}
         A_{\varnothing} &= \frac{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } - \sin\sqrt{\sigma } \sinh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
         B_{\varnothing} &= \frac{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
         C_{\varnothing} &= \frac{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \sin\sqrt{\sigma } \sinh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}, \\
-        D_{\varnothing} &= \frac{ -\cos\sqrt{\sigma } \sinh\sqrt{\sigma } - \sin\sqrt{\sigma } \cosh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]}.
+        D_{\varnothing} &= \frac{ -\cos\sqrt{\sigma } \sinh\sqrt{\sigma } - \sin\sqrt{\sigma } \cosh\sqrt{\sigma} }{2 \left[ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } \right]},
     \end{aligned}\right.
     \label{eq:eq_disp_func_coeffs_exps_zero}
 \end{equation}
-and the resulting dimensionless displacement function $u_{\varnothing} (z)$ is represented as
+and the resultant dimensionless relative displacement function $u_{\varnothing} (z)$ is represented as
 \begin{equation}
     u_{\varnothing} (z) = A_{\varnothing} \cos{\sqrt{\sigma}z} + B_{\varnothing} \sin{\sqrt{\sigma}z} + C_{\varnothing} \cosh{\sqrt{\sigma}z} + D_{\varnothing} \sinh{\sqrt{\sigma}z} - 1.
 \end{equation}
-When the electromechanical coupling is extremely strong, and $\delta$ is extremely large and can be seen as $\infty$ in mathematical sense. In this situation, the solution $u_\infty (z)$ is again real without any phase difference in the $z$ direction. The coefficients can be analytically expressed as 
+When the electromechanical coupling is extremely strong, $\delta$ is extremely large and can be seen as $\infty$ in mathematical sense. In this situation, the solution $u_\infty (z)$ is again real without any phase difference in the $z$ direction. The coefficients can be analytically expressed as 
 \begin{equation}
     \left\{\begin{aligned}
         A_\infty &= \frac{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } }{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }, \\
         B_\infty &= \frac{ \sin\sqrt{\sigma } \sinh\sqrt{\sigma } }{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }, \\
         C_\infty &= \frac{ \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }, \\
-        D_\infty &= \frac{ - \sin\sqrt{\sigma } \sinh\sqrt{\sigma } }{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } }.
+        D_\infty &= \frac{ - \sin\sqrt{\sigma } \sinh\sqrt{\sigma } }{ \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } },
     \end{aligned}\right.
     \label{eq:eq_disp_func_coeffs_exps_infty}
 \end{equation}
-and hence the dimensionless displacement function $u_{\infty} (z)$ is
+and hence the dimensionless relative displacement function $u_{\infty} (z)$ is
 \begin{equation}
     u_{\infty} (z) = A_{\infty} \cos{\sqrt{\sigma}z} + B_{\infty} \sin{\sqrt{\sigma}z} + C_{\infty} \cosh{\sqrt{\sigma}z} + D_{\infty} \sinh{\sqrt{\sigma}z} - 1.
 \end{equation}
-While a finite non-zero electromechanical coupling factor $\delta$ is present, which is expected in most applications, the resulting dimensionless displacement function $u(z)$ has varying magnitude and phase along the stream-wise direction or $z$ direction. Nevertheless, it is seen from the right panel of Figure~\ref{fig:fig_sol_analytic_disp_fun} that for different values of $\delta$, the phase change of $u(z)$ is very small in the $z$ direction, actually in the order $10^{-2}$. 
+While a finite non-zero electromechanical coupling factor $\delta$ is present, as expected in most applications, modulus and phase of the dimensionless displacement function $u(z;\delta)$ are both changing along the $z$ direction. Nevertheless, it is seen from the right panel of Figure~\ref{fig:fig_sol_analytic_disp_fun} that when the values of $\delta$ is either small or large, the phase change of $u(z;\delta)$ is very small in the $z$ direction. To make it more clear, we plot the modulus and phase of $u(z;\delta)$ at $z=1$ versus different values of $\delta$ in Figure~\ref{fig:fig_sol_analytic_disp_end}. It is clear that with the increase of $\delta$, modulus of $u(1;\delta)$ decreases, while its phase reaches a minimum at some intermediate value of $\delta$ (Here around $\delta = 20$). This also explains the fact expressed in Figure~\ref{fig:fig_sol_analytic_disp_fun} that the modulus of dimensionless relative displacement function $u_\delta (z)$ with $0 < \delta < \infty$ is always between that of $u_\varnothing (z)$ and $u_\infty (z)$.
 
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{./img_eig_asy/fig_sol_analytic_disp_end.jpg}
-    \caption{Amplitude and phase of the displacement function $u(z)$ at the position $z=1$ versus electromechanical coupling factor $\delta$. }
+    \caption{Modulus and phase of the displacement function $u(z;\delta)$ at the position $z=1$ versus electromechanical coupling factor $\delta$. The results are calculated at the parameter value of $\beta = 0.064$ and $\sigma = 1.557$.}
     \label{fig:fig_sol_analytic_disp_end}
 \end{figure}
 
 
-To make it more clear, we plot the phase of $u(z)$ at $z=1$ versus different values of $\delta$ in Figure~\ref{fig:fig_sol_analytic_disp_end}. It is clear that with the increase of $\delta$, amplitude of the end displacement $(z=1)$ of the beam $|u(z)|$ decreases, while its phase reaches a minimum at around $\delta = 10$. This also explains the fact expressed in Figure~\ref{fig:fig_sol_analytic_disp_fun} that the amplitude of displacement function $u_\delta (z)$ with $0 < \delta < \infty$ is always between that of $u_\varnothing (z)$ and $u_\infty (z)$.
 
-
-As for the output voltage $V_p(t)$, output current $I_p(t)$, and output power $P_p(t)$ for the classical piezoelectric cantilever energy harvester, their corresponding complex amplitudes $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ can be formulated as
+As for the output voltage $V_p(t)$, output current $I_p(t)$, and output power $P_p(t)$ of the PVEH, the corresponding complex amplitudes $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ can be formulated as
 \begin{equation}
     \left\{\begin{aligned}
-        \tilde{V}_p &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} u^\prime(1), \\
-        &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}} + B_\delta \cos{\sqrt{\sigma}} + C_\delta \sinh{\sqrt{\sigma}} + D_\delta \cosh{\sqrt{\sigma}} \right) \\
-        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p}  \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }\\
-        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(\frac{e_p}{C_p}\right) \chi_p , \\
+        \tilde{V}_p &= -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} u^\prime(1) = -\frac{j \sigma \beta}{j \sigma \beta + 1} \frac{\eta_b}{l_p} \frac{e_p}{C_p} \chi_p, \\
         \tilde{I}_p &=  \tilde{V}_p / R_l = - \frac{ j \sigma \beta } {j \sigma \beta + 1} \left( \frac{\eta_b}{l_p} \right) \left( \frac{e_p}{C_p R_l} \right) \chi_p , \\
         \tilde{P}_p &=  \tilde{V}_p^2 / R_l = \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left( \frac{e_p}{C_p R_l} \right) \left( \frac{ j \sigma \beta}{ j \sigma \beta + 1 } \right)^2 \chi_p^2∫,
     \end{aligned}\right.
     \label{eq:eq_peh_perfs_compact_form}
 \end{equation}
-in which we have used the notations that 
+in which we have used the notations of output index $\chi_p$ 
 \begin{equation}
     \chi_p = u_1^\prime(1) = \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }.
     \label{eq:eq_peh_perfs_compact_form_end_ders}
 \end{equation}
-Clearly, The three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are heavily dependent on another dimensionless parameter $r_d = \eta_b/l_p$. Formally, both $\tilde{V}_p$ and $\tilde{I}_p$ depend linearly upon $r_d$, while $\tilde{P}_p$ shows a quadratic dependence on $r_d$. The only dependence upon $\delta$ is introduced in $\chi_p$. However, it should be noted that the parameter $\delta$ relies on $e_p$, $l_p$, $C_p$, and $B_p$, while the three measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are dimensional values and depend on $e_p$, $\sigma_b$, and $R_l$. As a result, the change of parameter $\delta$ results in the change of reference voltage $e_p / C_p$, reference current $e_p / (C_p R_l)$, and reference power $(e_p / C_p)[e_p / (C_p R_l)]$, and therefore the corresponding values of $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$. Hence, we may establish a bijective relation between $\delta$ and $e_p$, and relate the change of $\delta$ to that of $e_p$. In this way, we calculate the output measures at different values of $\delta$ and plot their amplitudes in Figure~\ref{fig:fig_sol_analytic_perf_fun}. 
+Clearly, The three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are heavily dependent on another dimensionless parameter $r_d = \eta_b/l_p$, which is the dimensionless base excitation amplitude. Formally, both $\tilde{V}_p$ and $\tilde{I}_p$ depend linearly upon $r_d$, while $\tilde{P}_p$ shows a quadratic dependence on $r_d$. The only dependence upon $\delta$ is introduced in $\chi_p$. However, it should be noted that the definition of parameter $\delta$ relies on $e_p$, $l_p$, $C_p$, and $B_p$, while the three measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ are dimensional values and depend on $e_p$, $\sigma_b$, and $R_l$. As a result, the change of parameter $\delta$ results in the change of reference voltage $e_p / C_p$, reference current $e_p / (C_p R_l)$, and reference power $(e_p / C_p)[e_p / (C_p R_l)]$, and therefore the corresponding values of $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$. Hence, we may establish a bijective relation between $\delta$ and $e_p$, and relate the change of $\delta$ to that of $e_p$. In this way, we calculate the three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ at different values of $\delta$ and plot their moduli in Figure~\ref{fig:fig_sol_analytic_perf_fun}.
+
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_perf_fun}
@@ -430,7 +387,7 @@ For different values of $\delta$ and $\sigma$ (Here in this simulation, the valu
 
 
 
-Notice from Figure~\ref{fig:fig_sol_analytic_perf_vs_fr} that the first mode resonant frequency for the device is around $45\ Hz$. It is seen from these results that a smaller value of $\delta$ results in a better approximation, whatever the value of $f_b$. This is consistent with the philosophy behind asymptotic expansion. Besides, for the frequency away from the resonant frequency, the approximation results are relatively accurate in the range of $\delta \leq 0.1$ depending on the value of $f_b$. While when the base excitation frequency $f_b$ is close to a resonance, for example $f_b = 45\ Hz$, the approximation results are not accurate even at the value of $\delta = 0.01$. That is to say, the asymptotic expansion in terms of $\delta$ is not uniform with respect to parameter $\sigma$. Especially, the existence of resonance actually restrict the behavior of the asymptotic expansion. Around the resonance the expansion will show low accuracy, while away from the resonance, the expansion accuracy is easily retained. Nonetheless, for commonly used piezoelectric materials and energy harvesting device configuration, the value of $\delta$ is usually in the range of $10^{-2}$. Hence, it is generally validated to use the asymptotic expansion method to approximate the dimensionless displacement function $u(z;\delta)$. Furthermore, in view of the approximating performances of the asymptotic expansions to different orders, it suffices to keep only the $0th$ order terms. Then, we have that 
+Notice from Figure~\ref{fig:fig_sol_analytic_perf_vs_fr_mod} that the first mode resonant frequency for the device is around $45\ Hz$. It is seen from these results that a smaller value of $\delta$ results in a better approximation, whatever the value of $f_b$. This is consistent with the philosophy behind asymptotic expansion. Besides, for the frequency away from the resonant frequency, the approximation results are relatively accurate in the range of $\delta \leq 0.1$ depending on the value of $f_b$. While when the base excitation frequency $f_b$ is close to a resonance, for example $f_b = 45\ Hz$, the approximation results are not accurate even at the value of $\delta = 0.01$. That is to say, the asymptotic expansion in terms of $\delta$ is not uniform with respect to parameter $\sigma$. Especially, the existence of resonance actually restrict the behavior of the asymptotic expansion. Around the resonance the expansion will show low accuracy, while away from the resonance, the expansion accuracy is easily retained. Nonetheless, for commonly used piezoelectric materials and energy harvesting device configuration, the value of $\delta$ is usually in the range of $10^{-2}$. Hence, it is generally validated to use the asymptotic expansion method to approximate the dimensionless displacement function $u(z;\delta)$. Furthermore, in view of the approximating performances of the asymptotic expansions to different orders, it suffices to keep only the $0th$ order terms. Then, we have that 
 \begin{equation}
     u(z;\delta) \approx u^{(0)}(z) = A_0 \cos{\sqrt{\sigma}z} + B_0 \sin{\sqrt{\sigma}z} + C_0 \cosh{\sqrt{\sigma}z} + D_0 \sinh{\sqrt{\sigma}z} - 1.
 \end{equation}
