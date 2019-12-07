@@ -6,15 +6,13 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{geometry}
-\geometry{top = 1.5 cm, bottom = 1.5 cm}
+% \geometry{top = 1.5 cm, bottom = 1.5 cm}
 
 
 \title{Revisit to the theoretical analysis of a classical piezoelectric cantilever energy harvester}
-\author{Maoying Zhou$^1$ \and Yuhong Zhao$^2$}
+\author{Maoying Zhou$^1$ \and Huijun Zhao$^1$}
 \date{%
-    $^1$ Hangzhou Dianzi University\\%
-    $^2$ Zhejiang University\\[2ex]%
-    \today
+    $^1$ School of Mechanical Engineering, Hangzhou Dianzi University
 }
 
 \begin{document}
@@ -23,18 +21,8 @@
 
 
 \begin{abstract}
- In this paper, we investigate the classical problem for a piezoelectric cantilever energy harvester. Theoretical solution to the problem is derived and compared to the solution by other authors. Asymptotic expansions of the solution is explored in the hope of finding a plausible approximation of the problem. Dependence of the output measures upon electromechanical coupling factor is therefore studies. Some advice are provided for the design of piezoelectric energy harvester.
+ In this paper, we investigate the classical problem for a classical piezoelectric vibration energy harvester. Exact theoretical solution to the problem is derived and compared to the solutions proposed in the literature. Asymptotic expansions of the solution is explored in the hope of finding a plausible simpler approximation of the solution and corresponding output performance measures. Dependence of the output performance measures upon the electromechanical coupling factor is therefore studied. Some tips are then provided for the design of piezoelectric energy harvester.
 \end{abstract}
-
-\section{Outline of the paper}
-The outline of the paper should be as follows:
-\begin{itemize}
-    \item To obtain the closed form solution of the CPEH problem using the harmonic balance method
-    \item Analyze the dependence of relative displacement function $u(z;\delta)$
-    \item Tackling the dependence of output index $\chi_p$ and output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ upon the electromechanical coupling factor $\delta$ and base excitation frequency $f_b$
-    \item Derive the asymptotic expansion of the CPEH problem for the displacement function $u(z;\delta)$ and the output index $\chi_p$
-    \item Explore the approximation error of the asymptotic expansion and provide some clues to improve the performance
-\end{itemize}
 
 
 \section{Introduction}
@@ -260,18 +248,17 @@ Clearly, The three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_perf_fun}
-    \caption{Voltage, current and power output for the piezoelectric cantilever energy harvester}
+    \caption{Output voltage amplitude $\tilde{V}_p$, output current current $\tilde{I}_p$, and output power amplitude $\tilde{P}_p$ for the PVEH as a function of electromechanical coupling factor $\delta$ and equivalently $e_p$. The results are calculated at the parameter value of $\beta = 0.064$ and $\sigma = 1.557$.}
     \label{fig:fig_sol_analytic_perf_fun}
 \end{figure}
-% For a typical piezoelectric cantilever energy harvester in the literature \cite{erturk2008distributed,erturk2009experimentally}, this parameter $\delta$ is rather small
 
 
-It is seen from Figure~\ref{fig:fig_sol_analytic_perf_fun} that all the three measures show a maximum peak with the increase of $\delta$ at the approximate value of $\delta = 10$. When $\delta$ is small, or equivalently, $e_p$ is small, amplitude of the three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ increase with the increase of $\delta$. Then after the critical value of $\delta$, a further increase of $\delta$ causes the decrease of output measures. Thus we come to a small conclusion that to obtain an optimal output performance, the electromechanical coupling factor $\delta$ should be set to an appropriate value. However, a direct calculation using the parameters introduced in the literature \cite{erturk2008distributed,erturk2009experimentally} shows that the parameter $\delta$ is rather small for a typical piezoelectric cantilever energy harvester. For example, for a piezoelectric voltage constant $e_{31} = -5.35\ C / m^2$, the value of $e_p$ is $-5.35 \times 10^{-5}\ C$, and the final value of $\delta$ is $0.028$. According to the properties of commonly used piezoelectric materials, the parameter $e_{31}$ is always in the range of several or several tens $C / m^2$ \textcolor{red}{reference to be inserted}. That is to say, the final value of $\delta$ can be seen always in the order of $10^{-2}$, which is a rather small value according to the diagram. Hence we could present an asymptotic analysis of the performance of the classical piezoelectric energy harvester. This is the subject of the following section.
+It is seen from Figure~\ref{fig:fig_sol_analytic_perf_fun} that all the three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ show a maximum peak with the increase of $\delta$ at the approximate value of $\delta = 10$. When $\delta$ is small, or equivalently, $e_p$ is small, amplitudes of the three output measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ increase with the increase of $\delta$. Then after the critical value of $\delta$, a further increase of $\delta$ causes the decrease of these three output measures. Thus we come to a small conclusion that to obtain an optimal output performance, the electromechanical coupling factor $\delta$ should be set to an appropriate value. However, a direct calculation using the parameters introduced in the literature \cite{erturk2008distributed,erturk2009experimentally} shows that the parameter $\delta$ is rather small for a typical PVEH. For example, for a piezoelectric voltage constant $e_{31} = --12.54\ C / m^2$, the value of $e_p$ is $-8.778 \times 10^{-5}\ C$, and the final value of $\delta$ is $0.111$. According to the properties of commonly used piezoelectric materials, the parameter $e_{31}$ is always in the range of several or several tens $C / m^2$ \cite{erturk2011piezoelectric}. That is to say, the final value of $\delta$ is always in the order of $10^{-2}$ to $10^{-1}$, which is a rather small value according to the diagram. Hence we could present an asymptotic analysis of the performance of the PVEH. This is the subject of the following section.
 
 
-\section{Asymptotic analysis of the problem}
+\section{Asymptotic analysis of the model}
 
-Considering that the parameter $\delta$ is small, we expand the theoretical solution to the problem in terms of the small parameter $\delta$ using the following regular expansion:
+According to the above analysis, for small values of the parameter $\delta$, our solution to the derived model can be expanded in the following way:
 \begin{equation}
     \left\{\begin{aligned}
         A_\delta &= A_0 + \delta A_1 + \delta^2 A_2 + \cdots, \\
@@ -357,7 +344,7 @@ The solution is
 \end{equation}
 \normalsize
 
-Indeed, we can continue to obtain the coefficients for higher order ($\geq 2$) expansions, as shown in the appendices (\textcolor{red}{To add some comments}) using successive iteration method. Nevertheless, it suffices here to consider up to the second order expansion $u^{(0)} (z)$, $u^{(1)} (z)$, and $u^{(2)} (z)$, respectively:
+Indeed, we can continue to obtain the coefficients for higher order expansions, as shown in the appendix. Nevertheless, it suffices here to consider only the expansions up to the second order, which are represented by $u^{(0)} (z)$, $u^{(1)} (z)$, and $u^{(2)} (z)$, respectively:
 \begin{equation}
     \left\{\begin{aligned}
         u^{(0)} (z) &= u_0 (z), \\
@@ -374,186 +361,92 @@ where the terms $u_0 (z)$, $u_1(z)$, and $u_2 (z)$ are defined as
     \end{aligned}\right.
 \end{equation}
 
-
-For different values of $\delta$ and $\sigma$ (Here in this simulation, the value of $\sigma$ is changed through the variance of base excitation frequency $f_b$), the asymptotic approximations of the dimensionless relative beam displacement function $u(z;\delta)$ up to the second order $u^{(0)}(z)$, $u^{(1)}(z)$, and $u^{(2)}(z)$ are calculated and compared to the closed solution $u(z;\delta)$ itself. The results are shown in Figure~\ref{fig:fig_sol_analytic_disp_cmp_fr001}, \ref{fig:fig_sol_analytic_disp_cmp_fr020}, \ref{fig:fig_sol_analytic_disp_cmp_fr040}, \ref{fig:fig_sol_analytic_disp_cmp_fr045}, \ref{fig:fig_sol_analytic_disp_cmp_fr060}, \ref{fig:fig_sol_analytic_disp_cmp_fr080}, \ref{fig:fig_sol_analytic_disp_cmp_fr100}. 
-
+For different values of $\delta$ and $\sigma$ (Here in this simulation, the value of $\sigma$ is changed through the variance of base excitation frequency $f_b$), the asymptotic approximations of the dimensionless relative beam displacement function $u(z;\delta)$ up to the second order $u^{(0)}(z)$, $u^{(1)}(z)$, and $u^{(2)}(z)$ are calculated and compared to the solution $u(z;\delta)$ itself. The results are shown in Figure~\ref{fig:fig_sol_analytic_disp_cmp_fr_all}. 
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr001}
-    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
-    \label{fig:fig_sol_analytic_disp_cmp_fr001}
+    \includegraphics[width=0.8\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr_all}
+    \caption{Comparison of the asymptotic expansions to different orders for the dimensionless relative displacement function $u(z;\delta)$. The results are calculated at the parameter value of $\beta = 0.064$. The value of $\sigma$ is changed through changing $f_b$. For all the panels in the figure, the horizontal axis denotes the dimensionless streamwise position $z$, and the vertical axis represents the dimensionless relative displacement. }
+    \label{fig:fig_sol_analytic_disp_cmp_fr_all}
 \end{figure}
 
 
-
-Notice from Figure~\ref{fig:fig_sol_analytic_perf_vs_fr_mod} that the first mode resonant frequency for the device is around $45\ Hz$. It is seen from these results that a smaller value of $\delta$ results in a better approximation, whatever the value of $f_b$. This is consistent with the philosophy behind asymptotic expansion. Besides, for the frequency away from the resonant frequency, the approximation results are relatively accurate in the range of $\delta \leq 0.1$ depending on the value of $f_b$. While when the base excitation frequency $f_b$ is close to a resonance, for example $f_b = 45\ Hz$, the approximation results are not accurate even at the value of $\delta = 0.01$. That is to say, the asymptotic expansion in terms of $\delta$ is not uniform with respect to parameter $\sigma$. Especially, the existence of resonance actually restrict the behavior of the asymptotic expansion. Around the resonance the expansion will show low accuracy, while away from the resonance, the expansion accuracy is easily retained. Nonetheless, for commonly used piezoelectric materials and energy harvesting device configuration, the value of $\delta$ is usually in the range of $10^{-2}$. Hence, it is generally validated to use the asymptotic expansion method to approximate the dimensionless displacement function $u(z;\delta)$. Furthermore, in view of the approximating performances of the asymptotic expansions to different orders, it suffices to keep only the $0th$ order terms. Then, we have that 
+Notice from Figure~\ref{fig:fig_sol_analytic_perf_vs_fr_mod} that the first mode resonant frequency for the PVEH is around $45\ Hz$. It is seen from Figure~\ref{fig:fig_sol_analytic_disp_cmp_fr_all} that generally a smaller value of $\delta$ results in a better approximation, whatever the value of $f_b$. This is consistent with the philosophy behind asymptotic expansion. Besides, for the frequency away from the resonant frequency, the approximation results are relatively accurate in the range of $\delta \leq 0.1$ depending on the value of $f_b$. While the base excitation frequency $f_b$ is close to that of a resonance, for example $f_b = 45\ Hz$, the approximation results are not accurate even at the value of $\delta = 0.01$. That is to say, the asymptotic expansion in terms of $\delta$ is not uniform with respect to parameter $\sigma$. Especially, the existence of resonance actually restricts the performance of the asymptotic expansion. Around the resonance the expansion will show low accuracy, while away from the resonance, the expansion accuracy is easily retained. Nonetheless, for commonly used piezoelectric materials and energy harvesting device configuration, the value of $\delta$ is usually small. Thus the utilization of asymptotic expansion method to approximate the dimensionless relative displacement function $u(z;\delta)$ is to some degree feasible. Furthermore, in view of the approximating performances of the asymptotic expansions to different orders, it suffices to keep only the $0th$ order terms. Then, we have that 
 \begin{equation}
     u(z;\delta) \approx u^{(0)}(z) = A_0 \cos{\sqrt{\sigma}z} + B_0 \sin{\sqrt{\sigma}z} + C_0 \cosh{\sqrt{\sigma}z} + D_0 \sinh{\sqrt{\sigma}z} - 1.
 \end{equation}
-
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr020}
-    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
-    \label{fig:fig_sol_analytic_disp_cmp_fr020}
-\end{figure}
-
-
-This is exactly the displacement function of a pure elastic cantilever beam. It means that for most piezoelectric energy harvesting devices, due to the fact that the electromechanical coupling factor is relatively small, the displacement function is not much affected. In this way, we have indeed uncoupled the electrical part and elastic part of a piezoelectric energy harvesting device. It should be noted that the approximation is not valid near the resonant points.
-
-
-
-
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr040}
-    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
-    \label{fig:fig_sol_analytic_disp_cmp_fr040}
-\end{figure}
-
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr045}
-    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
-    \label{fig:fig_sol_analytic_disp_cmp_fr045}
-\end{figure}
-
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr060}
-    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
-    \label{fig:fig_sol_analytic_disp_cmp_fr060}
-\end{figure}
-
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr080}
-    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
-    \label{fig:fig_sol_analytic_disp_cmp_fr080}
-\end{figure}
-
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_disp_cmp_fr100}
-    \caption{Comparison for the different orders of asymptotic expansion for the dimensionless relative displacement function $u_\delta(z)$.}
-    \label{fig:fig_sol_analytic_disp_cmp_fr100}
-\end{figure}
-
-
-Theoretically, the first order derivative of the dimensionless relative displacement function $u(z;\delta)$ is 
-\begin{equation}
-    u^{\prime}(z;\delta) = \sigma^{1/2} \left( - A_\delta \sin{\sqrt{\sigma}z} + B_\delta \cos{\sqrt{\sigma}z} + C_\delta \sinh{\sqrt{\sigma}z} + D_\delta \cosh{\sqrt{\sigma}z} \right).
-\end{equation}
-\begin{equation}
-    \chi_p = u_1^\prime(1) = \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } + \frac{j \beta \sqrt{\sigma}}{ 1+ j \beta \sigma } \delta \left( \cos\sqrt{\sigma } \sinh\sqrt{\sigma } + \sin\sqrt{\sigma } \cosh\sqrt{\sigma } \right) }.
-    \label{eq:eq_peh_perfs_compact_form_end_ders1}
-\end{equation}
-The value of this function at the free end ($z=1$) is just the output index $\chi_p$ according to equation (\ref{eq:eq_peh_perfs_compact_form_end_ders}). To see the influences of $\delta$ and $f_b$, therefore $\sigma$, upon $\chi_p$, we firstly calculate the values of $\chi_p$ for different values of $\delta$ by fixing the value of $f_b$ to be some discrete values. The results are shown in Figure~\ref{fig:fig_sol_analytic_out_index_vs_delta}. 
+This expression is exactly the relative displacement function of a pure elastic cantilever beam under base excitation. It means that for most piezoelectric energy harvesting devices, due to the fact that the electromechanical coupling factor is relatively small, the relative displacement function is not much affected. In this way, we have indeed uncoupled the electrical part and elastic part of a piezoelectric energy harvesting device. It should be noted that the approximation is not valid near the resonance.
 
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_out_index_vs_delta}
-    \caption{Output index $\chi_p$ as a function of electromechanical coupling factor $\delta$ at different values of base excitation frequency $f_b$.}
+    \caption{Output index $\chi_p$ as a function of electromechanical coupling factor $\delta$ at different values of base excitation frequency $f_b$. The value of $\beta$ adopted in this simulation is $\beta = 0.321$ corresponding to an external resistance of $R_l = 50\ k\Omega$. }
     \label{fig:fig_sol_analytic_out_index_vs_delta}
 \end{figure}
 
-
-It is seen that the dependence of $\chi_p$ upon $\delta$ shows two different modes in the frequency range of $1\ - \ 100\ Hz$. For the frequencies of $45.2\ Hz \leq f_b \leq 71.8\ Hz$, a peak corresponding to a critical value of $\delta_p$ is present in the considered range of $\delta$. When $\delta$ is smaller than $\delta_p$, the output index $\chi_p$ increases along with $\delta$, and when $\delta$ is larger than $\delta_p$, the output index $\chi_p$ decreases with the increase of $\delta$. On the other hand, for the frequency range of $f_b \leq 45\ Hz$ or $f_b \geq 80\ Hz$, the output index $\chi_p$ shows a monotonic decrease with respect to the increase $\delta$.
+Furthermore, from equations (\ref{eq:eq_peh_perfs_compact_form}) and (\ref{eq:eq_peh_perfs_compact_form_end_ders}), the output index $\chi_p$ plays a key role in the performance investigation of the PVEH. To see the influences of $\delta$ and $f_b$, therefore $\sigma$, upon $\chi_p$, we firstly calculate the values of $\chi_p$ for different values of $\delta$ by fixing the value of $f_b$ to be some discrete values. The results are shown in Figure~\ref{fig:fig_sol_analytic_out_index_vs_delta}. It is seen that the dependence of $\chi_p$ upon $\delta$ shows two different modes in the frequency range of $1\ \leq f_b \leq \ 100\ Hz$. Firstly, in the frequency range of $45.2\ Hz \leq f_b \leq 71.8\ Hz$, a peak value of output index $\chi_p$ is reached at a critical value of $\delta = \delta_p^{(c)}$. When $\delta$ is smaller than $\delta_p^{(c)}$, the output index $\chi_p$ increases along with $\delta$, and when $\delta$ is larger than $\delta_p^{(c)}$, the output index $\chi_p$ decreases with the increase of $\delta$. It should be noted that the limit values of the frequency range discussed here are not strictly accurate as a result of the selection of numerical computation grids. Secondly, for the frequency range of $f_b \leq 45\ Hz$ or $f_b \geq 80\ Hz$, the output index $\chi_p$ shows a monotonic decrease with respect to the increase $\delta$.
 
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_out_index_vs_fr}
-    \caption{Output index $\chi_p$ as a function of base excitation frequency $f_b$ at different values of electromechanical coupling factor $\delta$.}
+    \caption{Output index $\chi_p$ as a function of base excitation frequency $f_b$ at different values of electromechanical coupling factor $\delta$. The value of $\beta$ adopted in this simulation is $\beta = 0.321$ corresponding to an external resistance of $R_l = 50\ k\Omega$. }
     \label{fig:fig_sol_analytic_out_index_vs_fr}
 \end{figure}
 
 
-Alternatively, by fixing the values of $\delta$ to a discrete set of numbers, we calculate the values of $\chi_p$ in relation to different values of $f_b$. This is very similar to a frequency response of the output index as a function of $\sigma$. The results are shown in Figure~\ref{fig:fig_sol_analytic_out_index_vs_fr}. It is clearly shown that with the increase of electromechanical coupling factor $\delta$, the resonant frequencies to the system increase with the increase of $\delta$. This is clearly shown in the shift to the right of the frequency response curve. Besides, we add in this figure the case where $\delta = 0.0$ as a reference. Simple comparisons show that the discrepancy between the frequency response curves related to the case of $\delta = 0$, $\delta=0.01$, and $\delta = 0.1$ is small. A direct conclusion is that for relatively small values of electromechanical coupling factor $\delta$, the output index $\chi_p$ can be approximated by 
+Alternatively, by fixing the values of $\delta$ to a discrete set of numbers, we calculate the values of $\chi_p$ in relation to different values of $f_b$. This is very similar to a frequency response of the output index as a function of $\sigma$. The results are shown in Figure~\ref{fig:fig_sol_analytic_out_index_vs_fr}. It is shown that with the increase of electromechanical coupling factor $\delta$, the resonant frequencies to the system increase with the increase of $\delta$. This is indicated by the shift to the right of the frequency response curve of output index $\chi_p$. Besides, we add in this figure the case where $\delta = 0.0$ as a reference. Simple comparisons show that the discrepancy between the frequency response curves of $\chi_p$ related to the case of $\delta = 0$, $\delta=0.01$, and $\delta = 0.1$ is small. A direct conclusion can be made that for small values of electromechanical coupling factor $\delta$, the output index $\chi_p$ can be approximated by 
 \begin{equation}
     \chi_p \approx \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } }.
 \end{equation}
-
-As a result, the output performance measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ can be approximated by 
+which is actually consistent with the above presented asymptotic expansion process. As a result, the output performance measures $\tilde{V}_p$, $\tilde{I}_p$, and $\tilde{P}_p$ can be approximated by 
 \begin{equation}
     \left\{\begin{aligned}
-        \tilde{V}_p &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(\frac{e_p}{C_p}\right) \chi_p , \\
-        &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(\frac{e_p}{C_p}\right) \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } } , \\
-        \tilde{I}_p &=  \tilde{V}_p / R_l = - \frac{ j \sigma \beta } {j \sigma \beta + 1} \left( \frac{\eta_b}{l_p} \right) \left( \frac{e_p}{C_p R_l} \right) \chi_p , \\
-        &= - \frac{ j \sigma \beta } {j \sigma \beta + 1} \left( \frac{\eta_b}{l_p} \right) \left( \frac{e_p}{C_p R_l} \right) \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } }, \\
-        \tilde{P}_p &=  \tilde{V}_p^2 / R_l = \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left( \frac{e_p}{C_p R_l} \right) \left( \frac{ j \sigma \beta}{ j \sigma \beta + 1 } \right)^2 \chi_p^2, \\
-        &= \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left( \frac{e_p}{C_p R_l} \right) \left( \frac{ j \sigma \beta}{ j \sigma \beta + 1 } \right)^2 \left( \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } } \right)^2.
+        \tilde{V}_p &= - \frac{j \sigma \beta}{j \sigma \beta + 1} \left(\frac{\eta_b}{l_p}\right) \left(\frac{e_p}{C_p}\right) \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } } , \\
+        \tilde{I}_p &= - \frac{ j \sigma \beta } {j \sigma \beta + 1} \left( \frac{\eta_b}{l_p} \right) \left( \frac{e_p}{C_p R_l} \right) \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } }, \\
+        \tilde{P}_p &= \left(\frac{\eta_b}{l_p}\right)^2 \left(\frac{e_p}{C_p}\right) \left( \frac{e_p}{C_p R_l} \right) \left( \frac{ j \sigma \beta}{ j \sigma \beta + 1 } \right)^2 \left( \frac{ \sqrt{\sigma} \left( \sinh\sqrt{\sigma} - \sin\sqrt{\sigma} \right) }{ 1 + \cos\sqrt{\sigma } \cosh\sqrt{\sigma } } \right)^2.
     \end{aligned}\right.
     \label{eq:eq_peh_perfs_compact_form_approx}
 \end{equation}
 
 
+
+
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_out_index_contour}
-    \caption{Output index $\chi_p$ as a function of base excitation frequency $f_b$ and electromechanical coupling factor $\delta$.}
+    \caption{Output index $\chi_p$ as a function of base excitation frequency $f_b$ and electromechanical coupling factor $\delta$. The value of $\beta$ adopted in this simulation is $\beta = 0.321$ corresponding to an external resistance of $R_l = 50\ k\Omega$. }
     \label{fig:fig_sol_analytic_out_index_contour}
 \end{figure}
 
-
+Furthermore, a closer look into the synergistic influence of the two parameters $\sigma$ and $\delta$ upon the output index $\chi_p$, the output voltage amplitude $\tilde{V}_p$, and the output power amplitude $\tilde{P}_p$ is taken. The output index $\chi_p$ as a function of $\sigma$ (hence $f_b$) and $\delta$ is plotted in Figure~\ref{fig:fig_sol_analytic_out_index_contour}, while the output voltage amplitude $\tilde{V}_p$ and the output power amplitude $\tilde{P}_p$ as functions of $\sigma$ (hence $f_b$) and $\delta$ are plotted in Figure~\ref{fig:fig_sol_analytic_out_vol_contour} and Figure~\ref{fig:fig_sol_analytic_out_pow_contour} respectively.
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_out_vol_contour}
-    \caption{Output voltage $\tilde{V}_p$ as a function of base excitation frequency $f_b$ and electromechanical coupling factor $\delta$.}
+    \caption{Output voltage amplitude $\tilde{V}_p$ as a function of base excitation frequency $f_b$ and electromechanical coupling factor $\delta$. In the simulations a load resistance of $R_l = 1\ k\Omega$ is adopted.}
     \label{fig:fig_sol_analytic_out_vol_contour}
 \end{figure}
-
-
-
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{./img_eig_asy/fig_sol_analytic_out_pow_contour}
-    \caption{Output voltage $\tilde{P}_p$ as a function of base excitation frequency $f_b$ and electromechanical coupling factor $\delta$.}
+    \caption{ Output power amplitude $\tilde{P}_p$ as a function of base excitation frequency $f_b$ and electromechanical coupling factor $\delta$. In the simulations a load resistance of $R_l = 1\ k\Omega$ is adopted.}
     \label{fig:fig_sol_analytic_out_pow_contour}
 \end{figure}
 
 
-
-
-
-
-
-
+According to Figure~\ref{fig:fig_sol_analytic_out_index_contour}, Figure~\ref{fig:fig_sol_analytic_out_vol_contour} and Figure~\ref{fig:fig_sol_analytic_out_pow_contour}, three narrow peak regions are present in the range of parameters considered, whatever the performance measures chosen. There can be large change in the order of magnitude for the performance measures when the parameter values are slightly away from the peak regions. Another point can be extracted that the increase of electromechanical coupling factor $\delta$ does not always leads to an increase of the output performances. For some value of $f_b$, a larger $\delta$ necessarily determines a larger output, while for some other values of $f_b$ a smaller value of $\delta$ is preferential. What's more, for some specific values of $\delta$, an intermediate value of $\delta$ is expected for a better output performance. Hence, to obtain a better energy harvesting performance for the PVEH, the frequency range should be considered along with the electromechanical coupling factor of the energy harvester designed. Future focus should be made upon the matching and optimization of the parameter values in a designed PVEH.
 
 
 \section{Conclusion}
 
+Piezoelectric vibration energy harvesting has attracted much research attention with the prospect of fully or completely replacing batteries for low-power electronics. Models of PVEHs are of key importance in the design and optimization of piezoelectric energy harvesters. In this contribution, we put forward a new way to theoretically express the solution to the base excitation problem of a PVEH. Analytical expressions of the solutions are given with validations done with respect to the currently adopted solutions. Asymptotic expansion analysis are then conducted to obtain the approximations of the dimensionless relative displacement function and the corresponding output index and output performance measures. Tips for design and optimization of piezoelectric energy harvesters are given. 
 
+\section*{Appendix}
+\label{sec:sec_appendix}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\section*{Appendices}
-
-The asymptotic expansion of equation (\ref{eq:eq_disp_func_coeffs_exps}) can be found using an iterative method. In fact, for higher order expansions ($k \geq 1$), we have the following iterative relation: 
 \begin{equation}
     \left\{\begin{aligned}
         A_{k+1} + C_{k+1} &= 0, \\
@@ -579,25 +472,10 @@ in which
 
 
 In terms of $Q_k$ ($k \geq 0$), we have the following iterative relation
-% \begin{equation}
-%     \begin{aligned}
-%         Q_{k+1} &= - A_{k+1} \sin{\sqrt{\sigma}} + B_{k+1} \cos{\sqrt{\sigma}} + C_{k+1} \sinh{\sqrt{\sigma}} + D_{k+1} \cosh{\sqrt{\sigma}} \\
-%         &= - \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right) \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) Q_k,
-%     \end{aligned}
-% \end{equation}
 \begin{equation}
     Q_{k+1} = - \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right) \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) Q_k,
 \end{equation}
 and the initial two values $Q_0$ and $Q_1$:
-% \begin{equation}
-%     \begin{aligned}
-%         Q_{1} &= - A_1 \sin{\sqrt{\sigma}} + B_1 \cos{\sqrt{\sigma}} + C_1 \sinh{\sqrt{\sigma}} + D_1 \cosh{\sqrt{\sigma}} \\
-%         &= \frac{j \beta  \sqrt{\sigma }}{1+j \beta  \sigma } \left(\frac{\sin\sqrt{\sigma } -\sinh\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)  \left( \frac{\cos\sqrt{\sigma } \sinh\sqrt{\sigma }+\sin\sqrt{\sigma } \cosh\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)
-%     \end{aligned}
-% \end{equation}
-% \begin{equation}
-%     Q_0 = \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1}
-% \end{equation}
 \begin{equation}
     \left\{\begin{aligned}
         Q_0 &= \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1}, \\
@@ -605,12 +483,6 @@ and the initial two values $Q_0$ and $Q_1$:
     \end{aligned}\right.
 \end{equation}
 Hence it is shown that for $k \geq 0$,
-% \begin{equation}
-%     \begin{aligned}
-%         Q_{k} &= - \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right) \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) Q_k \\
-%         &= \left[- \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)  \right]^k \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right)
-%     \end{aligned}
-% \end{equation}
 \begin{equation}
     Q_{k} = \left[- \left( \frac{j \beta \sqrt{\sigma }}{1+j \beta \sigma } \right) \left( \frac{ \sin\sqrt{\sigma} \cosh\sqrt{\sigma} + \cos\sqrt{\sigma} \sinh\sqrt{\sigma} }{ \cos\sqrt{\sigma }\cosh\sqrt{\sigma }+1 } \right)  \right]^k \left( \frac{\sinh\sqrt{\sigma }-\sin\sqrt{\sigma }}{\cos\sqrt{\sigma } \cosh\sqrt{\sigma }+1} \right).
 \end{equation}
@@ -628,8 +500,8 @@ As a result, we obtain that for $k \geq 1$,
 
 
 
-\section*{Acknowledgements}
-
+\section*{Acknowledgments}
+The authors would like to thank the financial support from the National Natural Science Foundation of China (NSFC) under contract number 51705112. The research presented in this paper is also supported by the Zhejiang Provincial Natural Science Foundation of China under Grant No. LQ18E050007.
 
 \bibliography{analysis_eig_asy.bib}
 \bibliographystyle{vancouver}

@@ -5,20 +5,22 @@ import matplotlib.ticker as ticker
 import matplotlib.colors as colors
 
 # beam base structure material constants
-lp   =  50.0e-3
-Ys   =  10.8e10
-rhos =  8.8e3
-hs   =  0.25e-3
-b    =  20.0e-3
+lp   = 100.0e-3
+Ys   = 100.0e9
+rhos = 7.165e3
+hs   = 0.25e-3
+b    = 20.0e-3
 # piezo layer material constants
-c11E = 12.03e10
-rhop = 7.75e3
-hp   = 0.5e-3
-ep33S= 7.32e-9
-e31  = -5.35
+c11E = 66.0e9
+rhop = 7.80e3
+hp   = 0.2e-3
+ep33S= 15.93e-9
+d31  = -190.0e-12
+e31  = d31 * c11E
+# e31  = -5.35
 # external circuit and excitation
-fr   = 40
-Rl   = 45.0e3
+fr   = 20
+Rl   = 10.0e3
 
 
 Bp = 2.0e0/3.0e0 * b * ( Ys*hs**3.0e0 + c11E*((hs+hp)**3.0e0 - hs**3.0e0) )
@@ -38,6 +40,9 @@ delta = alpha*alpha
 xib = 0.5e-3
 rd = xib / lp
 rv = ep / Cp
+
+
+print(beta, nu, alpha, delta)
 
 
 def output_vals(arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta, arg_rd = rd, arg_rv = rv, arg_Rl = Rl):
@@ -77,37 +82,37 @@ for i in range(delta_list.size):
     pow_list[i] = output[3]
 
 
-# plt.figure(1, figsize=(12,5))
-# plt.subplot(131)
-# plt.plot(delta_list, np.abs(vol_list))
-# plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
-# plt.xscale('log')
-# plt.xlabel('Electromechanical coupling factor $\\delta$')
-# plt.ylabel('voltage')
-# plt.grid(True)
+plt.figure(1, figsize=(18,6))
+plt.subplot(131)
+plt.plot(delta_list, np.abs(vol_list))
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+plt.xscale('log')
+plt.xlabel('Electromechanical coupling factor $\\delta$',fontsize=16)
+plt.ylabel('Amplitude of output voltage $\\tilde{V}_p$',fontsize=16)
+plt.grid(True)
 
-# plt.subplot(132)
-# plt.plot(delta_list, np.abs(cur_list))
-# plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
-# plt.xscale('log')
-# plt.xlabel('Electromechanical coupling factor $\\delta$')
-# plt.ylabel('current')
-# plt.grid(True)
+plt.subplot(132)
+plt.plot(delta_list, np.abs(cur_list))
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+plt.xscale('log')
+plt.xlabel('Electromechanical coupling factor $\\delta$',fontsize=16)
+plt.ylabel('Amplitude of output current $\\tilde{I}_p$',fontsize=16)
+plt.grid(True)
 
-# plt.subplot(133)
-# plt.plot(delta_list, np.abs(pow_list))
-# plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
-# plt.xscale('log')
-# plt.xlabel('Electromechanical coupling factor $\\delta$')
-# plt.ylabel('power')
-# plt.grid(True)
+plt.subplot(133)
+plt.plot(delta_list, np.abs(pow_list))
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+plt.xscale('log')
+plt.xlabel('Electromechanical coupling factor $\\delta$',fontsize=16)
+plt.ylabel('Amplitude of output power $\\tilde{P}_p$',fontsize=16)
+plt.grid(True)
 
-# plt.tight_layout()
-# # plt.savefig('fig_sol_analytic_perf_fun.jpg',dpi=300)
-# # plt.savefig('fig_sol_analytic_perf_fun.eps')
-# # plt.savefig('fig_sol_analytic_perf_fun.pdf')
+plt.tight_layout()
+# plt.savefig('fig_sol_analytic_perf_fun.jpg',dpi=300)
+plt.savefig('fig_sol_analytic_perf_fun.eps')
+plt.savefig('fig_sol_analytic_perf_fun.pdf')
 
-# plt.show()
+plt.show()
 
 
 

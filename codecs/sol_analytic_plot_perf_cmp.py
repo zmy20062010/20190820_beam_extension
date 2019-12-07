@@ -261,6 +261,7 @@ list_fr, list_delta = np.meshgrid(fr_list, delta_list)
 
 list_out = output_vals(list_fr, Rl, list_ep)
 
+
 plt.contourf(list_fr, list_delta, np.abs(list_out[3]), levels=np.logspace(-20,6,53), locator=ticker.LogLocator(), cmap=cm.jet)
 # plt.contourf(list_fr, list_delta, np.abs(list_out[3]), locator=ticker.LogLocator(), cmap=cm.jet)
 plt.xscale('log')

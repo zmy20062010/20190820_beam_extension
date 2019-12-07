@@ -39,6 +39,9 @@ rd = xib / lp
 rv = ep / Cp
 
 
+print(e31, ep)
+
+
 x = np.linspace(0.0, 1.0, 10001)
 
 def beam_disp(x, arg_sqlam = sqlam, arg_beta = beta, arg_eps = eps):

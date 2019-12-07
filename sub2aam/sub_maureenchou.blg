@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: sub_maureenchou.aux
+The style file: vancouver.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: analysis_eig_asy.bib
+You've used 24 entries,
+            3170 wiz_defined-function locations,
+            788 strings with 8565 characters,
+and the built_in function-call counts, 34306 in all, are:
+= -- 4374
+> -- 256
+< -- 1
++ -- 129
+- -- 64
+* -- 2686
+:= -- 3683
+add.period$ -- 92
+call.type$ -- 24
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 24
+duplicate$ -- 3259
+empty$ -- 3249
+format.name$ -- 85
+if$ -- 8120
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 242
+newline$ -- 123
+num.names$ -- 24
+pop$ -- 433
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 392
+stack$ -- 0
+substring$ -- 5978
+swap$ -- 548
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 205
+width$ -- 26
+write$ -- 263

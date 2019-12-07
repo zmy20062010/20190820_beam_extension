@@ -21,7 +21,7 @@ fr   = 45
 Rl   = 50.0e3
 
 
-Bp = 2.0e0/3.0e0 * b * ( Ys*hs**3.0e0 + c11E*((hs+hp)**3.0e0 - hs**3.0e0) )
+Bp = 2.0e0/3.0e0 * b * ( Ys*hs**3.0e0 + c11E*( (hs+hp)**3.0e0 - hs**3.0e0) )
 Cp = ep33S * b * lp / 2.0e0 / hp
 ep = b * e31 * (hs + hp/2.0e0)
 mp = 2.0e0 * b * ( rhos * hs + rhop * hp )
@@ -37,6 +37,8 @@ sqlam = np.sqrt(nu)
 xib = 0.5e-3
 rd = xib / lp
 rv = ep / Cp
+
+print(delta)
 
 fr_list = np.logspace(0.0, 3.0, 3001)
 sqlam_list = np.sqrt(2 * np.pi * fr_list * np.sqrt(mp * lp**4.0e0 / Bp))
@@ -132,49 +134,494 @@ def beam_disp_infty(x, arg_sqlam = sqlam, arg_beta = beta, arg_delta = delta):
 
 
 
-plt.figure(1, figsize=(16,8))
-plt.subplot(221)
+fr   = 1
+Rl   = 50.0e3
+# dimensionless parameters
+alpha = ep * np.sqrt(lp / Cp / Bp)
+beta  = Rl * Cp * np.sqrt(Bp / mp / lp**4.0e0)
+nu    = 2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp)
+
+delta = alpha*alpha
+sqlam = np.sqrt(nu)
+
+plt.figure(1, figsize=(24,32))
+plt.subplot(7,3,1)
 delta = 0.01
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
-plt.legend(loc = 'upper left')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
 plt.grid(True)
-plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
 
 
-plt.subplot(222)
+plt.subplot(7,3,2)
 delta = 0.1
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
-plt.legend(loc = 'upper left')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
 plt.grid(True)
-plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
 
 
-plt.subplot(223)
+plt.subplot(7,3,3)
 delta = 1
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
-plt.legend(loc = 'upper left')
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
 plt.grid(True)
-plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
 
 
-plt.subplot(224)
-delta = 10
-plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = 'closed form')
-plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '0th order')
-plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '1st order')
-plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '2nd order')
-plt.legend(loc = 'upper left')
+
+fr   = 20
+Rl   = 50.0e3
+# dimensionless parameters
+alpha = ep * np.sqrt(lp / Cp / Bp)
+beta  = Rl * Cp * np.sqrt(Bp / mp / lp**4.0e0)
+nu    = 2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp)
+
+delta = alpha*alpha
+sqlam = np.sqrt(nu)
+
+plt.subplot(7,3,4)
+delta = 0.01
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
 plt.grid(True)
-plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr))
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+plt.subplot(7,3,5)
+delta = 0.1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+plt.subplot(7,3,6)
+delta = 1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+
+
+fr   = 80
+Rl   = 40.0e3
+# dimensionless parameters
+alpha = ep * np.sqrt(lp / Cp / Bp)
+beta  = Rl * Cp * np.sqrt(Bp / mp / lp**4.0e0)
+nu    = 2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp)
+
+delta = alpha*alpha
+sqlam = np.sqrt(nu)
+
+plt.subplot(7,3,7)
+delta = 0.01
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+plt.subplot(7,3,8)
+delta = 0.1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+plt.subplot(7,3,9)
+delta = 1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+
+
+fr   = 45
+Rl   = 50.0e3
+# dimensionless parameters
+alpha = ep * np.sqrt(lp / Cp / Bp)
+beta  = Rl * Cp * np.sqrt(Bp / mp / lp**4.0e0)
+nu    = 2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp)
+
+delta = alpha*alpha
+sqlam = np.sqrt(nu)
+
+plt.subplot(7,3,10)
+delta = 0.01
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+plt.subplot(7,3,11)
+delta = 0.1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+plt.subplot(7,3,12)
+delta = 1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+
+
+
+
+fr   = 60
+Rl   = 50.0e3
+# dimensionless parameters
+alpha = ep * np.sqrt(lp / Cp / Bp)
+beta  = Rl * Cp * np.sqrt(Bp / mp / lp**4.0e0)
+nu    = 2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp)
+
+delta = alpha*alpha
+sqlam = np.sqrt(nu)
+
+plt.subplot(7,3,13)
+delta = 0.01
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+plt.subplot(7,3,14)
+delta = 0.1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+plt.subplot(7,3,15)
+delta = 1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+
+
+fr   = 80
+Rl   = 50.0e3
+# dimensionless parameters
+alpha = ep * np.sqrt(lp / Cp / Bp)
+beta  = Rl * Cp * np.sqrt(Bp / mp / lp**4.0e0)
+nu    = 2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp)
+
+delta = alpha*alpha
+sqlam = np.sqrt(nu)
+
+plt.subplot(7,3,16)
+delta = 0.01
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+plt.subplot(7,3,17)
+delta = 0.1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+plt.subplot(7,3,18)
+delta = 1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+
+
+
+
+fr   = 100
+Rl   = 50.0e3
+# dimensionless parameters
+alpha = ep * np.sqrt(lp / Cp / Bp)
+beta  = Rl * Cp * np.sqrt(Bp / mp / lp**4.0e0)
+nu    = 2 * np.pi * fr * np.sqrt(mp * lp**4.0e0 / Bp)
+
+delta = alpha*alpha
+sqlam = np.sqrt(nu)
+
+plt.subplot(7,3,19)
+delta = 0.01
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+plt.xlabel('Streamwise position $z$',fontsize=16)
+
+plt.subplot(7,3,20)
+delta = 0.1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+plt.xlabel('Streamwise position $z$',fontsize=16)
+
+
+plt.subplot(7,3,21)
+delta = 1
+plt.plot(x, np.abs(beam_disp(x, sqlam, beta, delta)), 'r-', label = '$u(z;\\delta)$')
+plt.plot(x, np.abs(beam_disp_zero(x, sqlam, beta, delta)), 'b-.', label = '$u^{(0)}(z)$')
+plt.plot(x, np.abs(beam_disp_one(x, sqlam, beta, delta)), 'k-', label = '$u^{(1)}(z)$')
+plt.plot(x, np.abs(beam_disp_two(x, sqlam, beta, delta)), 'm-.', label = '$u^{(2)}(z)$')
+plt.legend(loc = 'upper left',fontsize=16)
+plt.grid(True)
+plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}, $f_b = $ {2} $Hz$'.format(delta,nu, fr),fontsize=16)
+plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
+plt.xlabel('Streamwise position $z$',fontsize=16)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -183,6 +630,10 @@ plt.tight_layout()
 # plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.jpg',dpi=300)
 # plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.eps')
 # plt.savefig('./img/fig_sol_analytic_disp_cmp_fr045.pdf')
+
+# plt.savefig('./img/fig_sol_analytic_disp_cmp_fr_all.jpg',dpi=300)
+plt.savefig('./img/fig_sol_analytic_disp_cmp_fr_all.eps')
+plt.savefig('./img/fig_sol_analytic_disp_cmp_fr_all.pdf')
 
 plt.show()
 
