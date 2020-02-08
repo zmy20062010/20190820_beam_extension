@@ -183,7 +183,7 @@ plot(le*x + lp, angle(u2f)/pi*180, 'r--')
 % save('bm_ext_sol_laml_fr_1_Rl_1e4','u1f', 'u2f', 'x');
 % save('bm_ext_sol_laml_fr_1_Rl_1e5','u1f', 'u2f', 'x');
 % save('bm_ext_sol_laml_fr_1_Rl_1e6','u1f', 'u2f', 'x');
-save('bm_ext_sol_laml_fr_1_Rl_1e7','u1f', 'u2f', 'x');
+% save('bm_ext_sol_laml_fr_1_Rl_1e7','u1f', 'u2f', 'x');
 
 % end
 

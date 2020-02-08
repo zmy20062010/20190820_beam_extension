@@ -43,7 +43,6 @@ u1f10  = result10['u1f'][0]
 u2f10  = result10['u2f'][0]
 
 
-
 u1f00 = np.abs(u1f00)
 u2f00 = np.abs(u2f00)
 
@@ -100,17 +99,17 @@ u2f10 = np.concatenate(( -np.abs(u2f10[0:33]), np.abs(u2f10[33:83]), -np.abs(u2f
 u1f01 = np.abs(u1f01)
 u2f01 = np.abs(u2f01)
 
-u1f03 = np.abs(u1f03)
-u2f03 = np.concatenate(( np.abs(u2f03[0:70]), -np.abs(u2f03[70:101]) ),axis=0)
+# u1f03 = np.abs(u1f03)
+# u2f03 = np.concatenate(( np.abs(u2f03[0:70]), -np.abs(u2f03[70:101]) ),axis=0)
 
-u1f05 = np.concatenate(( np.abs(u1f05[0:49]), -np.abs(u1f05[49:101]) ),axis=0)
-u2f05 = np.concatenate(( -np.abs(u2f05[0:77]), np.abs(u2f05[77:101]) ),axis=0)
+# u1f05 = np.concatenate(( np.abs(u1f05[0:49]), -np.abs(u1f05[49:101]) ),axis=0)
+# u2f05 = np.concatenate(( -np.abs(u2f05[0:77]), np.abs(u2f05[77:101]) ),axis=0)
 
-u1f07 = np.abs(u1f07)
-u2f07 = np.concatenate(( np.abs(u2f07[0:13]), -np.abs(u2f07[13:80]), np.abs(u2f07[80:101]) ),axis=0)
+# u1f07 = np.abs(u1f07)
+# u2f07 = np.concatenate(( np.abs(u2f07[0:13]), -np.abs(u2f07[13:80]), np.abs(u2f07[80:101]) ),axis=0)
 
-u1f09 = np.concatenate(( np.abs(u1f09[0:62]), -np.abs(u1f09[62:101]) ),axis=0)
-u2f09 = np.concatenate(( -np.abs(u2f09[0:29]), np.abs(u2f09[29:82]), -np.abs(u2f09[82:101]) ),axis=0)
+# u1f09 = np.concatenate(( np.abs(u1f09[0:62]), -np.abs(u1f09[62:101]) ),axis=0)
+# u2f09 = np.concatenate(( -np.abs(u2f09[0:29]), np.abs(u2f09[29:82]), -np.abs(u2f09[82:101]) ),axis=0)
 
 
 fig, axes = plt.subplots(nrows=2, ncols=3, figsize=(18,10))
@@ -146,11 +145,11 @@ axes[1,2].plot(0, 0, 'b--', label= 'Extension Beam', linewidth=2)
 axes[1,2].legend(loc = 'center', ncol =1, fontsize=18)
 
 
-plt.text(0.02, 0.93, "(a) $f_b = 10\ Hz$", fontweight="bold", transform=axes[0,0].transAxes, fontsize=18)
-plt.text(0.02, 0.93, "(b) $f_b = 30\ Hz$", fontweight="bold", transform=axes[0,1].transAxes, fontsize=18)
-plt.text(0.02, 0.93, "(c) $f_b = 50\ Hz$", fontweight="bold", transform=axes[0,2].transAxes, fontsize=18)
-plt.text(0.02, 0.93, "(d) $f_b = 70\ Hz$", fontweight="bold", transform=axes[1,0].transAxes, fontsize=18)
-plt.text(0.02, 0.93, "(e) $f_b = 90\ Hz$", fontweight="bold", transform=axes[1,1].transAxes, fontsize=18)
+plt.text(0.02, 0.91, "(a) $f_b = 10\\ Hz$", fontweight="bold", transform=axes[0,0].transAxes, fontsize=18)
+plt.text(0.02, 0.91, "(b) $f_b = 30\\ Hz$", fontweight="bold", transform=axes[0,1].transAxes, fontsize=18)
+plt.text(0.02, 0.91, "(c) $f_b = 50\\ Hz$", fontweight="bold", transform=axes[0,2].transAxes, fontsize=18)
+plt.text(0.02, 0.91, "(d) $f_b = 70\\ Hz$", fontweight="bold", transform=axes[1,0].transAxes, fontsize=18)
+plt.text(0.02, 0.91, "(e) $f_b = 90\\ Hz$", fontweight="bold", transform=axes[1,1].transAxes, fontsize=18)
 plt.subplots_adjust(left=0.05, right=0.98, top=0.96, bottom=0.07, wspace=0.15, hspace=0.10)
 
 plt.savefig("fig_vibration_profile_vs_fr_Rl_laml_all.pdf")
