@@ -1,0 +1,796 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.1)  26 OCT 2019 12:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./model_simple01.tex
+(./model_simple01.tex
+LaTeX2e <2017/01/01> patch level 3
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/elsarticle/elsarticle.cl
+s
+Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
+\@bls=\dimen102
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cf
+g
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+) (d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\c@tnote=\count88
+\c@fnote=\count89
+\c@cnote=\count90
+\c@ead=\count91
+\c@author=\count92
+\@eadauthor=\toks15
+\c@affn=\count93
+\absbox=\box26
+\keybox=\box27
+\Columnwidth=\dimen106
+\space@left=\dimen107
+\els@boxa=\box28
+\els@boxb=\box29
+\leftMargin=\dimen108
+\@enLab=\toks16
+\@sep=\skip43
+\@@sep=\skip44
+
+(./model_simple01.spl)
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count94
+)
+\splwrite=\write3
+\openout3 = `model_simple01.spl'.
+
+)
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen109
+))
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen110
+)
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen111
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
+\dotsspace@=\muskip10
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks18
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks19
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
+\@envbody=\toks20
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (./model_simple01.aux)
+\openout1 = `model_simple01.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mki
+i
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count107
+\scratchdimen=\dimen118
+\scratchbox=\box32
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen119
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks23
+)
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.st
+y
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+) (d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.s
+ty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.
+sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys
+.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+ (d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+(d:/Program/Wooktool/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1
+
+
+{d:/Program/Wooktool/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+] [2]
+Package epstopdf Info: Source file: <./fig_beam_configuration.eps>
+(epstopdf)                    date: 2019-09-26 17:05:44
+(epstopdf)                    size: 1253233 bytes
+(epstopdf)             Output file: <./fig_beam_configuration-eps-converted-to.
+pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_beam_configuration-e
+ps-converted-to.pdf ./fig_beam_configuration.eps>
+(epstopdf)             \includegraphics on input line 58.
+runsystem(repstopdf --outfile=./fig_beam_configuration-eps-converted-to.pdf ./f
+ig_beam_configuration.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_beam_configuration-eps-converted-to.
+pdf>.
+
+
+! Package pdftex.def Error: File `./fig_beam_configuration-eps-converted-to.pdf
+' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...h=0.8\textwidth]{./fig_beam_configuration}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[3] [4] [5]
+Overfull \hbox (9.72508pt too wide) detected at line 195
+[]
+ []
+
+[6] [7] [8]
+Package epstopdf Info: Source file: <./fig_vibration_profile_vs_fr_Rl_laml_all.
+eps>
+(epstopdf)                    date: 2019-09-26 17:05:45
+(epstopdf)                    size: 108633 bytes
+(epstopdf)             Output file: <./fig_vibration_profile_vs_fr_Rl_laml_all-
+eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_vibration_profile_vs
+_fr_Rl_laml_all-eps-converted-to.pdf ./fig_vibration_profile_vs_fr_Rl_laml_all.
+eps>
+(epstopdf)             \includegraphics on input line 287.
+runsystem(repstopdf --outfile=./fig_vibration_profile_vs_fr_Rl_laml_all-eps-con
+verted-to.pdf ./fig_vibration_profile_vs_fr_Rl_laml_all.eps)...executed safely 
+(allowed).
+
+Package epstopdf Info: Result file: <./fig_vibration_profile_vs_fr_Rl_laml_all-
+eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `./fig_vibration_profile_vs_fr_Rl_laml_all-eps
+-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 .../fig_vibration_profile_vs_fr_Rl_laml_all}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[9] [10]
+Package epstopdf Info: Source file: <./fig_output_voltage_vs_fr_Rl_laml_all.eps
+>
+(epstopdf)                    date: 2019-09-26 17:05:44
+(epstopdf)                    size: 395801 bytes
+(epstopdf)             Output file: <./fig_output_voltage_vs_fr_Rl_laml_all-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_output_voltage_vs_fr
+_Rl_laml_all-eps-converted-to.pdf ./fig_output_voltage_vs_fr_Rl_laml_all.eps>
+(epstopdf)             \includegraphics on input line 301.
+runsystem(repstopdf --outfile=./fig_output_voltage_vs_fr_Rl_laml_all-eps-conver
+ted-to.pdf ./fig_output_voltage_vs_fr_Rl_laml_all.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <./fig_output_voltage_vs_fr_Rl_laml_all-eps
+-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `./fig_output_voltage_vs_fr_Rl_laml_all-eps-co
+nverted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.301 ...]{./fig_output_voltage_vs_fr_Rl_laml_all}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <./fig_output_power_vs_fr_Rl_laml_all.eps>
+(epstopdf)                    date: 2019-09-26 17:05:44
+(epstopdf)                    size: 320099 bytes
+(epstopdf)             Output file: <./fig_output_power_vs_fr_Rl_laml_all-eps-c
+onverted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_output_power_vs_fr_R
+l_laml_all-eps-converted-to.pdf ./fig_output_power_vs_fr_Rl_laml_all.eps>
+(epstopdf)             \includegraphics on input line 308.
+runsystem(repstopdf --outfile=./fig_output_power_vs_fr_Rl_laml_all-eps-converte
+d-to.pdf ./fig_output_power_vs_fr_Rl_laml_all.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_output_power_vs_fr_Rl_laml_all-eps-c
+onverted-to.pdf>.
+
+! Package pdftex.def Error: File `./fig_output_power_vs_fr_Rl_laml_all-eps-conv
+erted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.308 ...th]{./fig_output_power_vs_fr_Rl_laml_all}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[11] [12]
+Package epstopdf Info: Source file: <./fig_vol_laml_list_vs_fr_Rl.eps>
+(epstopdf)                    date: 2019-09-26 17:05:45
+(epstopdf)                    size: 378972 bytes
+(epstopdf)             Output file: <./fig_vol_laml_list_vs_fr_Rl-eps-converted
+-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_vol_laml_list_vs_fr_
+Rl-eps-converted-to.pdf ./fig_vol_laml_list_vs_fr_Rl.eps>
+(epstopdf)             \includegraphics on input line 326.
+runsystem(repstopdf --outfile=./fig_vol_laml_list_vs_fr_Rl-eps-converted-to.pdf
+ ./fig_vol_laml_list_vs_fr_Rl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_vol_laml_list_vs_fr_Rl-eps-converted
+-to.pdf>.
+
+
+! Package pdftex.def Error: File `./fig_vol_laml_list_vs_fr_Rl-eps-converted-to
+.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.326 ...\textwidth]{./fig_vol_laml_list_vs_fr_Rl}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <./fig_pow_laml_list_vs_fr_Rl.eps>
+(epstopdf)                    date: 2019-09-26 17:05:45
+(epstopdf)                    size: 358341 bytes
+(epstopdf)             Output file: <./fig_pow_laml_list_vs_fr_Rl-eps-converted
+-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_pow_laml_list_vs_fr_
+Rl-eps-converted-to.pdf ./fig_pow_laml_list_vs_fr_Rl.eps>
+(epstopdf)             \includegraphics on input line 333.
+runsystem(repstopdf --outfile=./fig_pow_laml_list_vs_fr_Rl-eps-converted-to.pdf
+ ./fig_pow_laml_list_vs_fr_Rl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_pow_laml_list_vs_fr_Rl-eps-converted
+-to.pdf>.
+
+! Package pdftex.def Error: File `./fig_pow_laml_list_vs_fr_Rl-eps-converted-to
+.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.333 ...\textwidth]{./fig_pow_laml_list_vs_fr_Rl}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[13] [14] [15]
+Package epstopdf Info: Source file: <./fig_vol_fr_sl_Rl_sl_vs_laml.eps>
+(epstopdf)                    date: 2019-09-26 17:05:45
+(epstopdf)                    size: 230745 bytes
+(epstopdf)             Output file: <./fig_vol_fr_sl_Rl_sl_vs_laml-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_vol_fr_sl_Rl_sl_vs_l
+aml-eps-converted-to.pdf ./fig_vol_fr_sl_Rl_sl_vs_laml.eps>
+(epstopdf)             \includegraphics on input line 345.
+runsystem(repstopdf --outfile=./fig_vol_fr_sl_Rl_sl_vs_laml-eps-converted-to.pd
+f ./fig_vol_fr_sl_Rl_sl_vs_laml.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_vol_fr_sl_Rl_sl_vs_laml-eps-converte
+d-to.pdf>.
+
+
+! Package pdftex.def Error: File `./fig_vol_fr_sl_Rl_sl_vs_laml-eps-converted-t
+o.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.345 ...textwidth]{./fig_vol_fr_sl_Rl_sl_vs_laml}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <./fig_pow_fr_sl_Rl_sl_vs_laml.eps>
+(epstopdf)                    date: 2019-09-26 17:05:44
+(epstopdf)                    size: 240806 bytes
+(epstopdf)             Output file: <./fig_pow_fr_sl_Rl_sl_vs_laml-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_pow_fr_sl_Rl_sl_vs_l
+aml-eps-converted-to.pdf ./fig_pow_fr_sl_Rl_sl_vs_laml.eps>
+(epstopdf)             \includegraphics on input line 352.
+runsystem(repstopdf --outfile=./fig_pow_fr_sl_Rl_sl_vs_laml-eps-converted-to.pd
+f ./fig_pow_fr_sl_Rl_sl_vs_laml.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_pow_fr_sl_Rl_sl_vs_laml-eps-converte
+d-to.pdf>.
+
+! Package pdftex.def Error: File `./fig_pow_fr_sl_Rl_sl_vs_laml-eps-converted-t
+o.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.352 ...textwidth]{./fig_pow_fr_sl_Rl_sl_vs_laml}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[16] [17] [18]
+Package epstopdf Info: Source file: <./fig_output_voltage_vs_fr_Rl_lamB_all.eps
+>
+(epstopdf)                    date: 2019-09-26 17:05:44
+(epstopdf)                    size: 346434 bytes
+(epstopdf)             Output file: <./fig_output_voltage_vs_fr_Rl_lamB_all-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_output_voltage_vs_fr
+_Rl_lamB_all-eps-converted-to.pdf ./fig_output_voltage_vs_fr_Rl_lamB_all.eps>
+(epstopdf)             \includegraphics on input line 373.
+runsystem(repstopdf --outfile=./fig_output_voltage_vs_fr_Rl_lamB_all-eps-conver
+ted-to.pdf ./fig_output_voltage_vs_fr_Rl_lamB_all.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <./fig_output_voltage_vs_fr_Rl_lamB_all-eps
+-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `./fig_output_voltage_vs_fr_Rl_lamB_all-eps-co
+nverted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 ...]{./fig_output_voltage_vs_fr_Rl_lamB_all}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <./fig_output_power_vs_fr_Rl_lamB_all.eps>
+(epstopdf)                    date: 2019-09-13 14:10:13
+(epstopdf)                    size: 330758 bytes
+(epstopdf)             Output file: <./fig_output_power_vs_fr_Rl_lamB_all-eps-c
+onverted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_output_power_vs_fr_R
+l_lamB_all-eps-converted-to.pdf ./fig_output_power_vs_fr_Rl_lamB_all.eps>
+(epstopdf)             \includegraphics on input line 380.
+runsystem(repstopdf --outfile=./fig_output_power_vs_fr_Rl_lamB_all-eps-converte
+d-to.pdf ./fig_output_power_vs_fr_Rl_lamB_all.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_output_power_vs_fr_Rl_lamB_all-eps-c
+onverted-to.pdf>.
+
+! Package pdftex.def Error: File `./fig_output_power_vs_fr_Rl_lamB_all-eps-conv
+erted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.380 ...th]{./fig_output_power_vs_fr_Rl_lamB_all}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[19] [20]
+Package epstopdf Info: Source file: <./fig_vol_fr_sl_Rl_sl_vs_lamB.eps>
+(epstopdf)                    date: 2019-09-26 17:05:45
+(epstopdf)                    size: 365127 bytes
+(epstopdf)             Output file: <./fig_vol_fr_sl_Rl_sl_vs_lamB-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_vol_fr_sl_Rl_sl_vs_l
+amB-eps-converted-to.pdf ./fig_vol_fr_sl_Rl_sl_vs_lamB.eps>
+(epstopdf)             \includegraphics on input line 393.
+runsystem(repstopdf --outfile=./fig_vol_fr_sl_Rl_sl_vs_lamB-eps-converted-to.pd
+f ./fig_vol_fr_sl_Rl_sl_vs_lamB.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_vol_fr_sl_Rl_sl_vs_lamB-eps-converte
+d-to.pdf>.
+
+
+! Package pdftex.def Error: File `./fig_vol_fr_sl_Rl_sl_vs_lamB-eps-converted-t
+o.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.393 ...textwidth]{./fig_vol_fr_sl_Rl_sl_vs_lamB}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <./fig_pow_fr_sl_Rl_sl_vs_lamB.eps>
+(epstopdf)                    date: 2019-09-26 17:05:44
+(epstopdf)                    size: 357249 bytes
+(epstopdf)             Output file: <./fig_pow_fr_sl_Rl_sl_vs_lamB-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_pow_fr_sl_Rl_sl_vs_l
+amB-eps-converted-to.pdf ./fig_pow_fr_sl_Rl_sl_vs_lamB.eps>
+(epstopdf)             \includegraphics on input line 400.
+runsystem(repstopdf --outfile=./fig_pow_fr_sl_Rl_sl_vs_lamB-eps-converted-to.pd
+f ./fig_pow_fr_sl_Rl_sl_vs_lamB.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_pow_fr_sl_Rl_sl_vs_lamB-eps-converte
+d-to.pdf>.
+
+! Package pdftex.def Error: File `./fig_pow_fr_sl_Rl_sl_vs_lamB-eps-converted-t
+o.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.400 ...textwidth]{./fig_pow_fr_sl_Rl_sl_vs_lamB}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[21] [22]
+Overfull \hbox (0.9141pt too wide) in paragraph at lines 409--410
+\OT1/cmr/m/n/10 nor-mal-ized out-put volt-age $\OMS/cmsy/m/n/10 j[]\OML/cmm/m/i
+t/10 =\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^[[]^^X[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/
+n/10 j$ \OT1/cmr/m/n/10 and nor-mal-ized out-put power $\OMS/cmsy/m/n/10 j[]\OM
+L/cmm/m/it/10 =\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^[[]^^X[]\OT1/cmr/m/n/10 )[]\
+OMS/cmsy/m/n/10 j$
+ []
+
+[23]
+Package epstopdf Info: Source file: <./fig_output_voltage_vs_fr_Rl_lamm_all.eps
+>
+(epstopdf)                    date: 2019-09-26 17:05:44
+(epstopdf)                    size: 236212 bytes
+(epstopdf)             Output file: <./fig_output_voltage_vs_fr_Rl_lamm_all-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_output_voltage_vs_fr
+_Rl_lamm_all-eps-converted-to.pdf ./fig_output_voltage_vs_fr_Rl_lamm_all.eps>
+(epstopdf)             \includegraphics on input line 422.
+runsystem(repstopdf --outfile=./fig_output_voltage_vs_fr_Rl_lamm_all-eps-conver
+ted-to.pdf ./fig_output_voltage_vs_fr_Rl_lamm_all.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <./fig_output_voltage_vs_fr_Rl_lamm_all-eps
+-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `./fig_output_voltage_vs_fr_Rl_lamm_all-eps-co
+nverted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.422 ...]{./fig_output_voltage_vs_fr_Rl_lamm_all}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <./fig_output_power_vs_fr_Rl_lamm_all.eps>
+(epstopdf)                    date: 2019-09-13 15:45:15
+(epstopdf)                    size: 227659 bytes
+(epstopdf)             Output file: <./fig_output_power_vs_fr_Rl_lamm_all-eps-c
+onverted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_output_power_vs_fr_R
+l_lamm_all-eps-converted-to.pdf ./fig_output_power_vs_fr_Rl_lamm_all.eps>
+(epstopdf)             \includegraphics on input line 429.
+runsystem(repstopdf --outfile=./fig_output_power_vs_fr_Rl_lamm_all-eps-converte
+d-to.pdf ./fig_output_power_vs_fr_Rl_lamm_all.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_output_power_vs_fr_Rl_lamm_all-eps-c
+onverted-to.pdf>.
+
+! Package pdftex.def Error: File `./fig_output_power_vs_fr_Rl_lamm_all-eps-conv
+erted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.429 ...th]{./fig_output_power_vs_fr_Rl_lamm_all}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[24] [25]
+Package epstopdf Info: Source file: <./fig_vol_fr_sl_Rl_sl_vs_lamm.eps>
+(epstopdf)                    date: 2019-09-26 17:05:45
+(epstopdf)                    size: 301493 bytes
+(epstopdf)             Output file: <./fig_vol_fr_sl_Rl_sl_vs_lamm-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_vol_fr_sl_Rl_sl_vs_l
+amm-eps-converted-to.pdf ./fig_vol_fr_sl_Rl_sl_vs_lamm.eps>
+(epstopdf)             \includegraphics on input line 440.
+runsystem(repstopdf --outfile=./fig_vol_fr_sl_Rl_sl_vs_lamm-eps-converted-to.pd
+f ./fig_vol_fr_sl_Rl_sl_vs_lamm.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_vol_fr_sl_Rl_sl_vs_lamm-eps-converte
+d-to.pdf>.
+
+
+! Package pdftex.def Error: File `./fig_vol_fr_sl_Rl_sl_vs_lamm-eps-converted-t
+o.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.440 ...textwidth]{./fig_vol_fr_sl_Rl_sl_vs_lamm}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <./fig_pow_fr_sl_Rl_sl_vs_lamm.eps>
+(epstopdf)                    date: 2019-09-26 17:05:45
+(epstopdf)                    size: 302780 bytes
+(epstopdf)             Output file: <./fig_pow_fr_sl_Rl_sl_vs_lamm-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./fig_pow_fr_sl_Rl_sl_vs_l
+amm-eps-converted-to.pdf ./fig_pow_fr_sl_Rl_sl_vs_lamm.eps>
+(epstopdf)             \includegraphics on input line 448.
+runsystem(repstopdf --outfile=./fig_pow_fr_sl_Rl_sl_vs_lamm-eps-converted-to.pd
+f ./fig_pow_fr_sl_Rl_sl_vs_lamm.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./fig_pow_fr_sl_Rl_sl_vs_lamm-eps-converte
+d-to.pdf>.
+
+! Package pdftex.def Error: File `./fig_pow_fr_sl_Rl_sl_vs_lamm-eps-converted-t
+o.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.448 ...textwidth]{./fig_pow_fr_sl_Rl_sl_vs_lamm}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[26] [27] [28] (./model_simple01.bbl
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+ [29] [30]) [31] (./model_simple01.aux) ) 
+Here is how much of TeX's memory you used:
+ 3607 strings out of 493013
+ 48770 string characters out of 6129191
+ 123314 words of memory out of 5000000
+ 7060 multiletter control sequences out of 15000+600000
+ 11118 words of font info for 43 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,12n,35p,2004b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
+<d:/Program/Wooktool/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/Program/Wooktool/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/Program/Wooktool/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Program/Wo
+oktool/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/Pro
+gram/Wooktool/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
+<d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb><d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb><d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb><d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr5.pfb><d:/Program/Wooktool/texlive/2016/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Program/Wooktool/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Program/Wooktool/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program/Wooktool/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/Program/Wookto
+ol/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/Program
+/Wooktool/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><d:
+/Program/Wooktool/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.
+pfb><d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti8.pfb><d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmtt10.pfb><d:/Program/Wooktool/texlive/2016/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmtt8.pfb>
+Output written on model_simple01.pdf (31 pages, 294655 bytes).
+PDF statistics:
+ 185 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
