@@ -122,7 +122,7 @@ plt.grid(True)
 # plt.title('$\\delta = $ {0}, $\\sigma = $ {1:1.2f}'.format(delta,nu))
 plt.xlabel('Dimensionless coordinate $z$',fontsize=16)
 plt.ylabel('Phase of relative displacement function $u(z)$',fontsize=16)
-
+plt.ylim([-30,5])
 
 plt.tight_layout()
 
@@ -137,9 +137,9 @@ plt.tight_layout()
 # plt.xlim([0.8,1.0])
 # plt.ylim([0.27,0.38])
 
-# plt.savefig('fig_sol_analytic_disp_fun.jpg',dpi=300)
-# plt.savefig('fig_sol_analytic_disp_fun.eps')
-# plt.savefig('fig_sol_analytic_disp_fun.pdf')
+plt.savefig('fig_sol_analytic_disp_fun.jpg',dpi=300)
+plt.savefig('fig_sol_analytic_disp_fun.eps')
+plt.savefig('fig_sol_analytic_disp_fun.pdf')
 
 plt.show()
 
